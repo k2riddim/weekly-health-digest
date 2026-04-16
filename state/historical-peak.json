@@ -1,0 +1,37 @@
+{
+  "computed_at": "2026-04-16T12:00:00Z",
+  "year": 2023,
+  "chronic_load_28d_avg": 1608,
+  "chronic_load_28d_peak": 2100,
+  "activity_mix": {
+    "Workout": 22.4,
+    "Ride": 21.6,
+    "Walk": 20.1,
+    "EBikeRide": 18.1,
+    "Run": 12.7,
+    "Swim": 3.1,
+    "Other": 1.9
+  },
+  "weekly_volume_km": {
+    "Ride": 78.6,
+    "EBikeRide": 28.5,
+    "Run": 9.9,
+    "Walk": 8.7,
+    "Swim": 1.6
+  },
+  "typical_session_minutes": {
+    "Ride": 99,
+    "Workout": 65,
+    "Run": 50,
+    "Swim": 39,
+    "Walk": 28,
+    "EBikeRide": 23
+  },
+  "dominant_hr_zones": {
+    "Run": "Z3",
+    "Ride": "Z2-Z3",
+    "Workout": "Z2",
+    "Swim": "Z2"
+  },
+  "hallmark": "High-volume multi-sport year driven by cycling (79 km/wk avg), supplemented by gym work, running, e-bike commuting, and swimming — peak chronic load reached 2100"
+}
