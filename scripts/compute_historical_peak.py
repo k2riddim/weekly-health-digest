@@ -7,47 +7,45 @@ computation is performed interactively via biometrics:query in a Claude Code
 session, not by running this script.
 
 The historical peak represents Benjamin's best sustained training period,
-used as the "north star" for the weekly digest's distance-from-peak metric.
+used as the "north star" for the daily digest's distance-from-peak metric.
+The value is stable — it is only overwritten if the current chronic_load_28d
+exceeds the stored peak.
 """
 
 # =============================================================================
 # Step 1: Find the peak 90-day rolling average of chronic_load_28d
 # =============================================================================
 #
-# This identifies the year/period when sustained fitness was highest.
-#
 # SQL:
 #   SELECT
-#     calendar_date,
+#     date,
 #     chronic_load_28d,
 #     AVG(chronic_load_28d) OVER (
-#       ORDER BY calendar_date
+#       ORDER BY date
 #       ROWS BETWEEN 89 PRECEDING AND CURRENT ROW
 #     ) AS rolling_90d_avg
 #   FROM training_load_daily
 #   WHERE chronic_load_28d IS NOT NULL
 #   ORDER BY rolling_90d_avg DESC NULLS LAST
 #   LIMIT 1;
-#
-# This gives us the date at the center of the peak sustained training block.
 
 # =============================================================================
-# Step 2: Query activity mix for the peak year
+# Step 2: Activity mix for the peak year
 # =============================================================================
-#
-# Using the year identified in Step 1, pull the activity distribution:
 #
 # SQL:
 #   SELECT
 #     sport_type,
 #     COUNT(*) AS session_count,
-#     ROUND(AVG(distance / 1000.0), 1) AS avg_distance_km,
-#     ROUND(AVG(moving_time / 60.0), 0) AS avg_duration_min,
-#     ROUND(SUM(distance / 1000.0), 0) AS total_distance_km
+#     ROUND(AVG(distance)::numeric, 1) AS avg_distance_km,
+#     ROUND(AVG(moving_time)::numeric, 0) AS avg_duration_min,
+#     ROUND(SUM(distance)::numeric, 0) AS total_distance_km
 #   FROM strava_activities
 #   WHERE EXTRACT(YEAR FROM start_date) = <peak_year>
 #   GROUP BY sport_type
 #   ORDER BY session_count DESC;
+#
+# Note: distance is already in km and moving_time already in minutes.
 
 # =============================================================================
 # Step 3: Weekly volume for the peak year
@@ -56,12 +54,12 @@ used as the "north star" for the weekly digest's distance-from-peak metric.
 # SQL:
 #   SELECT
 #     sport_type,
-#     ROUND(AVG(weekly_km), 1) AS avg_weekly_km
+#     ROUND(AVG(weekly_km)::numeric, 1) AS avg_weekly_km
 #   FROM (
 #     SELECT
 #       sport_type,
 #       DATE_TRUNC('week', start_date) AS week,
-#       SUM(distance / 1000.0) AS weekly_km
+#       SUM(distance) AS weekly_km
 #     FROM strava_activities
 #     WHERE EXTRACT(YEAR FROM start_date) = <peak_year>
 #     GROUP BY sport_type, DATE_TRUNC('week', start_date)
@@ -75,11 +73,11 @@ used as the "north star" for the weekly digest's distance-from-peak metric.
 # SQL:
 #   SELECT
 #     sport_type,
-#     ROUND(AVG(average_heartrate), 0) AS avg_hr,
-#     ROUND(AVG(max_heartrate), 0) AS avg_max_hr
+#     ROUND(AVG(average_heart_rate)::numeric, 0) AS avg_hr,
+#     ROUND(AVG(max_heart_rate)::numeric, 0) AS avg_max_hr
 #   FROM strava_activities
 #   WHERE EXTRACT(YEAR FROM start_date) = <peak_year>
-#     AND average_heartrate IS NOT NULL
+#     AND average_heart_rate IS NOT NULL
 #   GROUP BY sport_type
 #   ORDER BY COUNT(*) DESC;
 #

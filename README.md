@@ -1,35 +1,48 @@
-# Weekly Health Digest
+# Daily Health Digest
 
-An autonomous weekly health analysis system powered by Claude Code Routines. Every Sunday at 20:00 (Paris time), Claude clones this repo, pulls a week of biometric data from connected sources, analyses trends, plans next week's training, schedules calendar events, and delivers a digest to your inbox — all committed as a reviewable PR.
+An autonomous daily health analysis system powered by Claude Code Routines. Every morning, Claude clones this repo, pulls fresh biometric data, checks the week's calendar for "sur site" blocks, replans the rolling 7-day training window, delivers a digest via Telegram, and commits everything as a reviewable PR.
 
 ## How the Routine works
 
-The system executes a **6-phase pipeline** on every run:
+The system executes a **6-phase pipeline** on every daily run:
 
 | Phase | Name | What happens |
 |-------|------|-------------|
 | 0 | Recover state | Reads `state/latest.json`, `state/historical-peak.json`, and `protocols/thresholds.yaml` |
-| 1 | Snapshot | Pulls raw data from all connectors (Strava, Garmin, Withings, nutrition, labs, cognitive, cohabitant) |
-| 2 | Triage | Reassesses situational context, identifies top signals, checks deviation thresholds |
-| 3 | Deep dive | Tests hypotheses with SQL queries across multiple tables, loads research modules |
-| 4 | Training plan | Builds 3–5 sessions for W+1 respecting ACWR band, ramp cap, and readiness; creates Google Calendar events |
-| 5 | Delta | Computes week-over-week changes, tracks recommendation follow-through, measures distance from historical peak |
-| 6 | Persist + deliver | Commits all artifacts on a `claude/week-YYYY-WW` branch, opens a PR, creates a Gmail draft |
+| 1 | Snapshot | Pulls last 7 days of data from all connectors; reads Google Calendar for today + 7 days ahead; identifies `no_train_days` (events containing "sur site") |
+| 2 | Triage | Reassesses situational context, checks whether yesterday's planned session executed, identifies any signals, checks deviation thresholds |
+| 3 | Deep dive | Only when warranted — tests hypotheses with SQL across multiple tables, loads research modules |
+| 4 | Replan 7d | Builds the rolling 7-day plan; reconciles with existing Calendar events (leave / update / delete / create); respects `no_train_days` |
+| 5 | Delta | Computes day-over-day changes, plan adherence, distance from historical peak |
+| 6 | Persist + deliver | Commits artifacts on a `claude/day-YYYY-MM-DD` branch, opens a PR, sends a Telegram message |
+
+### Calendar-aware training
+
+Before scheduling any training session, the routine reads the next 7 days of Google Calendar events. Any day whose event summary or description contains **"sur site"** (case-insensitive) is treated as a day Benjamin is on-site at work and cannot train — no session is scheduled, and any existing Claude-created training event on that day is deleted.
+
+### Rolling replan, minimal churn
+
+The plan is rebuilt every day, but Calendar changes are minimized:
+- Existing training events that still fit → untouched
+- Existing events that no longer fit (readiness drop, newly-discovered "sur site") → updated or deleted
+- New slots that open up → new events created
+
+This keeps Benjamin's calendar stable while adapting to fresh data.
 
 ### Where state lives
 
-- **`state/latest.json`** — canonical current state, overwritten each week
+- **`state/latest.json`** — canonical current state, overwritten each day
 - **`state/historical-peak.json`** — best sustained training period, updated only if beaten
-- **`state/history/YYYY-WW.json`** — append-only weekly archive
-- **`digests/YYYY-WW.md`** — human-readable weekly reports
+- **`state/history/YYYY-MM-DD.json`** — append-only daily archive
+- **`digests/YYYY-MM-DD.md`** — human-readable daily reports
 - **`investigations/`** — standalone deep-dive analyses when signals warrant extended study
 
-### What gets committed weekly
+### What gets committed daily
 
-Each run creates a branch `claude/week-YYYY-WW` containing:
+Each run creates a branch `claude/day-YYYY-MM-DD` containing:
 - Updated `state/latest.json`
-- Archived `state/history/YYYY-WW.json`
-- Human-readable `digests/YYYY-WW.md`
+- Archived `state/history/YYYY-MM-DD.json`
+- Human-readable `digests/YYYY-MM-DD.md`
 - Any investigation files under `investigations/`
 - Updated `state/historical-peak.json` (only if a new peak is reached)
 
@@ -38,32 +51,33 @@ Each run creates a branch `claude/week-YYYY-WW` containing:
 1. Go to [claude.ai/code/routines](https://claude.ai/code/routines)
 2. Click **New routine**
 3. Configure:
-   - **Name**: `Weekly Health Digest`
+   - **Name**: `Daily Health Digest`
    - **Prompt**:
      ```
-     Execute the weekly health digest as specified in CLAUDE.md. Commit all artifacts on a `claude/week-YYYY-WW` branch and open a PR. Create a Gmail draft for mobile reading. Create Google Calendar events for W+1.
+     Execute the daily health digest as specified in CLAUDE.md. Commit all artifacts on a `claude/day-YYYY-MM-DD` branch and open a PR. Send a Telegram summary to Benjamin. Update Google Calendar training events for the next 7 days, respecting any "sur site" blocks.
      ```
    - **Repository**: `weekly-health-digest`
    - **Connectors**: enable all four:
      - `biometrics` (mcp.chrz.dev)
      - `baby mcp` (baby.chrz.dev)
-     - `Gmail`
      - `Google Calendar`
-   - **Schedule**: Weekly, Sunday 20:00 Europe/Paris
+     - `telegram`
+   - **Schedule**: Daily, e.g. 06:30 Europe/Paris (so Benjamin gets the digest before morning sessions start)
 4. Click **Save**
 
 The Routine clones this repo's default branch (main) at the start of every run. `CLAUDE.md` is auto-loaded as the routine prompt.
 
-## Reviewing weekly runs
+## Reviewing daily runs
 
-1. **Check your email** — a Gmail draft with subject `[HEALTH-DIGEST] Week YYYY-WW` is created for mobile reading
-2. **Review the PR** — each week's analysis lands as a pull request on the `claude/week-YYYY-WW` branch
-   - The PR body is auto-populated from `.github/pull_request_template.md`
-   - Review the delta summary, recommendations, and training plan
-3. **Merge or close** — merge to archive the week's state on main; close to discard
-4. **Calendar events** — training sessions are created in Google Calendar in French
-   - To reject a planned session: simply delete the calendar event
-   - Each event includes a tired-day fallback in the description
+1. **Check Telegram** — a compact French summary arrives on your phone: headline, today's session (or rest / "sur site" note), readiness metrics, top recommendation, PR link.
+2. **Review the PR** — each day's full analysis lands as a pull request on the `claude/day-YYYY-MM-DD` branch.
+   - The PR body is auto-populated from `.github/pull_request_template.md`.
+   - Review the delta summary, plan adherence, recommendations, and training plan.
+3. **Merge or close** — merge to archive the day's state on main; close to discard.
+4. **Calendar events** — training sessions appear in Google Calendar in French.
+   - To reject a planned session: delete the calendar event (the next day's run will see it's gone and won't recreate it unless conditions change).
+   - To block a day from training: add an event with "sur site" in the title or description. The next run will remove any training event scheduled for that day.
+   - Each event includes a tired-day fallback in the description.
 
 ## Evolving the system
 
@@ -85,6 +99,6 @@ Edit `protocols/thresholds.yaml`. All population-level invariants (ACWR band, ra
 
 Edit `protocols/zones.md` after a field test (30-min time trial, graded exercise test, or similar). The routine references these zones when prescribing training sessions.
 
-### Add an investigation template
+### Change the "sur site" keyword
 
-The investigation skill (`.claude/skills/investigation/SKILL.md`) handles scaffolding automatically. To trigger one manually, note the pattern in the skill file and create the directory structure under `investigations/`.
+The `sur site` match is defined in the Phase 1 calendar section of `CLAUDE.md` and in the training-planner skill. Update both locations (case-insensitive substring match) if the convention changes.

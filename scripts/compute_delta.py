@@ -1,8 +1,10 @@
 """
-compute_delta.py — Compute deltas between two weekly state snapshots.
+compute_delta.py — Compute deltas between two daily state snapshots.
 
 This is executable Python. The routine imports and calls compute_delta()
-to produce the Phase 5 delta summary.
+to produce the Phase 5 delta summary, comparing today's state to yesterday's
+state (and the trailing 7-day window to the prior 7-day window where
+applicable).
 
 Usage:
     import json
@@ -11,16 +13,17 @@ Usage:
     with open("state/latest.json") as f:
         previous = json.load(f)
 
-    current = { ... }  # new state dict from this week's analysis
+    current = { ... }  # new state dict from today's analysis
     delta = compute_delta(previous, current)
 """
 
 import json
 import sys
-from typing import Any
 
 
-# Numeric fields to diff between weekly states
+# Numeric fields to diff between daily states.
+# Each field represents either today's instantaneous value or a trailing
+# rolling average; both diff meaningfully day-over-day.
 NUMERIC_FIELDS = [
     "acute_load_7d",
     "chronic_load_28d",
@@ -29,18 +32,18 @@ NUMERIC_FIELDS = [
     "rhr_7d_avg",
     "sleep_hours_7d_avg",
     "weight_kg_7d_avg",
-    "sessions_completed",
 ]
 
 
 def compute_delta(previous: dict, current: dict) -> dict:
-    """Compute field-level deltas between two state snapshots.
+    """Compute field-level deltas between two daily state snapshots.
 
     Returns a dict with:
       - field_deltas: {field: {before, after, delta, pct_change}}
       - situational_context_changed: bool
       - previous_context: str
       - current_context: str
+      - plan_adherence: {yesterday_planned, yesterday_executed, note}
     """
     field_deltas = {}
 
@@ -82,11 +85,60 @@ def compute_delta(previous: dict, current: dict) -> dict:
     prev_context = previous.get("situational_context", "")
     curr_context = current.get("situational_context", "")
 
+    # Plan adherence: was yesterday's planned session actually executed?
+    plan_adherence = extract_yesterday_adherence(previous, current)
+
     return {
         "field_deltas": field_deltas,
         "situational_context_changed": prev_context != curr_context,
         "previous_context": prev_context,
         "current_context": curr_context,
+        "plan_adherence": plan_adherence,
+    }
+
+
+def extract_yesterday_adherence(previous: dict, current: dict) -> dict:
+    """Determine whether yesterday's planned session executed.
+
+    Looks at previous.plan_7d_ahead for an entry whose date == previous.as_of_date
+    or the day immediately after (depending on when 'yesterday' was planned).
+    Compares with current.last_session if present.
+    """
+    prev_plan = previous.get("plan_7d_ahead") or []
+    prev_as_of = previous.get("as_of_date")
+    last_session = current.get("last_session") or {}
+
+    yesterday_planned = None
+    for entry in prev_plan:
+        if entry.get("date") == prev_as_of:
+            yesterday_planned = entry
+            break
+
+    if yesterday_planned is None:
+        return {
+            "yesterday_planned": None,
+            "yesterday_executed": None,
+            "note": "No session was planned for yesterday",
+        }
+
+    if yesterday_planned.get("status") in ("blocked", "rest"):
+        return {
+            "yesterday_planned": yesterday_planned,
+            "yesterday_executed": False,
+            "note": f"Yesterday was {yesterday_planned['status']} — no session expected",
+        }
+
+    if last_session.get("date") == prev_as_of:
+        return {
+            "yesterday_planned": yesterday_planned,
+            "yesterday_executed": True,
+            "note": "Executed",
+        }
+
+    return {
+        "yesterday_planned": yesterday_planned,
+        "yesterday_executed": False,
+        "note": "Planned session not found in activities — investigate",
     }
 
 
@@ -116,6 +168,9 @@ def format_delta_summary(delta: dict) -> str:
         )
     else:
         summary += "\n\nSituational context: unchanged"
+
+    adherence = delta.get("plan_adherence") or {}
+    summary += f"\n\nPlan adherence: {adherence.get('note')}"
 
     return summary
 

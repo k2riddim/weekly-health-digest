@@ -1,5 +1,5 @@
 {
-  "week_ending": "2026-04-13",
+  "as_of_date": "2026-04-19",
   "bootstrap": true,
   "situational_context": "Extended low-training-load period: chronic load at 18 (~1% of 2023 historical peak of 1608). Activity limited to e-bike commuting (load 7-15/session) with one structured Zwift session (load 15). HRV trending upward over last 7d (33→42 overnight avg), suggesting improving recovery capacity or reduced physiological stress. RHR stable at 52-53 bpm. Sleep adequate (7.3h avg over 28d) but variable (5.9-8.3h range), with cohabitant-driven fragmentation likely contributing to low nights. Weight stable at ~107 kg across 2 readings in 28d. Readiness flags consistently 'high' — autonomic system is not stressed despite low fitness. Training readiness scores 75-95 indicate capacity for load increase. Garmin VO2max running estimate: 40.9. Pattern consistent with life-constrained detraining (infant cohabitant) rather than injury or illness.",
   "acute_load_7d": 15.3,
@@ -9,25 +9,31 @@
   "rhr_7d_avg": 53,
   "sleep_hours_7d_avg": 7.55,
   "weight_kg_7d_avg": 106.89,
-  "sessions_completed": 6,
-  "sessions_scheduled_next_week": [],
+  "last_session": {
+    "date": "2026-04-16",
+    "type": "EBikeRide",
+    "duration_min": 60,
+    "training_load": 12
+  },
+  "plan_7d_ahead": [],
+  "no_train_days": [],
   "recommendations": [
     {
       "priority": "P0",
       "text": "Begin structured rebuild: add 2-3 low-intensity aerobic sessions (Z1-Z2) per week alongside commute rides",
-      "measurable": "Acute load next week ≥20 with ≥2 dedicated training sessions",
+      "measurable": "Acute load over the next 7 days ≥20 with ≥2 dedicated training sessions",
       "evidence_class": "guideline"
     },
     {
       "priority": "P1",
-      "text": "Maintain sleep consistency — target ≥7h on all nights, especially on training days",
-      "measurable": "≤1 night below 6.5h sleep next week",
+      "text": "Maintain sleep consistency — target ≥7h on all nights, especially before training days",
+      "measurable": "≤1 night below 6.5h sleep in the next 7 days",
       "evidence_class": "RCT"
     },
     {
       "priority": "P2",
-      "text": "Log body composition measurement with full Withings scan (fat%, muscle mass) to establish rebuild baseline",
-      "measurable": "≥1 full-body Withings measurement logged next week",
+      "text": "Log a full Withings body composition scan (fat%, muscle mass) to establish rebuild baseline",
+      "measurable": "≥1 full-body Withings measurement logged in the next 7 days",
       "evidence_class": "consensus"
     }
   ],
