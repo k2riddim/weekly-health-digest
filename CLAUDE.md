@@ -28,6 +28,7 @@ Analytical report in **English**. Calendar event titles and descriptions, Telegr
 - **Archive**: `state/history/YYYY-MM-DD.json` — append-only copy of each day's state.
 - **Human digest**: `digests/YYYY-MM-DD.md`.
 - **Phone delivery**: Telegram message, body = compact version of the daily digest (French).
+- **Objectives register**: embedded in `state/latest.json` under `objectives[]`. The full athletic profile classification and static analysis live in `digests/2026-04-27-athletic-profile-and-objectives.md` — do not re-run the full classification daily; use the stored context and update only the live values and confidence scores.
 
 ## Thresholds
 
@@ -52,6 +53,7 @@ Complete all 6. Each requires real tool calls, not assumptions. Between phases, 
 2. `cat state/historical-peak.json` → parse into `HISTORICAL_PEAK`.
 3. `cat protocols/thresholds.yaml` → parse into `T`.
 4. If `LAST_STATE.bootstrap === true`, note that Phase 5 is the first real delta (compare today to the bootstrap snapshot, labelled as such).
+5. Parse `LAST_STATE.objectives` into `OBJECTIVES`. Each entry carries its `confidence_pct`, `current_gap`, and `blocker` from the previous run. These will be refreshed with live data in Phase 1 and updated in Phase 5.
 
 ### Phase 1 — Snapshot today + rolling context (broad pass)
 
@@ -70,14 +72,19 @@ Minimum coverage:
 - **Cohabitant** — `baby mcp:query` for night wakings / sleep fragmentation for `D - 7` through `D`.
 - **Calendar — upcoming 7 days** — list all events via `Google Calendar` for today through `today + 7`. Extract `no_train_days` = any date whose event summary or description matches `sur site` (case-insensitive). These are blocked for training.
 - **Calendar — yesterday** — to cross-check: did a "sur site" event yesterday prevent training, or did Benjamin skip for another reason?
+- **Objectives — live values** — for each entry in `OBJECTIVES` that has a `source_table`, run a live query to fetch the current metric. At minimum, always refresh these three every day:
+  1. Protein 30d avg: `SELECT AVG(total_protein_g) FROM oh_daily_nutrition_summary WHERE date >= CURRENT_DATE - 30`
+  2. Latest weight: latest `weight_kg` from `withings_measurements` where `weight_kg > 70`
+  3. Run sessions last 7d: count of `strava_activities` where `activity_type = 'Run'` and `start_date >= D - 6`
 
 ### Phase 2 — Triage + situational reassessment
 
 Produce an internal triage:
 1. **Reassess `situational_context`** inherited from `LAST_STATE`. Does the last 24–48h contradict it? State the signals that update it. Daily updates are incremental — the context rarely flips, but drifts.
 2. **Plan adherence check** — did yesterday's planned session (if any) execute? Was it skipped for a "sur site" event (legitimate), for readiness reasons (conditional), or silently (flag)?
-3. **Top 1–3 signals worth deep-diving**. For each: competing hypotheses ranked, tables to query. On a quiet day, zero deep-dives is the correct answer.
-4. If nothing is abnormal → explicit "maintenance — stay the course".
+3. **Objectives trajectory check** — for each entry in `OBJECTIVES`, compare the live value fetched in Phase 1 to `target_value` and to the previous `current_gap`. Is the trend moving toward or away from target? Adjust `confidence_pct` by ±5–15pp if trajectory data justifies it (positive momentum ↑, reversal or stall ↓, no new data → unchanged). Flag any objective that crossed a milestone or whose blocker was resolved or worsened.
+4. **Top 1–3 signals worth deep-diving**. For each: competing hypotheses ranked, tables to query. On a quiet day, zero deep-dives is the correct answer.
+5. If nothing is abnormal → explicit "maintenance — stay the course".
 
 Deep-dive triggers (from `T.deviation_thresholds`):
 - Any marker >`T.deviation_thresholds.personal_sigma_dive`σ from its personal 90-day baseline **today**
@@ -131,6 +138,7 @@ Compute using `scripts/compute_delta.py`:
 - **Markers-to-watch resolution** — resolved/worsened/flat since yesterday
 - **Rolling 7d vs previous rolling 7d** — shift in acute_load_7d, HRV 7d avg, RHR 7d avg, sleep hours 7d avg
 - **Distance-from-peak** — current chronic_load_28d as % of `HISTORICAL_PEAK.chronic_load_28d_avg`, day-over-day delta in pp
+- **Objectives progress** — for each `OBJECTIVES` entry: live value vs target vs previous `current_gap`. Update `confidence_pct` (bounded by Phase 2 logic). Explicitly note any objective that reversed direction, reached a milestone, or whose blocker changed.
 - **Situational context drift**
 
 If today's chronic_load_28d exceeds `HISTORICAL_PEAK.chronic_load_28d_avg` → update `state/historical-peak.json` with new values.
@@ -194,10 +202,17 @@ One sentence: readiness today, load trajectory, dominant situational factor, tod
   ...
 - Deload trigger: ...
 
-## 6. GP conversation seeds (only if relevant)
+## 6. Objectives tracker
+| Objective | Current | Target | By | Δ vs yesterday | Confidence |
+|-----------|---------|--------|----|----------------|-----------|
+| ... | ... | ... | ... | ↑/↓/→ | N% |
+
+Highlight any objective that changed materially. Flag the current highest-leverage blocker (1 line).
+
+## 7. GP conversation seeds (only if relevant)
 Natural observations Benjamin could mention at his next visit, not test requests.
 
-## 7. Investigations opened today
+## 8. Investigations opened today
 (Link to `investigations/YYYY-MM-DD-<slug>/` directories. Omit section if none.)
 ```
 
@@ -230,6 +245,9 @@ Natural observations Benjamin could mention at his next visit, not test requests
   ],
   "markers_to_watch": [
     {"marker": "...", "threshold": "...", "reason": "..."}
+  ],
+  "objectives": [
+    {"id": "...", "title": "...", "target_date": "YYYY-MM-DD", "confidence_pct": N, "current_gap": "...", "blocker": "..."}
   ],
   "investigations_opened": ["YYYY-MM-DD-<slug>"],
   "pr_url": "https://github.com/..."
