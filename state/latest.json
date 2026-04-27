@@ -1,18 +1,18 @@
 {
-  "as_of_date": "2026-04-19",
-  "bootstrap": true,
-  "situational_context": "Extended low-training-load period: chronic load at 18 (~1% of 2023 historical peak of 1608). Activity limited to e-bike commuting (load 7-15/session) with one structured Zwift session (load 15). HRV trending upward over last 7d (33→42 overnight avg), suggesting improving recovery capacity or reduced physiological stress. RHR stable at 52-53 bpm. Sleep adequate (7.3h avg over 28d) but variable (5.9-8.3h range), with cohabitant-driven fragmentation likely contributing to low nights. Weight stable at ~107 kg across 2 readings in 28d. Readiness flags consistently 'high' — autonomic system is not stressed despite low fitness. Training readiness scores 75-95 indicate capacity for load increase. Garmin VO2max running estimate: 40.9. Pattern consistent with life-constrained detraining (infant cohabitant) rather than injury or illness.",
+  "as_of_date": "2026-04-27",
+  "bootstrap": false,
+  "situational_context": "Extended low-training-load period: chronic load at 17.8 (~1.1% of 2023 historical peak of 1608). Activity in 2026 limited to Zwift VirtualRides (8 sessions, ~30 min each) and 2 outdoor rides — zero running since late 2025. HRV 7d avg 38 ms (was 42 at bootstrap). RHR 52-53 bpm stable. Sleep avg 7.55h. Weight trending down: 107→105.22 kg over 5 weeks (-0.36 kg/wk, ahead of target rate for 95 kg goal). Body recomp signal: fat% declining (28→26.6%) while muscle mass INCREASING (71→73.3 kg) despite low protein. Infant cohabitant constrains training windows — morning/lunchtime slots most viable. CRITICAL NUTRITIONAL DEFICIT: protein 56g/day vs 160g target (35% of target). This is below the 1.0g/kg lean mass preservation floor and risks undermining all performance objectives. ATHLETE PROFILE: historically competitive recreational endurance athlete (PR semi 1:34:33, PR marathon 3:39:55 at ~87 kg in 2019, top 12-15% French amateur); currently in advanced detraining after paternity-driven volume collapse. All physiological rebuilding capacity is intact — RHR and VO2max holdover confirms residual cardiac adaptation.",
   "acute_load_7d": 15.3,
   "chronic_load_28d": 17.8,
   "distance_from_peak_pct": 1.1,
   "hrv_7d_avg": 38,
   "rhr_7d_avg": 53,
   "sleep_hours_7d_avg": 7.55,
-  "weight_kg_7d_avg": 106.89,
+  "weight_kg_7d_avg": 105.22,
   "last_session": {
-    "date": "2026-04-16",
-    "type": "EBikeRide",
-    "duration_min": 60,
+    "date": "2026-04-24",
+    "type": "Ride",
+    "duration_min": 51,
     "training_load": 12
   },
   "plan_7d_ahead": [],
@@ -20,33 +20,101 @@
   "recommendations": [
     {
       "priority": "P0",
-      "text": "Begin structured rebuild: add 2-3 low-intensity aerobic sessions (Z1-Z2) per week alongside commute rides",
-      "measurable": "Acute load over the next 7 days ≥20 with ≥2 dedicated training sessions",
+      "text": "Fix protein intake immediately: target ≥120g/day this week, build to 160g/day over 4 weeks. Practical path: +2 scoops whey isolate (+50g) + 200g Greek yogurt (+20g) + protein-dense lunch = +70-80g added to current 56g base.",
+      "measurable": "30d avg protein ≥100g/day by May 27, ≥130g/day by June 27",
       "evidence_class": "guideline"
     },
     {
       "priority": "P1",
-      "text": "Maintain sleep consistency — target ≥7h on all nights, especially before training days",
-      "measurable": "≤1 night below 6.5h sleep in the next 7 days",
-      "evidence_class": "RCT"
+      "text": "Begin running immediately: 3x/week easy runs (Z1-Z2, ≤30 min), starting this week. No hero sessions. Consistent frequency > intensity.",
+      "measurable": "≥3 run sessions logged in the 7-day window ending May 4",
+      "evidence_class": "guideline"
     },
     {
       "priority": "P2",
-      "text": "Log a full Withings body composition scan (fat%, muscle mass) to establish rebuild baseline",
-      "measurable": "≥1 full-body Withings measurement logged in the next 7 days",
+      "text": "Schedule GP appointment for annual blood panel: NFS, lipids, ferritin, vitamin D, TSH, testosterone.",
+      "measurable": "GP appointment booked by May 15",
       "evidence_class": "consensus"
     }
   ],
   "markers_to_watch": [
     {
-      "marker": "hrv_7d_avg",
-      "threshold": "Sustaining >35 ms would confirm positive recovery trajectory",
-      "reason": "Upward HRV trend suggests readiness for load increase; reversal would indicate external stressor"
+      "marker": "protein_g_30d_avg",
+      "threshold": "Must reach ≥100g/day within 4 weeks",
+      "reason": "Currently 56g/day — below 1.0g/kg preservation floor; risks lean mass catabolism during weight loss and blunts all training adaptations"
     },
     {
-      "marker": "chronic_load_28d",
-      "threshold": "Target gradual increase toward 50+ over next 4 weeks",
-      "reason": "Currently at 1% of historical peak — any structured training will move the needle"
+      "marker": "run_sessions_per_week",
+      "threshold": "Must reach ≥3 sessions/week by May 15",
+      "reason": "Zero running in 2026; running habit is on the critical path to semi <1:45 by March 2027"
+    },
+    {
+      "marker": "weight_kg_7d_avg",
+      "threshold": "Maintain downward trend; watch for stall or reversal",
+      "reason": "Currently -0.36 kg/wk — ahead of 95 kg by Dec 2026 target rate (-0.30 kg/wk)"
+    },
+    {
+      "marker": "hrv_7d_avg",
+      "threshold": "Watch for drop below 32 ms when training load increases",
+      "reason": "Upward trend was positive but will be tested as training load rises"
+    }
+  ],
+  "objectives": [
+    {
+      "id": "a0000000-0000-0000-0000-000000000001",
+      "title": "Retour au niveau compétiteur amateur (semi <1h45, poids <95 kg)",
+      "target_date": "2027-06-30",
+      "confidence_pct": 25,
+      "current_gap": "Semi: 2:10 vs 1:45 target (-25 min). Weight: 105.22 vs 95 kg (-10.22 kg).",
+      "blocker": "Zero running in 2026 to date. Protein severely insufficient."
+    },
+    {
+      "id": "96910249-7ace-44e5-8eda-a4dc1c3ff512",
+      "title": "Semi-marathon < 1h45",
+      "target_date": "2027-03-30",
+      "confidence_pct": 28,
+      "current_gap": "-25 min from last race (2:10, Oct 2025). 0 runs in 2026.",
+      "blocker": "Running must start immediately — 11 months is the minimum window given ~3 structured blocks needed."
+    },
+    {
+      "id": "218d1c78-5e13-406a-b8ea-8dcdf8db2472",
+      "title": "Descendre à 95 kg",
+      "target_date": "2026-12-31",
+      "confidence_pct": 50,
+      "current_gap": "-10.22 kg. Current rate: -0.36 kg/wk (ahead of -0.30 kg/wk required).",
+      "blocker": "Protein at 56g/day risks shifting loss toward lean mass as training intensifies."
+    },
+    {
+      "id": "a1bde447-b23b-4ded-b9ad-9953e620b35c",
+      "title": "Reprendre la course 3x/semaine",
+      "target_date": "2026-09-30",
+      "confidence_pct": 40,
+      "current_gap": "0 runs/wk → 3 runs/wk. Started today (Apr 27).",
+      "blocker": "No track record in 2026 yet. Infant scheduling constraint."
+    },
+    {
+      "id": "49829c29-32c3-43b5-a6ef-d41b6f226160",
+      "title": "Atteindre 160g de protéines/jour",
+      "target_date": "2026-09-30",
+      "confidence_pct": 20,
+      "current_gap": "56g/day vs 160g target. Gap: +104g/day.",
+      "blocker": "Severe dietary reprogramming required. No upward trend visible."
+    },
+    {
+      "id": "c0eac7c5-c0c5-4f80-a919-b965b9e469ff",
+      "title": "FTP Zwift à 200W",
+      "target_date": "2026-09-30",
+      "confidence_pct": 30,
+      "current_gap": "150W → 200W (+33%). Currently casual Zwift only, no structured intervals.",
+      "blocker": "Need structured ERG-based intervals 3x/week to hit +33% in 5 months."
+    },
+    {
+      "id": "42361937-f5d7-4d3f-9720-9c2982aaa27d",
+      "title": "Bilan sanguin complet annuel",
+      "target_date": "2026-12-31",
+      "confidence_pct": 80,
+      "current_gap": "No appointment scheduled.",
+      "blocker": "Administrative only."
     }
   ],
   "investigations_opened": [],
