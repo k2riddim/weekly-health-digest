@@ -6,6 +6,64 @@ Auto-loaded by Claude Code on every run of the daily-digest Routine. Contains th
 
 Benjamin is a male endurance athlete based in Paris with longitudinal data across Strava, Garmin, Withings, labs, chess, nutrition, and cohabitant metrics. Everything about his current situation must be re-discovered from data each day. This prompt contains no hardcoded numbers, no life-phase assumptions, and no training templates — they evolve with him.
 
+## Athletic Profile Snapshot *(updated 2026-05-02 — refresh weekly)*
+
+**Demographics:** Male, 42 years old (born 1983-09-25), 178 cm, Paris. New parent (infant since ~Jan 2026).
+
+**Classification:** Category II–III Amateur Endurance Athlete, Mitchell Type IA (high dynamic / low static). Currently in post-parenthood detraining valley.
+
+**Lifetime Strava (excl. EBikeRide):** 2,185 activities · 20,573 km · 1,945 hours · 12 years (2014–2026).
+Primary sports: Run (804 sessions, 6,922 km) + Ride (740 sessions, 11,956 km) + Workout (328 sessions, 287h).
+
+**Competitive PRs:**
+- Half marathon: **1:34:33** (2019-03-16, Rueil-Malmaison) — ~top 10-15% French male
+- Marathon: **3:39:55** (2019-04-13, Paris) — ~top 25-30% French male
+- 10K: **44:42** (2016-02-06, Vincennes)
+- Cycling best avg power: **209.6W** (2020-08-22) · Longest ride: **106 km** (2023-09-02)
+
+**Training phases (chronological):**
+1. 2014–2015 — Foundation: 4.4–4.8 sessions/wk, peak running volume (1,692 km in 2015)
+2. 2016–2019 — Competitive prime: 4–5.5 sessions/wk; PRs achieved at 86 kg, 21.5% fat
+3. 2020–2022 — Pivot/lockdowns: gym/cycling dominant; essentially no running 2020–2022
+4. 2023 — Multi-sport resurgence: 3.0 sessions/wk; historical peak chronic load 2,100
+5. 2024–present — Parenthood detraining: 0–1.6 sessions/wk; current acute load ~37 (mostly e-bike)
+
+**Current physiological markers (2026-Q2):**
+- VO2max run: 40.9 ml/kg/min (ACSM "Fair" for 42M; was 43.2 at Q3-2025 peak = "Good")
+- RHR: 51.8 bpm ("Excellent" for 42M)
+- Weight: ~104.5 kg (peak competitive was 86 kg; current target 95 kg)
+- Fat: ~27.5–30% (peak competitive was 21.5%)
+- Muscle mass: ~70–72 kg (Withings, 2025–2026)
+- Runs logged in 2026: **0** (last run was Oct 2025 semi-marathon)
+
+**Body composition history (key years):**
+2019: 86.3 kg / 21.5% fat (marathon PR year) → 2021: 84.6 kg / 21.3% (leanest ever) → 2026: 105.6 kg / 27.5%
+
+## Active Objectives *(updated 2026-05-02 — confidence scores re-evaluated weekly)*
+
+| # | Objective | Domain | Target | Deadline | Confidence |
+|---|---|---|---|---|---|
+| 1 | **Reprendre la course 3x/semaine** | Habit | ≥3 runs/wk | 2026-09-30 | 35/100 ⚠️ |
+| 2 | Bilan sanguin complet annuel | Health | GP bloodwork (NFS, lipids, ferritin, vit D, TSH, T) | 2026-12-31 | 70/100 |
+| 3 | **Descendre à 95 kg** | Body comp | ≤95.0 kg (Withings) | 2026-12-31 | 50/100 |
+| 4 | Retour niveau compétiteur amateur | Performance | Semi <1h45 + weight <95 kg | 2027-06-30 | 50/100 |
+| 5 | Protéines 160g/jour | Nutrition | 30d avg ≥160g | 2026-09-30 | 45/100 |
+| 6 | FTP Zwift 200W | Cycling | ≥200W (baseline 150W) | 2026-09-30 | 25/100 ⚠️ |
+| 7 | Semi-marathon < 1h45 | Running | ≤105 min in a race | 2027-03-30 | 45/100 |
+
+**Objective baselines (2026-04-27):** weight 105.22 kg · protein 30d avg ~128g/day (logged days) · FTP 150W · HM current form ~130 min
+
+**Critical path:** OBJ-1 (running habit) unlocks OBJ-7 (semi time), accelerates OBJ-3 (weight loss), and is prerequisite for OBJ-4 (comeback). Every week without a run delays 5 of 7 objectives simultaneously.
+
+**Highest-leverage daily action:** Any running session — even 20 min Z2 — advances the critical path. Daily agent must flag any day without a planned run as a deviation when readiness allows.
+
+**Coherence notes:**
+- OBJ-3 (weight loss) and OBJ-7 (HM performance) are sequential, not concurrent: lose weight 2026, perform in Q1-2027
+- OBJ-6 (FTP 200W) is aspirational given 5-month timeline with zero structured cycling base; deprioritise in H1
+- OBJ-5 (protein 160g) supports both OBJ-3 (muscle retention) and OBJ-1 (recovery); track daily
+
+**Next weekly profile refresh:** ~2026-05-09 (update this section and re-run digests/2026-05-XX-athletic-profile.md)
+
 ## Target
 
 Intelligent progression toward the best sustainable fitness Benjamin has historically demonstrated (`state/historical-peak.json`), respecting current-life constraints inferred daily. The rolling 7-day training plan is **replanned every day** based on: yesterday's execution, today's readiness, upcoming calendar constraints, and trailing load trajectory. Never prescribe a ramp that raises acute 7-day load >10% week-over-week. No hero weeks.
