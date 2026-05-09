@@ -236,6 +236,54 @@ Natural observations Benjamin could mention at his next visit, not test requests
 }
 ```
 
+## Weekly Athletic Profile Digest (auto-updated each weekly run)
+
+**Last updated: 2026-05-09** | Full report: `digests/2026-05-09-athletic-profile.md`
+
+### Benjamin's Athletic Classification
+- **Category:** Recreational-competitive endurance athlete with elite-amateur peaks, currently in significant detraining (post-parenthood)
+- **ACSM current:** Category I (Recreational) — VO2max 40.9 (Good range), RHR 51 bpm
+- **ACSM historical peak (2019):** Category II (Competitive Recreational) — est. VO2max ~52–55, HM 1:34:33, FM 3:39:55
+- **Lifetime:** 2,385 activities, 23,725 km, 2,113 hours across 13 years (2014–2026)
+
+### Key Performance Benchmarks
+- **HM PR:** 1:34:33 (4:36/km) — Semi Rueil-Malmaison, March 2019 (top 15–20% Paris HM field)
+- **FM PR:** 3:39:55 (5:05/km) — Marathon de Paris, April 2019
+- **Most recent HM:** 2:10:27 (6:14/km) — Semi Vincennes, October 2025 (completion, not race)
+- **Running status:** Returned from 182-day hiatus May 2, 2026 (first run: 2.5 km @ 8:55/km) — APPLY RETURN-TO-RUN PROTOCOL
+
+### Current State (May 2026)
+- Weight: 104.1 kg (May 7) | Target: 95 kg | Gap: 9.1 kg | Trend: −0.85 kg/week (recent 23d)
+- Fat: 29.0% | Muscle: 70.3 kg | Peak weight (2021): 84.6 kg, 21.3% fat
+- Chronic load: 23.3 (1.5% of 2023 peak of 1,608)
+- VO2max run: 40.9 | VO2max cycle: 38.9 | RHR: 51 bpm
+
+### Active Objectives & Confidence Scores
+| Objective | Target | Current | Confidence | Priority |
+|-----------|--------|---------|------------|----------|
+| Course 3×/semaine | ≥3 runs/wk by Sep 30 | 0.25/wk | 40/100 | High |
+| Bilan sanguin annuel | Complete by Dec 30 | Last: Dec 2025 | 70/100 | High |
+| Descendre 95 kg | ≤95 kg by Dec 30 | 104.1 kg | 65/100 | High |
+| Comeback compétiteur | HM<1:45 + <95kg by Jun 27 | Far off | 40/100 | High |
+| Protéines 160g/jour | ≥160g/day avg by Sep 30 | 107g/day | 30/100 | High |
+| FTP Zwift 200W | ≥200W by Sep 30 | ~135W est. | 20/100 | Medium |
+| Semi <1:45 | ≤105 min by Mar 30 2027 | No base | 45/100 | Medium |
+
+### Critical Path for Daily Planner
+1. **Protein first** — 107g/day vs 160g target is the single highest-leverage change; unlocks weight loss AND running adaptation
+2. **Return-to-run protocol** — Benjamin is 7 days post-182-day hiatus; apply graduated return protocol (never exceed 10% ramp)
+3. **Weight loss is on track** — protect it by not over-training (caloric deficit + exercise = recovery bandwidth constraint)
+4. **FTP objective is secondary** — do not prioritize cycling load over running base given timeline
+5. **Vitamin D deficient** (27 ng/ml, Dec 2025) — supplementation warranted; GP conversation seed
+
+### Lab Flags (Dec 2025 bloodwork — 5 months ago)
+- 🔴 Vitamin D: 27 ng/ml (deficient, optimal 40–60)
+- ⚠️ Total Cholesterol: 2.27 g/L (elevated)
+- ⚠️ LDL: 1.57 g/L (borderline high)
+- ⚠️ HDL: 0.55 g/L (low-normal for men)
+- ✅ CBC, ferritin (159), TSH (2.2), glucose (1.01): all normal
+- ❓ Testosterone: not in last panel — needed for full annual objective
+
 ## Standing rules
 
 1. **Think hard.** Never write a recommendation without querying its supporting data first.
