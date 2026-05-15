@@ -1,52 +1,57 @@
 {
-  "as_of_date": "2026-04-19",
-  "bootstrap": true,
-  "situational_context": "Extended low-training-load period: chronic load at 18 (~1% of 2023 historical peak of 1608). Activity limited to e-bike commuting (load 7-15/session) with one structured Zwift session (load 15). HRV trending upward over last 7d (33→42 overnight avg), suggesting improving recovery capacity or reduced physiological stress. RHR stable at 52-53 bpm. Sleep adequate (7.3h avg over 28d) but variable (5.9-8.3h range), with cohabitant-driven fragmentation likely contributing to low nights. Weight stable at ~107 kg across 2 readings in 28d. Readiness flags consistently 'high' — autonomic system is not stressed despite low fitness. Training readiness scores 75-95 indicate capacity for load increase. Garmin VO2max running estimate: 40.9. Pattern consistent with life-constrained detraining (infant cohabitant) rather than injury or illness.",
-  "acute_load_7d": 15.3,
-  "chronic_load_28d": 17.8,
-  "distance_from_peak_pct": 1.1,
-  "hrv_7d_avg": 38,
-  "rhr_7d_avg": 53,
-  "sleep_hours_7d_avg": 7.55,
-  "weight_kg_7d_avg": 106.89,
+  "as_of_date": "2026-05-14",
+  "bootstrap": false,
+  "situational_context": "Running comeback underway: 2 runs completed since gap broken on 2026-05-03 (after 182 days off). Run #1: 2.47 km (May 3), Run #2: 2.01 km (May 9). Primary modality remains e-bike commuting (~38 km/day round trip). Chronic load slowly building (22.3, up from 17.8 on April 19). ACWR at 0.75 — safely below ramp cap, in rebuild zone. HRV stable (weekly avg 39, BALANCED status); RHR improved to 49 bpm (was 53 in mid-April). VO2max running estimate revised down to 38.3 (post-running activity update). Weight declining steadily: 104.1 kg (vs 106.9 kg April 14). Sleep adequate at 7.2h 7d avg. No new labs since Dec 2025. Comeback protocol (return-to-running.md) active — tissue tolerance, not cardio, is the limiting factor. Vitamin D retest due ~July 2026 (8 weeks post-comeback).",
+  "acute_load_7d": 16.8,
+  "chronic_load_28d": 22.3,
+  "distance_from_peak_pct": 1.4,
+  "hrv_7d_avg": 40,
+  "rhr_7d_avg": 49,
+  "sleep_hours_7d_avg": 7.23,
+  "weight_kg_7d_avg": 104.10,
   "last_session": {
-    "date": "2026-04-16",
+    "date": "2026-05-12",
     "type": "EBikeRide",
-    "duration_min": 60,
-    "training_load": 12
+    "duration_min": 59,
+    "training_load": 16
   },
   "plan_7d_ahead": [],
   "no_train_days": [],
   "recommendations": [
     {
       "priority": "P0",
-      "text": "Begin structured rebuild: add 2-3 low-intensity aerobic sessions (Z1-Z2) per week alongside commute rides",
-      "measurable": "Acute load over the next 7 days ≥20 with ≥2 dedicated training sessions",
+      "text": "Continue running comeback at current pace: 1-2 short runs per week (≤3 km each), maintaining ≥48h between runs. Do not increase distance faster than 10% per session.",
+      "measurable": "Run #3 completed this week, ≤3 km, no post-run pain lasting >24h",
       "evidence_class": "guideline"
     },
     {
       "priority": "P1",
-      "text": "Maintain sleep consistency — target ≥7h on all nights, especially before training days",
-      "measurable": "≤1 night below 6.5h sleep in the next 7 days",
+      "text": "Begin eccentric calf raises 3×/week — primary injury-prevention measure given body weight and Achilles risk profile during running comeback",
+      "measurable": "≥3 calf-raise sessions logged in the next 7 days",
       "evidence_class": "RCT"
     },
     {
       "priority": "P2",
-      "text": "Log a full Withings body composition scan (fat%, muscle mass) to establish rebuild baseline",
-      "measurable": "≥1 full-body Withings measurement logged in the next 7 days",
-      "evidence_class": "consensus"
+      "text": "Maintain Vitamin D supplementation daily; schedule blood panel for ~July 1, 2026 (8 weeks post-comeback) to confirm levels rising toward 40 ng/mL target",
+      "measurable": "Lab order placed before July 2026",
+      "evidence_class": "guideline"
     }
   ],
   "markers_to_watch": [
     {
-      "marker": "hrv_7d_avg",
-      "threshold": "Sustaining >35 ms would confirm positive recovery trajectory",
-      "reason": "Upward HRV trend suggests readiness for load increase; reversal would indicate external stressor"
+      "marker": "rhr_7d_avg",
+      "threshold": "Alert if RHR rises >5 bpm above 49 bpm baseline for 3+ consecutive days",
+      "reason": "RHR has improved to 49 bpm; elevation would indicate overload or sub-clinical illness during comeback"
     },
     {
       "marker": "chronic_load_28d",
-      "threshold": "Target gradual increase toward 50+ over next 4 weeks",
-      "reason": "Currently at 1% of historical peak — any structured training will move the needle"
+      "threshold": "Target gradual increase toward 35–40 over next 4 weeks",
+      "reason": "Currently at 1.4% of historical peak — structured running will progressively raise this"
+    },
+    {
+      "marker": "post_run_pain",
+      "threshold": "Any localized joint/tendon pain lasting >24h after a run triggers skip of next run",
+      "reason": "Tissue tolerance is the bottleneck at 104 kg body weight; pain signals early overload"
     }
   ],
   "investigations_opened": [],

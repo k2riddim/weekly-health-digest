@@ -8,21 +8,25 @@ Gap broken: 2026-05-03, after 182 days off running (4th-longest gap in 12 years 
 
 ## 1. Athlete snapshot
 
+*Last refreshed 2026-05-15 (12 days into comeback, 2 runs completed).*
+
 | Field | Value |
 |---|---|
 | Age | 42, male |
-| Body weight | **104.8 kg** (peak running era 84–85 kg, 2019-2020 → +20 kg) |
-| Resting HR | 50 bpm (stable) |
-| HRV (Garmin) | 37, weekly avg 38, status BALANCED |
-| VO2max running | 40.9 (frozen since Nov 2025) |
+| Body weight | **104.1 kg** (down from 104.8 kg at comeback start; peak running era 84–85 kg, 2019-2020 → +19 kg) |
+| Resting HR | 49 bpm (improved from 50 bpm at comeback start, 53 bpm in April) |
+| HRV (Garmin) | 40, weekly avg 39, status BALANCED |
+| VO2max running | 38.3 (updated post first runs, May 2026; was 40.9 frozen since Nov 2025) |
 | VO2max cycling | 38.6 (active) |
-| Sleep (30-day avg) | 7.4 h — recovery is **not** the bottleneck |
-| Current ACWR (cycling only) | **1.49 → Functional Overreaching** before any running added |
+| Sleep (30-day avg) | 7.45 h — recovery is **not** the bottleneck |
+| Current ACWR (all activities) | **0.75 — safe rebuild zone** (running now included; was 1.49 cycling-only before comeback) |
+| Comeback runs to date | Run #1: 2026-05-03, 2.47 km / 21 min (avg HR 135); Run #2: 2026-05-09, 2.01 km / 18 min (avg HR 144) |
 | Last run before gap | 2025-11-02 (EF 45'), 6 weeks after Vincennes half-marathon (21.2 km, 6:11/km, 2025-10-19) |
+| Gap duration | 182 days (2025-11-02 → 2026-05-03) |
 | Lifetime running base | 12 years, 800+ logged runs, half-marathon-fit at this body weight 6 months ago |
-| Family context | First child (Léonie) born 2026-01-09. Sleep currently OK; expect occasional fragmented nights. |
-| Vitamin D (Dec 2025) | **27 ng/mL — INSUFFICIENT** (optimal 40–60). Stress-fracture risk factor. |
-| Ferritin / Hb | 159 ng/mL / 15 g/dL — both normal |
+| Family context | First child (Léonie) born 2026-01-09. Sleep currently OK; occasional fragmented nights. |
+| Vitamin D (Dec 2025) | **27 ng/mL — INSUFFICIENT** (optimal 40–60). Supplementation active; retest due ~July 2026 (8 weeks in). |
+| Ferritin / Hb | 159 ng/mL / 15 g/dL — both normal (Dec 2025) |
 
 ---
 
@@ -126,4 +130,4 @@ If any of those is missed, the consolidation phase extends rather than progressi
 
 ---
 
-*Generated 2026-05-03 from longitudinal Strava / Garmin / Withings / lab data. Update each Sunday after the weekly health digest.*
+*Generated 2026-05-03 from longitudinal Strava / Garmin / Withings / lab data. Last refreshed 2026-05-15 (monthly maintenance pass). Update each Sunday after the weekly health digest.*
