@@ -6,6 +6,39 @@ Auto-loaded by Claude Code on every run of the daily-digest Routine. Contains th
 
 Benjamin is a male endurance athlete based in Paris with longitudinal data across Strava, Garmin, Withings, labs, chess, nutrition, and cohabitant metrics. Everything about his current situation must be re-discovered from data each day. This prompt contains no hardcoded numbers, no life-phase assumptions, and no training templates — they evolve with him. With the exception of the super important  return to running protocol you must always check and apply if the user is returning to running.
 
+## Athletic Profile — Last Weekly Digest (2026-05-16)
+
+### Classification
+**ACSM Class II → rebuilding toward Class III** ("Moderately Active Recreational — Aerobically Preserved, Running-Deconditioned")
+- Historically (2016–2019): trained competitive amateur — HM PR 1:34:33, marathon PR 3:39:55 at 86 kg, est. VO2max ~50–52
+- Currently: VO2max 40.2 mL/kg/min (weight-penalized), RHR 51 bpm, BF% 27.7%, weight 104.1 kg
+- E-bike commuting (170h/year) has preserved cardiovascular base despite 182-day running gap
+- Running comeback initiated May 3, 2026 — 3 sessions, 8 km total
+
+### Lifetime Totals (2,391 activities | 23,807 km | 2,118h | 12 years)
+Primary modalities: Run 807 sessions/6,930 km · Ride 741 sessions/11,968 km · EBikeRide 202 sessions/3,214 km
+
+### Active Objectives — Confidence Summary
+| Objective | Target | Current | Confidence |
+|---|---|---|---|
+| Bilan sanguin complet | Done by Dec 2026 | Not scheduled | 85/100 |
+| Poids ≤95 kg | Dec 30, 2026 | 104.1 kg (−0.38 kg/wk trend) | 72/100 |
+| Course 3×/semaine | Sep 29, 2026 | 1/wk (protocol-constrained) | 55/100 |
+| Compétiteur amateur (semi<1h45 + 95kg) | Jun 29, 2027 | 2:10 HM / 104.1 kg | 42/100 |
+| Semi-marathon <1:45 | Mar 30, 2027 | 2:10 (Oct 2025) | 40/100 |
+| Protéines ≥160g/jour | Sep 29, 2026 | 126.1g/day avg (30d) | 38/100 |
+| FTP Zwift ≥200W | Sep 29, 2026 | ~145W (WAP proxy) | 18/100 |
+
+### Critical Path
+**Protein (+34g/day) → weight loss → running volume → HM time → competitive return**
+The single highest-leverage action with zero injury risk: add one protein shake or 150g chicken/day to close the 34g protein gap. The FTP 200W objective conflicts with running priority — deadline extension recommended.
+
+### Key Race History
+HM trajectory: 1:49 (2015) → 1:40 (2016) → **1:34 PR (2019)** → 1:57 (2024) → 2:10 (2025)
+Weight at PR: 86.3 kg. Current: 104.1 kg. Gap: +17.8 kg.
+
+*Full profile: `digests/2026-05-16-athletic-profile.md` | Next weekly update: 2026-05-23*
+
 ## Target
 
 Intelligent progression toward the best sustainable fitness Benjamin has historically demonstrated (`state/historical-peak.json`), respecting current-life constraints inferred daily. The rolling 7-day training plan is **replanned every day** based on: yesterday's execution, today's readiness, upcoming calendar constraints, and trailing load trajectory. Never prescribe a ramp that raises acute 7-day load >10% week-over-week. No hero weeks.
