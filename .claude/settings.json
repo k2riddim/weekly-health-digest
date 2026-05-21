@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__biometrics__query",
+      "mcp__biometrics__update_strava_activity",
+      "mcp__Google-Calendar__list_events",
+      "mcp__Google-Calendar__update_event",
+      "mcp__Google-Calendar__create_event"
+    ]
+  }
+}
