@@ -236,6 +236,53 @@ Natural observations Benjamin could mention at his next visit, not test requests
 }
 ```
 
+## Weekly Athletic Profile — Last Digest (2026-05-23)
+
+> Updated every Saturday. The daily agent MUST read this section at Phase 0 to anchor its recommendations.
+
+### Athlete Classification
+Amateur compétitif en retour de forme. Catégorie ACSM "Trained/Competitive" au pic (2015–2019) — actuellement "Recreational transitioning to Trained". Coureur primaire avec cross-training cyclisme intensif. 12 ans de données longitudinales (2014–2026).
+
+### Lifetime Benchmarks (anchor for trajectory assessment)
+- **Lifetime**: 2,398 activités · 23,905 km · 2,123 h
+- **Best HM**: 1:34:33 (Rueil-Malmaison, mars 2019, ~87 kg) → top 15–20% France
+- **Best marathon**: 3:39:55 (Paris, avril 2019, ~87 kg)
+- **Peak running volume**: 179 courses/an · 1,692 km/an · 3.44 sessions/semaine (2015)
+- **Peak body weight competitive**: 84.6–87 kg (2015–2021)
+- **Lean mass (muscle Withings 2025–26)**: 71–76 kg — supérieur au pic 2019 (67 kg fat-free mass)
+
+### Current State (as of 2026-05-23)
+- **Poids**: 103.8 kg (tendance baisse: −0.52 kg/semaine) · cible 95 kg fin 2026
+- **VO2max**: 40.0 mL/kg/min running, 38.8 cycling (Garmin Q2 2026)
+- **RHR**: 49–51 bpm (Excellent/Athlete per ACSM)
+- **Retour running**: Semaine 4 · 4 sorties complétées (2.5 → 2.0 → 3.5 → 5.0 km) · protocole actif
+- **ACWR**: 0.780 — zone reconstruction
+- **Protéine**: 129.5 g/jour moyenne 30j (cible 160g) — tendance en baisse ⚠️
+
+### Active Objectives — Confidence Scores (2026-05-23)
+| Objectif | Échéance | Valeur actuelle | Cible | Confiance |
+|---|---|---|---|---|
+| Running 3×/semaine | 2026-09-30 | 1×/sem | 3×/sem | 52% |
+| Protéine 160g/j | 2026-09-30 | 129.5g | 160g | 45% ⚠️ |
+| Poids 95 kg | 2026-12-31 | 103.8 kg | 95 kg | 72% ✓ |
+| Bilan sanguin | 2026-12-31 | En attente | Réalisé | 75% |
+| Retour compétiteur (semi <1:45 + 95 kg) | 2027-06-30 | Rebuild | — | 42% |
+| FTP Zwift 200W | 2026-09-30 | ~150W | 200W | 15% ❌ |
+| Semi <1:45 | 2027-03-31 | 2:10 | <1:45 | 42% |
+
+### Standing Alerts for Daily Agent
+1. **Protéine en déclin** (148g/sem → 121–129g/sem sur 6 semaines) — mentionner si pas de progrès
+2. **FTP 200W objectif irréaliste** au 30/09 — suggérer décalage au 31/12/2026 ou T1 2027
+3. **Eccentric calf raises P1** — toujours non complété ; rappeler à chaque digest running
+4. **Bilan sanguin** — déclencher en juillet (8 semaines post-reprise = naturel)
+5. **Chemin critique composite** : Poids → Protéine → Running → performance demi-marathon
+
+### Phase Mapping
+- Phase actuelle: **Comeback Phase 2** (post-182 jours d'arrêt), semaine 4
+- Phase précédente: Running 2025 season (45 courses, Semi Vincennes 2:10:30)
+- Phase cible: Retour phase compétitive (3×/sem, poids <100 kg) → été 2026
+- Full digest: `digests/2026-05-23-athletic-profile.md`
+
 ## Standing rules
 
 1. **Think hard.** Never write a recommendation without querying its supporting data first.
