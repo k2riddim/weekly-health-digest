@@ -248,3 +248,42 @@ Natural observations Benjamin could mention at his next visit, not test requests
 8. **Bootstrap path.** If `LAST_STATE` is missing or explicitly marked `bootstrap: true`, Phase 5 says so; otherwise proceed normally.
 9. **Calendar authority.** Never schedule training on a `no_train_days` date. Always re-read Calendar at Phase 1 — a "sur site" event added since yesterday overrides any existing training event for that day.
 10. **Daily cadence discipline.** Replanning is cumulative, not from scratch — preserve upcoming events that still fit; only touch what must change. Reducing event churn keeps Benjamin's calendar stable.
+
+---
+
+## Latest Weekly Athletic Profile Digest
+
+**Last updated: 2026-05-30** — Full report at `digests/2026-05-30-athletic-profile.md`
+
+### Athletic Classification
+Recreational Competitive Endurance Athlete — Extended Post-Parenthood Deconditioning. Historical peak: top 10–15% French male amateur runners (HM PR 1:34:33 at 87 kg, Mar 2019; Marathon PR ~3:37–3:40, Apr 2019). Current state: 12.3 acute load / 17.2 chronic (0.8% of peak 2,100). Running comeback initiated 2026-05-03 after 182-day gap.
+
+### Key Physiological Benchmarks
+- VO2max running: **38.9** (weight-corrected ~46.5 at race weight — ACSM "Good")
+- RHR: **49 bpm** — athletic, preserved
+- HRV 7d avg: **36–37 ms**, BALANCED
+- Weight: **103.84 kg** (down from 106.9 kg on Apr 14; racing weight was 87 kg)
+- Lean mass: **71.9 kg** — well-preserved despite weight gain
+- Fat %: **27%** (vs 21–22% at racing weight)
+
+### Active Objectives (as of 2026-05-30)
+
+| # | Objective | Target | Deadline | Current | Confidence |
+|---|---|---|---|---|---|
+| 1 | Runs ≥3x/week | 3/wk | 2026-09-30 | ~1–2/wk | 40/100 |
+| 2 | Protein ≥160g/day | 160g | 2026-09-30 | **126.7g** | 30/100 |
+| 3 | Weight ≤95 kg | 95 kg | 2026-12-30 | **103.84 kg** | 68/100 |
+| 4 | Bilan sanguin complet | Done | 2026-12-30 | Not booked | 60/100 |
+| 5 | Competitive return (semi <1h45 + <95 kg) | Composite | 2027-06-30 | 2:10 / 103.8 kg | 42/100 |
+| 6 | FTP Zwift ≥200W | 200W | 2026-09-30 | ~165–175W est. | 18/100 |
+| 7 | Semi-marathon <1h45 | 105 min | 2027-03-30 | 130 min (2025) | 38/100 |
+
+### Critical Path for Daily Agent
+1. **Protein gap is the silent saboteur** — 33g/day below target. Each daily plan should prompt a protein nudge.
+2. **Weight on track** — 0.54 kg/wk loss, 2× required rate. Reinforce daily.
+3. **Running protocol** — return-to-running.md governs; tissue tolerance is the limiter at 104 kg. Max 3 km per run, ≥48h between runs, no pain signals.
+4. **FTP objective at risk** — needs 2–3 structured Zwift sessions/week to recover; currently insufficient cycling structure.
+5. **Blood panel** — flag weekly until booked.
+
+### Next Weekly Profile Update
+Scheduled: **~2026-06-06** (each Saturday). This section and the digest file will be overwritten with fresh data.
