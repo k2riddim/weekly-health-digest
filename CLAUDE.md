@@ -236,6 +236,61 @@ Natural observations Benjamin could mention at his next visit, not test requests
 }
 ```
 
+## Athletic Profile Snapshot
+*Auto-updated weekly — last run: 2026-06-13. Full report: `digests/profiles/2026-06-13-athletic-profile.md`*
+
+**Classification:** Skilled Recreational / Competitive Amateur Endurance Athlete — Post-Parenthood Rebuild
+**Dominant sport:** Running (814 sessions, 6,962 km lifetime) | Secondary: Road cycling (742 sessions, 11,983 km)
+**Active since:** May 2014 (12 years, 2,197 activities, 20,639 km excl. EBike)
+
+### Lifetime PRs
+| Distance | Time | Date |
+|----------|------|------|
+| 5km | 29:23 (5:53/km) | Jul 2014 |
+| 10km | 44:42 (4:28/km) | Feb 2016 |
+| Half marathon | **1:34:33 (4:29/km)** | Mar 2019 |
+| Marathon | **3:39:55 (5:12/km)** | Apr 2019 |
+| Cycling power (60 min) | 210W (2.47 W/kg) | Aug 2020 |
+
+**Last race:** Semi-marathon du Bois de Vincennes, Oct 18, 2025 — 2:10:27 (6:08/km). Decline of 35 min vs PR, reflecting 182-day running layoff and +18 kg above racing weight.
+
+### Current Physiological Status (June 2026)
+| Marker | Value | Classification |
+|--------|-------|---------------|
+| VO2max (running) | 39.9 ml/kg/min | ACSM "upper Good" (Good: 37.4–41.0) |
+| VO2max (cycling) | 38.8 ml/kg/min | ACSM "Good" |
+| Resting HR | 50.5 bpm | ACSM "Athlete" (<55 bpm) |
+| Weight | 102.6 kg | 26.8% fat — +18 kg above all-time lean (84.6 kg, 2021) |
+| Muscle mass | 71.5 kg | Well-preserved despite weight gain |
+| FTP (estimated) | ~150W (1.46 W/kg) | vs 210W peak (2.47 W/kg, 2020) |
+| Steps/day | 11,224 | WHO "Highly Active" (EBike commuting) |
+
+### Volume Phases — Quick Reference
+| Phase | Period | Runs/wk | Rides/wk | Status |
+|-------|--------|---------|----------|--------|
+| Running peak | 2015–2016 | 3.0–3.4 | 0.9–2.4 | Historic high |
+| Marathon peak | 2018–2019 | 1.4–2.2 | — | PR era |
+| Cycling pivot | 2017, 2023 | 0.6–0.9 | 1.1–3.0 | Cycling dominant |
+| Post-parenthood trough | 2022–2024 | 0.02–0.6 | 0.4–1.4 | Near-zero run |
+| **Current rebuild** | 2026 | **~1.75** | **0.25** | **Running comeback** |
+
+### Active Objectives (confidence scores as of 2026-06-13)
+| Objective | Target | Current | Confidence | Deadline |
+|-----------|--------|---------|-----------|----------|
+| Running 3x/week | ≥3/wk | 1.75/wk | 45/100 | Sep 30, 2026 |
+| Blood panel | Done | Not scheduled | 60/100 | Dec 30, 2026 |
+| Weight < 95 kg | ≤95 kg | 102.6 kg | **72/100** | Dec 30, 2026 |
+| Protein 160g/day | ≥160g | 130g/day | 42/100 | Sep 30, 2026 |
+| FTP Zwift 200W | ≥200W | ~150W | 28/100 | Sep 30, 2026 |
+| Semi < 1:45 | ≤105 min | 130 min | 42/100 | Mar 30, 2027 |
+| Compétiteur amateur (composite) | HM<1:45 + <95kg | Both in progress | 32/100 | Jun 29, 2027 |
+
+**Critical path for daily agent:** Weight loss on track (−0.42 kg/wk, target −0.26 kg/wk). Running volume inconsistent — protect from injury, enforce 48h recovery between runs. Blood panel is highest-leverage single action. Protein gap of 30g/day requires active dietary intervention. FTP objective deprioritized vs running.
+
+**Body composition note:** 9.5 kg excess fat vs all-time lean. Each 5 kg lost ≈ 10–15 min HM improvement. Weight below 100 kg (est. ~Jul 25 at current rate) is a key milestone for running economy.
+
+---
+
 ## Standing rules
 
 1. **Think hard.** Never write a recommendation without querying its supporting data first.
