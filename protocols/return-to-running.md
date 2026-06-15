@@ -8,24 +8,24 @@ Gap broken: 2026-05-03, after 182 days off running (4th-longest gap in 12 years 
 
 ## 1. Athlete snapshot
 
-*Last refreshed 2026-05-15 (12 days into comeback, 2 runs completed).*
+*Last refreshed 2026-06-15 (43 days into comeback, 10 runs completed).*
 
 | Field | Value |
 |---|---|
 | Age | 42, male |
-| Body weight | **104.1 kg** (down from 104.8 kg at comeback start; peak running era 84–85 kg, 2019-2020 → +19 kg) |
-| Resting HR | 49 bpm (improved from 50 bpm at comeback start, 53 bpm in April) |
-| HRV (Garmin) | 40, weekly avg 39, status BALANCED |
-| VO2max running | 38.3 (updated post first runs, May 2026; was 40.9 frozen since Nov 2025) |
-| VO2max cycling | 38.6 (active) |
-| Sleep (30-day avg) | 7.45 h — recovery is **not** the bottleneck |
-| Current ACWR (all activities) | **0.75 — safe rebuild zone** (running now included; was 1.49 cycling-only before comeback) |
-| Comeback runs to date | Run #1: 2026-05-03, 2.47 km / 21 min (avg HR 135); Run #2: 2026-05-09, 2.01 km / 18 min (avg HR 144) |
+| Body weight | **102.6 kg** (down from 104.8 kg at comeback start; −2.2 kg in 43 days; peak running era 84–85 kg, 2019-2020 → +18 kg) |
+| Resting HR | 51 bpm (7d avg ~50 bpm; comparable to comeback start) |
+| HRV (Garmin) | 37 (last score Jun 14), weekly avg 35, status BALANCED — down from avg 39–40 in mid-May; early-June showed several LOW/UNBALANCED days |
+| VO2max running | 40.6 (up from 38.3 at comeback start — Garmin estimate improving with run data) |
+| VO2max cycling | 38.6 (stable) |
+| Sleep (30-day avg) | 7.26 h — adequate but down from 7.45 h at last refresh |
+| Current ACWR (all activities) | **1.35 — slightly above 1.3 upper bound**; acute load spiked from recent runs on modest chronic base |
+| Comeback runs to date | Run #1: 2026-05-03, 2.47 km / 21 min (avg HR 135); Run #2: 2026-05-09, 2.01 km / 18 min (avg HR 144); Run #3: 2026-05-15, 3.53 km / 29 min (avg HR 139); Run #4: 2026-05-18, 5.01 km / 43 min (avg HR 140); Run #5: 2026-05-23, 5.02 km / 41 min (avg HR 136); Run #6: 2026-05-31, 3.78 km / 30 min (avg HR 140); Run #7: 2026-06-03, 5.23 km / 41 min (avg HR 141); Run #8: 2026-06-07, 5.56 km / 44 min (avg HR 138); Run #9: 2026-06-10, 5.79 km / 45 min (avg HR 142); Run #10: 2026-06-14, 4.90 km / 38 min (avg HR 136) |
 | Last run before gap | 2025-11-02 (EF 45'), 6 weeks after Vincennes half-marathon (21.2 km, 6:11/km, 2025-10-19) |
 | Gap duration | 182 days (2025-11-02 → 2026-05-03) |
 | Lifetime running base | 12 years, 800+ logged runs, half-marathon-fit at this body weight 6 months ago |
-| Family context | First child (Léonie) born 2026-01-09. Sleep currently OK; occasional fragmented nights. |
-| Vitamin D (Dec 2025) | **27 ng/mL — INSUFFICIENT** (optimal 40–60). Supplementation active; retest due ~July 2026 (8 weeks in). |
+| Family context | First child (Léonie) born 2026-01-09. Sleep currently adequate (7.26h 30d avg); occasional fragmented nights. |
+| Vitamin D (Dec 2025) | **27 ng/mL — INSUFFICIENT** (optimal 40–60). Supplementation active; retest due ~July 2026. |
 | Ferritin / Hb | 159 ng/mL / 15 g/dL — both normal (Dec 2025) |
 
 ---
@@ -130,4 +130,4 @@ If any of those is missed, the consolidation phase extends rather than progressi
 
 ---
 
-*Generated 2026-05-03 from longitudinal Strava / Garmin / Withings / lab data. Last refreshed 2026-05-15 (monthly maintenance pass). Update each Sunday after the weekly health digest.*
+*Generated 2026-05-03 from longitudinal Strava / Garmin / Withings / lab data. Last refreshed 2026-06-15 (monthly maintenance pass). Update each Sunday after the weekly health digest.*
