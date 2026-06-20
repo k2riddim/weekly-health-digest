@@ -248,3 +248,69 @@ Natural observations Benjamin could mention at his next visit, not test requests
 8. **Bootstrap path.** If `LAST_STATE` is missing or explicitly marked `bootstrap: true`, Phase 5 says so; otherwise proceed normally.
 9. **Calendar authority.** Never schedule training on a `no_train_days` date. Always re-read Calendar at Phase 1 — a "sur site" event added since yesterday overrides any existing training event for that day.
 10. **Daily cadence discipline.** Replanning is cumulative, not from scratch — preserve upcoming events that still fit; only touch what must change. Reducing event churn keeps Benjamin's calendar stable.
+
+---
+
+## Weekly Athletic Profile Snapshot
+*Last updated: 2026-06-20 — auto-updated each Saturday by the weekly profile run. Daily agents: use this as standing context, do NOT re-derive unless data is >7 days old.*
+
+### Benjamin's Athletic Identity
+- **Classification:** Competitive Amateur Endurance Athlete (post-parenthood deconditioning phase)
+- **Training age:** 12 years structured sport (since 2014)
+- **Primary modality:** Running (815 sessions lifetime) + Cycling (742 sessions)
+- **Dominant race distance:** Road running — half-marathon to marathon
+- **Historical tier:** Top 12–15% nationally (HM PR 1:34:33, Marathon PR 3:39:55 in 2019)
+
+### Lifetime Performance PRs
+| Distance | Time | Date | Pace |
+|----------|------|------|------|
+| 5K | 29:23 | 2014-11 | 5:53/km |
+| 10K | 44:42 | 2016-02-06 | 4:28/km |
+| Half-marathon | **1:34:33** | 2019-03-16 | 4:29/km |
+| Marathon | **3:39:55** | 2019-04-13 | 5:12/km |
+
+### Peak Training Phase (reference target)
+- **Year:** 2015–2016 (and 2019 for marathon quality)
+- **Peak run volume:** 3.0–3.4 sessions/week, 1,500–1,700 km/year
+- **Peak combined sport:** 5.4 sessions/week, 235 hours/year
+- **Body weight at PR:** 86–87 kg, 21.5% fat
+- **Muscle mass:** ~72 kg (estimated from 2019 regression)
+
+### Current Status (as of 2026-06-20)
+| Metric | Current | Peak Reference | Gap |
+|--------|---------|---------------|-----|
+| Weight | 102.6 kg ↓ | 86 kg (2019) | −16.6 kg |
+| Fat % | 26.8% ↓ | 21.5% (2019) | −5.3pp |
+| Muscle mass | 71.5 kg | ~72 kg | −0.5 kg (well preserved) |
+| VO2max running | 39.9 ↓ | 43.2 (Q3 2025) | −3.3 units |
+| RHR | 50.5 bpm | 48.5 bpm (Q3 2025) | +2 bpm |
+| Run sessions/week | 1.75/wk ↑ | 3.4/wk | −1.65/wk |
+| Last race | Semi 2:10:27 (Oct 2025) | Semi 1:34:33 (2019) | −36 min |
+| ACWR (as of Jun 18) | 0.94 (Maintaining) | — | — |
+| Chronic load 28d | 17.7 | ~35 (estimated peak) | ~50% of peak |
+
+### Active Objectives & Confidence
+| Objective | Target | Current | Deadline | Confidence |
+|-----------|--------|---------|----------|------------|
+| Weight ≤ 95 kg | 95 kg | 102.6 kg | 2026-12-30 | **72%** ✅ On track |
+| Run 3×/week | 3.0/wk | 1.75/wk | 2026-09-29 | **25%** ❌ Off track |
+| Bilan sanguin annuel | Done | Unknown | 2026-12-30 | **40%** ⚠️ Schedule needed |
+| Protein ≥ 160g/day | 160 g | 129 g | 2026-09-29 | **35%** ❌ Off track |
+| Semi < 1:45:00 | 1:45 | ~2:10 | 2027-03-30 | **30%** ⚠️ Challenging |
+| Long run ≥ 12 km | 12 km | 4.9 km | 2026-10-30 | **50%** ⚠️ Building |
+| Compétiteur (composite) | semi+weight | In progress | 2027-06-29 | **28%** ⚠️ At risk |
+
+### Critical Path for Daily Agents
+1. **Protein gap (−30g/day):** Highest-leverage action. Mention daily if protein log available and below 140g.
+2. **Run frequency:** Target is 2.5→3×/week by September. ACWR must stay ≤1.3 — never add a run session if ACWR >1.3.
+3. **Weight trajectory:** On track (−0.53 kg/week). Do not recommend aggressive caloric cuts beyond current deficit.
+4. **Long run build:** +~0.4 km/week on the long run is the safe progression. No long run jump >10% from last long run.
+5. **Blood panel:** Nudge scheduling whenever health topics arise — Vitamin D retest due July 2026, full panel by end of 2026.
+
+### Key Physiological Constraints for Training Planning
+- **Body weight 102.6 kg:** Mechanical load is ~20% higher than at PR weight. Tendon/joint tolerance is the binding constraint, not aerobic capacity.
+- **12% VO2max gap from personal best:** Recoverable — ~half via weight loss alone, rest via training volume.
+- **Return-to-running protocol applies** (per CLAUDE.md standing instructions): ramp ACWR conservatively; tissue tolerance is the limiter.
+- **Muscle mass well preserved** (71.5 kg): strength sessions are maintenance-only; no need to add volume; protect during weight loss with adequate protein.
+
+*Full report: `digests/2026-06-20-athletic-profile.md`*
