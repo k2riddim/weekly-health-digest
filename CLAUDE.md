@@ -2,6 +2,47 @@
 
 Auto-loaded by Claude Code on every run of the daily-digest Routine. Contains the complete self-contained logic for one daily run.
 
+---
+
+## Weekly Athletic Profile — Last Updated 2026-06-27
+
+> Auto-updated every weekly profile run. The daily agent uses these as stable anchor values.
+
+**Athlete classification**: Advanced Recreational Endurance Athlete (ACSM Category III), structured rebuild phase (post-parenthood).
+
+**Lifetime baseline (Strava 2014–2026):**
+- 2,421 activities | 24,218 km | 2,142 hours | 13-year training age
+- Primary discipline: Running (816 sessions, 6,974 km). Secondary: Cycling (742 sessions, 11,983 km)
+
+**Historical performance peak (2015–2019, weight 86–88 kg):**
+- 10K PR: 44:42 (4:28/km) — 2016
+- Half-marathon PR: 1:34:33 (4:36/km) — 2019, Rueil-Malmaison
+- Marathon PR: 3:39:55 (5:03/km) — 2019, Paris
+- Race-weight body composition: 86–88 kg, 21–22% fat, ~19 kg fat mass
+- Population tier: top 15–22% French male amateur endurance field
+
+**Current physiological snapshot (2026-06-27):**
+- Weight: 103.7 kg (latest: 2026-06-20) | Fat: 26.3% | Muscle: 72.6 kg | Fat mass: 27.3 kg
+- VO2max running: 40.8 mL/kg/min (↑ from 38.3 at comeback start May 3) | Cycling: 38.6
+- Absolute VO2max: ~4.23 L/min (unchanged from peak era — the engine is intact)
+- RHR: 50 bpm (Athletic category) | Steps: 10,856/day
+- At 95 kg: projected VO2max ~44.5 mL/kg/min; at 88 kg: ~48+ (sub-1:35 territory)
+- Comeback longest run: 7.5 km (2026-06-20), 12 sessions since May 3
+
+**Active objectives summary (confidence scores as of 2026-06-27):**
+- Protéines 160g/day avg by Sep 2026: current 126.3g → confidence 38/100 (gap −21%)
+- 3 runs/week by Sep 2026: current ~1.7/wk → confidence 42/100 (ACWR constraint)
+- Bilan sanguin complet by Dec 2026: due July 2026 → confidence 72/100
+- Poids 95 kg by Dec 2026: current 103.7 kg, rate −0.20 kg/wk (need 0.32) → confidence 38/100
+- Parc des Beaumonts 12 km by Oct 2026: current 7.5 km → confidence 78/100 (on track)
+- Semi <1h45 by Mar 2027: prerequisite chain in progress → confidence 48/100
+- Global comeback (semi <1h45 + 95 kg) by Jun 2027 → confidence 52/100
+
+**Critical path note for daily planning:**
+The single highest-leverage action is closing the protein gap (+34g/day). It cascades into muscle preservation, recovery quality, satiety, weight loss acceleration, and running tolerance. Second lever is body weight — every −5 kg mechanically improves VO2max/kg by ~2 mL/kg/min and reduces tendon load by ~15 kg per stride. Tissue tolerance at 103 kg is the running volume ceiling, not aerobic capacity.
+
+---
+
 ## Context
 
 Benjamin is a male endurance athlete based in Paris with longitudinal data across Strava, Garmin, Withings, labs, chess, nutrition, and cohabitant metrics. Everything about his current situation must be re-discovered from data each day. This prompt contains no hardcoded numbers, no life-phase assumptions, and no training templates — they evolve with him. With the exception of the super important  return to running protocol you must always check and apply if the user is returning to running.
