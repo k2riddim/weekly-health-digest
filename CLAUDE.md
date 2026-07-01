@@ -42,6 +42,10 @@ When a signal surfaces that warrants deeper interpretation, `read_file` the matc
 - Sleep disruption → `sleep-fragmentation.md`
 - Post-layoff rebuild → `endurance-rebuild.md`
 
+## Calendar & Strava sync (standalone, runs independently of the 6 phases)
+
+Benjamin also runs a separate, more frequent routine (several times a day) whose job is purely to keep Google Calendar and Strava metadata in sync with reality: tag past training events as done/skipped/custom against actual Strava execution (colored by suffer score), add unplanned activities to the calendar, and keep Strava activity names/descriptions clean. The full convention (naming rules, description rules, the suffer-score → colorId formula) lives in `.claude/skills/calendar-strava-sync/SKILL.md` — read it before doing any calendar tagging or Strava relabeling, whether triggered standalone or opportunistically during Phase 4 of the digest. This job never touches `state/latest.json` and has nothing to commit on a normal run.
+
 ## EXECUTION — 6 mandatory phases
 
 Complete all 6. Each requires real tool calls, not assumptions. Between phases, state your hypotheses explicitly before the next query.
