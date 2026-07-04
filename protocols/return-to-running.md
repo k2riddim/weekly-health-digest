@@ -8,25 +8,31 @@ Gap broken: 2026-05-03, after 182 days off running (4th-longest gap in 12 years 
 
 ## 1. Athlete snapshot
 
-*Last refreshed 2026-06-15 (43 days into comeback, 10 runs completed).*
+*Last refreshed 2026-07-04 (63 days into comeback, 13 runs completed — monthly maintenance pass + Athletic Profile & Objectives deep-dive, see `profile-reports/2026-07-04-athletic-profile-objectives.md`).*
 
 | Field | Value |
 |---|---|
 | Age | 42, male |
-| Body weight | **102.6 kg** (down from 104.8 kg at comeback start; −2.2 kg in 43 days; peak running era 84–85 kg, 2019-2020 → +18 kg) |
-| Resting HR | 51 bpm (7d avg ~50 bpm; comparable to comeback start) |
-| HRV (Garmin) | 37 (last score Jun 14), weekly avg 35, status BALANCED — down from avg 39–40 in mid-May; early-June showed several LOW/UNBALANCED days |
-| VO2max running | 40.6 (up from 38.3 at comeback start — Garmin estimate improving with run data) |
-| VO2max cycling | 38.6 (stable) |
-| Sleep (30-day avg) | 7.26 h — adequate but down from 7.45 h at last refresh |
-| Current ACWR (all activities) | **1.35 — slightly above 1.3 upper bound**; acute load spiked from recent runs on modest chronic base |
-| Comeback runs to date | Run #1: 2026-05-03, 2.47 km / 21 min (avg HR 135); Run #2: 2026-05-09, 2.01 km / 18 min (avg HR 144); Run #3: 2026-05-15, 3.53 km / 29 min (avg HR 139); Run #4: 2026-05-18, 5.01 km / 43 min (avg HR 140); Run #5: 2026-05-23, 5.02 km / 41 min (avg HR 136); Run #6: 2026-05-31, 3.78 km / 30 min (avg HR 140); Run #7: 2026-06-03, 5.23 km / 41 min (avg HR 141); Run #8: 2026-06-07, 5.56 km / 44 min (avg HR 138); Run #9: 2026-06-10, 5.79 km / 45 min (avg HR 142); Run #10: 2026-06-14, 4.90 km / 38 min (avg HR 136) |
+| Body weight | **103.67 kg** (2026-06-20 reading — **14 days stale, no Withings sync since**; down from 105.22 kg at comeback start; peak running era 84–85 kg, 2019-2020 → +18 kg) |
+| Resting HR | 51 bpm (2026-07-03), 7d avg ~49 bpm — stable |
+| HRV (Garmin) | weekly avg 35–36, status BALANCED as of Jun 30–Jul 2 (improved from UNBALANCED/LOW readings Jun 21–28) |
+| VO2max running | 41.1 (2026-Q2 avg; down ~5% from 2025-Q2 peak of 43.2, consistent with the 2025H2–2026Q1 layoff) |
+| VO2max cycling | 38.6 (stable, down slightly from 2025 peak 41.2) |
+| Sleep | variable last week, 6.3–8.7h nightly; no sustained deficit |
+| Current ACWR (all activities) | **0.72 — below the 0.8 lower bound.** Acute load has fallen (14.3) against chronic (20.0) because **no run has been logged since Jun 27** (7-day gap as of this refresh) — this is a frequency stall, not a red-flag/illness signal (readiness metrics are healthy). |
+| Comeback runs since last refresh | Run #12 (J+1 progression): 2026-06-21, 7.51 km / 56.6 min (avg HR 140, **new comeback-best distance**); Run #13: 2026-06-28, 3.48 km / 26.9 min (avg HR 138, Forêt de Chantilly) — plus one unnumbered easy 1.25 km run 2026-06-02. **13 total comeback runs; none in the last 7 days.** |
 | Last run before gap | 2025-11-02 (EF 45'), 6 weeks after Vincennes half-marathon (21.2 km, 6:11/km, 2025-10-19) |
 | Gap duration | 182 days (2025-11-02 → 2026-05-03) |
 | Lifetime running base | 12 years, 800+ logged runs, half-marathon-fit at this body weight 6 months ago |
-| Family context | First child (Léonie) born 2026-01-09. Sleep currently adequate (7.26h 30d avg); occasional fragmented nights. |
-| Vitamin D (Dec 2025) | **27 ng/mL — INSUFFICIENT** (optimal 40–60). Supplementation active; retest due ~July 2026. |
+| Family context | New child, per objectives created 2026-04-26 (post-paternité comeback). Sleep currently adequate; occasional fragmented nights. |
+| Vitamin D (Dec 2025) | **27 ng/mL — INSUFFICIENT** (optimal 40–60). Supplementation active; retest due ~July 2026 — **not yet confirmed done, check next digest.** |
 | Ferritin / Hb | 159 ng/mL / 15 g/dL — both normal (Dec 2025) |
+
+### Cross-reference: live objectives (full detail in `profile-reports/2026-07-04-athletic-profile-objectives.md`)
+
+- **Reprendre la course 3x/semaine** (target 2026-09-29): actual trailing-3-week cadence is **0.67 runs/wk**, decelerating against a 3/wk target. **This target date is in tension with this protocol's conservative ramp-cap doctrine** — do not compress the frequency ramp to chase it; flag for retiming instead.
+- **Sortie 12km Parc des Beaumonts** (target 2026-10-30): current best is 7.51 km (Run #12) — achievable via standard 10%/week long-run progression *if* frequency above recovers.
+- **Descendre à 95 kg** (target 2026-12-30): current pace (−0.194 kg/wk) is under the required rate (−0.339 kg/wk); nutrition (protein 115g/day vs 160g target) is the likely shared lever.
 
 ---
 
@@ -130,4 +136,4 @@ If any of those is missed, the consolidation phase extends rather than progressi
 
 ---
 
-*Generated 2026-05-03 from longitudinal Strava / Garmin / Withings / lab data. Last refreshed 2026-06-15 (monthly maintenance pass). Update each Sunday after the weekly health digest.*
+*Generated 2026-05-03 from longitudinal Strava / Garmin / Withings / lab data. Last refreshed 2026-07-04 (monthly maintenance pass + Athletic Profile & Objectives Tracker deep-dive). Update each Sunday after the weekly health digest.*

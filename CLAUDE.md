@@ -29,6 +29,16 @@ Analytical report in **English**. Calendar event titles and descriptions, Telegr
 - **Human digest**: `digests/YYYY-MM-DD.md`.
 - **Phone delivery**: Telegram message, body = compact version of the daily digest (French).
 
+## Latest Athletic Profile & Objectives Digest
+
+A periodic deep-dive (separate from the daily 6-phase pipeline) classifies Benjamin's athletic profile against his full lifetime history and assesses every active objective in `objectives` against live data. Full reports live under `profile-reports/YYYY-MM-DD-athletic-profile-objectives.md`; the daily pipeline does not need to re-derive this, but should treat it as standing context.
+
+- **Latest**: `profile-reports/2026-07-04-athletic-profile-objectives.md`
+- **Headline**: Masters-age (42y) sub-elite amateur endurance athlete (half-marathon PR 1:34:33, marathon PR 3:39:55, both 2019 @ ~86kg), currently ~18kg above PR-era racing weight and 9 weeks into a structured return-to-running comeback after a 182-day layoff. Cardiovascular base intact (RHR "Excellent", VO2max-run "Good" for age); current limiter is tissue tolerance and body composition, not fitness ceiling.
+- **Objectives status**: 7 active objectives (retour compétiteur, weight→95kg, annual bloodwork, protein→160g/day, run 3x/week, semi<1h45, 12km long run). All measurable ones are currently behind their required pace. Critical path: running-frequency objective is furthest behind and gates the two downstream performance goals — its Sept 2026 deadline is in tension with the conservative ramp-cap in `protocols/return-to-running.md` and should be retimed rather than accelerated. Highest-leverage near-term action: close the protein gap (115g→160g/day), which de-risks the weight objective without added training load.
+- **Daily-planner note**: never compress the running-frequency ramp to chase an objective deadline — the return-to-running protocol's ACWR/tissue-tolerance constraints always win over objective timelines.
+- Regenerate this section (and the linked report) whenever a new athletic-profile/objectives pass runs. Keep only the current headline here; supersede rather than append.
+
 ## Thresholds
 
 Load `protocols/thresholds.yaml` at the start of every run. All population-level invariants (ACWR band, ramp cap, sigma cutoffs, deload multiplier, illness triggers) come from there. Never hardcode them in this prompt.
