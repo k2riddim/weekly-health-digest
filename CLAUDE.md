@@ -60,7 +60,7 @@ Define `D` = yesterday (most recent complete day of data). Define the **context 
 Pull raw numbers via `biometrics:query`, `baby mcp:query`, and `Google Calendar`. Do not interpret yet.
 
 Minimum coverage:
-- **Training executed** — `strava_activities` where `start_date >= D - 7 days`. Look specifically at whether yesterday's planned session (from `LAST_STATE.plan_7d_ahead`) was executed.
+- **Training executed** — `strava_activities` where `start_date >= D - 7 days`. Look specifically at whether yesterday's planned session (from `LAST_STATE.plan_7d_ahead`) was executed. Invoke `.claude/skills/calendar-strava-sync` (Job A + Job B) to reconcile Calendar event status/color tags against this data and to label/document new Strava activities — this runs every pass, not once daily.
 - **Load & readiness** — `training_load_daily` for `D - 14` through `D` (ACWR continuity). `readiness_daily` for `D - 7` through `D`.
 - **Wearable** — `garmin_health` for `D - 7` through `D` (focus on today/yesterday).
 - **Body composition** — `withings_measurements` last 28d, filter `weight_kg > T.data_quality.weight_kg_floor`.
