@@ -5,9 +5,16 @@
 training:
   acwr_lower_bound: 0.8       # Acute:Chronic Workload Ratio safe zone
   acwr_upper_bound: 1.3
-  weekly_acute_ramp_cap: 1.10 # Next week acute <= current × 1.10
+  weekly_acute_ramp_cap: 1.10 # Next week acute <= current × 1.10 (general routine)
   deload_multiplier: 0.70     # When red flags trigger
   return_from_layoff_acute_to_chronic_threshold: 0.50
+  # Return-to-running override (see protocols/return-to-running.md). During an
+  # active comeback the chronic-load denominator is artificially depressed by the
+  # layoff, so the general ACWR band and ramp cap are too conservative — they make
+  # longer single runs and normal weekly progression impossible. These looser
+  # values apply ONLY while the return-to-running protocol is active.
+  comeback_weekly_acute_ramp_cap: 1.15  # Next week acute <= current × 1.15
+  comeback_acwr_upper_bound: 1.50        # Tolerated while chronic base is rebuilding
 
 deviation_thresholds:
   personal_sigma_dive: 1.5    # σ from 90-day baseline that forces deep-dive

@@ -59,9 +59,10 @@ Run through this every Sunday before publishing the next 7 days. If any item is 
 
 ### A. Load state (data lives in Garmin / Strava / training_load_daily)
 
-- [ ] **ACWR ≤ 1.30** at start of week (all activities combined). 1.30–1.50 → reduce cycling. > 1.50 → repeat previous week.
+- [ ] **ACWR ≤ 1.50** at start of week (all activities combined). The chronic-load denominator is still artificially depressed by the 182-day layoff, so the general 1.30 band is too tight during the comeback — up to 1.50 is expected and acceptable while tissue feedback (Section C) stays clean. 1.50–1.70 → reduce **cycling** to make room for running, not the running itself. > 1.70 → repeat previous week. (`T.training.comeback_acwr_upper_bound`.)
 - [ ] **Chronic load 28d trending up**, not flat or down.
-- [ ] **No daily_load spike > 1.5× the 7d avg** in the previous week.
+- [ ] **Weekly volume may ramp up to +15%** week-over-week during the comeback (`T.training.comeback_weekly_acute_ramp_cap`), overriding the general +10% cap — a low chronic base tolerates faster early progression than a maintenance block. No single week more than doubles the prior week ("no hero weeks" still holds).
+- [ ] **Longer single runs are encouraged, not capped.** The daily-load-spike guardrail from the general routine does **not** gate the long run here — a progressively longer easy Z2 run *is* the point of this phase. Extend the long run by ≤ ~10 min per step (currently ~45 min; progress toward 60–75 min as tissue feedback allows), keeping it Z1–Z2. A hard-effort spike is still a flag; a longer *easy* run is not.
 
 ### B. Recovery state
 
@@ -99,7 +100,7 @@ Run through this every Sunday before publishing the next 7 days. If any item is 
 | Localized bony tenderness (tibia, navicular, metatarsal) > 2 days | **Stop running entirely.** GP consult for stress reaction workup. |
 | HRV drop > 10% from weekly average for 3 consecutive days | Swap next run for easy bike or rest. |
 | RHR elevated > 5 bpm above baseline for 3+ days | Likely overload or sub-clinical illness — rest. |
-| ACWR > 1.5 for 5+ days while running | Insert extra rest day; reduce next week. |
+| ACWR > 1.7 for 5+ days while running | Insert extra rest day; reduce next week. (1.50–1.70 is tolerated during the comeback — see §4A.) |
 | Any unilateral pain pattern (one side only) | Always investigate. Asymmetry = compensation = next injury upstream/downstream. |
 | Sharp pain altering gait mid-run | Stop the run. Don't try to walk it off past 5 minutes. |
 
@@ -121,7 +122,7 @@ Run through this every Sunday before publishing the next 7 days. If any item is 
 
 Coach and athlete agree on these gates before re-introducing intensity:
 - Asymptomatic across consecutive weeks.
-- Consistent weekly volume sustained without ACWR > 1.3.
+- Consistent weekly volume sustained without ACWR > 1.5.
 - Strength sessions sustained alongside running (not sacrificed when volume rises).
 - Vitamin D ≥ 40 ng/mL on retest.
 - Body weight trend on track.

@@ -35,9 +35,9 @@ Logic:
 
 Before generating sessions, verify each constraint:
 
-- [ ] **Ramp cap**: Projected next-7-day acute load ≤ trailing acute × `T.training.weekly_acute_ramp_cap`
-- [ ] **ACWR band**: Projected ACWR (next_acute / chronic_load_28d) within `[acwr_lower_bound, acwr_upper_bound]`
-- [ ] **Rebuild mode**: If acute/chronic < `return_from_layoff_acute_to_chronic_threshold`, bias toward aerobic base (Z1–Z2), lower volume
+- [ ] **Ramp cap**: Projected next-7-day acute load ≤ trailing acute × `T.training.weekly_acute_ramp_cap`. **When the return-to-running protocol is active, use `T.training.comeback_weekly_acute_ramp_cap` (+15%) instead** — the layoff-depressed chronic base tolerates faster early progression.
+- [ ] **ACWR band**: Projected ACWR (next_acute / chronic_load_28d) within `[acwr_lower_bound, acwr_upper_bound]`. **When the return-to-running protocol is active, use `comeback_acwr_upper_bound` (1.50) as the upper bound** — the general 1.30 ceiling is too tight while chronic load is still rebuilding.
+- [ ] **Rebuild mode**: If acute/chronic < `return_from_layoff_acute_to_chronic_threshold`, bias toward aerobic base (Z1–Z2). Volume should still progress and single runs should get longer — bias aerobic ≠ stay short. Extend the long run (easy Z1–Z2) as tissue feedback allows; do not treat a longer easy run as a red-flag load spike.
 - [ ] **Red flags**: If HRV/sleep/illness signals flagged in Phase 2–3, apply `deload_multiplier` to today's planned load
 - [ ] **Illness signals**: Rest + light aerobic only, no intensity
 - [ ] **Session count**: Between `min_sessions_per_week` and `max_sessions_per_week` across the 7-day window, adjusted for `no_train_days` (fewer available days → fewer sessions, not higher density)

@@ -8,7 +8,7 @@ Benjamin is a male endurance athlete based in Paris with longitudinal data acros
 
 ## Target
 
-Intelligent progression toward the best sustainable fitness Benjamin has historically demonstrated (`state/historical-peak.json`), respecting current-life constraints inferred daily. The rolling 7-day training plan is **replanned every day** based on: yesterday's execution, today's readiness, upcoming calendar constraints, and trailing load trajectory. Never prescribe a ramp that raises acute 7-day load >10% week-over-week. No hero weeks.
+Intelligent progression toward the best sustainable fitness Benjamin has historically demonstrated (`state/historical-peak.json`), respecting current-life constraints inferred daily. The rolling 7-day training plan is **replanned every day** based on: yesterday's execution, today's readiness, upcoming calendar constraints, and trailing load trajectory. Never prescribe a ramp that raises acute 7-day load >10% week-over-week — except while the return-to-running protocol is active, where the comeback override (`T.training.comeback_weekly_acute_ramp_cap`, currently +15%) applies because the layoff-depressed chronic base tolerates faster early progression. No hero weeks either way.
 
 ## Language
 
