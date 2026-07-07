@@ -70,6 +70,8 @@ Minimum coverage:
 - **Cohabitant** — `baby mcp:query` for night wakings / sleep fragmentation for `D - 7` through `D`.
 - **Calendar — upcoming 7 days** — list all events via `Google Calendar` for today through `today + 7`. Extract `no_train_days` = any date whose event summary or description matches `sur site` (case-insensitive). These are blocked for training.
 - **Calendar — yesterday** — to cross-check: did a "sur site" event yesterday prevent training, or did Benjamin skip for another reason?
+- **Weather — planning horizon** — fetch the **feels-like (apparent) temperature** forecast for Paris for each day today → `today + 7`, at the likely training hour (`web_search` or a weather source). Also note whether a heatwave occurred in the last `T.heat.post_heatwave_window_days` days (recent daily highs, or a Météo-France *canicule* alert). This drives the heat protocol in Phase 4 — outdoor sessions cannot be planned without it.
+- **Recent runs (comeback)** — if a running comeback is active, pull the last ~3 weeks of `strava_activities` runs (distance, duration, avg HR) to anchor prescribed run length to demonstrated tolerance in Phase 4.
 
 ### Phase 2 — Triage + situational reassessment
 
@@ -112,12 +114,16 @@ The planner produces a **full rolling 7-day plan** (today → today + 6). Becaus
 - If it no longer fits (e.g., readiness has dropped, or a newly-discovered "sur site" event blocks the day) → **update or delete** the Calendar event.
 - If a new slot opens up → create a new Calendar event.
 
+**When a running comeback is active, read `protocols/return-to-running.md` first** (the super-important override) and apply its comeback thresholds (`comeback_weekly_acute_ramp_cap`, `comeback_acwr_upper_bound`) in place of the general ones below.
+
 Planner constraints:
-- Next 7-day projected acute load ≤ `T.training.weekly_acute_ramp_cap` × trailing acute
-- If acute/chronic < `T.training.return_from_layoff_acute_to_chronic_threshold` → rebuild mode, bias aerobic
+- Next 7-day projected acute load ≤ `T.training.weekly_acute_ramp_cap` × trailing acute (comeback: `comeback_weekly_acute_ramp_cap`)
+- If acute/chronic < `T.training.return_from_layoff_acute_to_chronic_threshold` → rebuild mode, bias aerobic (but volume still progresses and single runs still get longer)
+- **Run length anchored to demonstrated tolerance** — set the easy-run floor to the longest recent well-tolerated run; never prescribe below it without a current recovery/injury reason; treat well-tolerated overshoot as evidence to raise the target, not clamp it. No GPS-alarm / "STRICT MAX" gimmicks outside a genuine red-flag context. (See `return-to-running.md` §4F.)
+- **Heat** — for every outdoor session apply `protocols/heat.md` with `T.heat`: classify the feels-like temp at the planned hour (with post-heatwave shift), and mitigate by **timing first** (coolest hour), then reduction, then indoor substitution / rest. Red band → no outdoor running.
 - Red flags → deload today to `T.training.deload_multiplier` × normal
 - Illness signals → rest + light aerobic only
-- Projected ACWR in `[T.training.acwr_lower_bound, T.training.acwr_upper_bound]`
+- Projected ACWR in `[T.training.acwr_lower_bound, T.training.acwr_upper_bound]` (comeback: upper bound `comeback_acwr_upper_bound`)
 - **Respect `no_train_days`**: never schedule a session on a "sur site" day
 - Respect `T.session_planning.min_sessions_per_week` and `max_sessions_per_week` across the rolling window, adjusted for blocked days
 

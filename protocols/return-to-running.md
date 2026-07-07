@@ -90,6 +90,16 @@ Run through this every Sunday before publishing the next 7 days. If any item is 
 - [ ] Cycling volume capped to keep ACWR in range — running is being added on top of an already-loaded baseline, not in isolation.
 - [ ] Calendar: any major work / family disruption in the upcoming week? (anticipate sleep, not just fatigue).
 
+### F. Prescribing run length — anchor to what he has already tolerated
+
+The single biggest planning error is prescribing runs **shorter than what Benjamin has already run comfortably**, then treating the inevitable overshoot as a problem. Cardio fitness is intact — he was half-marathon-fit 6 months ago. The limiter is tissue tolerance, and tissue tolerance is revealed by *what recent runs he absorbed without symptoms*, not by an abstract conservative floor.
+
+- **Set the easy-run floor to his demonstrated tolerance.** The floor = the longest run in roughly the last 3 weeks that was completed without gait change or pain **and** followed by clean next-morning recovery (no HRV crash, no RHR spike, no lingering soreness). Do **not** prescribe below that without a specific, current recovery or injury reason.
+- **Reference point (as of this comeback):** runs have reached 5–6 km at Z2–Z3 (up to 6.0 km) with no reported tissue issues. The easy-run floor is therefore ~5 km / ~40 min, and the long run should be **progressing toward 8–10 km**, not clamped to 3 km.
+- **Progress the long run from that anchor**, by ≤ ~1 km or ~10 min per step, keeping it easy Z1–Z2. Extend the long run, not the number of junk-short runs.
+- **Overshoot of a well-tolerated target is data, not disobedience.** If Benjamin repeatedly runs longer than prescribed and absorbs it cleanly, the target was set too low → **raise it toward demonstrated capacity.** Never respond to well-tolerated overshoot by cutting the next target.
+- **Banned as planning tools:** GPS turnaround alarms, forced-mid-run cutoffs, and "STRICT MAX" distance caps used to enforce an artificially low target. These are control gimmicks, not coaching. A hard cap is legitimate **only** in a genuine red-flag context — post-injury return-to-run progression, active illness, or red recovery markers (Section B) — and even then it is framed as a recovery decision with a reason, not a punishment for running well.
+
 ---
 
 ## 5. Red flags — abort criteria during the week
@@ -114,6 +124,7 @@ Run through this every Sunday before publishing the next 7 days. If any item is 
 - **Body composition**: a modest deficit (−3 to −5 kg over the comeback window) is desired. Each kg lost ≈ 3 kg less per-stride peak impact. Aggressive deficits are off the table — they compromise tendon adaptation.
 - **Footwear**: 2-shoe rotation in use (Malisoux 2013 evidence). Max-cushion options preferred given current BW.
 - **Surface**: Bois de Vincennes dirt loops accessible — soft surfaces preferred over asphalt for impact mitigation.
+- **Heat**: apply `protocols/heat.md` to every outdoor session. The first lever is **timing** — move runs to the coolest hour (dawn) — then reduction, then indoor substitution or rest. During and after a heatwave the bands shift cooler; do not push outdoor running in the heat "to not lose fitness" — a comeback loses nothing by moving one session indoors or resting a day.
 - **No race, no threshold, no intervals** until the comeback is consolidated. The athlete and coach align on when this gate opens — not a fixed date, depends on the data.
 
 ---

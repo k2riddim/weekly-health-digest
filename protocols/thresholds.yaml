@@ -30,6 +30,22 @@ data_quality:
   abort_if_no_data_days: 5    # No core-table data in last N days => pipeline warning
   weight_kg_floor: 70         # Filter non-user readings on withings
 
+# Heat protocol (see protocols/heat.md). Bands apply to the FEELS-LIKE
+# (apparent) temperature at the session's actual start hour, after the
+# post-heatwave modifier. Personalized conservatively for a ~103 kg,
+# deconditioned, poorly-acclimatized athlete — deliberately cooler than
+# generic population thresholds. Timing (run at the coolest hour) is the
+# first mitigation, before any duration cut.
+heat:
+  green_max: 21               # <= => normal training
+  yellow_max: 26              # caution: coolest window, Z1-Z2, ease pace, hydrate
+  orange_max: 30              # high: easy only + ~30-40% shorter, or substitute indoor
+  # > orange_max => RED: no outdoor running; indoor/AC or rest
+  post_heatwave_window_days: 10     # modifier active for N days after a heatwave
+  post_heatwave_shift_celsius: 3    # lower every band boundary by this while active
+  heatwave_defining_feels_like: 32  # >=3 consecutive days at/above this = a heatwave
+  duration_cut_orange_pct: 0.35     # duration reduction in the Orange band
+
 session_planning:
   min_sessions_per_week: 3
   max_sessions_per_week: 5
