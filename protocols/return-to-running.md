@@ -59,9 +59,10 @@ Run through this every Sunday before publishing the next 7 days. If any item is 
 
 ### A. Load state (data lives in Garmin / Strava / training_load_daily)
 
-- [ ] **ACWR ≤ 1.30** at start of week (all activities combined). 1.30–1.50 → reduce cycling. > 1.50 → repeat previous week.
+- [ ] **ACWR ≤ 1.50** at start of week (all activities combined). The chronic-load denominator is still artificially depressed by the 182-day layoff, so the general 1.30 band is too tight during the comeback — up to 1.50 is expected and acceptable while tissue feedback (Section C) stays clean. 1.50–1.70 → reduce **cycling** to make room for running, not the running itself. > 1.70 → repeat previous week. (`T.training.comeback_acwr_upper_bound`.)
 - [ ] **Chronic load 28d trending up**, not flat or down.
-- [ ] **No daily_load spike > 1.5× the 7d avg** in the previous week.
+- [ ] **Weekly volume may ramp up to +15%** week-over-week during the comeback (`T.training.comeback_weekly_acute_ramp_cap`), overriding the general +10% cap — a low chronic base tolerates faster early progression than a maintenance block. No single week more than doubles the prior week ("no hero weeks" still holds).
+- [ ] **Longer single runs are encouraged, not capped.** The daily-load-spike guardrail from the general routine does **not** gate the long run here — a progressively longer easy Z2 run *is* the point of this phase. Extend the long run by ≤ ~10 min per step (currently ~45 min; progress toward 60–75 min as tissue feedback allows), keeping it Z1–Z2. A hard-effort spike is still a flag; a longer *easy* run is not.
 
 ### B. Recovery state
 
@@ -89,6 +90,16 @@ Run through this every Sunday before publishing the next 7 days. If any item is 
 - [ ] Cycling volume capped to keep ACWR in range — running is being added on top of an already-loaded baseline, not in isolation.
 - [ ] Calendar: any major work / family disruption in the upcoming week? (anticipate sleep, not just fatigue).
 
+### F. Prescribing run length — anchor to what he has already tolerated
+
+The single biggest planning error is prescribing runs **shorter than what Benjamin has already run comfortably**, then treating the inevitable overshoot as a problem. Cardio fitness is intact — he was half-marathon-fit 6 months ago. The limiter is tissue tolerance, and tissue tolerance is revealed by *what recent runs he absorbed without symptoms*, not by an abstract conservative floor.
+
+- **Set the easy-run floor to his demonstrated tolerance.** The floor = the longest run in roughly the last 3 weeks that was completed without gait change or pain **and** followed by clean next-morning recovery (no HRV crash, no RHR spike, no lingering soreness). Do **not** prescribe below that without a specific, current recovery or injury reason.
+- **Reference point (as of this comeback):** runs have reached 5–6 km at Z2–Z3 (up to 6.0 km) with no reported tissue issues. The easy-run floor is therefore ~5 km / ~40 min, and the long run should be **progressing toward 8–10 km**, not clamped to 3 km.
+- **Progress the long run from that anchor**, by ≤ ~1 km or ~10 min per step, keeping it easy Z1–Z2. Extend the long run, not the number of junk-short runs.
+- **Overshoot of a well-tolerated target is data, not disobedience.** If Benjamin repeatedly runs longer than prescribed and absorbs it cleanly, the target was set too low → **raise it toward demonstrated capacity.** Never respond to well-tolerated overshoot by cutting the next target.
+- **Banned as planning tools:** GPS turnaround alarms, forced-mid-run cutoffs, and "STRICT MAX" distance caps used to enforce an artificially low target. These are control gimmicks, not coaching. A hard cap is legitimate **only** in a genuine red-flag context — post-injury return-to-run progression, active illness, or red recovery markers (Section B) — and even then it is framed as a recovery decision with a reason, not a punishment for running well.
+
 ---
 
 ## 5. Red flags — abort criteria during the week
@@ -99,7 +110,7 @@ Run through this every Sunday before publishing the next 7 days. If any item is 
 | Localized bony tenderness (tibia, navicular, metatarsal) > 2 days | **Stop running entirely.** GP consult for stress reaction workup. |
 | HRV drop > 10% from weekly average for 3 consecutive days | Swap next run for easy bike or rest. |
 | RHR elevated > 5 bpm above baseline for 3+ days | Likely overload or sub-clinical illness — rest. |
-| ACWR > 1.5 for 5+ days while running | Insert extra rest day; reduce next week. |
+| ACWR > 1.7 for 5+ days while running | Insert extra rest day; reduce next week. (1.50–1.70 is tolerated during the comeback — see §4A.) |
 | Any unilateral pain pattern (one side only) | Always investigate. Asymmetry = compensation = next injury upstream/downstream. |
 | Sharp pain altering gait mid-run | Stop the run. Don't try to walk it off past 5 minutes. |
 
@@ -113,6 +124,7 @@ Run through this every Sunday before publishing the next 7 days. If any item is 
 - **Body composition**: a modest deficit (−3 to −5 kg over the comeback window) is desired. Each kg lost ≈ 3 kg less per-stride peak impact. Aggressive deficits are off the table — they compromise tendon adaptation.
 - **Footwear**: 2-shoe rotation in use (Malisoux 2013 evidence). Max-cushion options preferred given current BW.
 - **Surface**: Bois de Vincennes dirt loops accessible — soft surfaces preferred over asphalt for impact mitigation.
+- **Heat**: apply `protocols/heat.md` to every outdoor session. The first lever is **timing** — move runs to the coolest hour (dawn) — then reduction, then indoor substitution or rest. During and after a heatwave the bands shift cooler; do not push outdoor running in the heat "to not lose fitness" — a comeback loses nothing by moving one session indoors or resting a day.
 - **No race, no threshold, no intervals** until the comeback is consolidated. The athlete and coach align on when this gate opens — not a fixed date, depends on the data.
 
 ---
@@ -121,7 +133,7 @@ Run through this every Sunday before publishing the next 7 days. If any item is 
 
 Coach and athlete agree on these gates before re-introducing intensity:
 - Asymptomatic across consecutive weeks.
-- Consistent weekly volume sustained without ACWR > 1.3.
+- Consistent weekly volume sustained without ACWR > 1.5.
 - Strength sessions sustained alongside running (not sacrificed when volume rises).
 - Vitamin D ≥ 40 ng/mL on retest.
 - Body weight trend on track.

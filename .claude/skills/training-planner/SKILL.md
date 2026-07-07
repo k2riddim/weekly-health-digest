@@ -21,6 +21,12 @@ Given today's analysis, produce a full 7-day training plan (today → today+6) a
 - `T.session_planning` — `min_sessions_per_week`, `max_sessions_per_week`, `horizon_days`
 - `no_train_days` — list of dates (YYYY-MM-DD) where Google Calendar shows a "sur site" event. **Training is forbidden on these days.**
 - `existing_events` — list of Calendar events in the horizon that Claude created before (matched via `calendar_event_id`)
+- `recent_runs` — the completed runs from the last ~3 weeks (date, distance, duration, avg HR, any reported pain), used to anchor prescribed run length (see checklist).
+- `heat_forecast` — per-day feels-like temperature for the planning horizon (from Phase 1), used with `T.heat` and `protocols/heat.md`.
+
+## Mandatory reads when the return-to-running protocol is active
+
+If Benjamin is in a running comeback, **read `protocols/return-to-running.md` before planning** (it is the super-important override). For any outdoor session, **read `protocols/heat.md`** and apply the `T.heat` bands. These are not optional — the comeback and heat rules override the generic defaults below.
 
 ## "Sur site" constraint
 
@@ -35,9 +41,11 @@ Logic:
 
 Before generating sessions, verify each constraint:
 
-- [ ] **Ramp cap**: Projected next-7-day acute load ≤ trailing acute × `T.training.weekly_acute_ramp_cap`
-- [ ] **ACWR band**: Projected ACWR (next_acute / chronic_load_28d) within `[acwr_lower_bound, acwr_upper_bound]`
-- [ ] **Rebuild mode**: If acute/chronic < `return_from_layoff_acute_to_chronic_threshold`, bias toward aerobic base (Z1–Z2), lower volume
+- [ ] **Ramp cap**: Projected next-7-day acute load ≤ trailing acute × `T.training.weekly_acute_ramp_cap`. **When the return-to-running protocol is active, use `T.training.comeback_weekly_acute_ramp_cap` (+15%) instead** — the layoff-depressed chronic base tolerates faster early progression.
+- [ ] **ACWR band**: Projected ACWR (next_acute / chronic_load_28d) within `[acwr_lower_bound, acwr_upper_bound]`. **When the return-to-running protocol is active, use `comeback_acwr_upper_bound` (1.50) as the upper bound** — the general 1.30 ceiling is too tight while chronic load is still rebuilding.
+- [ ] **Rebuild mode**: If acute/chronic < `return_from_layoff_acute_to_chronic_threshold`, bias toward aerobic base (Z1–Z2). Volume should still progress and single runs should get longer — bias aerobic ≠ stay short. Extend the long run (easy Z1–Z2) as tissue feedback allows; do not treat a longer easy run as a red-flag load spike.
+- [ ] **Run length anchored to demonstrated tolerance**: Set the easy-run floor to the longest run in `recent_runs` that was completed without pain and followed by clean recovery. **Never prescribe below that without a specific current recovery/injury reason.** Progress the long run from that anchor by ≤ ~1 km / ~10 min per step. If recent runs consistently overshot the prescribed target and were tolerated well, the target was too low → **raise it**, do not clamp it. **Do not** use GPS turnaround alarms, forced cutoffs, or "STRICT MAX" caps to enforce an artificially low target — those are only legitimate in a genuine red-flag context (post-injury, illness, red recovery markers). See `return-to-running.md` §4F.
+- [ ] **Heat**: For each outdoor session, take the `heat_forecast` feels-like value at the planned start hour, apply the `T.heat` post-heatwave modifier if triggered, and classify per `protocols/heat.md`. **First lever is timing** (move to the coolest hour), then duration reduction, then indoor substitution or rest. In the Red band, no outdoor running — substitute indoor or rest. Do not encode heat as a blanket "−20% if >36°C"; that threshold is far too permissive for this athlete.
 - [ ] **Red flags**: If HRV/sleep/illness signals flagged in Phase 2–3, apply `deload_multiplier` to today's planned load
 - [ ] **Illness signals**: Rest + light aerobic only, no intensity
 - [ ] **Session count**: Between `min_sessions_per_week` and `max_sessions_per_week` across the 7-day window, adjusted for `no_train_days` (fewer available days → fewer sessions, not higher density)

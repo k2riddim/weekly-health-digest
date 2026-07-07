@@ -35,6 +35,8 @@ Required data pulls:
 - Google Calendar: list events from today through `today + 7`
   - Extract `no_train_days` = dates whose event summary or description matches `sur site` (case-insensitive)
   - Extract existing training events Claude created in prior runs (match on title convention / event id stored in `LAST_STATE.plan_7d_ahead`)
+- Weather: feels-like (apparent) temperature forecast for Paris, per day today → `today + 7` at the likely training hour (`web_search` or weather source). Flag whether a heatwave occurred in the last `T.heat.post_heatwave_window_days` days. Required for the heat protocol in Phase 4.
+- If a running comeback is active: last ~3 weeks of `strava_activities` runs (distance, duration, avg HR) to anchor prescribed run length in Phase 4.
 
 **Gate:** Training load, readiness, wearable, and calendar data present. If core tables empty for `T.data_quality.abort_if_no_data_days`+ days, emit warning.
 
@@ -74,6 +76,8 @@ Invoke `.claude/skills/training-planner` with inputs:
 - `T.training` and `T.session_planning` thresholds
 - `no_train_days` list from Phase 1
 - Existing training Calendar events in the horizon (from Phase 1)
+
+**If a running comeback is active, read `protocols/return-to-running.md` (super-important override); for any outdoor session read `protocols/heat.md`.** Apply comeback thresholds, anchor run length to demonstrated tolerance (never clamp a well-tolerated target; no GPS-alarm/"STRICT MAX" gimmicks), and apply the heat bands (timing first, then reduction, then indoor substitution / rest; Red band → no outdoor running).
 
 Planner outputs a full 7-day rolling plan. For each day:
 - Existing event that still fits → leave untouched

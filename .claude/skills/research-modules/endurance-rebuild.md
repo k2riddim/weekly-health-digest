@@ -6,9 +6,9 @@ An extended layoff (>4 weeks of minimal training) causes measurable detraining: 
 
 ## Rebuild principles
 
-**Week 1–2 (reintroduction)**: 50–60% of pre-layoff volume, exclusively Z1–Z2. Focus on movement patterns and consistency rather than load. Sessions should feel easy. ACWR will be very low (<0.5) and that's expected.
+**Week 1–2 (reintroduction)**: Start easy and exclusively Z1–Z2 — the 50–60%-of-pre-layoff figure is a floor to *start* from, not a ceiling to sit at. Focus on movement patterns and consistency. Sessions should feel easy. ACWR will be very low (<0.5) and that's expected.
 
-**Week 3–6 (base building)**: Ramp volume by ≤10% per week. Maintain 90%+ of sessions in Z1–Z2. Introduce one Z3 session per week by week 4 if recovery markers are stable. Monitor ACWR — it will climb rapidly as chronic load is still low from the layoff period.
+**Week 3–6 (base building)**: When the chronic-load denominator is still depressed by the layoff, a strict ≤10%/week ramp is unnecessarily slow — a low base tolerates faster early progression, and up to ~15%/week is reasonable while recovery markers (HRV, RHR, sleep) and tissue feedback stay clean. This is also the phase to **extend the long run**: a progressively longer *easy* Z1–Z2 run is the goal, and its higher single-session load should not be treated as a red-flag spike (a hard-effort spike still is). Maintain 90%+ of sessions in Z1–Z2. Introduce one Z3 session per week by week 4 if recovery markers are stable. Monitor ACWR — it will climb rapidly as chronic load is still low from the layoff period; up to ~1.5 is acceptable here.
 
 **Week 7–12 (structured development)**: Begin 80/20 polarization. Add threshold (Z4) work 1×/week. Volume continues to ramp but now load increases come from intensity, not just duration. ACWR should stabilize in 0.8–1.2 range.
 
