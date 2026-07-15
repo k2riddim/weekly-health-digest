@@ -1,11 +1,11 @@
 # HR Training Zones
 
-*Last refreshed 2026-06-15 from live Garmin/Strava data. Update manually if a new fitness test warrants revision.*
+*Last refreshed 2026-07-15 from live Garmin/Strava data. Update manually if a new fitness test warrants revision.*
 
 ## Estimation basis
 
 - **Estimated HRmax**: 198 bpm — derived from highest observed max_heart_rate in Strava over last 2 years (210 bpm, likely near-maximal effort), adjusted conservatively. All-time max of 235 bpm excluded as probable recording artifact.
-- **Resting HR**: 50 bpm — 7-day average from Garmin (June 8–14, 2026). Up slightly from 49 bpm (May) as accumulated fatigue from running reintroduction shows.
+- **Resting HR**: 50 bpm — 7-day average from Garmin (July 8–14, 2026). Stable vs mid-June (50 bpm); 30-day average 49.6 bpm.
 - **Method**: Standard %HRmax bands. Karvonen reserve-based ranges provided for reference.
 
 ## Zone table
@@ -23,12 +23,12 @@
 - E-bike commutes (n=30): avg HR 104 bpm → **Z1** (expected — motor-assisted, low effort)
 - Virtual rides (n=8): avg HR 129, max 167 → **Z2** avg, **Z3–Z4** peak
 - Gravel rides (n=4): avg HR 141, max 168 → **Z3** avg, **Z3–Z4** peak
-- Running comeback (n=10, May–Jun 2026): avg HR 135–144 bpm → **Z2–Z3** (appropriate pacing for body-weight-limited early comeback)
+- Running comeback (n=15, May–Jul 2026): avg HR 135–144 bpm → **Z2–Z3** (appropriate pacing for body-weight-limited comeback)
 - 2023 peak-year running: avg HR 146 → **Z3** (tempo-dominant running profile)
 - 2023 peak-year cycling: avg HR 133 → **Z2** (aerobic base riding)
 
 ## Notes
 
 - These zones are approximate until validated by a field test (e.g., 30-min time trial for lactate threshold, or graded exercise test).
-- HRV scores 33–41 ms (weekly avg 35 as of Jun 2026, down from 39 in May) and VO2max estimates (40.6 running / 38.6 cycling as of Jun 2026) remain below peak-year levels. Zones stay valid as they're anchored to HRmax, which is physiology-stable.
-- Running comeback underway since May 3, 2026 (10 runs completed; distances now 4–6 km). During this phase, >80% of training time should be in Z1–Z2.
+- HRV scores 29–39 ms (weekly avg ~34–35 as of Jul 2026, plateaued since Jun, down from 39 in May) and VO2max estimates (41.6 running / 38.6 cycling as of Jul 2026) remain below peak-year levels. Zones stay valid as they're anchored to HRmax, which is physiology-stable.
+- Running comeback underway since May 3, 2026 (15 runs completed; distances now 3.5–7.5 km, longest 7.5 km). During this phase, >80% of training time should be in Z1–Z2.
