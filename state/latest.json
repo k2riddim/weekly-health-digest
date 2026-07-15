@@ -1,57 +1,57 @@
 {
-  "as_of_date": "2026-06-14",
+  "as_of_date": "2026-07-14",
   "bootstrap": false,
-  "situational_context": "Running comeback well established: 10 structured runs since May 3, 2026 (43 days in). Distances have progressed from 2 km to 5–6 km range (Run #10: 4.9 km on June 14). VO2max running improved to 40.6 (from 38.3 at comeback start May 3). Weight trending down to 102.6 kg (vs 104.1 kg on May 14, −1.5 kg in one month). E-bike commuting remains primary modality. ACWR at 1.35 — slightly above the 1.3 upper bound, warranting load monitoring this week. HRV 7d avg has drifted down to 35 ms (from 39–40 in mid-May); several LOW/UNBALANCED status days in early June suggest accumulated fatigue from adding running on top of e-bike base. Chronic load 17.5 (down from 22.3 in May) due to lower base volume; acute load elevated at 23.7 from recent running uptick. No new labs since Dec 2025; Vitamin D retest due ~July 2026.",
-  "acute_load_7d": 23.7,
-  "chronic_load_28d": 17.5,
-  "distance_from_peak_pct": 1.1,
+  "situational_context": "Running comeback deep into consolidation: 15 running activities since May 3, 2026 (73 days in) — 14 numbered comeback runs plus one unnumbered opportunistic short run (June 2). Distances now range 3.5–7.5 km; longest well-tolerated run to date is 7.5 km (Run #12, June 21, avg HR 140, no issues) with a 6.0 km 'dépassement' on July 5 also absorbed cleanly. Most recent run (July 13, Saint-Malo) was a shorter 4.5 km at higher avg HR (142) — travel context, not a red flag. VO2max running continues climbing: 41.6 (up from 40.6 mid-June, 38.3 at comeback start). ACWR has normalized to ~1.04 (down from 1.35 in mid-June), now solidly mid-band even without the comeback override. HRV 7d avg has stabilized around 34–35 ms for the past month (down from 39–40 pre-comeback, but no further decline since mid-June) with status flipping BALANCED/UNBALANCED — not worsening, just a new lower plateau. RHR stable at ~50 bpm (30d avg 49.6). Sleep improved to 7.5h 30d avg (up from 7.26h at last refresh). Weight tracking has lapsed: last Withings reading is 103.67 kg on June 20 (25 days stale, up ~1 kg from 102.6 kg on June 6) — no new weigh-ins logged since. No new labs since Dec 2025; Vitamin D retest was due ~July 2026 and has not yet been logged.",
+  "acute_load_7d": 20.7,
+  "chronic_load_28d": 19.9,
+  "distance_from_peak_pct": 1.2,
   "hrv_7d_avg": 35,
   "rhr_7d_avg": 50,
-  "sleep_hours_7d_avg": 7.59,
-  "weight_kg_7d_avg": 102.62,
+  "sleep_hours_7d_avg": 7.32,
+  "weight_kg_7d_avg": 103.67,
   "last_session": {
-    "date": "2026-06-14",
+    "date": "2026-07-13",
     "type": "Run",
-    "duration_min": 38,
-    "training_load": 18
+    "duration_min": 35,
+    "training_load": 30
   },
   "plan_7d_ahead": [],
   "no_train_days": [],
   "recommendations": [
     {
       "priority": "P0",
-      "text": "ACWR is 1.35 (above 1.3 threshold) — hold or reduce total load this week. No new running session until ACWR drops below 1.3; substitute with easy e-bike if the gap is uncomfortable.",
-      "measurable": "ACWR ≤ 1.3 by end of week; no run added until threshold cleared",
-      "evidence_class": "guideline"
-    },
-    {
-      "priority": "P1",
-      "text": "HRV 7d avg has declined from 39–40 (mid-May) to 35 ms (June 14) — a 12% drop suggesting accumulated fatigue. Prioritise 7–8h sleep; avoid high-intensity sessions until HRV 7d avg returns to ≥37 ms.",
-      "measurable": "HRV 7d avg ≥ 37 ms within 7 days",
+      "text": "Weight tracking has lapsed — no Withings reading in 25 days (last: 103.67 kg, June 20). Body-mass drives the ground-reaction-force risk model underpinning the whole comeback protocol (return-to-running.md §2, §4D); resume regular weigh-ins so that estimate stays current.",
+      "measurable": "≥3 weigh-ins logged in the next 7 days",
       "evidence_class": "consensus"
     },
     {
+      "priority": "P1",
+      "text": "Vitamin D retest was due ~July 2026 (8 weeks post-comeback start, May 3) and has not yet been logged — no new labs since Dec 2025 (27 ng/mL, insufficient). Schedule the blood panel now.",
+      "measurable": "Lab order placed before end of July 2026",
+      "evidence_class": "guideline"
+    },
+    {
       "priority": "P2",
-      "text": "Vitamin D retest is due ~July 1, 2026 (8 weeks post-comeback start May 3). Schedule blood panel now to confirm levels rising toward 40 ng/mL target.",
-      "measurable": "Lab order placed before July 2026",
+      "text": "Demonstrated tolerance has risen: 7.5 km (June 21) and a 6.0 km 'dépassement' (July 5) both absorbed with clean recovery. Anchor the easy-run floor at ~6-7 km and keep progressing the long run toward 8-10 km per return-to-running.md §4F rather than clamping to the July 13 shorter run, which was a travel-context outlier.",
+      "measurable": "Next long run ≥7 km with no pain lasting >24h",
       "evidence_class": "guideline"
     }
   ],
   "markers_to_watch": [
     {
-      "marker": "acwr",
-      "threshold": "Alert if ACWR remains > 1.3 for more than 3 consecutive days",
-      "reason": "Currently at 1.35; sustained elevation increases injury risk, especially during running comeback at 102 kg body weight"
+      "marker": "weight_kg_7d_avg",
+      "threshold": "Alert if no new Withings reading lands within the next 7 days",
+      "reason": "25-day gap already exists; the comeback's injury-risk model depends on current body mass"
     },
     {
       "marker": "hrv_7d_avg",
-      "threshold": "Alert if HRV 7d avg drops below 32 ms or fails to recover toward 37–39 ms over next 7 days",
-      "reason": "Down 12% from May baseline; trend reversal needed before resuming running volume increases"
+      "threshold": "Alert if HRV 7d avg drops below 30 ms, or fails to trend back toward 37-39 ms over the next 2-3 weeks",
+      "reason": "Has plateaued at 34-35 ms for a month (down from 39-40 pre-comeback) — stable for now, but a further drop would signal accumulating fatigue"
     },
     {
       "marker": "post_run_pain",
       "threshold": "Any localized joint/tendon pain lasting >24h after a run triggers skip of next run",
-      "reason": "Tissue tolerance remains the bottleneck at 102 kg body weight; pain signals early overload"
+      "reason": "Tissue tolerance remains the bottleneck at ~104 kg body weight; pain signals early overload"
     }
   ],
   "investigations_opened": [],
