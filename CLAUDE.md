@@ -28,6 +28,22 @@ Analytical report in **English**. Calendar event titles and descriptions, Telegr
 - **Archive**: `state/history/YYYY-MM-DD.json` — append-only copy of each day's state.
 - **Human digest**: `digests/YYYY-MM-DD.md`.
 - **Phone delivery**: Telegram message, body = compact version of the daily digest (French).
+- **Objectives**: `objectives` table (biometrics DB) — long-horizon goals with live progress tracking, refreshed weekly by the athletic-profile review. Read via `biometrics:query` when the daily plan needs to weigh a long-horizon target (e.g. anchoring long-run progression to the 12 km objective, or checking whether today's session should protect the running-frequency habit objective). Full methodology and confidence scoring in `profile-reports/YYYY-MM-DD-athletic-profile-objectives.md`.
+
+## Latest weekly athletic profile (auto-refreshed weekly — do not hand-edit; superseded on each weekly review)
+
+_Refreshed 2026-07-18. Full report: `profile-reports/2026-07-18-athletic-profile-objectives.md`._
+
+**Classification**: Master's-age (42) recreational endurance athlete in an active, structured post-layoff/post-paternity rebuild. Historical ceiling is competitive-amateur (half marathon PR 1:34:33, marathon PR 3:39:55, both 2018–2019) — current fitness (VO2max running ~40–41.5, Fair–Good ACSM band for age) sits well below it, driven mainly by a ~20 kg body-composition swing since 2021, not by lost cardiac conditioning (RHR 48–52 bpm has stayed Excellent–Good throughout). The 2023 "historical peak" in `state/historical-peak.json` is a cycling/multisport chronic-load peak, not a running-fitness peak — don't conflate "% of peak" with running readiness.
+
+**Objectives status (see `objectives` table for live values)**:
+- Running frequency (3x/week target) is the **critical-path bottleneck**, still the lowest-confidence objective (24%, up from 18%), but the trailing 7 days (as of 2026-07-18) logged 2 runs — including a new demonstrated-tolerance high of 8.03 km on 2026-07-14 — after a zero-run week the prior cycle. Treat this as encouraging but unconfirmed: 4-week rolling cadence is still only 1.0/wk, and there was no run in the 4 days before this refresh.
+- ACWR sits mid-band (~1.37, comeback ceiling 1.50) — ample physiological headroom. The shortfall is behavioral/scheduling, **not** an injury-risk or ramp-cap constraint. Do not throttle the plan for safety reasons; do prioritize protecting/scheduling run slots over pushing distance further, though 8 km is now demonstrated-tolerable (raise the long-run floor accordingly per `return-to-running.md` §4F).
+- Weight objective (→95 kg by 2026-12-30): no new Withings sync in 28 days (still frozen at 103.67 kg) — pace unchanged (-0.197 kg/wk vs -0.339 kg/wk needed) and the widening weigh-in gap is itself an engagement signal.
+- Protein objective (160 g/day): the literal 30-day average looks collapsed (81.8 g) but this is a logging-gap artifact (9 straight zero-logged days, 7/9–7/17) that overlaps with the same window running dipped — likely one travel/routine disruption, not two independent regressions. On days actually logged, protein is flat at ~115 g.
+- Vitamin D retest (flagged low at 27 ng/mL, Dec 2025) is now overdue relative to the "~July 2026" target for a second consecutive weekly review — worth a GP-conversation seed if it hasn't come up.
+
+**System note**: as of this refresh, `state/history/` and `digests/` are still empty and `state/latest.json` is still frozen at `as_of_date: 2026-06-14` — the daily-digest Phase 6 commit does not appear to have run/persisted recently (flagged for a second consecutive weekly review). If you are running the daily digest now, proceed normally from current data (don't assume the stale `state/latest.json` reflects reality beyond what Phase 1 re-queries confirm).
 
 ## Thresholds
 
