@@ -29,6 +29,23 @@ Analytical report in **English**. Calendar event titles and descriptions, Telegr
 - **Human digest**: `digests/YYYY-MM-DD.md`.
 - **Phone delivery**: Telegram message, body = compact version of the daily digest (French).
 
+## Weekly athletic profile & objectives (updated weekly)
+
+A separate weekly routine runs a full lifetime athletic-profile classification and an objectives-tracker refresh (Part 1 + Part 2), independent of the daily 6-phase pipeline. Its output is the source of truth for Benjamin's active goals and should inform daily training decisions — in particular the demonstrated-tolerance floor for runs (Phase 4) and any "sur site"/comeback framing in the digest headline.
+
+- **Objectives table**: `objectives` table in the biometrics DB (`biometrics:query`). Each active row carries a live `current_value`, a `notes` field refreshed weekly with trajectory/confidence, and `source_table`/`source_column`/`source_filter`/`source_agg` for live re-querying. Read it during Phase 2 triage if a training or body-composition decision would benefit from goal context (e.g. is the prescribed long run converging on the 12km objective's demonstrated-tolerance floor; is running frequency still the critical-path bottleneck).
+- **Latest weekly report**: `profile-reports/YYYY-MM-DD-athletic-profile-objectives.md` (most recent: `profile-reports/2026-07-25-athletic-profile-objectives.md`).
+
+### Latest digest summary (as of 2026-07-25)
+
+**Athletic profile verdict**: Master-age (42y) recreational endurance athlete, post-peak, mid-rebuild. Lifetime PRs (half 1:34:33, marathon 3:39:55) set in 2019 at peak fitness (86kg, 21.5% fat). Multi-year disruption (Covid, cycling pivot, new parenthood) produced ~18kg regain to an all-time-high bodyweight (104.6kg, BMI ~33) but VO2max (42 ml/kg/min) and RHR (47-49 bpm) are both "Good-to-Excellent" for age and actively improving this quarter — the cardiovascular engine is recovering faster than body composition or race pace, the classic post-layoff pattern.
+
+**Objectives — critical path**: Running frequency (`a1bde447`, "Reprendre la course 3x/semaine") gates the long-run (`9b982443`, 12km target, currently 8.03km max) and half-marathon (`96910249`, <1h45) objectives. It just posted its first stabilization signal — two consecutive weeks at 2 runs/week (target 3) — after months of 0-3/wk volatility. Treat "land a 3rd easy run this week without breaking the streak" as the standing highest-leverage recommendation until frequency reaches 3/wk consistently.
+
+**Objectives — engagement gap**: The two manually-logged objectives (weight `218d1c78`, target 95kg; protein `49829c29`, target 160g/day) have both gone dark — no Withings weigh-in in 35+ days, no nutrition log in 16+ days — while auto-tracked objectives (Strava/Garmin) show no such gap. If a daily run notices a new Withings or nutrition-log entry landing after this staleness, flag it positively (re-engagement signal) in the digest.
+
+**Objectives — housekeeping**: Annual bloodwork (`42361937`) on track for 2026-12-30, but the Vitamin D retest ("due ~July 2026") has now passed its window unbooked — a standing GP-conversation seed until resolved. FTP/Zwift objective (`c0eac7c5`) is abandoned; do not resurface cycling-FTP framing.
+
 ## Thresholds
 
 Load `protocols/thresholds.yaml` at the start of every run. All population-level invariants (ACWR band, ramp cap, sigma cutoffs, deload multiplier, illness triggers) come from there. Never hardcode them in this prompt.
