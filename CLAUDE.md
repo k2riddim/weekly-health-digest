@@ -129,6 +129,13 @@ Planner constraints:
 
 Each new or updated event must have: French title, duration, target HR zone, target load, one-line rationale, tired-day fallback.
 
+### Bloc actif
+Si `protocols/active_block.md` existe et couvre la semaine à venir : planifier les séances depuis sa table
+(distances, D+, type) au lieu de la progression générique, et créer les événements Calendar correspondants.
+Valider la semaine écoulée contre `thresholds.yaml > c4_block` (pic non planifié, barreau SL, ACWR,
+règle semaine blanche) et signaler toute violation dans le digest avec la correction appliquée à la semaine
+suivante. En fin de bloc, suivre la consigne d'archivage du fichier.
+
 ### Phase 5 — Delta vs yesterday (and rolling 7d)
 
 Compute using `scripts/compute_delta.py`:

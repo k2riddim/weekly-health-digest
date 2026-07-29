@@ -56,3 +56,18 @@ evidence_classes:
   - guideline
   - consensus
   - preliminary
+
+# C4 block #21-40 (rev 2026-07-29) — voir protocols/active_block.md, source aria-routine#431
+c4_block:
+  session_spike_cap_vs_trailing4_avg_load: 1.3   # toute séance hors SL désignée
+  long_run_cap_vs_21d_max_load: 1.3              # barreau de la sortie longue hebdo
+  acwr_warn: 1.40                                # => séance suivante -30 %, easy only
+  acwr_ceiling: 1.50                             # => jour de repos obligatoire
+  blank_week_reentry: "semaine suivante <= volume moyen des 4 semaines pré-trou, pas de SL"
+  hr_avg_flat_max_bpm: 145
+  hr_avg_hill_max_bpm: 148
+  hr_spike_hill_max_bpm: 158
+  long_run_weekly_share_max: 0.40
+  long_run_increment_km_max: 1.0
+  no_racing_before: "2026-10-01"
+  pain_rule: ">3/10 en course, altération de foulée, ou aggravation J+1 => séance sautée entièrement, pas raccourcie"
