@@ -10,6 +10,13 @@ Benjamin is a male endurance athlete based in Paris with longitudinal data acros
 
 Intelligent progression toward the best sustainable fitness Benjamin has historically demonstrated (`state/historical-peak.json`), respecting current-life constraints inferred daily. The rolling 7-day training plan is **replanned every day** based on: yesterday's execution, today's readiness, upcoming calendar constraints, and trailing load trajectory. Never prescribe a ramp that raises acute 7-day load >10% week-over-week — except while the return-to-running protocol is active, where the comeback override (`T.training.comeback_weekly_acute_ramp_cap`, currently +15%) applies because the layoff-depressed chronic base tolerates faster early progression. No hero weeks either way.
 
+## Latest weekly athletic profile (auto-updated weekly, do not hand-edit)
+
+- **As of**: 2026-08-01 — full report: `profile-reports/2026-08-01-athletic-profile-objectives.md`
+- **Verdict**: Masters-age (42y) endurance athlete, Mitchell Class IC (low static/high dynamic), ACSM "Good" VO2max-running tier for age/sex, in a post-layoff rebuild below but recovering toward a documented sub-elite-amateur ceiling (1:34:33 half-marathon PR, 2019). Primary constraint is body mass/tissue tolerance from the 2020-2025 volume collapse, not aerobic capacity.
+- **Objectives snapshot** (machine-readable version: `state/objectives-latest.json`): running-frequency 3x/wk 46% confidence (up, 2 consecutive weeks on target) · 12km Beaumonts long run 56% (flat, 10.5km banked) · half-marathon <1h45 27% (up, no race booked) · global rollup 28% (up) · weight to 95kg 14% (down, Withings sync 42d stale) · protein 160g/day 6% (down, 22-day nutrition-logging blackout) · annual bloodwork 35% (down, Vit D retest window lapsed).
+- **Highest-leverage action**: land the 3rd weekly run to bank a 3rd consecutive on-target week, and log one full day of nutrition intake to break the measurement blackout on the weight/protein objectives.
+
 ## Language
 
 Analytical report in **English**. Calendar event titles and descriptions, Telegram message body in **French**.
@@ -28,6 +35,7 @@ Analytical report in **English**. Calendar event titles and descriptions, Telegr
 - **Archive**: `state/history/YYYY-MM-DD.json` — append-only copy of each day's state.
 - **Human digest**: `digests/YYYY-MM-DD.md`.
 - **Phone delivery**: Telegram message, body = compact version of the daily digest (French).
+- **Objectives assessment**: `state/objectives-latest.json` (machine-readable) + `profile-reports/YYYY-MM-DD-athletic-profile-objectives.md` (full narrative) — refreshed weekly by the separate athletic-profile-and-objectives routine. Read alongside `LAST_STATE` at Phase 1 and again at Phase 4: objectives carry `training_planner_relevance` flags (e.g. `gating`, or a note like "primary driver of active_block.md long-run progression") that constrain or motivate session choices — most importantly the running-frequency and long-run objectives that gate the return-to-running block. Weight/nutrition objective status is useful daily context (e.g. a logging blackout is not itself a training red flag, but a resumed log is a fresh data point worth noting) but never overrides `T.training` or `active_block.md` guardrails.
 
 ## Thresholds
 
@@ -51,7 +59,8 @@ Complete all 6. Each requires real tool calls, not assumptions. Between phases, 
 1. `cat state/latest.json` → parse into `LAST_STATE`.
 2. `cat state/historical-peak.json` → parse into `HISTORICAL_PEAK`.
 3. `cat protocols/thresholds.yaml` → parse into `T`.
-4. If `LAST_STATE.bootstrap === true`, note that Phase 5 is the first real delta (compare today to the bootstrap snapshot, labelled as such).
+4. If `state/objectives-latest.json` exists, `cat` it → parse into `OBJECTIVES`. Refreshed weekly by the separate athletic-profile routine; carries per-objective confidence, trajectory, and `training_planner_relevance` flags consumed in Phase 2 and Phase 4.
+5. If `LAST_STATE.bootstrap === true`, note that Phase 5 is the first real delta (compare today to the bootstrap snapshot, labelled as such).
 
 ### Phase 1 — Snapshot today + rolling context (broad pass)
 
@@ -80,6 +89,7 @@ Produce an internal triage:
 2. **Plan adherence check** — did yesterday's planned session (if any) execute? Was it skipped for a "sur site" event (legitimate), for readiness reasons (conditional), or silently (flag)?
 3. **Top 1–3 signals worth deep-diving**. For each: competing hypotheses ranked, tables to query. On a quiet day, zero deep-dives is the correct answer.
 4. If nothing is abnormal → explicit "maintenance — stay the course".
+5. If `OBJECTIVES` loaded, note any objective whose `training_planner_relevance` is `gating` or otherwise training-relevant (e.g. a running-frequency streak at risk, a long-run rung due) — carry it into Phase 4. A logging blackout on a non-training objective (weight, nutrition) is context, not a deep-dive trigger by itself.
 
 Deep-dive triggers (from `T.deviation_thresholds`):
 - Any marker >`T.deviation_thresholds.personal_sigma_dive`σ from its personal 90-day baseline **today**
@@ -107,7 +117,7 @@ One data-anchored paragraph per domain dove into. On days with no signals, skip 
 
 ### Phase 4 — Replan the rolling 7-day training window
 
-Invoke `.claude/skills/training-planner`. Inputs: `LAST_STATE`, today's load/readiness, `HISTORICAL_PEAK`, `situational_context`, `T.training`, `T.session_planning`, the `no_train_days` list from Phase 1, the list of existing Calendar training events within the horizon.
+Invoke `.claude/skills/training-planner`. Inputs: `LAST_STATE`, today's load/readiness, `HISTORICAL_PEAK`, `situational_context`, `T.training`, `T.session_planning`, the `no_train_days` list from Phase 1, the list of existing Calendar training events within the horizon, and `OBJECTIVES` (`state/objectives-latest.json`) if present — respect its `training_planner_relevance` flags (e.g. protect a running-frequency streak already `gating` other objectives; treat an objective's demonstrated long-run rung as a floor, matching the `active_block.md` rung logic) alongside the C4 block below.
 
 The planner produces a **full rolling 7-day plan** (today → today + 6). Because this runs daily:
 - If an existing Calendar training event still fits the updated plan → leave it.
