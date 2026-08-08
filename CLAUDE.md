@@ -29,6 +29,16 @@ Analytical report in **English**. Calendar event titles and descriptions, Telegr
 - **Human digest**: `digests/YYYY-MM-DD.md`.
 - **Phone delivery**: Telegram message, body = compact version of the daily digest (French).
 
+## Objectives tracker (weekly athletic-profile refresh)
+
+A separate weekly routine runs a full athletic-profile classification + `objectives` table (biometrics DB) review and writes `profile-reports/YYYY-MM-DD-athletic-profile-objectives.md`. This section is overwritten by that routine each week — read it for standing context on Benjamin's active goals; the daily digest does not need to re-derive it, but should factor the highest-leverage action and any confidence/trajectory shift into today's recommendations and training plan where relevant.
+
+- **Latest refresh**: 2026-08-08 — `profile-reports/2026-08-08-athletic-profile-objectives.md`
+- **Active objectives** (live-tracked via `objectives` table, `patient_id='benjamin'`): global comeback rollup (`a0000000…`, 31% confidence), 12km Beaumonts long-run/elevation (`9b982443…`, 57%), 3 runs/wk habit (`a1bde447…`, 55%, now a 3-consecutive-week streak), semi-marathon <1h45 (`96910249…`, 25%, gated), weight ≤95kg (`218d1c78…`, 45%, pace now near-required), protein 160g/day (`49829c29…`, 8%, logging blackout), annual bloodwork (`42361937…`, 40%, Vitamin D retest overdue).
+- **Bloc actif**: the C4 running block (`protocols/active_block.md`) is the canonical source for this week's prescribed sessions/distances/D+ — training-planner should read it directly, not just this summary.
+- **Standing highest-leverage action** (behavioral, not training-load): resume daily protein logging and book the overdue Vitamin D retest — both zero-cost relative to training and currently the weakest-confidence items in the tracker.
+- Do not hand-edit the objectives table from the daily run; it's refreshed weekly. The daily run may read it for context via `biometrics:query`.
+
 ## Thresholds
 
 Load `protocols/thresholds.yaml` at the start of every run. All population-level invariants (ACWR band, ramp cap, sigma cutoffs, deload multiplier, illness triggers) come from there. Never hardcode them in this prompt.
