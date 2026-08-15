@@ -8,25 +8,25 @@ Gap broken: 2026-05-03, after 182 days off running (4th-longest gap in 12 years 
 
 ## 1. Athlete snapshot
 
-*Last refreshed 2026-06-15 (43 days into comeback, 10 runs completed).*
+*Last refreshed 2026-08-15 (104 days into comeback, 27 runs logged).*
 
 | Field | Value |
 |---|---|
 | Age | 42, male |
-| Body weight | **102.6 kg** (down from 104.8 kg at comeback start; −2.2 kg in 43 days; peak running era 84–85 kg, 2019-2020 → +18 kg) |
-| Resting HR | 51 bpm (7d avg ~50 bpm; comparable to comeback start) |
-| HRV (Garmin) | 37 (last score Jun 14), weekly avg 35, status BALANCED — down from avg 39–40 in mid-May; early-June showed several LOW/UNBALANCED days |
-| VO2max running | 40.6 (up from 38.3 at comeback start — Garmin estimate improving with run data) |
-| VO2max cycling | 38.6 (stable) |
-| Sleep (30-day avg) | 7.26 h — adequate but down from 7.45 h at last refresh |
-| Current ACWR (all activities) | **1.35 — slightly above 1.3 upper bound**; acute load spiked from recent runs on modest chronic base |
-| Comeback runs to date | Run #1: 2026-05-03, 2.47 km / 21 min (avg HR 135); Run #2: 2026-05-09, 2.01 km / 18 min (avg HR 144); Run #3: 2026-05-15, 3.53 km / 29 min (avg HR 139); Run #4: 2026-05-18, 5.01 km / 43 min (avg HR 140); Run #5: 2026-05-23, 5.02 km / 41 min (avg HR 136); Run #6: 2026-05-31, 3.78 km / 30 min (avg HR 140); Run #7: 2026-06-03, 5.23 km / 41 min (avg HR 141); Run #8: 2026-06-07, 5.56 km / 44 min (avg HR 138); Run #9: 2026-06-10, 5.79 km / 45 min (avg HR 142); Run #10: 2026-06-14, 4.90 km / 38 min (avg HR 136) |
+| Body weight | **100.68 kg** (Aug 11 reading; down from 102.6 kg mid-June; −4.1 kg vs comeback-start weight of 104.8 kg; peak running era 84–85 kg, 2019-2020 → +16 kg) |
+| Resting HR | 52 bpm (7d avg, Aug 8–14) — up from 50 bpm in June; last 3 days (Aug 12–14) elevated to 52–55 bpm, coinciding with travel (Saint-Malo) — monitor for continued drift before resuming full volume |
+| HRV (Garmin) | last score 31 (Aug 13), weekly avg 35, status BALANCED — flat vs June (35), still below the 39–40 mid-May peak |
+| VO2max running | 42.9 (up from 40.6 in June — Garmin estimate continuing to improve with run volume) |
+| VO2max cycling | shows 42.9 as of Aug 11–14, jumped from a stable 38.6 and now identical to the running figure — **likely a Garmin sync/algorithm artifact, not a genuine fitness jump**; treat as unconfirmed until it diverges from the running value on next refresh |
+| Sleep (30-day avg) | 7.98 h — up from 7.26 h at last refresh; recovery is not the bottleneck |
+| Current ACWR (all activities) | **0.59 — well below the 0.8 general floor, "Detraining" per Garmin status**; chronic load has drifted down from a late-July peak (~30.6) to ~24.7 as this week's volume (travel week, Saint-Malo) has been light |
+| Comeback runs to date | 27 runs logged since May 3, 2026 (Run #11 not present in the data — likely unlogged). Milestones: Run #1 2026-05-03 2.47 km/21 min (HR 135); longest to date Run #20 2026-07-25 10.50 km/72.7 min (HR 145, Saint-Malo hills). Most recent 5: #23 Aug 2 5.06 km (HR 139) · #24 Aug 5 6.11 km (HR 142) · #25 Aug 7 4.81 km RECON côte Beaumonts (HR 143) · #26 Aug 9 5.89 km (HR 144, short of the 9 km SL target) · #27 Aug 12 4.23 km easy (HR 133, short of the 6 km target). Full log: Strava / `protocols/active_block.md` for the active block's week-by-week table. |
 | Last run before gap | 2025-11-02 (EF 45'), 6 weeks after Vincennes half-marathon (21.2 km, 6:11/km, 2025-10-19) |
 | Gap duration | 182 days (2025-11-02 → 2026-05-03) |
 | Lifetime running base | 12 years, 800+ logged runs, half-marathon-fit at this body weight 6 months ago |
-| Family context | First child (Léonie) born 2026-01-09. Sleep currently adequate (7.26h 30d avg); occasional fragmented nights. |
-| Vitamin D (Dec 2025) | **27 ng/mL — INSUFFICIENT** (optimal 40–60). Supplementation active; retest due ~July 2026. |
-| Ferritin / Hb | 159 ng/mL / 15 g/dL — both normal (Dec 2025) |
+| Family context | First child (Léonie) born 2026-01-09. Sleep currently adequate (7.98h 30d avg); occasional fragmented nights. |
+| Vitamin D (Dec 2025) | **27 ng/mL — INSUFFICIENT** (optimal 40–60). Supplementation active; retest was due ~July 2026 and **has not landed yet as of this refresh (mid-August)** — no new labs since Dec 2025. Overdue; schedule now. |
+| Ferritin / Hb | 159 ng/mL / 15 g/dL — both normal (Dec 2025, unchanged — no newer panel) |
 
 ---
 
@@ -95,7 +95,7 @@ Run through this every Sunday before publishing the next 7 days. If any item is 
 The single biggest planning error is prescribing runs **shorter than what Benjamin has already run comfortably**, then treating the inevitable overshoot as a problem. Cardio fitness is intact — he was half-marathon-fit 6 months ago. The limiter is tissue tolerance, and tissue tolerance is revealed by *what recent runs he absorbed without symptoms*, not by an abstract conservative floor.
 
 - **Set the easy-run floor to his demonstrated tolerance.** The floor = the longest run in roughly the last 3 weeks that was completed without gait change or pain **and** followed by clean next-morning recovery (no HRV crash, no RHR spike, no lingering soreness). Do **not** prescribe below that without a specific, current recovery or injury reason.
-- **Reference point (as of this comeback):** runs have reached 5–6 km at Z2–Z3 (up to 6.0 km) with no reported tissue issues. The easy-run floor is therefore ~5 km / ~40 min, and the long run should be **progressing toward 8–10 km**, not clamped to 3 km.
+- **Reference point (as of this refresh, 2026-08-15):** the long run has already reached 10.5 km (Run #20, 2026-07-25, Saint-Malo hills, HR 145) with no reported tissue issues — well past the 8–10 km target set at the previous refresh. A dedicated **active block** (`protocols/active_block.md`, rev 2026-07-29) now governs the week-by-week progression toward a 12 km Beaumonts objective (~30/10) with its own elevation-aware rungs; **while that block covers the coming week, plan from its table instead of the generic floor logic below.** The general floor/anchor approach here remains the fallback once the block ends or lapses.
 - **Progress the long run from that anchor**, by ≤ ~1 km or ~10 min per step, keeping it easy Z1–Z2. Extend the long run, not the number of junk-short runs.
 - **Overshoot of a well-tolerated target is data, not disobedience.** If Benjamin repeatedly runs longer than prescribed and absorbs it cleanly, the target was set too low → **raise it toward demonstrated capacity.** Never respond to well-tolerated overshoot by cutting the next target.
 - **Banned as planning tools:** GPS turnaround alarms, forced-mid-run cutoffs, and "STRICT MAX" distance caps used to enforce an artificially low target. These are control gimmicks, not coaching. A hard cap is legitimate **only** in a genuine red-flag context — post-injury return-to-run progression, active illness, or red recovery markers (Section B) — and even then it is framed as a recovery decision with a reason, not a punishment for running well.
@@ -142,4 +142,4 @@ If any of those is missed, the consolidation phase extends rather than progressi
 
 ---
 
-*Generated 2026-05-03 from longitudinal Strava / Garmin / Withings / lab data. Last refreshed 2026-06-15 (monthly maintenance pass). Update each Sunday after the weekly health digest.*
+*Generated 2026-05-03 from longitudinal Strava / Garmin / Withings / lab data. Last refreshed 2026-08-15 (monthly maintenance pass). Update each Sunday after the weekly health digest.*

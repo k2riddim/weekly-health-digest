@@ -1,57 +1,57 @@
 {
-  "as_of_date": "2026-06-14",
+  "as_of_date": "2026-08-14",
   "bootstrap": false,
-  "situational_context": "Running comeback well established: 10 structured runs since May 3, 2026 (43 days in). Distances have progressed from 2 km to 5–6 km range (Run #10: 4.9 km on June 14). VO2max running improved to 40.6 (from 38.3 at comeback start May 3). Weight trending down to 102.6 kg (vs 104.1 kg on May 14, −1.5 kg in one month). E-bike commuting remains primary modality. ACWR at 1.35 — slightly above the 1.3 upper bound, warranting load monitoring this week. HRV 7d avg has drifted down to 35 ms (from 39–40 in mid-May); several LOW/UNBALANCED status days in early June suggest accumulated fatigue from adding running on top of e-bike base. Chronic load 17.5 (down from 22.3 in May) due to lower base volume; acute load elevated at 23.7 from recent running uptick. No new labs since Dec 2025; Vitamin D retest due ~July 2026.",
-  "acute_load_7d": 23.7,
-  "chronic_load_28d": 17.5,
-  "distance_from_peak_pct": 1.1,
+  "situational_context": "Running comeback well established and now governed by an active C4 training block (protocols/active_block.md, rev 2026-07-29, sessions #21-40) targeting a 12 km Beaumonts objective (~30/10). 27 runs logged since May 3, 2026 (104 days in); longest to date is 10.5 km (Run #20, Jul 25, Saint-Malo hills, avg HR 145) — well past the 8-10 km reference set at the previous refresh. The most recent two prescribed sessions came in short of the active block's table (Run #26 Aug 9: 5.89 km vs a 9.0 km SL target; Run #27 Aug 12: 4.23 km easy vs a 6.0 km target), and this past week has been light overall (Saint-Malo travel, one casual sea swim Aug 14) — Garmin now flags training_status as 'Detraining', chronic_load_28d down to ~24.7 from a late-July peak of ~30.6, acute_load_7d at 14.6, ACWR ~0.59 (well below the 0.8 floor). Body weight continues to trend down: 100.68 kg (Aug 11, latest reading), down from 102.6 kg mid-June. VO2max running improved to 42.9 (from 40.6 in June); VO2max cycling shows an unexplained jump to an identical 42.9 starting Aug 11 (from a stable 38.6) that looks like a Garmin sync artifact rather than a real gain, flagged for cross-check next refresh. HRV weekly avg flat at 35 (unchanged vs June, still below the 39-40 mid-May peak). Resting HR has drifted up: 7d avg ~52 bpm (vs 50 in June), with the last 3 days (Aug 12-14) elevated to 52-55 bpm, coinciding with travel — worth watching before resuming full block volume. Sleep improved to 7.98h 30-day avg (from 7.26h in June) - not the bottleneck. No new labs since Dec 2025; the Vitamin D retest that was due ~July 2026 has not landed as of this refresh (mid-August) and is now overdue.",
+  "acute_load_7d": 14.6,
+  "chronic_load_28d": 24.74,
+  "distance_from_peak_pct": 1.54,
   "hrv_7d_avg": 35,
-  "rhr_7d_avg": 50,
-  "sleep_hours_7d_avg": 7.59,
-  "weight_kg_7d_avg": 102.62,
+  "rhr_7d_avg": 51.7,
+  "sleep_hours_7d_avg": 7.69,
+  "weight_kg_7d_avg": 100.68,
   "last_session": {
-    "date": "2026-06-14",
-    "type": "Run",
-    "duration_min": 38,
-    "training_load": 18
+    "date": "2026-08-14",
+    "type": "Swim",
+    "duration_min": 13,
+    "training_load": 2
   },
   "plan_7d_ahead": [],
   "no_train_days": [],
   "recommendations": [
     {
       "priority": "P0",
-      "text": "ACWR is 1.35 (above 1.3 threshold) — hold or reduce total load this week. No new running session until ACWR drops below 1.3; substitute with easy e-bike if the gap is uncomfortable.",
-      "measurable": "ACWR ≤ 1.3 by end of week; no run added until threshold cleared",
+      "text": "Vitamin D retest was due ~July 2026 (8 weeks post-comeback) and has not been logged as of mid-August — no new lab data since Dec 2025 (27 ng/mL, insufficient). Schedule the blood panel now.",
+      "measurable": "Lab order placed and result logged within 2 weeks of this refresh",
       "evidence_class": "guideline"
     },
     {
       "priority": "P1",
-      "text": "HRV 7d avg has declined from 39–40 (mid-May) to 35 ms (June 14) — a 12% drop suggesting accumulated fatigue. Prioritise 7–8h sleep; avoid high-intensity sessions until HRV 7d avg returns to ≥37 ms.",
-      "measurable": "HRV 7d avg ≥ 37 ms within 7 days",
+      "text": "Resting HR has drifted from a 50 bpm baseline (June) to 52-55 bpm over the last 3 days (Aug 12-14), alongside chronic load declining to 'Detraining' and the last two prescribed active-block sessions coming in short of target. Treat this as a recovery signal, not just a travel artifact: hold at current volume (don't chase the block's missed SL/target distances) until RHR 7d avg returns toward ~50 bpm and next sessions feel normal.",
+      "measurable": "RHR 7d avg back to <=51 bpm and next 2 sessions completed at or above active-block target distance without symptoms",
       "evidence_class": "consensus"
     },
     {
       "priority": "P2",
-      "text": "Vitamin D retest is due ~July 1, 2026 (8 weeks post-comeback start May 3). Schedule blood panel now to confirm levels rising toward 40 ng/mL target.",
-      "measurable": "Lab order placed before July 2026",
-      "evidence_class": "guideline"
+      "text": "VO2max cycling jumped from a stable 38.6 to 42.9 starting Aug 11 - identical to the running estimate, which reads as a Garmin sync/algorithm artifact rather than a genuine fitness gain. Do not use it to inform cycling zones or plan decisions until it diverges from the running value on the next monthly check.",
+      "measurable": "VO2max cycling re-checked at next monthly refresh; flagged as data-quality note in the interim",
+      "evidence_class": "preliminary"
     }
   ],
   "markers_to_watch": [
     {
-      "marker": "acwr",
-      "threshold": "Alert if ACWR remains > 1.3 for more than 3 consecutive days",
-      "reason": "Currently at 1.35; sustained elevation increases injury risk, especially during running comeback at 102 kg body weight"
+      "marker": "rhr_7d_avg",
+      "threshold": "Alert if RHR 7d avg stays >=52 bpm for more than 5 consecutive days, or any single day exceeds 55 bpm again",
+      "reason": "Up from a 50 bpm June baseline; recent 3-day spike to 52-55 bpm coincides with reduced chronic load and under-executed sessions - possible early overload or sub-clinical illness"
     },
     {
-      "marker": "hrv_7d_avg",
-      "threshold": "Alert if HRV 7d avg drops below 32 ms or fails to recover toward 37–39 ms over next 7 days",
-      "reason": "Down 12% from May baseline; trend reversal needed before resuming running volume increases"
+      "marker": "chronic_load_28d",
+      "threshold": "Flag if it keeps declining past 2 more weeks without a rebuild toward the late-July level (~30.6)",
+      "reason": "Currently 'Detraining' per Garmin status (24.7, down from ~30.6 in late July) - active block assumes a rebuilding base toward the 12 km objective"
     },
     {
-      "marker": "post_run_pain",
-      "threshold": "Any localized joint/tendon pain lasting >24h after a run triggers skip of next run",
-      "reason": "Tissue tolerance remains the bottleneck at 102 kg body weight; pain signals early overload"
+      "marker": "vo2max_cycling",
+      "threshold": "Confirm it diverges back from the running VO2max value (42.9) on the next data pull",
+      "reason": "Jumped to match the running figure exactly starting Aug 11, after being stable at 38.6 for months - likely artifact, not a real signal, until it independently moves"
     }
   ],
   "investigations_opened": [],

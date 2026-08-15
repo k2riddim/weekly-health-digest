@@ -10,7 +10,7 @@ Numeric bands live in `protocols/thresholds.yaml` under `heat:` — never hardco
 
 Population heat guidance assumes a lean, heat-acclimatized athlete. Benjamin is the opposite on every axis that matters, so every band shifts **cooler** (more conservative):
 
-1. **Body mass ~103 kg.** Metabolic heat production and heat storage scale with mass; a big athlete's core temperature rises faster for the same pace. More mass, less surface-area-to-mass ratio to dump heat.
+1. **Body mass ~101 kg** (100.68 kg latest reading, Aug 2026 — down from ~103 kg in June, trend continuing). Metabolic heat production and heat storage scale with mass; a big athlete's core temperature rises faster for the same pace. More mass, less surface-area-to-mass ratio to dump heat.
 2. **Comeback / deconditioned.** Lower running fitness ⇒ higher relative cardiovascular strain at any pace ⇒ less spare capacity for skin blood flow and sweating. VO2max still well below peak-year.
 3. **Poorly heat-acclimatized.** Primary modality has been e-bike commuting; likely little sustained heat exposure. Acclimatization takes 7–14 days of exposure to build and decays within ~1–2 weeks without it.
 4. **Age 42, and a young child at home.** Sleep is adequate but occasionally fragmented; heat plus sleep debt compounds strain.
@@ -89,4 +89,4 @@ These override any planned session. Walk to shade, cool the skin, hydrate; seek 
 
 ---
 
-*Evidence class: consensus / guideline (ACSM Position Stand on Exertional Heat Illness; WBGT flag systems used in road-race medical guidance). Thresholds personalized conservatively for a ~103 kg, deconditioned, poorly-acclimatized 42-year-old in a running comeback. Revisit as body weight drops and heat acclimatization builds.*
+*Evidence class: consensus / guideline (ACSM Position Stand on Exertional Heat Illness; WBGT flag systems used in road-race medical guidance). Thresholds personalized conservatively for a ~101 kg, deconditioned, poorly-acclimatized 42-year-old in a running comeback. Revisit as body weight drops and heat acclimatization builds. (Last data check: 2026-08-15.)*
