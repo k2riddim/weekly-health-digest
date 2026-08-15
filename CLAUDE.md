@@ -6,6 +6,25 @@ Auto-loaded by Claude Code on every run of the daily-digest Routine. Contains th
 
 Benjamin is a male endurance athlete based in Paris with longitudinal data across Strava, Garmin, Withings, labs, chess, nutrition, and cohabitant metrics. Everything about his current situation must be re-discovered from data each day. This prompt contains no hardcoded numbers, no life-phase assumptions, and no training templates — they evolve with him. With the exception of the super important  return to running protocol you must always check and apply if the user is returning to running.
 
+## Athlete profile & objectives (weekly refresh)
+
+*Last refreshed 2026-08-15 by the weekly athletic-profile-classification + objectives-tracker pass. Full report: `profile-reports/2026-08-15-athletic-profile-objectives.md`. The `objectives` table (via `biometrics:query` / `upsert_objective`) is the canonical live source — this block is a summary snapshot for daily-routine context, not the source of truth.*
+
+**Classification**: masters-age (42, M) recreational endurance athlete of demonstrated competitive-amateur running caliber (half-marathon PR 1:34:33, marathon PR 3:39:55, both 2019 age 35), currently ~1.5 years into rebuilding from a 2020–2024 volume collapse and weight/fat-% regain. VO2max running holds in the ACSM "Good" band (40–43), resting HR in the "Athlete" band (48–53 bpm) — cardio fitness has held up better than body composition (BMI ≈31.8, current weight 100.68 kg, near the 12-year record's least-favorable point outside the 2011 baseline).
+
+**Active objectives** (id / confidence 0-100, ↑↓ vs prior weekly refresh):
+| Objective | Confidence | Trajectory |
+|---|---|---|
+| Descendre à 95 kg (`218d1c78`) | 48 (↑) | On track — pace ≈ required rate |
+| Sortie 12 km Beaumonts (`9b982443`, parent of C4 block) | 47 (↓) | Weakening — 2 consecutive SL sessions under-executed |
+| Reprendre la course 3x/semaine (`a1bde447`) | 40 (↓) | Broke a 4-week streak this cycle (travel-driven, not physiological) |
+| Bilan sanguin annuel / Vitamin D retest (`42361937`) | 35 (↓) | Vitamin D retest 6+ weeks overdue |
+| Retour compétiteur amateur — rollup (`a0000000`) | 28 (↓) | Net negative this cycle |
+| Semi-marathon <1h45 (`96910249`) | 20 (↓) | Fully gated, no race scheduled |
+| Protéines ≥160g/j (`49829c29`) | 15 (↑) | Worst-scoring objective — pure logging-habit gap, zero training-load cost to fix |
+
+**Implication for daily training planning**: the running-frequency and long-run objectives are the load-bearing nodes for the active C4 block (`protocols/active_block.md`) — when readiness allows, weight session-adherence to the block's SL progression over volume-for-volume's-sake, since two under-executed SL sessions are the proximate cause of this cycle's confidence drop, not an ACWR/readiness constraint. Flag (don't silently ignore) any week where the protein-logging gap coincides with a deepening calorie deficit — cross-domain lean-mass risk noted in the latest objectives report.
+
 ## Target
 
 Intelligent progression toward the best sustainable fitness Benjamin has historically demonstrated (`state/historical-peak.json`), respecting current-life constraints inferred daily. The rolling 7-day training plan is **replanned every day** based on: yesterday's execution, today's readiness, upcoming calendar constraints, and trailing load trajectory. Never prescribe a ramp that raises acute 7-day load >10% week-over-week — except while the return-to-running protocol is active, where the comeback override (`T.training.comeback_weekly_acute_ramp_cap`, currently +15%) applies because the layoff-depressed chronic base tolerates faster early progression. No hero weeks either way.
@@ -28,6 +47,7 @@ Analytical report in **English**. Calendar event titles and descriptions, Telegr
 - **Archive**: `state/history/YYYY-MM-DD.json` — append-only copy of each day's state.
 - **Human digest**: `digests/YYYY-MM-DD.md`.
 - **Phone delivery**: Telegram message, body = compact version of the daily digest (French).
+- **Objectives (weekly refresh, separate routine)**: canonical live state lives in the `objectives` table (`biometrics:query` / `upsert_objective`), not in this repo — each objective's `notes` field carries its own refresh history and confidence trail. Full reports archived at `profile-reports/YYYY-MM-DD-athletic-profile-objectives.md`. The "Athlete profile & objectives" section above is a summary snapshot refreshed weekly; do not treat it as more current than the table itself.
 
 ## Thresholds
 
