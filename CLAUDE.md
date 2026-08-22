@@ -6,6 +6,17 @@ Auto-loaded by Claude Code on every run of the daily-digest Routine. Contains th
 
 Benjamin is a male endurance athlete based in Paris with longitudinal data across Strava, Garmin, Withings, labs, chess, nutrition, and cohabitant metrics. Everything about his current situation must be re-discovered from data each day. This prompt contains no hardcoded numbers, no life-phase assumptions, and no training templates — they evolve with him. With the exception of the super important  return to running protocol you must always check and apply if the user is returning to running.
 
+## Latest weekly athletic profile & objectives (auto-updated weekly)
+
+Refreshed 2026-08-22 by the weekly athletic-profile routine. Full report: `profile-reports/2026-08-22-athletic-profile-objectives.md`. The daily digest agent should treat this as background context for `situational_context` and training-planner decisions — it is not a substitute for Phase 1's daily data pull.
+
+- **Classification**: 42y male, masters-age recreational endurance athlete with amateur-competitive credentials (half-marathon PR 1:34:33, top-decile-adjacent French amateur pace; marathon PR 3:39:55 — both 2019). VO2max running ~42 (ACSM "Good"–"Excellent" for age/sex). Currently 17 weeks into a structured post-hiatus running comeback (started 2026-04-26) layered on a cycling/e-bike aerobic base.
+- **Adherence alert**: running frequency has broken for 2 consecutive weeks (1 run/wk vs the 3/wk habit target), with no physiological cause — RHR, HRV, and training_readiness all point to full recovery by 2026-08-21. Treat any further missed running days this week as an adherence signal, not a readiness one, and prioritize re-establishing frequency (short runs) over chasing long-run distance until 2 consecutive weeks show 3/3 sessions.
+- **Long-run objective** (Beaumonts 12km) stalled at 10.5 km for 4 straight weeks — do not reduce the run-length floor below 10.5 km without a genuine recovery/injury reason; the stall is adherence-driven, not physiological.
+- **Weight objective**: on-pace (100.68 kg vs 95 kg target by 2026-12-30) but Withings data is stale (11-day gap as of 2026-08-22) — flag if no new reading lands soon.
+- **Nutrition**: protein logging shows real capability (~123 g/day on logged days) but repeated multi-day blackouts recur; not directly training-relevant but worth surfacing if it recurs alongside a deload/illness signal.
+- Objective confidence scores and full dependency/coherence analysis live in the `objectives` table (`biometrics:query`) and the linked report — consult before asserting progress toward the semi-marathon or "retour au niveau compétiteur" goals.
+
 ## Target
 
 Intelligent progression toward the best sustainable fitness Benjamin has historically demonstrated (`state/historical-peak.json`), respecting current-life constraints inferred daily. The rolling 7-day training plan is **replanned every day** based on: yesterday's execution, today's readiness, upcoming calendar constraints, and trailing load trajectory. Never prescribe a ramp that raises acute 7-day load >10% week-over-week — except while the return-to-running protocol is active, where the comeback override (`T.training.comeback_weekly_acute_ramp_cap`, currently +15%) applies because the layoff-depressed chronic base tolerates faster early progression. No hero weeks either way.
@@ -28,6 +39,7 @@ Analytical report in **English**. Calendar event titles and descriptions, Telegr
 - **Archive**: `state/history/YYYY-MM-DD.json` — append-only copy of each day's state.
 - **Human digest**: `digests/YYYY-MM-DD.md`.
 - **Phone delivery**: Telegram message, body = compact version of the daily digest (French).
+- **Weekly athletic profile & objectives**: `profile-reports/YYYY-MM-DD-athletic-profile-objectives.md`, run separately from the daily 6-phase pipeline (athletic profile classification + objectives-tracker pass over the `objectives` table). Each weekly run must: (1) write the dated report under `profile-reports/`, (2) refresh each active objective's `current_value`/`notes`/confidence via `biometrics:upsert_objective`, (3) replace the "Latest weekly athletic profile & objectives" section (near the top, right after ## Context, before ## Target) with a fresh summary so the daily digest agent always has current-week context without re-deriving it, and (4) send the report via Telegram.
 
 ## Thresholds
 
