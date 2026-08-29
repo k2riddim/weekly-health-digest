@@ -29,6 +29,23 @@ Analytical report in **English**. Calendar event titles and descriptions, Telegr
 - **Human digest**: `digests/YYYY-MM-DD.md`.
 - **Phone delivery**: Telegram message, body = compact version of the daily digest (French).
 
+## Weekly athletic profile & objectives (latest)
+
+A separate weekly pass (not one of the 6 daily phases) produces a full athletic-profile classification and refreshes every row in the `objectives` DB table (via `biometrics:upsert_objective`), archived under `profile-reports/YYYY-MM-DD-athletic-profile-objectives.md`. **This section is overwritten by that pass each week — the daily digest should read it as background context, not regenerate it.**
+
+- **Latest refresh**: 2026-08-29. Full report: `profile-reports/2026-08-29-athletic-profile-objectives.md`.
+- **Classification**: masters-age (42y) recreationally-trained endurance athlete with sub-elite competitive history (half-marathon PR 1:34:33, marathon PR 3:39:55, both 2019, top-decile-adjacent French amateur pace) — currently in an active, physiologically-well-preserved post-paternity running rebuild. VO2max (~42 ml/kg/min) and RHR (~50 bpm) sit near his own 2025 peak and well above ACSM age-norms; running volume, race pace, and body composition still reflect the 2020-2025 trough that only began reversing May 2026.
+- **Live objectives snapshot** (confidence 0-100 = probability of hitting target_date given current trajectory; full detail and cross-refs in the report):
+  - Global rollup (a0000000…) — 26/100, improving but fragile.
+  - Semi-marathon <1h45 by 2027-03-30 (96910249…) — 17/100, gated by long-run + frequency.
+  - Weight → 95 kg by 2026-12-30 (218d1c78…) — 42/100; current 100.68 kg, Withings data 18d stale.
+  - Running 3x/week (a1bde447…) — 34/100; hit 3/3 the week of 8/17-23 (first time), current week stalled to 1/3.
+  - Long run → 12 km Beaumonts by 2026-10-30 (9b982443…) — 33/100; live max still 10.5 km, 5 weeks with no distance attempt despite frequency being met.
+  - Protein → 160g/day 30d-avg by 2026-09-29 (49829c29…) — 9/100, worst in the set; new 6-day zero-protein blackout 8/23-28.
+  - Annual bloodwork (42361937…) — 29/100; Vitamin D retest ~8-9 weeks overdue, zero-cost fix still not actioned.
+- **Highest-leverage action standing**: convert one of the weekly run slots into a dedicated long-run attempt beyond 10.5 km — frequency alone is not moving the long-run or half-marathon objectives.
+- **Daily-planner relevance**: the training planner (Phase 4) should keep biasing toward run frequency *and* start nudging one weekly session specifically toward distance progression (within `return-to-running.md` tolerance limits), and should treat the 8/24-8/28 HRV/RHR/readiness dip as a live readiness signal until it resolves.
+
 ## Thresholds
 
 Load `protocols/thresholds.yaml` at the start of every run. All population-level invariants (ACWR band, ramp cap, sigma cutoffs, deload multiplier, illness triggers) come from there. Never hardcode them in this prompt.
