@@ -1,7 +1,7 @@
 {
   "as_of_date": "2026-08-31",
   "bootstrap": false,
-  "situational_context": "Running comeback in extended recovery phase after failed W35 deload gate (HRV ≤32, RHR ≥54). C4 block #21-40 active but W36 running modified reentry (5.0/5.5/6.0 km) instead of original plan (6.5/8.0/12.0 km) — 12 km Beaumonts objective deferred. Recovery markers showing first improvement today: RHR 52 (down from 54-55 sustained for 9 days), body battery 53.5 (up from 21-36 mid-week range), training readiness 63. HRV weekly avg dropped to 30 (from 35 on Aug 14), persistently LOW for 7+ days — recovery deficit from Run #29 HR spike (suffer 51, Aug 22) is resolving but not yet cleared. Training status improved from 'Detraining' to 'Maintaining'. Chronic load 28d continued declining to 18.2 (from 24.7). Congés Sep 1-11 (adaptation crèche Léonie). No new labs since Dec 2025 — Vitamin D retest 2+ months overdue. Weight data gap (last reading Aug 12, 19 days). VO2max cycling artifact persists (42.9 vs running 42.5).",
+  "situational_context": "Running comeback in extended recovery phase after failed W35 deload gate (HRV ≤32, RHR ≥54). C4 block #21-40 active but W36 running modified reentry (5.0/5.5/6.0 km) instead of original plan (6.5/8.0/12.0 km) — 12 km Beaumonts objective deferred. Recovery markers showing first improvement today: RHR 52 (down from 54-55 sustained for 9 days), body battery 53.5 (up from 21-36 mid-week range), training readiness 63. HRV weekly avg dropped to 30 (from 35 on Aug 14), persistently LOW for 7+ days — recovery deficit from Run #29 HR spike (suffer 51, Aug 22) is resolving but not yet cleared. Training status improved from 'Detraining' to 'Maintaining'. Chronic load 28d continued declining to 18.2 (from 24.7). ON GLP-1 RECEPTOR AGONIST — weight loss trajectory (104.8→100.7 kg since May) partly pharmacological; must monitor lean mass preservation (Withings Body Scan muscle_mass_kg: 70.9 latest vs 72.6 Aug 3), protein intake ≥150g/day critical to limit GLP-1-associated lean mass loss, and weight loss rate ≤1 kg/week to protect tendon adaptation during comeback. Nutrition logging gap is now a higher-priority concern. Congés Sep 1-11 (adaptation crèche Léonie). No new labs since Dec 2025 — Vitamin D retest 2+ months overdue. Weight data gap (last reading Aug 12, 19 days). VO2max cycling artifact persists (42.9 vs running 42.5).",
   "acute_load_7d": 15,
   "chronic_load_28d": 18.21,
   "distance_from_peak_pct": 1.13,
@@ -40,8 +40,8 @@
     },
     {
       "priority": "P2",
-      "text": "Fresh Withings weighing needed — last reading Aug 12 (19 days ago). Pesée hebdo scheduled Sep 6. Weight data gap prevents TDEE calibration and masks composition trends.",
-      "measurable": "Withings weighing completed by Sep 6",
+      "text": "Fresh Withings weighing needed — last reading Aug 12 (19 days ago). Pesée hebdo scheduled Sep 6. On GLP-1: weight data gap is higher-priority — must track both rate of loss (≤1 kg/week to protect tendon adaptation) AND lean mass trend (muscle_mass_kg dropped from 72.6 to 70.9 between Aug 3-12, needs confirmation). Resume nutrition logging to ensure ≥150g protein/day — critical for limiting GLP-1-associated lean mass loss during a running comeback at this body weight.",
+      "measurable": "Withings weighing by Sep 6 with muscle_mass_kg check; nutrition logged ≥5 of next 7 days",
       "evidence_class": "consensus"
     }
   ],
@@ -60,6 +60,11 @@
       "marker": "chronic_load_28d",
       "threshold": "Flag if drops below 15 (severe detraining, Oct 30 objective at risk)",
       "reason": "Declined from 24.7 to 18.2 over 17 days — reentry runs this week must arrest the slide"
+    },
+    {
+      "marker": "muscle_mass_kg (Withings)",
+      "threshold": "Alert if muscle_mass_kg drops below 70.0 kg or loses >1 kg between consecutive readings",
+      "reason": "On GLP-1 — lean mass preservation is critical. Dropped from 72.6 (Aug 3) to 70.9 (Aug 12) = −1.7 kg in 9 days. Could be measurement noise, hydration, or genuine sarcopenic signal. Needs fresh reading to confirm trend."
     }
   ],
   "investigations_opened": [],
