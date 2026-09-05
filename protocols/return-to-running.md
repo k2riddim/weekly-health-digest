@@ -13,9 +13,9 @@ Gap broken: 2026-05-03, after 182 days off running (4th-longest gap in 12 years 
 | Field | Value |
 |---|---|
 | Age | 42, male |
-| **Medication** | **GLP-1 receptor agonist, weekly injection, since ~mid-Aug 2026** (decision at 2026-08-04 consult with Dr Monnier; molecule / dose / injection day to confirm — see `protocols/health-profile.md`). Expected: RHR +1–5 bpm, lower HRV, suppressed appetite, faster weight loss. The RHR/HRV rows below are pre-medication baselines — do not gate the comeback on them without re-baselining (`T.glp1`). |
+| **Medication** | **GLP-1 receptor agonist, weekly injection every Wednesday, first dose 2026-08-12** (decision at 2026-08-04 consult with Dr Monnier; molecule / dose to confirm — see `protocols/health-profile.md`). Post-injection window Thu–Sat → long run and harder work Sun–Tue. Expected: RHR +1–5 bpm, lower HRV, suppressed appetite, faster weight loss. The RHR/HRV rows below are pre-medication baselines — do not gate the comeback on them without re-baselining (`T.glp1`). |
 | Body weight | **100.68 kg** (Aug 11 reading; down from 102.6 kg mid-June; −4.1 kg vs comeback-start weight of 104.8 kg; peak running era 84–85 kg, 2019-2020 → +16 kg) |
-| Resting HR | 52 bpm (7d avg, Aug 8–14) — up from 50 bpm in June; last 3 days (Aug 12–14) elevated to 52–55 bpm, coinciding with travel (Saint-Malo) **and with the GLP-1 initiation window — a +2–5 bpm offset is the expected class effect, not overload; re-baseline per `T.glp1` before using RHR as a gate** |
+| Resting HR | 52 bpm (7d avg, Aug 8–14) — up from 50 bpm in June; last 3 days (Aug 12–14) elevated to 52–55 bpm, coinciding with travel (Saint-Malo) **and with the first GLP-1 injection on Aug 12 (RHR 51→54 that day) — a +2–5 bpm offset is the expected class effect, not overload; re-baseline per `T.glp1` before using RHR as a gate** |
 | HRV (Garmin) | last score 31 (Aug 13), weekly avg 35, status BALANCED — flat vs June (35), still below the 39–40 mid-May peak |
 | VO2max running | 42.9 (up from 40.6 in June — Garmin estimate continuing to improve with run volume) |
 | VO2max cycling | shows 42.9 as of Aug 11–14, jumped from a stable 38.6 and now identical to the running figure — **likely a Garmin sync/algorithm artifact, not a genuine fitness jump**; treat as unconfirmed until it diverges from the running value on next refresh |

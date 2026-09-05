@@ -20,10 +20,10 @@ relevant, into `protocols/thresholds.yaml > glp1`.
 |---|---|---|
 | Class | GLP-1 receptor agonist ("analogue du GLP-1"), weight-management indication | Teleconsultation transcript 2026-08-04 (ARIA `meeting:20260804-141724-184fc4`) — high |
 | Molecule / brand | **TO CONFIRM** (semaglutide vs tirzepatide vs liraglutide not stated in the transcript) | unknown |
-| Current dose / escalation step | **TO CONFIRM** — standard protocols escalate every 4 weeks; the prescriber reassesses dose monthly | consult: "chaque mois on réévalue … même dosage ou on ajuste" |
-| Injection day | **TO CONFIRM** — ask Benjamin to log each injection in `oh_supplement_logs` (name it `GLP-1 injection`) so the pipeline can align side-effect windows | unknown |
+| Current dose / escalation step | **TO CONFIRM** — standard protocols escalate every 4 weeks from 2026-08-12 (candidate step dates: 2026-09-09, 2026-10-07, 2026-11-04); the prescriber reassesses dose monthly. Apply `T.glp1.dose_escalation_watch_days` after any confirmed step | consult: "chaque mois on réévalue … même dosage ou on ajuste" |
+| Injection day | **Wednesday** (weekly). Post-injection side-effect window = Thu–Sat (`T.glp1.post_injection_side_effect_window_days`); schedule the long run and any harder work Sun–Tue. Logging each injection in `oh_supplement_logs` (`GLP-1 injection`) is still useful to capture dose changes | Benjamin, 2026-09-05 — high |
 | Prescriber | Dr Delphine Monnier (téléconsultation Doctolib) | transcript — high |
-| Initiation | Decision taken at the 2026-08-04 consult; first injection date not directly observed. Wearable signature (RHR +3–5 bpm, HRV weekly 36→30) appears from **mid/late August 2026**, consistent with initiation in that window | inferred — medium |
+| Initiation | **First injection Wednesday 2026-08-12.** Decision taken at the 2026-08-04 consult. Wearable signature matches: Garmin RHR jumped 51→54 bpm on 2026-08-12 itself and has sat at 52–55 bpm since (vs 48–50 pre-initiation); HRV weekly avg drifted 36→30 over the following 3 weeks | Benjamin, 2026-09-05 — high |
 | Follow-up cadence | Monthly with the prescriber (first follow-up planned ~2026-09-04) | transcript — high |
 | Intended duration | Multi-year (prescriber mentioned ~3 years is typical, then taper) | transcript, degraded audio — medium |
 | Indication context | BMI ≈ 33, weight plateau 101–107 kg for ~15 months despite calorie tracking and regular training; episodic hyperphagia linked to fatigue; 15+ years of weight cycling (down to ~85 kg with a dietitian in the past) | transcript — high |
@@ -99,8 +99,9 @@ stating, in the same sentence, how GLP-1 therapy does or does not account for th
 
 ## 6. Known unknowns — ask Benjamin / update when known
 
-- [ ] Molecule, brand and current dose of the GLP-1 agonist; date of first injection
-- [ ] Weekly injection day (so side-effect windows can be aligned with the training plan)
+- [ ] Molecule, brand and current dose of the GLP-1 agonist; dates of any dose escalation
+- [x] Date of first injection — 2026-08-12 (confirmed 2026-09-05)
+- [x] Weekly injection day — Wednesday (confirmed 2026-09-05)
 - [ ] Whether the prescriber gave any exercise-specific guidance
 - [ ] Médecin traitant identity for the GP-conversation-seeds section
 - [ ] `oh_user_profile.medications` in the biometrics DB is still `[]` — Benjamin should add the GLP-1 entry there so DB-side tooling sees it too

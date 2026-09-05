@@ -79,8 +79,8 @@ c4_block:
 # update health-profile.md in the same commit).
 glp1:
   active: true
-  initiation_date: "2026-08-15"        # best estimate — decision 2026-08-04, wearable signature from mid-Aug; refine when Benjamin confirms the first injection
-  injection_weekday: null              # 0=Mon … 6=Sun; null until Benjamin logs it
+  initiation_date: "2026-08-12"        # first injection (confirmed by Benjamin 2026-09-05); decision at the 2026-08-04 consult
+  injection_weekday: 2                 # 0=Mon … 6=Sun → Wednesday (confirmed by Benjamin 2026-09-05)
   rhr_expected_shift_bpm_min: 1        # class effect on resting HR vs pre-treatment baseline (RCT)
   rhr_expected_shift_bpm_max: 5
   rebaseline_after_days_on_stable_dose: 21   # after this many days on a stable dose, the post-initiation window is the RHR/HRV reference

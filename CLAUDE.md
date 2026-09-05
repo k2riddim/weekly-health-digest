@@ -235,7 +235,7 @@ Natural observations Benjamin could mention at his next visit, not test requests
   "situational_context": "free-text, re-evaluated today — must include the active-medication clause",
   "profile_ref": "protocols/health-profile.md",
   "medications": [
-    {"name": "GLP-1 receptor agonist (molecule/dose to confirm)", "since": "2026-08 (estimate)", "days_on": N, "last_injection": "YYYY-MM-DD or null", "prescriber": "Dr Delphine Monnier", "next_review": "monthly", "interpretation_notes": "RHR +1-5 bpm expected; HRV lower; appetite suppressed; use post-initiation baseline"}
+    {"name": "GLP-1 receptor agonist (molecule/dose to confirm)", "since": "2026-08-12", "injection_weekday": "Wednesday", "days_on": N, "last_injection": "YYYY-MM-DD (most recent Wednesday)", "prescriber": "Dr Delphine Monnier", "next_review": "monthly", "interpretation_notes": "RHR +1-5 bpm expected; HRV lower; appetite suppressed; use post-initiation baseline; side-effect window Thu-Sat"}
   ],
   "acute_load_7d": N,
   "chronic_load_28d": N,
