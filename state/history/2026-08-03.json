@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-08-03",
+  "bootstrap": false,
+  "situational_context": "Running comeback mature at 93 days (23 runs since May 3). C4 active block #21-40 in effect; W31 deload completed successfully (3 runs, 17.1 km, load 82/95 budget). W32 starts today with sessions #24-#26 planned. Distances have progressed to 10.5 km (Run #20, Jul 25). VO2max running improved to 42.5 (from 38.3 at comeback start). Weight stable at 102.0 kg. Chronic load recovered to 29.0 (from 17.5 in mid-June, +66%). ACWR at 0.74 post-deload — below 0.8 lower bound, expected to normalize during W32. HRV weekly avg stable at 36 ms, BALANCED. Post-heatwave modifier active (canicule late July); outdoor sessions in Orange/Red band shifted to early morning or indoor. No new labs since Dec 2025; Vitamin D retest overdue (~1 month past July target). Nutrition logging inactive.",
+  "acute_load_7d": 21.4,
+  "chronic_load_28d": 29.0,
+  "distance_from_peak_pct": 1.80,
+  "hrv_7d_avg": 36,
+  "rhr_7d_avg": 48.9,
+  "sleep_hours_7d_avg": 7.95,
+  "weight_kg_7d_avg": 102.01,
+  "last_session": {
+    "date": "2026-08-02",
+    "type": "Run",
+    "duration_min": 37,
+    "training_load": 20
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-08-03", "day": "Mon", "time": "-", "type": "Rest (post-deload transition)", "duration_min": 0, "target_load": 0, "calendar_event_id": "onf7ur28rnc5ek3349tohqit7o", "status": "rest"},
+    {"date": "2026-08-04", "day": "Tue", "time": "-", "type": "Sur site (ebike commute ~38 km)", "duration_min": 120, "target_load": 12, "calendar_event_id": "", "status": "blocked"},
+    {"date": "2026-08-05", "day": "Wed", "time": "11:00", "type": "Run #24 — 5,5 km Z2 plat intérieur", "duration_min": 50, "target_load": 30, "calendar_event_id": "ma3itaf2rc6pmgbho2t8udaltk", "status": "planned"},
+    {"date": "2026-08-06", "day": "Thu", "time": "-", "type": "Sur site (ebike commute ~38 km)", "duration_min": 120, "target_load": 12, "calendar_event_id": "", "status": "blocked"},
+    {"date": "2026-08-07", "day": "Fri", "time": "11:00", "type": "Run #25 — 6,5 km côte RECON Beaumonts", "duration_min": 60, "target_load": 40, "calendar_event_id": "trj81ttdarapjo1116cn8rg1nk", "status": "planned"},
+    {"date": "2026-08-08", "day": "Sat", "time": "11:00", "type": "Récupération active — vélo léger ou renforcement", "duration_min": 60, "target_load": 10, "calendar_event_id": "91kv9vk43ao362u9hp7sol0u58", "status": "planned"},
+    {"date": "2026-08-09", "day": "Sun", "time": "11:15", "type": "Run #26 — SL 9,0 km Z2 plat", "duration_min": 65, "target_load": 50, "calendar_event_id": "42gonf5bop238grsr4ptlq6df4", "status": "planned"}
+  ],
+  "no_train_days": ["2026-08-04", "2026-08-06"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Execute W32 C4 block as planned to rebuild acute load from deload trough. ACWR at 0.74 is below the 0.8 lower bound — this is a normal deload artifact. Runs #24-#26 will bring it back into the 0.8-1.0 range. No load restriction needed; follow the active block distances and rest-day spacing.",
+      "measurable": "ACWR returns to 0.8-1.0 by end of W32 (Aug 9)",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Post-heatwave modifier remains active (canicule late July, post-heatwave window 10 days). Check feels-like temp at 11am on each run day. Run #24 (Wed) confirmed indoor/treadmill. Run #25 (Fri RECON) and Run #26 (Sun SL) outdoor contingent on feels-like ≤23°C at 11am, otherwise treadmill or dawn timing. Do not push outdoor running in Orange/Red bands.",
+      "measurable": "All runs completed within heat protocol band constraints; no heat-related HRV or RHR anomaly",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Vitamin D retest is now ~1 month overdue (was due July 2026). Schedule blood panel to confirm levels approaching 40 ng/mL target. Last reading was 27 ng/mL (insufficient) in Dec 2025. Supplementation has been active for 8+ months.",
+      "measurable": "Blood panel ordered within the next 2 weeks",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "acwr",
+      "threshold": "Should return to 0.8-1.0 by end of W32. Alert if still < 0.8 after completing all 3 planned runs.",
+      "reason": "Post-deload trough at 0.74; W32 sessions designed to rebuild acute load progressively"
+    },
+    {
+      "marker": "post_heatwave_modifier",
+      "threshold": "Check daily: modifier lifts 10 days after last feels-like ≥32°C day. Estimate active through ~Aug 8-10.",
+      "reason": "Canicule late July shifted all heat bands by -3°C; affects outdoor session feasibility"
+    },
+    {
+      "marker": "run_25_recon_d_plus",
+      "threshold": "Measure actual D+ on Beaumonts route (Run #25, Fri Aug 7). Update active_block.md table if actual differs from 80-100m estimate.",
+      "reason": "C4 block progression toward 12 km Beaumonts objective depends on accurate elevation data from this reconnaissance run"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/106"
+}
