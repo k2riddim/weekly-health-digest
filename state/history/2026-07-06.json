@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-07-06",
+  "bootstrap": false,
+  "situational_context": "Running comeback week 10 (14 runs since May 3, 64 days in). Pattern of distance overshoots persists: Run #12 (Jun 21) 7.5 km/suffer 36, Run #14 (Jul 5) 6 km/suffer 30 — both vs 4 km targets. Controlled run between: Run #13 (Jun 28) 3.5 km/suffer 13. ACWR normalized to 0.96 (from 1.35 at last state Jun 14). HRV weekly recovering: 37 ms (from 34-35 in late June). VO2max running 41.5 (up from 40.6). Weight 103.67 kg (single Jun 21 reading — no recent Withings data). Training status oscillating Detraining/Maintaining due to irregular session spacing. Heat wave in Paris this week (35-38C) constrains outdoor sessions. Travel to Saint-Malo Jul 12 (vacation start). Baby Leonie 18 months. Vitamin D retest overdue (last 27 ng/mL Dec 2025, target 40+). E-bike commuting on sur site days provides light aerobic base (~14 load per round trip).",
+  "acute_load_7d": 20,
+  "chronic_load_28d": 20.73,
+  "distance_from_peak_pct": 1.29,
+  "hrv_7d_avg": 37,
+  "rhr_7d_avg": 49,
+  "sleep_hours_7d_avg": 7.75,
+  "weight_kg_7d_avg": 103.67,
+  "last_session": {
+    "date": "2026-07-05",
+    "type": "Run",
+    "duration_min": 46,
+    "training_load": 30
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-07-06", "day": "Mon", "time": null, "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": "94jian4a94td9d7j46dtqb72fg", "status": "rest"},
+    {"date": "2026-07-07", "day": "Tue", "time": null, "type": "E-bike commute (sur site)", "duration_min": 120, "target_load": 14, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-07-08", "day": "Wed", "time": "11:00", "type": "Run #15 — 3 km Z2 strict", "duration_min": 25, "target_load": 10, "calendar_event_id": "0jf3215bpejrtipi2vodkp3uts", "status": "planned"},
+    {"date": "2026-07-09", "day": "Thu", "time": null, "type": "E-bike commute (sur site)", "duration_min": 120, "target_load": 14, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-07-10", "day": "Fri", "time": null, "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-07-11", "day": "Sat", "time": "11:30", "type": "Gravel endurance — 60 min Z2", "duration_min": 60, "target_load": 18, "calendar_event_id": "6aos77mggr9mma4f9oq9irljb8", "status": "planned"},
+    {"date": "2026-07-12", "day": "Sun", "time": "11:15", "type": "Marche rapide / footing optionnel — 30 min", "duration_min": 30, "target_load": 5, "calendar_event_id": "ged3o7i2cgd0uqcbk8ec2to4ac", "status": "planned"}
+  ],
+  "no_train_days": ["2026-07-07", "2026-07-09"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "DISCIPLINE DE DISTANCE : Run #12 (7.5 km) et Run #14 (6 km) ont depasse les cibles de 50-90%. A 103.67 kg, chaque depassement augmente le risque tendineux cumulatif (Achille, rotulien, fascia plantaire). ACTIVER ALARME GPS a 1.5 km pour forcer le demi-tour. Run #15 = 3 km MAX, pas un metre de plus.",
+      "measurable": "Run #15 distance <= 3 km et suffer <= 15",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "PROTOCOLE CANICULE : 35-38C toute la semaine a Paris. Sessions exterieures 11h-15h = pic de chaleur. Hydratation >= 750 mL eau + electrolytes par session. Raccourcir de 20% si temperature ressentie > 36C. Casquette/bandana humide. Arret immediat si nausee, confusion ou arret de sudation.",
+      "measurable": "Hydratation >= 750 mL par session, aucun signe de coup de chaleur",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P2",
+      "text": "BILAN VITAMINE D : Retest prevu juillet 2026 non encore realise (dernier 27 ng/mL dec 2025 = insuffisant). Risque stress fracture 2x sous 40 ng/mL (Burgi 2011). Programmer prise de sang avant fin juillet.",
+      "measurable": "Prise de sang programmee avant 31 juillet 2026",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "run_overshoot_pattern",
+      "threshold": "Run #15 distance > 3.75 km (125% of target)",
+      "reason": "2 of last 3 runs exceeded plan by 50-90%. Pattern must break to protect tissue tolerance at 103.67 kg."
+    },
+    {
+      "marker": "heat_stress_markers",
+      "threshold": "RHR elevated > 3 bpm above 49 avg OR HRV drop > 10% from 37 during heat wave",
+      "reason": "35-38C heat wave. Heat stress compounds training stress and impairs recovery."
+    },
+    {
+      "marker": "vitamin_d_retest",
+      "threshold": "No lab result by end July 2026",
+      "reason": "Last 27 ng/mL (Dec 2025) = insufficient for bone/tendon health during running comeback. Active supplementation needs confirmation."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/76"
+}
