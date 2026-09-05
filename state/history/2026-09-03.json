@@ -1,0 +1,72 @@
+{
+  "as_of_date": "2026-09-03",
+  "bootstrap": false,
+  "situational_context": "Running comeback day 123 (34 runs since May 3). C4 active block (sessions #21-40, rev 2026-07-29) is significantly behind schedule — W34 under-executed, W35 deload produced only 1 of 3 planned runs (Run #34, 3.5 km on Aug 30), runs #32-#33 never logged. The 12 km Beaumonts objective attempt planned for W36 (this week) is NOT feasible: HRV has been persistently LOW (weekly avg 30, down from 35 in mid-August) for 7+ consecutive days, body battery consistently < 50 (max 46), RHR elevated to 52-55 bpm (vs 48-50 baseline). Run #29 (Aug 22, 7.04 km, HR 146, load 51) appears to have triggered a prolonged autonomic recovery suppression; subsequent runs have been short and easy but markers haven't normalized 12 days later. Benjamin is on congés (crèche adaptation for Léonie, Sept 1-11) providing scheduling flexibility. Weight stalled at ~101 kg (slight uptick 100.68→101.15). No nutrition logging. Vitamin D retest still overdue (no labs since Dec 2025). Training status stabilized from 'Detraining' to 'Maintaining' but ACWR remains below the 0.8 floor (~0.69 estimated). Post-heatwave modifier expired (last canicule ended Aug 16). Plan: conservative re-entry with 5.0-5.5 km runs, contingent on readiness markers. 12 km objective pushed to late September at earliest.",
+  "acute_load_7d": 12,
+  "chronic_load_28d": 17.5,
+  "distance_from_peak_pct": 1.09,
+  "hrv_7d_avg": 30,
+  "rhr_7d_avg": 53.3,
+  "sleep_hours_7d_avg": 7.53,
+  "weight_kg_7d_avg": 101.15,
+  "last_session": {
+    "date": "2026-08-30",
+    "type": "Run",
+    "duration_min": 26.5,
+    "training_load": 8
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-09-03", "day": "Thu", "time": null, "type": "rest", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-09-04", "day": "Fri", "time": "12:00", "type": "Run 5.0 km easy plat", "duration_min": 38, "target_load": 18, "calendar_event_id": "kcpnjft731u8299dpnat9kmonc", "status": "planned"},
+    {"date": "2026-09-05", "day": "Sat", "time": "11:00", "type": "Vélo easy 45 min Z1-Z2", "duration_min": 45, "target_load": 13, "calendar_event_id": "1bpnufqmv4642g0sekbjqhnh18", "status": "planned"},
+    {"date": "2026-09-06", "day": "Sun", "time": "11:15", "type": "Run 5.5 km easy plat", "duration_min": 42, "target_load": 20, "calendar_event_id": "1uh8esqs4q6nine281ugvk2vd0", "status": "planned"},
+    {"date": "2026-09-07", "day": "Mon", "time": null, "type": "rest", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-09-08", "day": "Tue", "time": null, "type": "rest or marche active 30 min", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-09-09", "day": "Wed", "time": "12:00", "type": "Run 5.5 km easy plat (contingent)", "duration_min": 42, "target_load": 20, "calendar_event_id": "f6m393bds095qdkcj4275q4epk", "status": "planned"}
+  ],
+  "no_train_days": [],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Address the autonomic recovery suppression before attempting to progress the active block. HRV has been LOW (weekly avg 30) for 7+ consecutive days with body battery consistently < 50 — this is a clear recovery deficit per return-to-running protocol §4B. Hold run volume at current demonstrated tolerance (5.0-5.5 km easy) until HRV weekly avg returns to ≥32 and body battery reaches ≥50 on at least 4/7 days.",
+      "measurable": "HRV weekly avg ≥32 and body battery max ≥50 on 4+/7 days within the next 7-10 days",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P1",
+      "text": "Postpone the 12 km Beaumonts objective attempt. The W36 target from the active block is not achievable with current recovery markers. Freeze the block at current position and push the objective to W39+ (late September), contingent on recovery normalization and progressive rebuild to 8+ km runs.",
+      "measurable": "12 km objective attempt no earlier than Sept 21, only after 2 consecutive weeks of 3x runs at ≥6 km with clean recovery markers",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Vitamin D retest now ~10 weeks overdue (target July 2026, last lab Dec 2025 at 27 ng/mL — insufficient). Schedule blood panel during congés while scheduling is flexible. Stress-fracture risk remains elevated at current body weight (101 kg) with suboptimal vitamin D.",
+      "measurable": "Lab order placed and blood drawn within 1 week",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "hrv_weekly_avg",
+      "threshold": "Alert if HRV weekly avg stays ≤30 for 3+ more days despite reduced training; investigate non-training stressors",
+      "reason": "Persistently LOW 7+ days, down from 35 in mid-Aug — not responding to reduced volume"
+    },
+    {
+      "marker": "body_battery_max",
+      "threshold": "Flag if BB max doesn't reach ≥50 on any day this week",
+      "reason": "Hasn't exceeded 46 in 7+ days — protocol §4B requires ≥50 on 4/7 days"
+    },
+    {
+      "marker": "rhr_7d_avg",
+      "threshold": "Alert if RHR 7d avg stays ≥53 for another week",
+      "reason": "Elevated 53.3 vs 48-50 baseline for 3+ weeks — autonomic suppression pattern"
+    },
+    {
+      "marker": "weight_kg",
+      "threshold": "Flag if weight exceeds 102 kg",
+      "reason": "Slight uptick 100.68→101.15; no nutrition logging to diagnose; weight loss supports injury risk reduction"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/135"
+}
