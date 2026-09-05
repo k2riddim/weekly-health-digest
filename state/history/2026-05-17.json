@@ -1,0 +1,73 @@
+{
+  "as_of_date": "2026-05-17",
+  "bootstrap": false,
+  "situational_context": "Running comeback progressing: 3 runs completed (May 3, 9, 15). Run #3 extended to 3.53 km — above 2.5 km protocol cap but HR well-controlled (avg 139, Z2). VO2max running improving (38.7, up from 38.3). Primary modality remains e-bike commuting (~38 km/day on sur site days). Chronic load continuing to decline (22.0, down from 22.3 on May 14) as April cycling loads age out of 28d window. ACWR 0.75 — safe rebuild zone, detraining status. HRV stable at 39 weekly avg (BALANCED). Weight hitting new lows (103.3 kg on May 16, 103.8 today). Sleep adequate at 7.06h 7d avg. No new labs since Dec 2025. Comeback protocol active — tissue tolerance remains the limiting factor at 103+ kg. Two sur site commute days this week (Tue 19, Thu 21) will contribute load via ebike or gravel.",
+  "acute_load_7d": 16.5,
+  "chronic_load_28d": 22.0,
+  "distance_from_peak_pct": 1.4,
+  "hrv_7d_avg": 39,
+  "rhr_7d_avg": 50,
+  "sleep_hours_7d_avg": 7.06,
+  "weight_kg_7d_avg": 103.56,
+  "last_session": {
+    "date": "2026-05-16",
+    "type": "GravelRide",
+    "duration_min": 49,
+    "training_load": 17
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-05-17", "day": "Sun", "time": "-", "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"},
+    {"date": "2026-05-18", "day": "Mon", "time": "12:00", "type": "Run Z1-Z2 ≤3.5 km", "duration_min": 25, "target_load": 15, "calendar_event_id": "hj3iqcb1tshb0gqmbh3811irbs", "status": "planned"},
+    {"date": "2026-05-19", "day": "Tue", "time": "-", "type": "Commute only (sur site)", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "blocked"},
+    {"date": "2026-05-20", "day": "Wed", "time": "-", "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"},
+    {"date": "2026-05-21", "day": "Thu", "time": "-", "type": "Commute only (sur site)", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "blocked"},
+    {"date": "2026-05-22", "day": "Fri", "time": "13:00", "type": "Bike endurance Z2 50 min", "duration_min": 50, "target_load": 18, "calendar_event_id": "1qvtb1vbspdmhkc216soitae74", "status": "planned"},
+    {"date": "2026-05-23", "day": "Sat", "time": "12:00", "type": "Run Z1-Z2 ≤3.5 km", "duration_min": 25, "target_load": 15, "calendar_event_id": "2gh25jhdrvih06is7hj12nsp24", "status": "planned"},
+    {"date": "2026-05-24", "day": "Sun", "time": "12:00", "type": "Bike endurance Z2 50 min", "duration_min": 50, "target_load": 18, "calendar_event_id": "irsb93a8mprc38vvvrpvqqa2ko", "status": "planned"}
+  ],
+  "no_train_days": ["2026-05-19", "2026-05-21"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Continue running comeback: Run #4 tomorrow (Mon, congés), consolidate at ≤3.5 km. Run #3 overshot the 2.5 km cap by 41% — tissue tolerance is the concern, not cardio. Do not increase distance this week. If any localized pain lasting >24h after Run #3, skip Run #4 entirely.",
+      "measurable": "Run #4 completed ≤3.5 km, no post-run pain lasting >24h",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Stabilize chronic load via consistent aerobic sessions: the 28d load is declining (22.0, down from 23.5 two weeks ago) as April rides age out. Each planned bike session and run contributes to the floor. Sur site commute days (Tue, Thu) also help — gravel commutes contribute significantly more load than ebike.",
+      "measurable": "Chronic load ≥21.0 by next Sunday (May 24)",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Maintain weight trajectory: 103.3-103.8 kg is a new low range, down 2+ kg in 30 days. Nutrition averaging 2864 kcal/day vs 2500 target — but weight is still declining, confirming TDEE > intake. Continue current approach; do not cut further as each kg lost reduces per-stride impact by ~3 kg GRF, directly supporting running comeback.",
+      "measurable": "Weight 7d avg ≤103.5 kg by May 24",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "rhr_7d_avg",
+      "threshold": "Alert if RHR rises >5 bpm above 50 bpm baseline for 3+ consecutive days",
+      "reason": "RHR stable at 50 bpm; elevation would indicate overload or sub-clinical illness during running comeback"
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Monitor for continued decline below 21; target stabilization via consistent sessions",
+      "reason": "Declining from 23.5 to 22.0 as April rides age out; need to arrest decline through planned sessions"
+    },
+    {
+      "marker": "post_run_pain",
+      "threshold": "Any localized joint/tendon pain lasting >24h after a run triggers skip of next run",
+      "reason": "Tissue tolerance is the bottleneck at 103+ kg body weight; Run #3 overshot protocol cap"
+    },
+    {
+      "marker": "hrv_overnight",
+      "threshold": "Alert if HRV overnight drops below 30 for 3+ consecutive nights",
+      "reason": "HRV overnight was 33 today (lower end of recent range 34-50); monitoring for sustained suppression"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/27"
+}
