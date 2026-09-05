@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-07-27",
+  "bootstrap": false,
+  "situational_context": "Running comeback Day 85, 20 runs completed (May 3 to Jul 27). Returning to Paris from 2-week Saint-Malo vacation today. Breakthrough Run #20 (10.5 km, suffer 70) achieved Jul 25 — comeback distance record, absorbed with 2 full rest days. VO2max running at 42.1 (+3.8 from 38.3 at comeback start). Chronic load risen to 28.6 (from 17.5 at last state Jun 14) — strong upward trajectory. Incoming heatwave (35-38C daily highs Jul 28-Aug 2) blocks outdoor running at preferred midday window — indoor treadmill sessions recommended. Weight unknown since Jun 21 (103.67 kg, Withings scale not available in Saint-Malo). Vitamin D retest overdue (was due July). E-bike commuting resumes with sur site days this week.",
+  "acute_load_7d": 38,
+  "chronic_load_28d": 28.6,
+  "distance_from_peak_pct": 1.78,
+  "hrv_7d_avg": 37,
+  "rhr_7d_avg": 48,
+  "sleep_hours_7d_avg": 8.2,
+  "weight_kg_7d_avg": 103.67,
+  "last_session": {
+    "date": "2026-07-25",
+    "type": "Run",
+    "duration_min": 73,
+    "training_load": 70
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-07-27", "day": "Lundi", "time": "-", "type": "REST", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"},
+    {"date": "2026-07-28", "day": "Mardi", "time": "-", "type": "SUR SITE", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "blocked"},
+    {"date": "2026-07-29", "day": "Mercredi", "time": "11:00", "type": "Run #21 — 6 km Z2 interieur", "duration_min": 45, "target_load": 35, "calendar_event_id": "34pgbv6h2q9kk5nnvonrd14044", "status": "planned"},
+    {"date": "2026-07-30", "day": "Jeudi", "time": "-", "type": "SUR SITE", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "blocked"},
+    {"date": "2026-07-31", "day": "Vendredi", "time": "-", "type": "REST", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"},
+    {"date": "2026-08-01", "day": "Samedi", "time": "11:00", "type": "Run #22 — 7 km Z2 interieur", "duration_min": 50, "target_load": 40, "calendar_event_id": "cdh2ph6k4rvh2ro4pj7sqrd9rs", "status": "planned"},
+    {"date": "2026-08-02", "day": "Dimanche", "time": "11:00", "type": "Recuperation active", "duration_min": 45, "target_load": 10, "calendar_event_id": "ur06tkrr04dus8e5c31pt19hco", "status": "planned"}
+  ],
+  "no_train_days": ["2026-07-28", "2026-07-30"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Heatwave active (35-38C daily highs Jul 28-Aug 2). NO outdoor running at midday. Use indoor treadmill with AC for Run #21 and #22, or rest. E-bike (not gravel) for sur site commutes to manage heat load.",
+      "measurable": "Zero outdoor running sessions above 27C feels-like; all runs done indoors or deferred until heatwave breaks",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P1",
+      "text": "Vitamin D retest is now overdue (was due July 2026, 8 weeks post-comeback start). Schedule blood panel this week. Last value was 27 ng/mL (insufficient) in Dec 2025.",
+      "measurable": "Lab order placed by end of week",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P2",
+      "text": "Weigh-in on Withings scale (back in Paris). Last reading Jun 21 (103.67 kg). 5+ weeks without body composition data creates a blind spot for tissue-load risk assessment.",
+      "measurable": "Withings weigh-in completed by Aug 2 (weekly pesee event scheduled)",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "heat_exposure",
+      "threshold": "Any outdoor session with feels-like >27C (post-heatwave modifier active)",
+      "reason": "Active heatwave in Paris; ~103 kg athlete poorly heat-acclimatized; RED protocol applies"
+    },
+    {
+      "marker": "post_run20_tissue_feedback",
+      "threshold": "Any localized pain >24h post-run, especially Achilles/patellar/tibial",
+      "reason": "Run #20 was 10.5 km — biggest run of comeback by far; tissue tolerance needs confirmation"
+    },
+    {
+      "marker": "acwr",
+      "threshold": "Alert if ACWR > 1.50 (comeback upper bound)",
+      "reason": "Currently 1.33; heatwave deload week should bring this down"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/99"
+}
