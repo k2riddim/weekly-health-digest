@@ -118,5 +118,6 @@ If chronic_load_28d exceeds HISTORICAL_PEAK → update `state/historical-peak.js
 7. Send Telegram message via the `telegram` MCP connector:
    - French, compact (≤ ~600 characters so it fits a phone notification)
    - Contains: headline, today's session (or rest/sur-site), HRV/RHR/sleep snapshot, top P0 recommendation, PR link
+   - While a medication is active, the HRV/RHR snapshot carries the medication qualifier in French (e.g. "RHR 54, +4 vs base pré-Wegovy, attendu J+24"); no "déficit de récupération" / warning emoji when the Phase 2 medication-lens verdict is "expected class effect"
 
 **Gate:** PR URL obtained. Telegram message sent. All artifacts committed.

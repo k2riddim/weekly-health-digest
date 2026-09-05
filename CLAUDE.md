@@ -173,11 +173,11 @@ If today's chronic_load_28d exceeds `HISTORICAL_PEAK.chronic_load_28d_avg` → u
 **Telegram delivery** via the `telegram` MCP connector. Send a compact French message containing:
 - Headline (1 line)
 - Today's planned session (or rest / "sur site" block)
-- Key readiness metrics (HRV, RHR, sleep)
+- Key readiness metrics (HRV, RHR, sleep) — **while a medication is active, the RHR/HRV line carries the medication qualifier in French**, e.g. "RHR 54 (+4 vs base pré-Wegovy, attendu J+24) · HRV 30 (effet attendu, pas de 2e signal)". Never send "déficit de récupération", "HRV LOW ⚠️" or "RHR élevé ⚠️" without that qualifier; if the medication-lens verdict is "expected class effect", say so and drop the warning emoji.
 - Top recommendation (P0)
 - PR link
 
-The full digest stays in the repo; Telegram is a push notification summary.
+The full digest stays in the repo; Telegram is a push notification summary. It is also the message Benjamin actually reads — a Telegram summary that omits the medication context is the failure mode this profile exists to prevent.
 
 ## Digest format
 
