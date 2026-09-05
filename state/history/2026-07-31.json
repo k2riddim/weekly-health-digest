@@ -1,0 +1,130 @@
+{
+  "as_of_date": "2026-07-31",
+  "bootstrap": false,
+  "situational_context": "Running comeback fully structured under C4 block #21-40 (rev 2026-07-29). W31 deload week nearly complete (Runs #21-#22 done, #23 on Aug 2). 22 comeback runs since May 3, 2026 (89 days in). Distances progressed from 2 km to 10.5 km (Run #20, Jul 25 — new comeback PB). VO2max running improved to 42.4 (from 38.3 at comeback start). ACWR normalized at 1.06 (down from 1.35 on Jun 14). Chronic load 29.7 (up 70% from 17.5 on Jun 14). HRV stable at 36 ms, BALANCED. Post-heatwave modifier active through ~Aug 8 — all midday runs planned indoor. Weight data missing since Jun 21 (last: 103.67 kg). Vitamin D retest overdue (~July 2026 target). Nutrition logging absent. Saint-Malo vacation Jul 13-25 produced significant running volume increase (6 runs in 13 days, 4.5-10.5 km). E-bike commuting resumed since return to Paris. Baby Leonie ~6.5 months old.",
+  "acute_load_7d": 31.4,
+  "chronic_load_28d": 29.7,
+  "distance_from_peak_pct": 1.85,
+  "hrv_7d_avg": 36,
+  "rhr_7d_avg": 48,
+  "sleep_hours_7d_avg": 8.07,
+  "weight_kg_7d_avg": null,
+  "last_session": {
+    "date": "2026-07-31",
+    "type": "Run #22 — 5 km Z2 (Bois de Vincennes)",
+    "duration_min": 35,
+    "training_load": 19
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-07-31",
+      "day": "Fri",
+      "time": "06:20",
+      "type": "Run #22 — 5 km Z2 plat (DONE)",
+      "duration_min": 35,
+      "target_load": 19,
+      "calendar_event_id": "9bomro77drdh1m0r4j5u0ehld0",
+      "status": "executed"
+    },
+    {
+      "date": "2026-08-01",
+      "day": "Sat",
+      "time": "11:00",
+      "type": "Recuperation active — marche ou renforcement",
+      "duration_min": 60,
+      "target_load": 10,
+      "calendar_event_id": "v8gv8rvlre5hk0jgup8apdpq3s",
+      "status": "planned"
+    },
+    {
+      "date": "2026-08-02",
+      "day": "Sun",
+      "time": "11:30",
+      "type": "Run #23 — 5 km Z2 plat interieur (deload cloture W31)",
+      "duration_min": 40,
+      "target_load": 27,
+      "calendar_event_id": "f74r5678m0mn8ubt0kh2dnobto",
+      "status": "planned"
+    },
+    {
+      "date": "2026-08-03",
+      "day": "Mon",
+      "time": null,
+      "type": "Repos (transition W31 > W32)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-08-04",
+      "day": "Tue",
+      "time": null,
+      "type": "Sur site (e-bike commute ~12 load)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-08-05",
+      "day": "Wed",
+      "time": "11:00",
+      "type": "Run #24 — 5,5 km Z2 plat interieur (W32 debut)",
+      "duration_min": 50,
+      "target_load": 30,
+      "calendar_event_id": "ma3itaf2rc6pmgbho2t8udaltk",
+      "status": "planned"
+    },
+    {
+      "date": "2026-08-06",
+      "day": "Thu",
+      "time": null,
+      "type": "Sur site (e-bike commute ~12 load)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "blocked"
+    }
+  ],
+  "no_train_days": ["2026-08-04", "2026-08-06"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Resume weight tracking immediately — 5+ weeks without Withings data (last: 103.67 kg on Jun 21). Pesee hebdo is scheduled Aug 2 at 11:00. Body weight tracking is critical for tissue-tolerance monitoring during the comeback at ~103 kg.",
+      "measurable": "Withings reading on Aug 2; weekly readings sustained going forward",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Schedule Vitamin D retest — was due July 2026, now overdue by ~1 month. Dec 2025 level was 27 ng/mL (insufficient). Target >= 40 ng/mL. At ~103 kg with 22 runs under load, stress-fracture risk remains elevated below 40 ng/mL (Burgi 2011: ~2x risk).",
+      "measurable": "Lab order placed by Aug 8; results within 2 weeks",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P2",
+      "text": "Continue indoor runs during post-heatwave period — modifier active through ~Aug 8. All midday runs (11am-3pm) are in RED band (>27C feels-like with post-heatwave shift). Aug 2-4 forecast (32-35C max) likely triggers a new heatwave, extending the modifier further. Early AM outdoor option only if feels-like <23C at departure.",
+      "measurable": "All runs either indoor (treadmill) or early AM (<23C feels-like) through Aug 8+",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "weight_tracking",
+      "threshold": "Alert if no Withings reading by Aug 3",
+      "reason": "5+ weeks without data; body weight is the primary tissue-tolerance risk factor at ~103 kg"
+    },
+    {
+      "marker": "hrv_7d_avg",
+      "threshold": "Alert if HRV 7d avg drops below 32 ms",
+      "reason": "Currently stable at 36 ms but W32 ramps volume to 21 km with hill work — monitor for fatigue response"
+    },
+    {
+      "marker": "run_hr_ceiling",
+      "threshold": "Alert if HR avg on flat runs exceeds 145 bpm",
+      "reason": "Run #21 averaged 144 bpm (barely under C4 block ceiling of 145). Continued drift suggests inadequate recovery or heat impact"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/103"
+}
