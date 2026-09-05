@@ -1,0 +1,120 @@
+{
+  "as_of_date": "2026-06-19",
+  "bootstrap": false,
+  "situational_context": "Running comeback week 7: 10 structured runs since May 3 (47 days in). Run #11 skipped June 17 (baby appointment). Last run: Run #10 on June 14 (4.9 km, FC 136, load 18). ACWR normalized from 1.35 to 0.94 after 5-day absorption period — safe zone reached. HRV recovering strongly: overnight 41 ms (best in 3+ weeks), 7d avg 36, BALANCED. Training readiness 88, body battery 61 — both best of the period. Weight steady at 102.6 kg (3-week trend: 103.84 → 102.97 → 102.62). EXTREME HEAT WAVE: 34-40C forecast through June 25 — dominant constraint for outdoor sessions. E-bike remains primary modality (2 rides today, total 38 km, load 17). Vitamin D retest due ~July 2026. No new labs since Dec 2025.",
+  "acute_load_7d": 16.7,
+  "chronic_load_28d": 17.7,
+  "distance_from_peak_pct": 1.1,
+  "hrv_7d_avg": 36,
+  "rhr_7d_avg": 50,
+  "sleep_hours_7d_avg": 7.57,
+  "weight_kg_7d_avg": 102.62,
+  "last_session": {
+    "date": "2026-06-19",
+    "type": "EBikeRide",
+    "duration_min": 67,
+    "training_load": 10
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-06-20",
+      "day": "Saturday",
+      "time": "11:30",
+      "type": "Run #12 — 4 km Z2 (canicule 34C)",
+      "duration_min": 40,
+      "target_load": 13,
+      "calendar_event_id": "htge0trofvj84q6kd129bl3lm8",
+      "status": "planned"
+    },
+    {
+      "date": "2026-06-21",
+      "day": "Sunday",
+      "time": "11:30",
+      "type": "Sortie velo — ebike Z1-Z2 60 min (canicule 38C)",
+      "duration_min": 60,
+      "target_load": 11,
+      "calendar_event_id": "u98g4brlhab37mo6g8pofpqht0",
+      "status": "planned"
+    },
+    {
+      "date": "2026-06-22",
+      "day": "Monday",
+      "time": null,
+      "type": "Rest",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-06-23",
+      "day": "Tuesday",
+      "time": null,
+      "type": "Sur site — commute ebike/gravel possible",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-06-24",
+      "day": "Wednesday",
+      "time": "12:00",
+      "type": "Run #13 — 3-4 km Z2 (conditionnel)",
+      "duration_min": 40,
+      "target_load": 12,
+      "calendar_event_id": "2jurvde9vndpjakmvjionr1u50",
+      "status": "planned"
+    },
+    {
+      "date": "2026-06-25",
+      "day": "Thursday",
+      "time": null,
+      "type": "Sur site — commute ebike/gravel possible",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "blocked"
+    }
+  ],
+  "no_train_days": ["2026-06-23", "2026-06-25"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "CANICULE 34-40C all week — apply heat protocol to all outdoor sessions: cap HR 10 bpm below normal targets, carry 500+ mL water, prefer shaded routes (Bois de Vincennes), abort immediately if nausea/dizziness/confusion. If ambient temp exceeds 38C at session start, convert to indoor or postpone.",
+      "measurable": "No heat-related symptoms during any session; all sessions completed or safely aborted",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "ACWR resolved to 0.94 — running resumes tomorrow (Run #12, 4 km Z2). Keep FC max 128 bpm (heat-adjusted). Monitor post-run pain at 24h and 48h; confirm absence before Run #13 Wednesday.",
+      "measurable": "Run #12 completed without pain lasting >24h; ACWR stays in [0.8-1.3]",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P2",
+      "text": "Protein intake averaging 113 g/day vs 150 g target (75%). At 102.6 kg during running comeback + heat stress, adequate protein supports tissue repair and adaptation. Add an extra protein serving at dinner to close the gap.",
+      "measurable": "Average daily protein >= 130 g over next 7 days",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "heat_stress",
+      "threshold": "Any heat-related symptom during or after outdoor session",
+      "reason": "34-40C all week; canicule conditions require strict monitoring of every outdoor session"
+    },
+    {
+      "marker": "post_run_pain",
+      "threshold": "Any localized joint/tendon pain lasting >24h after Run #12 (Saturday)",
+      "reason": "6 days since last run; tissues rested but need reconditioning. Gate for Run #13"
+    },
+    {
+      "marker": "hrv_7d_avg",
+      "threshold": "Alert if HRV 7d avg drops below 33 ms",
+      "reason": "Currently recovering (36 ms, overnight 41 ms); need to confirm trend holds through heat wave"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/60"
+}
