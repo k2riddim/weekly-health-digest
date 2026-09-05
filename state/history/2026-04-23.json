@@ -1,0 +1,130 @@
+{
+  "as_of_date": "2026-04-23",
+  "bootstrap": false,
+  "situational_context": "Extended low-training-load rebuild continues: chronic load at 18.1 (~1.1% of 2023 historical peak of 1608). Activity dominated by e-bike commuting on 'sur site' days (load 8-12/leg) with one Zwift session last week (load 15). Readiness trending positively: RHR down to 51.9 (from 53), training readiness 95, body battery 57 (7d best). HRV stable at 36 weekly avg (within 90d baseline 35.4 +/- 3.0). Sleep averaging 7.3h with one sub-6h night. Weight 105.85 kg (down ~1 kg over 2 weeks). Yesterday's planned run skipped (no calendar block, silent skip). Three structured sessions planned Fri-Sun. Pattern consistent with life-constrained rebuild (infant cohabitant).",
+  "acute_load_7d": 17.67,
+  "chronic_load_28d": 18.11,
+  "distance_from_peak_pct": 1.13,
+  "hrv_7d_avg": 36,
+  "rhr_7d_avg": 51.9,
+  "sleep_hours_7d_avg": 7.32,
+  "weight_kg_7d_avg": 105.85,
+  "last_session": {
+    "date": "2026-04-23",
+    "type": "EBikeRide (commute)",
+    "duration_min": 121,
+    "training_load": 17
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-04-23",
+      "day": "Thu",
+      "time": "-",
+      "type": "E-bike commute (sur site)",
+      "duration_min": 121,
+      "target_load": 17,
+      "calendar_event_id": null,
+      "status": "completed"
+    },
+    {
+      "date": "2026-04-24",
+      "day": "Fri",
+      "time": "11:30",
+      "type": "Zwift Endurance Z2",
+      "duration_min": 40,
+      "target_load": 15,
+      "calendar_event_id": "2m0k39oqc34k07e3cvvvc72su8",
+      "status": "planned"
+    },
+    {
+      "date": "2026-04-25",
+      "day": "Sat",
+      "time": "11:00",
+      "type": "Sortie velo outdoor Z2",
+      "duration_min": 50,
+      "target_load": 15,
+      "calendar_event_id": "sbcckct0ckms6dut5rmdh1kssk",
+      "status": "planned"
+    },
+    {
+      "date": "2026-04-26",
+      "day": "Sun",
+      "time": "11:00",
+      "type": "Course recup Z1",
+      "duration_min": 30,
+      "target_load": 8,
+      "calendar_event_id": "nf35e1e8r0sd2lr20ad2l6qp1k",
+      "status": "planned"
+    },
+    {
+      "date": "2026-04-27",
+      "day": "Mon",
+      "time": "-",
+      "type": "Rest",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-04-28",
+      "day": "Tue",
+      "time": "-",
+      "type": "E-bike commute expected (sur site)",
+      "duration_min": 120,
+      "target_load": 17,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-04-29",
+      "day": "Wed",
+      "time": "-",
+      "type": "Rest",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    }
+  ],
+  "no_train_days": ["2026-04-23", "2026-04-28"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Execute the 3 planned structured sessions this weekend (Fri Zwift, Sat outdoor ride, Sun recovery run) — consistency is the single most important rebuild lever, especially after yesterday's skipped session",
+      "measurable": "3/3 planned sessions completed by Sunday evening",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Increase daily protein to >=150g — current 7d average is ~129g, well below target. Insufficient protein during rebuild limits muscular adaptation",
+      "measurable": ">=150g protein logged on >=5 of next 7 days",
+      "evidence_class": "RCT"
+    },
+    {
+      "priority": "P2",
+      "text": "Log a Withings Body Scan this weekend to track body composition alongside the training rebuild. Last scan was Apr 18 (105.85 kg, no composition detail)",
+      "measurable": ">=1 full Body Scan with fat%/muscle mass logged by Apr 27",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "hrv_7d_avg",
+      "threshold": "Sustaining >=35 ms confirms stable recovery capacity",
+      "reason": "Currently at 36 (within 90d baseline). Watch for drops below 33 (>1 sigma below baseline) as training load increases"
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Target gradual increase toward 25-30 over next 2 weeks",
+      "reason": "At 18.1 (1.1% of peak). Structured sessions should begin moving this if adherence improves"
+    },
+    {
+      "marker": "plan_adherence",
+      "threshold": ">=2/3 planned sessions executed per week",
+      "reason": "Yesterday's skip continues a pattern of difficulty converting plans to execution. Baby constraints expected, but monitoring calibrates planning"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/5"
+}
