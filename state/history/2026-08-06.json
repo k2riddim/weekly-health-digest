@@ -1,0 +1,72 @@
+{
+  "as_of_date": "2026-08-06",
+  "bootstrap": false,
+  "situational_context": "Running comeback structured under C4 bloc #21-40 (12 km Beaumonts objective by W36, ~Aug 31). 24 runs since May 3 — longest well-tolerated run: 10.5 km (Run #20, Jul 25, côte). W31 deload completed successfully (3 runs, 17.1 km, total load 82 ≤ 95 cap). W32 underway: Run #24 executed (6.11 km, Aug 5). ACWR 0.68 (below 0.8 — 'Detraining' from deload, expected to recover as W32 sessions #25-26 execute). Chronic load 29.25 (up 67% from 17.5 on Jun 14 — consistent building). VO2max running improved to 42.6 (from 40.6 at Jun 14 state). Weight 101.16 kg (−1.5 kg since Jun 14; −3.6 kg since comeback start). HRV weekly avg 36 (stable BALANCED). Post-heatwave modifier from late-July canicule expiring ~Aug 8-9 but new heatwave forming Aug 8-12 (32-38°C highs) — modifier will re-trigger. E-bike commuting consistent (~38 km round-trip on sur-site days). Vitamin D retest overdue (~1 month past July target). Baby (Léonie, 19 months) — sleep data unavailable (MCP server offline) but no readiness signals suggesting disruption.",
+  "acute_load_7d": 19.8,
+  "chronic_load_28d": 29.25,
+  "distance_from_peak_pct": 1.82,
+  "hrv_7d_avg": 36,
+  "rhr_7d_avg": 49.3,
+  "sleep_hours_7d_avg": 8.0,
+  "weight_kg_7d_avg": 101.59,
+  "last_session": {
+    "date": "2026-08-06",
+    "type": "EBikeRide (commute x2)",
+    "duration_min": 118,
+    "training_load": 12
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-08-06", "day": "Thu", "type": "rest (sur site — e-bike commute done)", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "blocked"},
+    {"date": "2026-08-07", "day": "Fri", "time": "11:00", "type": "Run #25 — 6.5 km côte RECON Beaumonts", "duration_min": 50, "target_load": 35, "calendar_event_id": "trj81ttdarapjo1116cn8rg1nk", "status": "planned"},
+    {"date": "2026-08-08", "day": "Sat", "time": "11:00", "type": "Récupération active — renforcement indoor ou vélo léger", "duration_min": 60, "target_load": 8, "calendar_event_id": "91kv9vk43ao362u9hp7sol0u58", "status": "planned"},
+    {"date": "2026-08-09", "day": "Sun", "time": "11:00", "type": "Run #26 — SL 9.0 km Z2 plat — TAPIS ROULANT (canicule)", "duration_min": 65, "target_load": 48, "calendar_event_id": "42gonf5bop238grsr4ptlq6df4", "status": "planned"},
+    {"date": "2026-08-10", "day": "Mon", "type": "repos (post-SL + canicule active)", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"},
+    {"date": "2026-08-11", "day": "Tue", "type": "rest (sur site — e-bike commute)", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "blocked"},
+    {"date": "2026-08-12", "day": "Wed", "time": "11:00", "type": "Run #27 — 6.0 km Z2 plat — TAPIS ROULANT (canicule)", "duration_min": 45, "target_load": 25, "calendar_event_id": "scd8n0eum6gkij4f63016s2k3g", "status": "planned"}
+  ],
+  "no_train_days": ["2026-08-06", "2026-08-11"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Run #25 RECON Beaumonts demain (ven 7 août, 11h) — première montée côte du bloc C4. FC moy ≤ 148 bpm, pointes ≤ 158 en montée. Marche autorisée et encouragée en descente (excentrique à 101 kg = vecteur blessure principal). Logger le D+ réel pour calibrer la progression vers l'objectif 12 km. Hydratation 500 mL + électrolytes. T ressentie ~22°C à 11h (Jaune post-canicule) → extérieur OK avec précautions.",
+      "measurable": "D+ réel mesuré et comparé à l'estimation 150-180 m ; FC avg ≤ 148 ; aucune douleur articulaire/tendineuse > 24h post-run",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Bilan sanguin Vitamine D URGENT — le retest prévu ~juillet 2026 est en retard d'un mois. Dernière valeur : 27 ng/mL (insuffisant, objectif ≥ 40 ng/mL). Risque stress-fracture ×2 sous 40 ng/mL (Burgi 2011) — critique à 101 kg en comeback running avec volume montant.",
+      "measurable": "Prise de sang programmée avant le 15/08/2026",
+      "evidence_class": "RCT"
+    },
+    {
+      "priority": "P2",
+      "text": "Nouvelle canicule en développement Aug 8-12 (RealFeel 32-40°C). SL dimanche (Run #26, 9 km) → tapis roulant obligatoire (T ressentie ~28°C à 11h = Orange/Rouge). Run #27 mercredi 12 → tapis roulant (38°C). Modifier post-canicule sera réactivé pour ≥10 jours après la fin de cette vague.",
+      "measurable": "Aucune session outdoor si T ressentie > 27°C (post-HW) ou > 30°C (normal) ; sessions indoor maintiennent paramètres de charge du bloc C4",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "acwr",
+      "threshold": "Alert if ACWR remains below 0.8 beyond Aug 10 (after W32 sessions #25-26 execute)",
+      "reason": "Currently 0.68 ('Detraining') from W31 deload — expected to recover to 0.8+ as W32 accumulates load"
+    },
+    {
+      "marker": "hrv_7d_avg",
+      "threshold": "Alert if HRV 7d avg drops below 33 ms for 3+ consecutive days",
+      "reason": "Currently 36 ms (BALANCED). Today's overnight dip to 33 ms post-Run #24 is expected — watch for sustained decline"
+    },
+    {
+      "marker": "heat_protocol",
+      "threshold": "Alert if feels-like ≥32°C for 3+ consecutive days (new heatwave trigger)",
+      "reason": "Forecast shows RealFeel 32-40°C Aug 8-12 — new heatwave highly probable, will re-activate post-HW modifier for 10+ days"
+    },
+    {
+      "marker": "fc_max_flat_runs",
+      "threshold": "Alert if FC max > 158 bpm on flat runs for 2+ consecutive sessions",
+      "reason": "Runs #21 (161) and #24 (159) both showed elevated FC max on flat — not a formal C4 bloc violation (spike cap is for côte) but suggests pacing discipline needed"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/109"
+}
