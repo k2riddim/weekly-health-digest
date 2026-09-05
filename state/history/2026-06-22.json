@@ -1,0 +1,72 @@
+{
+  "as_of_date": "2026-06-22",
+  "bootstrap": false,
+  "situational_context": "Running comeback day 50: 12 runs since May 3 (Run #12 completed June 21 — 7.5 km overreach from 4 km planned, suffer 36, biggest session of comeback). ACWR normalized to 1.20 (was 1.35 on June 14) — back in safe zone. HRV 7d avg stable at 35 ms (unchanged from 2 weeks ago, ~12% below mid-May baseline of 39-40; 3 of 7 days UNBALANCED). VO2max running improved to 40.8 (+0.2). Weight bounced to 103.67 kg (+1.05 kg from June 7) driven by caloric surplus averaging 3254 kcal/day vs 2500 target. Extreme heatwave in Paris (Météo-France red alert, 40°C Mon-Thu, easing to 37°C Sat, 35°C Sun). E-bike commuting remains active. No new labs since Dec 2025; Vitamin D retest due ~July 2026. Baby (Léonie, 5 months) — cohabitant sleep data unavailable this cycle.",
+  "acute_load_7d": 22.7,
+  "chronic_load_28d": 18.9,
+  "distance_from_peak_pct": 1.18,
+  "hrv_7d_avg": 35,
+  "rhr_7d_avg": 50.6,
+  "sleep_hours_7d_avg": 7.56,
+  "weight_kg_7d_avg": 103.67,
+  "last_session": {
+    "date": "2026-06-21",
+    "type": "Run",
+    "duration_min": 57,
+    "training_load": 36
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-06-22", "day": "Monday", "time": "—", "type": "Rest (post-Run #12 recovery + heatwave 40°C)", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"},
+    {"date": "2026-06-23", "day": "Tuesday", "time": "—", "type": "Sur site — commute only (ebike or gravel)", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "blocked"},
+    {"date": "2026-06-24", "day": "Wednesday", "time": "12:00", "type": "Run #13 — 4 km Z2 (conditionnel, canicule 40°C)", "duration_min": 35, "target_load": 12, "calendar_event_id": "2jurvde9vndpjakmvjionr1u50", "status": "planned"},
+    {"date": "2026-06-25", "day": "Thursday", "time": "—", "type": "Sur site — commute only (ebike or gravel)", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "blocked"},
+    {"date": "2026-06-26", "day": "Friday", "time": "—", "type": "Rest (pre-weekend recovery)", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"},
+    {"date": "2026-06-27", "day": "Saturday", "time": "11:30", "type": "Sortie vélo weekend — 60 min ebike Z1-Z2", "duration_min": 60, "target_load": 10, "calendar_event_id": "sm1bvahm3qonm84euiluk9ftl4", "status": "planned"},
+    {"date": "2026-06-28", "day": "Sunday", "time": "12:00", "type": "Run #14 — 4-5 km Z2 (conditionnel)", "duration_min": 40, "target_load": 14, "calendar_event_id": "r6d61t9ourbgg7s35dt9taod44", "status": "planned"}
+  ],
+  "no_train_days": ["2026-06-23", "2026-06-25"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Caloric surplus is the #1 issue: 6-day average was 3254 kcal/day (+30% above 2500 target). This is the primary driver of the +1.05 kg weight rebound. Return to 2500 kcal target immediately. Prioritize protein to 150g/day (currently averaging 113g/day) to protect muscle during deficit.",
+      "measurable": "7-day average calories ≤ 2600 kcal by June 29; protein avg ≥ 140g/day",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Post-Run #12 tissue monitoring: yesterday's 7.5 km (suffer 36) was the biggest run of the entire comeback — nearly double the planned 4 km. Monitor for Achilles, patellar, or tibial pain >24h. If any persistent pain, skip Run #13 on Wednesday and substitute with 30 min walk.",
+      "measurable": "No localized pain lasting >24h by Tuesday evening → green light for Run #13",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "HRV remains static at 35 ms (12% below mid-May baseline of 39-40) for 2+ weeks. RHR is stable at 50.6 — per Buchheit 2014, this pattern (low HRV + stable RHR) more likely reflects autonomic adaptation than overtraining. Maintain current volume; do not increase until HRV trends toward 37+. Heatwave is an additional suppressor — expect HRV to stay depressed until temperatures normalize.",
+      "measurable": "HRV 7d avg ≥ 37 ms by July 5 (post-heatwave)",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "post_run_12_tissue_response",
+      "threshold": "Any localized pain (Achilles, patellar, tibial, fascia) lasting >24h after Jun 21 run",
+      "reason": "7.5 km at 102 kg is the highest impact load of the comeback; tissue tolerance is the bottleneck"
+    },
+    {
+      "marker": "hrv_7d_avg",
+      "threshold": "Alert if HRV 7d avg drops below 32 ms or remains ≤ 34 ms for another week",
+      "reason": "Static at 35 ms for 2+ weeks; heatwave will suppress further; need recovery signal before any load increase"
+    },
+    {
+      "marker": "weight_trend",
+      "threshold": "Alert if weight exceeds 104 kg on next Withings reading",
+      "reason": "Caloric surplus driving rebound; need to verify nutrition correction takes effect"
+    },
+    {
+      "marker": "heatwave_impact",
+      "threshold": "Body battery < 30 or HRV < 28 on any day → cancel that day's planned session",
+      "reason": "40°C ambient temperature increases physiological strain; body battery and HRV will reflect compound heat + training stress"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/63"
+}
