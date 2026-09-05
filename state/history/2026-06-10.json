@@ -1,0 +1,135 @@
+{
+  "as_of_date": "2026-06-10",
+  "bootstrap": false,
+  "situational_context": "Running comeback week 6: 9 runs completed since May 3 (Run #9 today: 5.79 km, FC 142, suffer 34). 5 km plateau consolidated (3 consecutive runs at 5+ km). ACWR elevated at 1.36 — above 1.3 safety cap, requiring load reduction this week. HRV sustained LOW (7d avg 34, down 15% from May baseline of 40). Body battery depleted (49). However, VO2max running improved to 40.4 (+2.1 vs May), indicating positive adaptation despite recovery strain. Training status: Functional Overreaching. Weight declining steadily: 102.6 kg (-1.5 kg since May). Primary daily modality remains e-bike commuting (~38 km/day on sur-site days). Weekend plan reduced (gravel 45 min Z1, Run #10 4.5 km) to allow chronic load to catch up. No new labs since Dec 2025; Vitamin D retest due ~July 2026.",
+  "acute_load_7d": 23.75,
+  "chronic_load_28d": 17.41,
+  "distance_from_peak_pct": 1.08,
+  "hrv_7d_avg": 34,
+  "rhr_7d_avg": 50,
+  "sleep_hours_7d_avg": 7.21,
+  "weight_kg_7d_avg": 102.62,
+  "last_session": {
+    "date": "2026-06-10",
+    "type": "Run",
+    "duration_min": 45,
+    "training_load": 34
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-06-10",
+      "day": "Wed",
+      "time": "15:07",
+      "type": "Run #9 — 5.79 km Z2",
+      "duration_min": 45,
+      "target_load": 34,
+      "calendar_event_id": "h5k8mtgpnkqlhadk0tvef1tsh0",
+      "status": "executed"
+    },
+    {
+      "date": "2026-06-11",
+      "day": "Thu",
+      "time": null,
+      "type": "Sur site (e-bike commute)",
+      "duration_min": 55,
+      "target_load": 10,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-06-12",
+      "day": "Fri",
+      "time": null,
+      "type": "REST",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-06-13",
+      "day": "Sat",
+      "time": "11:30",
+      "type": "Gravel/ebike endurance Z1 — 45 min (reduced)",
+      "duration_min": 45,
+      "target_load": 12,
+      "calendar_event_id": "k8a6ga7t9qa7knkq6d93jo4bfk",
+      "status": "planned"
+    },
+    {
+      "date": "2026-06-14",
+      "day": "Sun",
+      "time": "11:30",
+      "type": "Run #10 — 4.5 km Z2 (reduced)",
+      "duration_min": 38,
+      "target_load": 15,
+      "calendar_event_id": "rjjjug0p9j0gv3et996jsn3r3g",
+      "status": "planned"
+    },
+    {
+      "date": "2026-06-15",
+      "day": "Mon",
+      "time": null,
+      "type": "REST",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-06-16",
+      "day": "Tue",
+      "time": null,
+      "type": "Sur site (e-bike commute)",
+      "duration_min": 55,
+      "target_load": 10,
+      "calendar_event_id": null,
+      "status": "blocked"
+    }
+  ],
+  "no_train_days": ["2026-06-11", "2026-06-16"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Reduce training load to correct ACWR from 1.36 to ≤1.30 — Saturday gravel reduced to 45 min Z1 (ebike preferred), Sunday Run #10 reduced to 4.5 km with strict HR ≤135. No distance progression until ACWR normalizes.",
+      "measurable": "ACWR ≤ 1.30 by Jun 17",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Monitor HRV recovery — 7d avg declined 15% from May baseline (40 → 34, sustained LOW). If HRV 7d avg doesn't recover toward ≥36 within one week, reduce to 1 run/week.",
+      "measurable": "HRV 7d avg ≥ 36 by Jun 17",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Increase daily protein to ≥150g — current 7d avg is 127g, 15% below target needed for tendon remodeling. Add protein source to breakfast.",
+      "measurable": "7d protein avg ≥ 140g by Jun 17",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "acwr",
+      "threshold": "Must return to ≤1.30 within 7 days (currently 1.36)",
+      "reason": "Above safety cap — elevated injury risk during running comeback at 102.6 kg"
+    },
+    {
+      "marker": "hrv_7d_avg",
+      "threshold": "Recovery target ≥36 within 7 days (currently 34, baseline was 40)",
+      "reason": "Sustained LOW for 7+ days. Normal RHR + improving VO2max suggests functional overreaching, but protocol triggers at >10% decline"
+    },
+    {
+      "marker": "run_hr_control",
+      "threshold": "Run #10 avg HR must be ≤135 bpm (Run #9 was 142 — 7 bpm over target)",
+      "reason": "Cardiac drift at current effort levels suggests either pace too aggressive or insufficient recovery between runs"
+    },
+    {
+      "marker": "post_run_pain",
+      "threshold": "Any localized pain lasting >24h after Run #9 triggers skip of Run #10",
+      "reason": "Tissue tolerance bottleneck at 102.6 kg body weight; Run #9 suffer score was the highest of the comeback (34)"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/50"
+}
