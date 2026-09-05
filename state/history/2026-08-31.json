@@ -1,0 +1,72 @@
+{
+  "as_of_date": "2026-08-31",
+  "bootstrap": false,
+  "situational_context": "Running comeback in extended recovery phase after failed W35 deload gate (HRV ≤32, RHR ≥54). C4 block #21-40 active but W36 running modified reentry (5.0/5.5/6.0 km) instead of original plan (6.5/8.0/12.0 km) — 12 km Beaumonts objective deferred. Recovery markers showing first improvement today: RHR 52 (down from 54-55 sustained for 9 days), body battery 53.5 (up from 21-36 mid-week range), training readiness 63. HRV weekly avg dropped to 30 (from 35 on Aug 14), persistently LOW for 7+ days — recovery deficit from Run #29 HR spike (suffer 51, Aug 22) is resolving but not yet cleared. Training status improved from 'Detraining' to 'Maintaining'. Chronic load 28d continued declining to 18.2 (from 24.7). ON GLP-1 RECEPTOR AGONIST — weight loss trajectory (104.8→100.7 kg since May) partly pharmacological; must monitor lean mass preservation (Withings Body Scan muscle_mass_kg: 70.9 latest vs 72.6 Aug 3), protein intake ≥150g/day critical to limit GLP-1-associated lean mass loss, and weight loss rate ≤1 kg/week to protect tendon adaptation during comeback. Nutrition logging gap is now a higher-priority concern. Congés Sep 1-11 (adaptation crèche Léonie). No new labs since Dec 2025 — Vitamin D retest 2+ months overdue. Weight data gap (last reading Aug 12, 19 days). VO2max cycling artifact persists (42.9 vs running 42.5).",
+  "acute_load_7d": 15,
+  "chronic_load_28d": 18.21,
+  "distance_from_peak_pct": 1.13,
+  "hrv_7d_avg": 30,
+  "rhr_7d_avg": 53.6,
+  "sleep_hours_7d_avg": 7.30,
+  "weight_kg_7d_avg": 100.68,
+  "last_session": {
+    "date": "2026-08-31",
+    "type": "EBikeRide (commute retour)",
+    "duration_min": 65,
+    "training_load": 9
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-08-31", "day": "Lundi", "time": "-", "type": "Sur site — e-bike commute", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "blocked"},
+    {"date": "2026-09-01", "day": "Mardi", "time": "-", "type": "Repos (congés)", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"},
+    {"date": "2026-09-02", "day": "Mercredi", "time": "12:00", "type": "Run 5.0 km easy plat Z1-Z2 (contingent)", "duration_min": 38, "target_load": 18, "calendar_event_id": "kqkobsuio1h14hkskr8bot351s", "status": "planned"},
+    {"date": "2026-09-03", "day": "Jeudi", "time": "-", "type": "Sur site — e-bike commute", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "blocked"},
+    {"date": "2026-09-04", "day": "Vendredi", "time": "12:00", "type": "Run 5.5 km easy plat Z1-Z2 (contingent)", "duration_min": 42, "target_load": 22, "calendar_event_id": "kcpnjft731u8299dpnat9kmonc", "status": "planned"},
+    {"date": "2026-09-05", "day": "Samedi", "time": "11:00", "type": "Vélo easy 45 min Z1-Z2", "duration_min": 45, "target_load": 15, "calendar_event_id": "1bpnufqmv4642g0sekbjqhnh18", "status": "planned"},
+    {"date": "2026-09-06", "day": "Dimanche", "time": "11:00", "type": "Run 6.0 km easy plat Z1-Z2 (contingent) ou vélo", "duration_min": 45, "target_load": 25, "calendar_event_id": "1uh8esqs4q6nine281ugvk2vd0", "status": "planned"}
+  ],
+  "no_train_days": ["2026-08-31", "2026-09-03"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Vitamin D retest now 2+ months overdue (due ~July 2026). Last value 27 ng/mL (Dec 2025) = insufficient. Congés this week provide the window — schedule blood panel now.",
+      "measurable": "Lab order placed and blood drawn by Sep 5",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "HRV weekly avg dropped to 30 (from 35 on Aug 14), persistently LOW. Today's RHR (52) and body battery (53.5) show first recovery signs. Respect contingent gates on Sep 2 and Sep 4 runs — do not force if morning HRV < 32 or RHR >= 54. The 12 km Beaumonts attempt stays deferred until a clean week of 3 runs with HRV weekly >= 34.",
+      "measurable": "HRV weekly avg >= 34 and RHR 7d avg <= 52 sustained for 5+ days before attempting block progression",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Fresh Withings weighing needed — last reading Aug 12 (19 days ago). Pesée hebdo scheduled Sep 6. On GLP-1: weight data gap is higher-priority — must track both rate of loss (≤1 kg/week to protect tendon adaptation) AND lean mass trend (muscle_mass_kg dropped from 72.6 to 70.9 between Aug 3-12, needs confirmation). Resume nutrition logging to ensure ≥150g protein/day — critical for limiting GLP-1-associated lean mass loss during a running comeback at this body weight.",
+      "measurable": "Withings weighing by Sep 6 with muscle_mass_kg check; nutrition logged ≥5 of next 7 days",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "hrv_weekly_avg",
+      "threshold": "Alert if <=30 persists through Sep 5, or any nightly score drops below 25",
+      "reason": "Persistently LOW for 7+ days, dropped from 35 to 30 — recovery deficit from Run #29 spike resolving but not cleared"
+    },
+    {
+      "marker": "rhr_trend",
+      "threshold": "Alert if RHR reverses back above 54 after today's improvement to 52",
+      "reason": "First sub-53 reading in 9 days — needs to hold as a trend"
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Flag if drops below 15 (severe detraining, Oct 30 objective at risk)",
+      "reason": "Declined from 24.7 to 18.2 over 17 days — reentry runs this week must arrest the slide"
+    },
+    {
+      "marker": "muscle_mass_kg (Withings)",
+      "threshold": "Alert if muscle_mass_kg drops below 70.0 kg or loses >1 kg between consecutive readings",
+      "reason": "On GLP-1 — lean mass preservation is critical. Dropped from 72.6 (Aug 3) to 70.9 (Aug 12) = −1.7 kg in 9 days. Could be measurement noise, hydration, or genuine sarcopenic signal. Needs fresh reading to confirm trend."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/132"
+}
