@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-07-15",
+  "bootstrap": false,
+  "situational_context": "Running comeback day 73 (16 runs completed since May 3). On vacation in Saint-Malo, Bretagne (Jul 12-27) — coastal terrain, GREEN heat conditions (~20°C). Run #16 today: 8.0 km in 58 min, suffer 57 — longest run and highest single-session load of the comeback, significant overshoot of 5 km plan (+60%). ACWR spiked to 1.48 (near 1.50 comeback ceiling). Chronic load building well: 23.7 (+35% since Jun 14). VO2max running improved to 41.7. HRV 7d avg stable at 35 ms. Weight 103.67 kg (stale, single reading Jun 21). Nutrition logging stopped since Jul 9. Vitamin D retest overdue (was due July). No sur-site days this week.",
+  "acute_load_7d": 35,
+  "chronic_load_28d": 23.7,
+  "distance_from_peak_pct": 1.5,
+  "hrv_7d_avg": 35,
+  "rhr_7d_avg": 49.9,
+  "sleep_hours_7d_avg": 7.37,
+  "weight_kg_7d_avg": 103.67,
+  "last_session": {
+    "date": "2026-07-15",
+    "type": "Run",
+    "duration_min": 58,
+    "training_load": 57
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-07-15", "day": "Wed", "time": "08:35", "type": "Run #16 — 8 km Z2 (Saint-Malo, côte)", "duration_min": 58, "target_load": 57, "calendar_event_id": "44clvk29mq6f3g115s419dit44", "status": "completed"},
+    {"date": "2026-07-16", "day": "Thu", "time": null, "type": "Repos — récupération post Run #16", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-07-17", "day": "Fri", "time": null, "type": "Repos — monitoring tissulaire", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-07-18", "day": "Sat", "time": "11:00", "type": "Run #17 — 7 km Z2 (Saint-Malo, côte)", "duration_min": 55, "target_load": 30, "calendar_event_id": "9fod0ffae5f59r072kj8qudsto", "status": "planned"},
+    {"date": "2026-07-19", "day": "Sun", "time": "11:00", "type": "Marche côtière — 45 min", "duration_min": 45, "target_load": 10, "calendar_event_id": "hf0h1hnldp2lslfbnpsjosmsbg", "status": "planned"},
+    {"date": "2026-07-20", "day": "Mon", "time": null, "type": "Repos", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-07-21", "day": "Tue", "time": null, "type": "Repos ou marche facile", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"}
+  ],
+  "no_train_days": [],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "48h tissue-tolerance monitoring after Run #16 (8 km, suffer 57) — longest and hardest run of the comeback. Watch for localized Achilles/patellar pain >24h, bony tenderness, unusual morning stiffness. Any pain altering gait → skip Run #17 and substitute with walking. ACWR at 1.48 — no additional running load until Saturday.",
+      "measurable": "Zero localized pain by Friday evening; readiness ≥ 50 on Saturday morning",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Resume nutrition logging — data dark since July 9. TDEE recalibration on Sunday Jul 19 needs ≥3 days of intake data. Without logging, the 95 kg weight objective is flying blind.",
+      "measurable": "≥3 days logged before Sunday's TDEE recalibration",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Schedule Vitamin D blood draw for week of Jul 28 (return to Paris). Last value 27 ng/mL (insufficient, Dec 2025). Stress-fracture risk ~2× elevated below 40 ng/mL at 103+ kg.",
+      "measurable": "Blood draw scheduled for Jul 28-Aug 1",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "post_run_tissue_response",
+      "threshold": "Any localized pain lasting >24h after Run #16 (8 km)",
+      "reason": "Longest run of comeback at 103+ kg; tissue tolerance is the bottleneck. 48h window ends Fri evening."
+    },
+    {
+      "marker": "acwr",
+      "threshold": "ACWR > 1.50 for >2 consecutive days",
+      "reason": "Currently 1.48 after Run #16 spike. Should normalize as the load ages out of the acute window."
+    },
+    {
+      "marker": "hrv_7d_avg",
+      "threshold": "Drop below 32 ms or 3+ consecutive UNBALANCED days",
+      "reason": "Stable at 35 ms. Two UNBALANCED days Jul 13-14 suggest system near absorption limit."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/87"
+}
