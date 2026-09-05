@@ -88,12 +88,63 @@ def compute_delta(previous: dict, current: dict) -> dict:
     # Plan adherence: was yesterday's planned session actually executed?
     plan_adherence = extract_yesterday_adherence(previous, current)
 
+    # Standing-profile carry-over: medications listed yesterday must still be
+    # listed today. The routine mirrors protocols/health-profile.md into the
+    # state every day; a medication vanishing from the state without a profile
+    # edit is a pipeline error (the "forgot he is on GLP-1" failure mode).
+    profile_carryover = check_profile_carryover(previous, current)
+
     return {
         "field_deltas": field_deltas,
         "situational_context_changed": prev_context != curr_context,
         "previous_context": prev_context,
         "current_context": curr_context,
         "plan_adherence": plan_adherence,
+        "profile_carryover": profile_carryover,
+    }
+
+
+def _medication_names(state: dict) -> set:
+    meds = state.get("medications") or []
+    names = set()
+    for m in meds:
+        if isinstance(m, dict):
+            name = m.get("name")
+        else:
+            name = m
+        if name:
+            names.add(str(name).strip().lower())
+    return names
+
+
+def check_profile_carryover(previous: dict, current: dict) -> dict:
+    """Verify that no active medication was silently dropped from the state.
+
+    Returns {ok, dropped, added, note}. `dropped` non-empty means the new state
+    lost a medication that yesterday's state carried — only legitimate if
+    protocols/health-profile.md was edited to say the therapy stopped.
+    """
+    prev_meds = _medication_names(previous)
+    curr_meds = _medication_names(current)
+    dropped = sorted(prev_meds - curr_meds)
+    added = sorted(curr_meds - prev_meds)
+
+    if dropped:
+        note = (
+            "PIPELINE ERROR: medication(s) dropped from state without a profile "
+            "change: " + ", ".join(dropped) +
+            ". Re-read protocols/health-profile.md and restore `medications`."
+        )
+    elif not curr_meds and not prev_meds:
+        note = "No medications recorded in either state — confirm protocols/health-profile.md is empty on purpose."
+    else:
+        note = "Medications carried over: " + ", ".join(sorted(curr_meds))
+
+    return {
+        "ok": not dropped,
+        "dropped": dropped,
+        "added": added,
+        "note": note,
     }
 
 
@@ -171,6 +222,9 @@ def format_delta_summary(delta: dict) -> str:
 
     adherence = delta.get("plan_adherence") or {}
     summary += f"\n\nPlan adherence: {adherence.get('note')}"
+
+    carry = delta.get("profile_carryover") or {}
+    summary += f"\n\nProfile carry-over: {carry.get('note')}"
 
     return summary
 

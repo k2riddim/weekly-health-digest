@@ -31,6 +31,7 @@ This keeps Benjamin's calendar stable while adapting to fresh data.
 
 ### Where state lives
 
+- **`protocols/health-profile.md`** — standing medical context (medications, conditions, care team). Human-maintained, read every run, never overwritten by the routine. Currently records the GLP-1 receptor agonist therapy started in Aug 2026; the matching interpretation rules live in `protocols/thresholds.yaml > glp1` and `.claude/skills/research-modules/glp1-endurance.md`
 - **`state/latest.json`** — canonical current state, overwritten each day
 - **`state/historical-peak.json`** — best sustained training period, updated only if beaten
 - **`state/history/YYYY-MM-DD.json`** — append-only daily archive
@@ -90,6 +91,10 @@ Create a new `.md` file in `.claude/skills/research-modules/` with the topic bri
 After a new fitness test or if the stored peak no longer represents a meaningful target:
 1. Edit `state/historical-peak.json` directly, or
 2. Delete it and re-run the bootstrap computation from a Claude Code session
+
+### Record a medication or condition change
+
+Edit `protocols/health-profile.md` (the routine reads it at Phase 0 and mirrors `medications` into `state/latest.json` every day). If the change is the GLP-1 therapy (dose step, injection day, stop), also update `protocols/thresholds.yaml > glp1` in the same commit — `active`, `initiation_date` and `injection_weekday` drive the medication-aware interpretation and planning rules.
 
 ### Tune thresholds
 

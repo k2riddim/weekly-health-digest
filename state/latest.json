@@ -1,7 +1,22 @@
 {
   "as_of_date": "2026-08-14",
   "bootstrap": false,
-  "situational_context": "Running comeback well established and now governed by an active C4 training block (protocols/active_block.md, rev 2026-07-29, sessions #21-40) targeting a 12 km Beaumonts objective (~30/10). 27 runs logged since May 3, 2026 (104 days in); longest to date is 10.5 km (Run #20, Jul 25, Saint-Malo hills, avg HR 145) — well past the 8-10 km reference set at the previous refresh. The most recent two prescribed sessions came in short of the active block's table (Run #26 Aug 9: 5.89 km vs a 9.0 km SL target; Run #27 Aug 12: 4.23 km easy vs a 6.0 km target), and this past week has been light overall (Saint-Malo travel, one casual sea swim Aug 14) — Garmin now flags training_status as 'Detraining', chronic_load_28d down to ~24.7 from a late-July peak of ~30.6, acute_load_7d at 14.6, ACWR ~0.59 (well below the 0.8 floor). Body weight continues to trend down: 100.68 kg (Aug 11, latest reading), down from 102.6 kg mid-June. VO2max running improved to 42.9 (from 40.6 in June); VO2max cycling shows an unexplained jump to an identical 42.9 starting Aug 11 (from a stable 38.6) that looks like a Garmin sync artifact rather than a real gain, flagged for cross-check next refresh. HRV weekly avg flat at 35 (unchanged vs June, still below the 39-40 mid-May peak). Resting HR has drifted up: 7d avg ~52 bpm (vs 50 in June), with the last 3 days (Aug 12-14) elevated to 52-55 bpm, coinciding with travel — worth watching before resuming full block volume. Sleep improved to 7.98h 30-day avg (from 7.26h in June) - not the bottleneck. No new labs since Dec 2025; the Vitamin D retest that was due ~July 2026 has not landed as of this refresh (mid-August) and is now overdue.",
+  "situational_context": "Running comeback well established and now governed by an active C4 training block (protocols/active_block.md, rev 2026-07-29, sessions #21-40) targeting a 12 km Beaumonts objective (~30/10). 27 runs logged since May 3, 2026 (104 days in); longest to date is 10.5 km (Run #20, Jul 25, Saint-Malo hills, avg HR 145) — well past the 8-10 km reference set at the previous refresh. The most recent two prescribed sessions came in short of the active block's table (Run #26 Aug 9: 5.89 km vs a 9.0 km SL target; Run #27 Aug 12: 4.23 km easy vs a 6.0 km target), and this past week has been light overall (Saint-Malo travel, one casual sea swim Aug 14) — Garmin now flags training_status as 'Detraining', chronic_load_28d down to ~24.7 from a late-July peak of ~30.6, acute_load_7d at 14.6, ACWR ~0.59 (well below the 0.8 floor). Body weight continues to trend down: 100.68 kg (Aug 11, latest reading), down from 102.6 kg mid-June. VO2max running improved to 42.9 (from 40.6 in June); VO2max cycling shows an unexplained jump to an identical 42.9 starting Aug 11 (from a stable 38.6) that looks like a Garmin sync artifact rather than a real gain, flagged for cross-check next refresh. HRV weekly avg flat at 35 (unchanged vs June, still below the 39-40 mid-May peak). Resting HR has drifted up: 7d avg ~52 bpm (vs 50 in June), with the last 3 days (Aug 12-14) elevated to 52-55 bpm, coinciding with travel — worth watching before resuming full block volume. Sleep improved to 7.98h 30-day avg (from 7.26h in June) - not the bottleneck. No new labs since Dec 2025; the Vitamin D retest that was due ~July 2026 has not landed as of this refresh (mid-August) and is now overdue. MEDICATION (standing, from protocols/health-profile.md): Benjamin is on a GLP-1 receptor agonist (weekly injection, weight-management indication) — initiation decided at the 2026-08-04 teleconsultation with Dr Monnier, first injection estimated mid-August 2026 (molecule, dose and injection day still to confirm). The Aug 12-14 RHR rise to 52-55 bpm and the flat-to-falling HRV coincide with this window and are inside the expected GLP-1 class effect (+1-5 bpm RHR, lower HRV); they must be read against a post-initiation baseline, not the June pre-medication one, and RHR/HRV alone must not gate the running comeback. Appetite suppression is expected: low or absent nutrition logs are a possible under-fueling signal, not only a logging lapse, and the protein floor (T.glp1) applies daily. Weight is expected to fall; flag only loss faster than the T.glp1 band or a high lean-mass share.",
+  "profile_ref": "protocols/health-profile.md",
+  "medications": [
+    {
+      "name": "GLP-1 receptor agonist (molecule/dose to confirm)",
+      "route": "weekly subcutaneous injection (abdomen)",
+      "indication": "weight management (BMI ~33, 15-month plateau)",
+      "since": "2026-08-15 (estimate; decision 2026-08-04)",
+      "days_on": null,
+      "last_injection": null,
+      "injection_weekday": null,
+      "prescriber": "Dr Delphine Monnier (Doctolib teleconsultation)",
+      "next_review": "monthly (first follow-up ~2026-09-04)",
+      "interpretation_notes": "RHR +1-5 bpm and lower HRV expected (class effect) - use post-initiation baseline and require a second signal before flagging; appetite suppressed - protein >= T.glp1.protein_floor_g_per_kg daily, zero-intake days may be real under-eating; weight loss expected - flag only rate > T.glp1.weight_loss_rate_flag_pct_per_week or lean-mass share > T.glp1.lean_mass_share_of_loss_flag_pct; delayed gastric emptying - last solid meal >= T.glp1.pre_run_meal_gap_hours_min h pre-run; hydration and heat caution; keep >= 1 strength session/week"
+    }
+  ],
   "acute_load_7d": 14.6,
   "chronic_load_28d": 24.74,
   "distance_from_peak_pct": 1.54,
@@ -26,8 +41,8 @@
     },
     {
       "priority": "P1",
-      "text": "Resting HR has drifted from a 50 bpm baseline (June) to 52-55 bpm over the last 3 days (Aug 12-14), alongside chronic load declining to 'Detraining' and the last two prescribed active-block sessions coming in short of target. Treat this as a recovery signal, not just a travel artifact: hold at current volume (don't chase the block's missed SL/target distances) until RHR 7d avg returns toward ~50 bpm and next sessions feel normal.",
-      "measurable": "RHR 7d avg back to <=51 bpm and next 2 sessions completed at or above active-block target distance without symptoms",
+      "text": "Resting HR has drifted from a 50 bpm baseline (June) to 52-55 bpm over the last 3 days (Aug 12-14). This coincides with the GLP-1 agonist initiation window (protocols/health-profile.md): a +1-5 bpm RHR rise with lower HRV is the expected class effect, so it is NOT by itself evidence of overload or sub-clinical illness. Do not gate the active block on the pre-medication RHR; re-baseline after ~3 weeks on a stable dose (T.glp1) and hold volume only if a second signal (sleep, skin temp, symptoms, HR-at-pace drift) agrees. Separately, the last two prescribed sessions came in short of target - check appetite/energy (GLP-1 appetite suppression) before attributing that to fatigue.",
+      "measurable": "Post-initiation RHR/HRV baseline established after 21 days on a stable dose; next 2 sessions completed at target with no second recovery signal off; protein >= 1.6 g/kg logged on >= 5 of 7 days",
       "evidence_class": "consensus"
     },
     {
@@ -40,8 +55,8 @@
   "markers_to_watch": [
     {
       "marker": "rhr_7d_avg",
-      "threshold": "Alert if RHR 7d avg stays >=52 bpm for more than 5 consecutive days, or any single day exceeds 55 bpm again",
-      "reason": "Up from a 50 bpm June baseline; recent 3-day spike to 52-55 bpm coincides with reduced chronic load and under-executed sessions - possible early overload or sub-clinical illness"
+      "threshold": "Compare to the post-GLP-1-initiation baseline (T.glp1), not the June 50 bpm value. Alert only if RHR 7d avg rises > 5 bpm above the pre-medication baseline (i.e. > 55 bpm sustained) AND a second recovery signal is off (sleep score, skin temp, symptoms, HR-at-pace)",
+      "reason": "Up from a 50 bpm June baseline; the rise coincides with GLP-1 agonist initiation (expected +1-5 bpm class effect). Beyond that band, or with a corroborating signal, consider under-fueling (appetite suppression), dehydration (reduced thirst + GI losses) or illness"
     },
     {
       "marker": "chronic_load_28d",
@@ -52,6 +67,16 @@
       "marker": "vo2max_cycling",
       "threshold": "Confirm it diverges back from the running VO2max value (42.9) on the next data pull",
       "reason": "Jumped to match the running figure exactly starting Aug 11, after being stable at 38.6 for months - likely artifact, not a real signal, until it independently moves"
+    },
+    {
+      "marker": "protein_g_per_kg / consecutive_zero_intake_days",
+      "threshold": "Flag if protein < T.glp1.protein_floor_g_per_kg (1.6 g/kg) on >= 3 of 7 logged days, or >= 2 consecutive zero-intake days (treat as possible under-eating on GLP-1, not only a logging gap)",
+      "reason": "GLP-1 appetite suppression on top of a 3-runs/week rebuild is the canonical low-energy-availability / lean-mass-loss setup; protein objective (160 g/day) is harder and more important on therapy"
+    },
+    {
+      "marker": "weight_loss_rate_pct_per_week / lean_mass_share",
+      "threshold": "Flag if 14-day loss rate > T.glp1.weight_loss_rate_flag_pct_per_week (1.5 %/wk) or Withings muscle-mass share of the loss > T.glp1.lean_mass_share_of_loss_flag_pct (35 %); a downward trend inside the 0.5-1.0 %/wk band is expected and is not a signal",
+      "reason": "Weight loss is the therapeutic goal of the GLP-1 agonist; the athletic risk is the lean-mass share and too-rapid loss (gallstones, RED-S), not the loss itself"
     }
   ],
   "investigations_opened": [],

@@ -71,3 +71,32 @@ c4_block:
   long_run_increment_km_max: 1.0
   no_racing_before: "2026-10-01"
   pain_rule: ">3/10 en course, altération de foulée, ou aggravation J+1 => séance sautée entièrement, pas raccourcie"
+
+# GLP-1 receptor agonist therapy (see protocols/health-profile.md and
+# .claude/skills/research-modules/glp1-endurance.md). Population-level
+# invariants for interpreting wearable / nutrition / body-composition data
+# while the therapy is active. Set `active: false` when therapy stops (and
+# update health-profile.md in the same commit).
+glp1:
+  active: true
+  initiation_date: "2026-08-15"        # best estimate — decision 2026-08-04, wearable signature from mid-Aug; refine when Benjamin confirms the first injection
+  injection_weekday: null              # 0=Mon … 6=Sun; null until Benjamin logs it
+  rhr_expected_shift_bpm_min: 1        # class effect on resting HR vs pre-treatment baseline (RCT)
+  rhr_expected_shift_bpm_max: 5
+  rebaseline_after_days_on_stable_dose: 21   # after this many days on a stable dose, the post-initiation window is the RHR/HRV reference
+  split_personal_baseline_at_initiation: true # never pool pre- and post-initiation days in the 90-day baseline
+  require_second_signal_for_rhr_hrv_flag: true # RHR/HRV drift alone is not a red flag while active
+  post_injection_side_effect_window_days: 3  # highest GI / fatigue risk in the days after each injection
+  dose_escalation_watch_days: 14            # extra caution window after any dose increase
+  weight_loss_rate_expected_pct_per_week_min: 0.5
+  weight_loss_rate_expected_pct_per_week_max: 1.0
+  weight_loss_rate_flag_pct_per_week: 1.5   # faster than this => lean-mass / energy-availability / gallstone warning
+  lean_mass_share_of_loss_flag_pct: 35      # Withings muscle-mass share of a 14d weight change above this => flag
+  protein_floor_g_per_kg: 1.6               # per kg current body weight, every day
+  protein_target_g_per_kg: 2.0              # target on training days
+  energy_availability_floor_kcal_per_kg_ffm: 30  # intake - exercise expenditure, per kg fat-free mass (IOC RED-S)
+  intake_gap_treat_as_real_after_days: 2    # >= N consecutive zero-intake days on GLP-1 => treat as possible under-eating, not just a logging gap
+  hydration_target_ml_per_kg: 35            # baseline daily fluid, before sweat replacement
+  pre_run_meal_gap_hours_min: 3             # delayed gastric emptying: last solid meal before a run
+  session_duration_min_requiring_fuel: 75   # fuel in-session beyond this on suppressed intake
+  strength_sessions_per_week_min: 1         # lean-mass preservation stimulus in the rolling plan

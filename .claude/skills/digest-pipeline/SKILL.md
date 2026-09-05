@@ -13,8 +13,9 @@ This skill defines the 6 mandatory phases of the daily health digest. Each phase
 2. Read `state/historical-peak.json` → `HISTORICAL_PEAK`
 3. Read `protocols/thresholds.yaml` → `T` (parse all threshold values)
 4. If `LAST_STATE.bootstrap === true`, flag Phase 5 as first-real-delta mode
+5. Read `protocols/health-profile.md` → `PROFILE`. If `T.glp1.active`, also read `.claude/skills/research-modules/glp1-endurance.md`. Write one explicit line: "Active medications: … — interpretation adjustments in force: …".
 
-**Gate:** All three files parsed. If `latest.json` is missing, abort with pipeline error.
+**Gate:** All four files parsed and the active-medications line written. If `latest.json` or `health-profile.md` is missing, abort with pipeline error.
 
 ## Phase 1 — Snapshot today + rolling context
 
@@ -27,8 +28,9 @@ Required data pulls:
 - `training_load_daily` from `D - 14` through `D` (ACWR continuity)
 - `readiness_daily` from `D - 7` through `D`
 - `garmin_health` from `D - 7` through `D`
-- `withings_measurements` last 28d, filter `weight_kg > T.data_quality.weight_kg_floor`
-- `oh_daily_nutrition_summary` from `D - 7` through `D`
+- `withings_measurements` last 28d, filter `weight_kg > T.data_quality.weight_kg_floor`, including `fat_mass_kg` / `muscle_mass_kg` (lean-mass share of any change while on GLP-1)
+- `oh_daily_nutrition_summary` from `D - 7` through `D` — plus protein g/kg vs `T.glp1.protein_floor_g_per_kg` and the count of consecutive zero-intake days, cross-checked against `oh_nutrition_intakes` row counts
+- `oh_supplement_logs` entries matching `GLP-1` / injection (last injection date, dose) and `oh_symptoms_log` GI / nausea / fatigue rows in the window
 - `cognitive_sessions` from `D - 7` through `D`
 - `oh_observations` since max(`LAST_STATE.as_of_date`, `D - 30`) — only surface if new
 - Baby MCP: night wakings and sleep fragmentation from `D - 7` through `D`
@@ -42,7 +44,8 @@ Required data pulls:
 
 ## Phase 2 — Triage + situational reassessment
 
-1. Re-evaluate `situational_context` from `LAST_STATE`. State which signals from the last 24–48h confirm or contradict it.
+1. Re-evaluate `situational_context` from `LAST_STATE`. State which signals from the last 24–48h confirm or contradict it. Keep the active-medication clause from `PROFILE` in the context text.
+1b. **Medication lens** (mandatory while `T.glp1.active`): for RHR, HRV, weight / body composition, intake / protein, GI and fatigue, state whether the value sits inside the expected GLP-1 effect. Compare RHR/HRV to the post-initiation baseline only. RHR/HRV drift needs a second, independent signal before it counts as a red flag; any deload gate written as a pre-medication absolute is re-expressed relative to the post-initiation baseline before it may block a session.
 2. **Plan adherence check**: for each session in `LAST_STATE.plan_7d_ahead` with date ≤ yesterday, did it execute? Match `strava_activities` by date ± 1 day, type, and duration ± 25%.
    - Executed → mark done
    - Missed on a "sur site" day → legitimate
@@ -73,6 +76,7 @@ If a signal warrants a standalone study: invoke `.claude/skills/investigation` t
 Invoke `.claude/skills/training-planner` with inputs:
 - `LAST_STATE`, today's load/readiness, `HISTORICAL_PEAK`
 - `situational_context` (updated from Phase 2)
+- `PROFILE.medications` and `T.glp1` (fuelling gap, strength-session floor, injection window, no pre-medication RHR/HRV gates)
 - `T.training` and `T.session_planning` thresholds
 - `no_train_days` list from Phase 1
 - Existing training Calendar events in the horizon (from Phase 1)
@@ -101,11 +105,11 @@ Compute:
 
 If chronic_load_28d exceeds HISTORICAL_PEAK → update `state/historical-peak.json`.
 
-**Gate:** Delta summary produced. If bootstrap mode, label accordingly.
+**Gate:** Delta summary produced, including the `profile_carryover` check (no medication silently dropped). If bootstrap mode, label accordingly.
 
 ## Phase 6 — Persist + deliver
 
-1. Write `state/latest.json` with full new state (schema in CLAUDE.md)
+1. Write `state/latest.json` with full new state (schema in CLAUDE.md) — `medications` copied from `PROFILE`, never omitted
 2. Copy to `state/history/YYYY-MM-DD.json`
 3. Write `digests/YYYY-MM-DD.md` in the canonical daily-digest format
 4. Update `state/historical-peak.json` if beaten
