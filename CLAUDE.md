@@ -29,6 +29,22 @@ Analytical report in **English**. Calendar event titles and descriptions, Telegr
 - **Human digest**: `digests/YYYY-MM-DD.md`.
 - **Phone delivery**: Telegram message, body = compact version of the daily digest (French).
 
+## Weekly athletic profile & objectives digest (latest)
+
+A separate weekly routine (not this daily one) runs a full athletic-profile classification and re-scores every active objective in the `objectives` table against live data, writing `profile-reports/YYYY-MM-DD-athletic-profile-objectives.md`. Its objective-level notes and confidence scores are the source of truth for "where things stand" beyond the daily 7-day window — **read the `objectives` table's `notes` field (or the linked report) whenever planning needs the wider trajectory context**, e.g. before deciding whether to push the return-to-running comeback harder or hold back. This section is overwritten each time that weekly routine runs — treat it as a snapshot, not a permanent rule.
+
+**Last refreshed: 2026-09-05.** Headline: every active objective weakened simultaneously this cycle for the first time — traced to one shared, plausible root cause rather than seven independent problems.
+
+- **Running frequency** (a1bde447, target 3×/wk by 2026-09-29): 0/3 this week, 2/3 the week before — two straight sub-target weeks. **Not adherence failure**: the daily routine's own "porte deload" gate (HRV weekly ≥36 AND RHR 7d ≤51) has correctly stayed shut since 2026-08-28 because HRV (weekly avg 30 vs 90d baseline 35.0±2.2, z≈-2.3) and RHR (53-55 vs 90d baseline 50.3±2.2) have been outside personal-baseline range for **14 consecutive days** with no illness logged. Keep respecting this gate — do not override it to force volume just because the calendar slot is open.
+- **Protein** (49829c29, target ≥160g/day avg by 2026-09-29): a **12-day zero-protein-logged streak** (2026-08-23 → still open), the third and worst escalation of this pattern (previously 3 days, then 6 days). Logged-day capability is fine (~121g/day) — this is a pure logging/intake-consistency gap, flagged as the probable **critical-path bottleneck**: inadequate protein plausibly delays the HRV/RHR normalization the deload gate is waiting on.
+- **Weight** (218d1c78, target ≤95kg by 2026-12-30): 101.15kg (2026-09-01), pace has decelerated below the required rate for the first time this cycle — a 3-week plateau coinciding with the protein blackout. Watch for lean-mass loss risk, not just a fat-loss stall.
+- **12km Beaumonts long run** (9b982443, target by 2026-10-30): stalled at 10.5km for 6 straight weeks — the active block's W36 attempt (`protocols/active_block.md`) has been fully deferred by the deload gate above, not skipped arbitrarily.
+- **Half marathon <1h45** (96910249) and **bilan sanguin annuel** (42361937): both drifting further out of reach, the latter purely on inaction (Vitamin D retest ~9-10 weeks overdue).
+- **Contextual headwind**: Benjamin is on daycare-adaptation leave ("Congés - crèche") 2026-09-01 → 2026-09-12 — expect schedule flexibility but reduced admin/logging consistency through that window; this is not itself a reason to relax training-safety gates.
+- **Implication for daily replanning**: do not force the 12km attempt or push weekly volume back up purely because a calendar slot is free — keep gating on HRV/RHR normalizing per the return-to-running / active-block protocols. If asked to prioritize one non-training nudge, surface the protein-logging gap (zero-cost, plausibly unblocks everything else) ahead of pushing more running volume.
+
+Full detail, confidence scores, and methodology: `profile-reports/2026-09-05-athletic-profile-objectives.md`.
+
 ## Thresholds
 
 Load `protocols/thresholds.yaml` at the start of every run. All population-level invariants (ACWR band, ramp cap, sigma cutoffs, deload multiplier, illness triggers) come from there. Never hardcode them in this prompt.
