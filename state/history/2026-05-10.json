@@ -1,0 +1,68 @@
+{
+  "as_of_date": "2026-05-10",
+  "bootstrap": false,
+  "situational_context": "Active rebuild phase, week 3 post-bootstrap. Return-to-running protocol in progress (2 runs completed: Run #1 May 3 at HR 135, Run #2 May 9 at HR 144). Training mix: ebike commuting on sur-site days (load 6-14/ride), gravel for structured load (load 17-57), running re-introduction (load 7-15). Chronic load climbing slowly (17.8->22.7, 1.4% of 2023 peak). ACWR 0.67 — below optimal band, safe to ramp. Weight trending down well: 106.9->104.1 kg in 3.5 weeks (-2.8 kg), ahead of -1.2 kg/month target. RHR improved 53->49. Run #2 showed higher cardiac cost than Run #1 (HR avg 144 vs 135 at similar pace) — attributed to residual fatigue from prior-day gravel. Readiness consistently high. Infant cohabitant (Leonie, 16 months) present; sleep adequate at 7.7h avg.",
+  "acute_load_7d": 15.2,
+  "chronic_load_28d": 22.7,
+  "distance_from_peak_pct": 1.41,
+  "hrv_7d_avg": 37,
+  "rhr_7d_avg": 49,
+  "sleep_hours_7d_avg": 7.7,
+  "weight_kg_7d_avg": 104.1,
+  "last_session": {
+    "date": "2026-05-09",
+    "type": "Run",
+    "duration_min": 18,
+    "training_load": 15
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-05-10", "day": "Sun", "time": "13:00", "type": "Endurance velo Z2", "duration_min": 60, "target_load": 13, "calendar_event_id": "ai4f5u6ua325j9k2hpi5ol57k4", "status": "planned"},
+    {"date": "2026-05-11", "day": "Mon", "time": null, "type": "Sur site — commute ebike/gravel", "duration_min": 120, "target_load": null, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-05-12", "day": "Tue", "time": null, "type": "Sur site — commute ebike/gravel", "duration_min": 120, "target_load": null, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-05-13", "day": "Wed", "time": "12:00", "type": "Recuperation active Z1-Z2 velo", "duration_min": 45, "target_load": 11, "calendar_event_id": "s3c1gsv2j2tntn4mah63art6kc", "status": "planned"},
+    {"date": "2026-05-14", "day": "Thu", "time": "12:00", "type": "Endurance velo Z2 ou Gravel Z2", "duration_min": 45, "target_load": 13, "calendar_event_id": "ggh1p6fbqmuah0n461c44no9s0", "status": "planned"},
+    {"date": "2026-05-15", "day": "Fri", "time": "12:00", "type": "Run #3 conditionnel OU Endurance velo Z2", "duration_min": 55, "target_load": 10, "calendar_event_id": "7bb0sc9o9ak1upro4g03p4be9o", "status": "planned"},
+    {"date": "2026-05-16", "day": "Sat", "time": "12:00", "type": "Endurance velo Z2", "duration_min": 60, "target_load": 13, "calendar_event_id": "4b87dm11dh8pa57mq62i66ci5k", "status": "planned"},
+    {"date": "2026-05-17", "day": "Sun", "time": "13:00", "type": "Sortie velo Z1-Z2", "duration_min": 45, "target_load": 11, "calendar_event_id": "nbkfqeb6h09ssdsd913r0178i0", "status": "planned"}
+  ],
+  "no_train_days": ["2026-05-11", "2026-05-12"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Continue return-to-running protocol: Run #3 on May 15 conditional on zero localized pain from Run #2. Target HR avg <=145 bpm at 8:30-9:00/km pace. If HR rises above 150, shorten to 15 min max.",
+      "measurable": "Run #3 completed with HR avg <=145 bpm OR correctly deferred to bike if pain present",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Address macro imbalance: reduce fat intake toward 80g target, increase protein toward 150g. Current 7d avg: fat 137g (+71% over target), protein 122g (-19% under target). Fat is crowding out carb budget for cycling performance.",
+      "measurable": "Next 7d avg: fat <110g, protein >135g",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Execute both weekend sessions (Sat 16 + Sun 17) to rebuild training consistency and push ACWR toward 0.8. Consistent frequency matters more than individual session quality at this rebuild stage.",
+      "measurable": ">=5 dedicated training sessions completed May 10-17 (excluding commutes)",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "run_hr_trend",
+      "threshold": "Run #3 HR avg should be <=145 bpm at 8:30-9:00/km. If >150 flag cardiovascular regression",
+      "reason": "Run #2 showed +9 bpm avg HR vs Run #1 at similar pace. Need Run #3 to confirm whether gravel-fatigue artifact or trend."
+    },
+    {
+      "marker": "acwr",
+      "threshold": "Target >=0.75 by May 17. Currently 0.67.",
+      "reason": "Below optimal band (0.8-1.3). Consistent sessions this week should bring it up."
+    },
+    {
+      "marker": "weight_kg",
+      "threshold": "Rate of loss should be <=1 kg/week to protect tendon adaptation",
+      "reason": "Lost 2.8 kg in 3.5 weeks (~0.8 kg/wk) — within safe range but monitor per return-to-running protocol."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/20"
+}
