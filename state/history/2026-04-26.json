@@ -1,0 +1,130 @@
+{
+  "as_of_date": "2026-04-26",
+  "bootstrap": false,
+  "situational_context": "Post-spike absorption phase. Gravel ride on Apr 25 (load 57, suffer 57) pushed ACWR to 1.44 — first significant training stimulus in weeks. Body absorbing well: training readiness recovering from 25 (Apr 25) to 51 (Apr 26). Chronic load climbing slowly (22, up from 17.8 at bootstrap). Weight trending down (105.2 kg, -1.7 kg in 10 days). Still at 1.4% of 2023 historical peak. HRV stable at 38 weekly avg. Rebuild phase: priority is ACWR normalization (<1.3) through recovery-focused sessions this week, then resume progressive loading. Baby cohabitant present; schedule flexibility essential.",
+  "acute_load_7d": 31.67,
+  "chronic_load_28d": 22,
+  "distance_from_peak_pct": 1.37,
+  "hrv_7d_avg": 38,
+  "rhr_7d_avg": 50,
+  "sleep_hours_7d_avg": 7.49,
+  "weight_kg_7d_avg": 105.22,
+  "last_session": {
+    "date": "2026-04-25",
+    "type": "GravelRide",
+    "duration_min": 51,
+    "training_load": 57
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-04-26",
+      "day": "Dim",
+      "time": "11:00",
+      "type": "Course récup Z1",
+      "duration_min": 30,
+      "target_load": 8,
+      "calendar_event_id": "nf35e1e8r0sd2lr20ad2l6qp1k",
+      "status": "planned"
+    },
+    {
+      "date": "2026-04-27",
+      "day": "Lun",
+      "time": null,
+      "type": "Repos",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-04-28",
+      "day": "Mar",
+      "time": null,
+      "type": "Sur site — trajet eBike recommandé",
+      "duration_min": 120,
+      "target_load": 15,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-04-29",
+      "day": "Mer",
+      "time": "12:00",
+      "type": "Zwift Récup Z1",
+      "duration_min": 30,
+      "target_load": 10,
+      "calendar_event_id": "povq9lsag6oqlbdajhju1ttm10",
+      "status": "planned"
+    },
+    {
+      "date": "2026-04-30",
+      "day": "Jeu",
+      "time": null,
+      "type": "Sur site — trajet eBike recommandé",
+      "duration_min": 120,
+      "target_load": 15,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-05-01",
+      "day": "Ven",
+      "time": "11:00",
+      "type": "Sortie vélo endurance Z2",
+      "duration_min": 60,
+      "target_load": 18,
+      "calendar_event_id": "t0jforto8j77dufii0jv8o51g8",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-02",
+      "day": "Sam",
+      "time": "11:00",
+      "type": "Sortie longue Z2",
+      "duration_min": 75,
+      "target_load": 25,
+      "calendar_event_id": "r22o9g67fjatm4tp3qvfendq08",
+      "status": "planned"
+    }
+  ],
+  "no_train_days": ["2026-04-28", "2026-04-30"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Prioritize ACWR normalization: keep all sessions Z1-Z2 (HR <135 bpm) this week. The gravel ride spiked ACWR to 1.44 on a low chronic base — absorb before progressing.",
+      "measurable": "ACWR below 1.3 by May 1",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "On sur site days (Apr 28, 30), prefer eBike over gravel for commute. eBike adds ~15 load (appropriate); gravel would add ~40-57 and re-spike ACWR.",
+      "measurable": "Commute suffer scores ≤15 on both sur site days",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Increase daily protein to ≥140g. 7-day average was 133g vs 150g target. At current weight loss rate and rebuild phase, protein is critical for muscle preservation.",
+      "measurable": "≥5 of next 7 days with protein ≥140g logged",
+      "evidence_class": "RCT"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "acwr",
+      "threshold": "Must return below 1.3 within 5 days",
+      "reason": "Currently 1.44 post-gravel spike — above safe zone upper bound"
+    },
+    {
+      "marker": "training_readiness",
+      "threshold": "Should recover above 70 within 48h",
+      "reason": "Crashed to 25 post-gravel, recovered to 51 today — monitor trajectory"
+    },
+    {
+      "marker": "weight_trend",
+      "threshold": "Loss rate <1.0 kg/week sustained",
+      "reason": "Down 1.67 kg in 10 days (1.17 kg/wk) — at upper edge, watch for acceleration"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/7"
+}
