@@ -1,0 +1,139 @@
+{
+  "as_of_date": "2026-06-04",
+  "bootstrap": false,
+  "situational_context": "Running comeback week 5: 7 runs completed since May 3 (progressed from 2.5 km to 5.2 km). Run #7 executed June 3 (5.23 km, FC 140, suffer 27) — now consolidating at 5 km distance. Primary modality remains e-bike commuting on sur-site days. Chronic load declining (15.61, down from 22.3 on May 14) due to fewer commute days — training status oscillates between Maintaining and Detraining. ACWR at 0.88 — safely within bounds. HRV today UNBALANCED (28, post-run recovery dip expected to resolve within 24-48h). VO2max running improved to 39.9 (from 38.3 at comeback start). Weight down to 102.97 kg (from 104.10). Weekend active plan: gravel ride Saturday, Run #8 Sunday. Two sur-site days Thu-Fri will contribute ebike commute load. No new labs since Dec 2025. Vitamin D retest due ~July 2026.",
+  "acute_load_7d": 13.75,
+  "chronic_load_28d": 15.61,
+  "distance_from_peak_pct": 0.97,
+  "hrv_7d_avg": 35,
+  "rhr_7d_avg": 49,
+  "sleep_hours_7d_avg": 7.66,
+  "weight_kg_7d_avg": 102.97,
+  "last_session": {
+    "date": "2026-06-03",
+    "type": "Run",
+    "duration_min": 41,
+    "training_load": 27
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-06-04",
+      "day": "Thu",
+      "time": "-",
+      "type": "Sur site (ebike commute)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "",
+      "status": "blocked"
+    },
+    {
+      "date": "2026-06-05",
+      "day": "Fri",
+      "time": "-",
+      "type": "Sur site (ebike commute)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "",
+      "status": "blocked"
+    },
+    {
+      "date": "2026-06-06",
+      "day": "Sat",
+      "time": "11:00",
+      "type": "Gravel Z2 endurance 50 min",
+      "duration_min": 50,
+      "target_load": 16,
+      "calendar_event_id": "4nbgbluuctq748tei69h8qqj2g",
+      "status": "planned"
+    },
+    {
+      "date": "2026-06-07",
+      "day": "Sun",
+      "time": "11:30",
+      "type": "Run #8 — 5 km Z1-Z2",
+      "duration_min": 45,
+      "target_load": 18,
+      "calendar_event_id": "mv6pqpgi9hmah19pad4kjm3v3s",
+      "status": "planned"
+    },
+    {
+      "date": "2026-06-08",
+      "day": "Mon",
+      "time": "-",
+      "type": "Rest / recovery walk",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "",
+      "status": "rest"
+    },
+    {
+      "date": "2026-06-09",
+      "day": "Tue",
+      "time": "-",
+      "type": "Sur site (ebike commute)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "",
+      "status": "blocked"
+    },
+    {
+      "date": "2026-06-10",
+      "day": "Wed",
+      "time": "-",
+      "type": "Rest or optional easy walk",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "",
+      "status": "rest"
+    }
+  ],
+  "no_train_days": [
+    "2026-06-04",
+    "2026-06-05",
+    "2026-06-09"
+  ],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Execute Run #8 on Sunday (5 km, FC target <=137 bpm). Two successful 5 km runs validate the palier and open progression to 5.5-6 km. If FC remains >140 at easy pace, suspect accumulated fatigue — do not progress.",
+      "measurable": "Run #8 completed, avg FC <=137, zero post-run pain >24h",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Monitor HRV recovery: today's 28 (UNBALANCED, -2.6 sigma) must recover to >=34 by Saturday. If still UNBALANCED Friday night, downgrade Saturday gravel from Z2 50 min to easy ebike 30 min.",
+      "measurable": "HRV >=34 by Saturday morning",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Address caloric surplus: 7d avg 3,261 kcal vs 2,500 target (+30%), driven by high fat (168g vs 80g target). Weight still trending down but surplus slows progress. Portion control at dinner (avg 1,584 kcal).",
+      "measurable": "3 of next 7 days within +/-200 kcal of 2,500 target",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "hrv_score",
+      "threshold": "Alert if HRV remains <32 for 2+ consecutive days",
+      "reason": "Today's 28 is -2.6 sigma — expected post-run but must recover within 48h"
+    },
+    {
+      "marker": "rhr_7d_avg",
+      "threshold": "Alert if RHR rises >54 bpm (>5 bpm above 49 baseline) for 3+ days",
+      "reason": "RHR 52 today is slightly elevated post-run; should normalize"
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Target stabilization above 16, then gradual increase",
+      "reason": "Declining from 22.3 to 15.61 — detraining trend needs reversal"
+    },
+    {
+      "marker": "run_fc_trend",
+      "threshold": "If avg FC >140 on Run #8 at same 5 km distance/pace, investigate cardiac drift or fatigue",
+      "reason": "Run #7 FC was 140 vs Run #5 at 136 for same distance — trending up"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/44"
+}
