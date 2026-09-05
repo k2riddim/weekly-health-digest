@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-06-24",
+  "bootstrap": false,
+  "situational_context": "Running comeback day 52 (12 runs completed since May 3). Run #12 overreach on June 21 (7.5 km vs ~4 km planned, suffer 36) absorbed without apparent tissue issues — body battery 60, training readiness 85 today. ACWR normalized to 1.21 (from 1.35 on June 14) as chronic load rose to 19. HRV 7d avg stable at 34.7 ms — below 90d personal baseline (36.2) but not at deep-dive threshold; likely partly suppressed by Paris canicule (41°C). VO2max running up to 40.8. Weight bounced to 103.67 kg (from 102.62 on June 7); combination of caloric surplus (avg 2886 kcal/day, 166g fat/day) and heat-related fluid retention. Run #13 cancelled today due to canicule 41°C — correct per protocol. Chantilly weekend (June 26-28) offers cooler temps and Forêt de Chantilly for training. Next run Sunday June 28. No new labs since Dec 2025; Vitamin D retest due July 2026.",
+  "acute_load_7d": 23,
+  "chronic_load_28d": 19,
+  "distance_from_peak_pct": 1.18,
+  "hrv_7d_avg": 34.7,
+  "rhr_7d_avg": 50.3,
+  "sleep_hours_7d_avg": 7.42,
+  "weight_kg_7d_avg": 103.67,
+  "last_session": {
+    "date": "2026-06-23",
+    "type": "EBikeRide (commute x2)",
+    "duration_min": 129,
+    "training_load": 16
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-06-24", "day": "Wed", "time": "-", "type": "Rest (Run #13 cancelled — canicule 41°C)", "duration_min": 0, "target_load": 0, "calendar_event_id": "2jurvde9vndpjakmvjionr1u50", "status": "blocked"},
+    {"date": "2026-06-25", "day": "Thu", "time": "-", "type": "Sur site — commute ebike/gravel", "duration_min": 120, "target_load": 15, "calendar_event_id": "", "status": "blocked"},
+    {"date": "2026-06-26", "day": "Fri", "time": "-", "type": "Rest (Chantilly arrivée)", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"},
+    {"date": "2026-06-27", "day": "Sat", "time": "11:30", "type": "Vélo endurance Z1-Z2 60 min (Forêt de Chantilly)", "duration_min": 60, "target_load": 10, "calendar_event_id": "sm1bvahm3qonm84euiluk9ftl4", "status": "planned"},
+    {"date": "2026-06-28", "day": "Sun", "time": "12:00", "type": "RETOUR RUNNING — Run #13 — 4 km Z2 (Forêt de Chantilly)", "duration_min": 35, "target_load": 14, "calendar_event_id": "r6d61t9ourbgg7s35dt9taod44", "status": "planned"},
+    {"date": "2026-06-29", "day": "Mon", "time": "-", "type": "Rest (recovery post-run)", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"},
+    {"date": "2026-06-30", "day": "Tue", "time": "-", "type": "Sur site — commute ebike/gravel", "duration_min": 120, "target_load": 15, "calendar_event_id": "", "status": "blocked"}
+  ],
+  "no_train_days": ["2026-06-25", "2026-06-30"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Run #13 cancelled today (canicule 41°C) — correct per protocol. Next run Sunday June 28 in Forêt de Chantilly (30°C, shade, soft surface). Cap at 4 km STRICT after Run #12 overreach (7.5 km). Do NOT increase distance until 2 consecutive compliant runs at 4 km.",
+      "measurable": "Run #13 executed at ≤4 km, avg HR ≤130 bpm, no pain >24h post-run",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Protein intake critically low at 119g/day avg (79% of 150g target) while fat is double target at 166g/day. Increase lean protein sources and reduce excess fat. Essential for tendon adaptation during comeback and body recomposition at 103.7 kg.",
+      "measurable": "Protein ≥140g/day avg over next 7 days; fat ≤100g/day",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Hydration critical during canicule. Maintain ≥3L water/day through June 25, add electrolytes. Weight bounce (102.6→103.7 kg) is partly heat-related fluid retention — will clarify after heatwave breaks. Next pesée June 28 (Chantilly — bring portable if possible, otherwise weigh at return).",
+      "measurable": "Water logged ≥2.5L/day; next pesée within ±0.5 kg of 103 kg",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "run_distance_compliance",
+      "threshold": "Alert if next run exceeds 4 km",
+      "reason": "Run #12 was 7.5 km vs ~4 km plan — nearly doubled. Must demonstrate discipline before any progression."
+    },
+    {
+      "marker": "weight_trend",
+      "threshold": "Alert if next Withings reading >104 kg",
+      "reason": "Reversed from 102.6 to 103.7 over 14 days. Caloric surplus + heat retention. Need pesée data post-heatwave."
+    },
+    {
+      "marker": "hrv_7d_avg",
+      "threshold": "Alert if HRV 7d avg drops below 32 ms",
+      "reason": "Currently 34.7 ms, stable but below 90d baseline of 36.2. Expected to recover as canicule breaks."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/65"
+}
