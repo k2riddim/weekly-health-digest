@@ -1,0 +1,130 @@
+{
+  "as_of_date": "2026-05-08",
+  "bootstrap": false,
+  "situational_context": "Early rebuild phase with return-to-running protocol active (week 1, run #1 on May 3 successful — 2.47 km, no pain reported). Chronic load rising steadily (17.8→23.3 since Apr 19 bootstrap). ACWR at 0.65, below safe zone — structural drop after May 1 outlier (load 55) fell off the 7-day window. Weight trending down meaningfully: 106.9→104.1 kg over 3 weeks (~0.9 kg/week, approaching the 1 kg/week caution threshold from return-to-running protocol). RHR improved from 53→49 bpm. Life context stable with infant (Léonie, ~16 months); training constrained by 2-3 sur site days per week with eBike commutes. Training mix: eBike commutes on sur site days, gravel rides, and first return-to-running session.",
+  "acute_load_7d": 15.25,
+  "chronic_load_28d": 23.31,
+  "distance_from_peak_pct": 1.45,
+  "hrv_7d_avg": 37,
+  "rhr_7d_avg": 49,
+  "sleep_hours_7d_avg": 7.64,
+  "weight_kg_7d_avg": 104.44,
+  "last_session": {
+    "date": "2026-05-08",
+    "type": "GravelRide",
+    "duration_min": 43,
+    "training_load": 17
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-05-08",
+      "day": "Fri",
+      "time": "08:30",
+      "type": "GravelRide Z1-Z2",
+      "duration_min": 43,
+      "target_load": 17,
+      "calendar_event_id": "p9uduferkvv5c4rta89d7i4ekg",
+      "status": "executed"
+    },
+    {
+      "date": "2026-05-09",
+      "day": "Sat",
+      "time": "12:00",
+      "type": "Retour running #2 OU Endurance vélo Z2",
+      "duration_min": 60,
+      "target_load": 10,
+      "calendar_event_id": "04qpo5crol1aun7n5c1gga9pm8",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-10",
+      "day": "Sun",
+      "time": "13:00",
+      "type": "Endurance vélo Z2",
+      "duration_min": 60,
+      "target_load": 15,
+      "calendar_event_id": "ai4f5u6ua325j9k2hpi5ol57k4",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-11",
+      "day": "Mon",
+      "time": "-",
+      "type": "Sur site — eBike commute expected",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "",
+      "status": "blocked"
+    },
+    {
+      "date": "2026-05-12",
+      "day": "Tue",
+      "time": "-",
+      "type": "Sur site — eBike commute expected",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "",
+      "status": "blocked"
+    },
+    {
+      "date": "2026-05-13",
+      "day": "Wed",
+      "time": "12:00",
+      "type": "Récupération active Z1-Z2 vélo — post sur site",
+      "duration_min": 45,
+      "target_load": 12,
+      "calendar_event_id": "s3c1gsv2j2tntn4mah63art6kc",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-14",
+      "day": "Thu",
+      "time": "12:00",
+      "type": "Endurance vélo Z2 ou Gravel Z2",
+      "duration_min": 45,
+      "target_load": 15,
+      "calendar_event_id": "ggh1p6fbqmuah0n461c44no9s0",
+      "status": "planned"
+    }
+  ],
+  "no_train_days": ["2026-05-11", "2026-05-12"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Execute return-to-running #2 tomorrow (Sat May 9): 20-25 min Z1-Z2, max 3 km, soft surface (Bois de Vincennes). Abort if any localized pain (Achilles, patellar, tibia). This is the gating session for week 2 progression.",
+      "measurable": "Run completed ≤25 min, avg HR ≤145, no pain reported within 24h post-run",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Increase daily protein intake to ≥140g consistently. Current 7d average is 127g against a 150g target. At 104 kg during a rebuild with return-to-running impact loading, protein adequacy supports tendon collagen synthesis and muscle preservation. Add a protein-rich snack post-training.",
+      "measurable": "Protein ≥140g on ≥5 of 7 days next week",
+      "evidence_class": "RCT"
+    },
+    {
+      "priority": "P2",
+      "text": "Maintain consistent training rhythm to rebuild ACWR into safe zone (0.8-1.3). Target ≥3 dedicated sessions plus sur-site commute loads. Avoid single-session load spikes >25.",
+      "measurable": "ACWR ≥0.75 by Wednesday May 13",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "weight_loss_rate",
+      "threshold": "Must stay <1 kg/week averaged over any 2-week window",
+      "reason": "Return-to-running protocol: rapid weight loss compromises tendon adaptation, especially at 104 kg with Achilles/patellar risk"
+    },
+    {
+      "marker": "post_run_pain",
+      "threshold": "Zero localized pain lasting >24h after run #2 (May 9)",
+      "reason": "Return-to-running protocol week 1: any tissue complaint → abort running, substitute cycling"
+    },
+    {
+      "marker": "acwr",
+      "threshold": "Target return to ≥0.8 within 7 days",
+      "reason": "Below 0.8 since May 1 outlier dropped off; consistent training should restore ratio"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/18"
+}
