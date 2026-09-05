@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-06-26",
+  "bootstrap": false,
+  "situational_context": "Running comeback week 8 (12th run due Sunday): Run #12 on June 21 was a critical distance overreach (7.5 km vs 4 km planned, suffer 36) — mirrors the March 2025 failure pattern of erratic distance jumps at week 8-10. Run #13 cancelled June 24 (41C heatwave), rescheduled to June 28 at Chantilly forest. HRV persistently UNBALANCED/LOW (6/7 days), weekly avg 34 ms — multi-week decline from 39-40 (mid-May) suggesting accumulated fatigue from running + e-bike + heatwave stress. ACWR normalized to 1.21 (down from 1.35 on June 14) after 3 rest days. Body battery recovering (49 vs 28 post-overreach). Weight reversed +1 kg to 103.7 kg on high-calorie days. Protein consistently below 150g target (avg 119g). At Hotel Mercure Chantilly (June 26-29) — forest offers shaded, soft-surface training. Heatwave easing from 41C peak toward 35C Sunday. E-bike commuting primary weekly volume. Vitamin D retest due July 2026.",
+  "acute_load_7d": 23,
+  "chronic_load_28d": 19,
+  "distance_from_peak_pct": 1.2,
+  "hrv_7d_avg": 34,
+  "rhr_7d_avg": 50.6,
+  "sleep_hours_7d_avg": 7.42,
+  "weight_kg_7d_avg": 103.67,
+  "last_session": {
+    "date": "2026-06-23",
+    "type": "EBikeRide (commute)",
+    "duration_min": 73,
+    "training_load": 9
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-06-26", "day": "Fri", "time": "-", "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-06-27", "day": "Sat", "time": "11:30", "type": "Sortie velo 60 min gravel/ebike Z1-Z2 (Foret de Chantilly)", "duration_min": 60, "target_load": 12, "calendar_event_id": "sm1bvahm3qonm84euiluk9ftl4", "status": "planned"},
+    {"date": "2026-06-28", "day": "Sun", "time": "12:00", "type": "Run #13 - 4 km Z2 strict (Foret de Chantilly)", "duration_min": 35, "target_load": 14, "calendar_event_id": "r6d61t9ourbgg7s35dt9taod44", "status": "planned"},
+    {"date": "2026-06-29", "day": "Mon", "time": "-", "type": "Rest (retour de Chantilly)", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-06-30", "day": "Tue", "time": "-", "type": "Sur site - e-bike commute only", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-07-01", "day": "Wed", "time": "-", "type": "Rest ou marche optionnelle", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-07-02", "day": "Thu", "time": "-", "type": "Sur site - e-bike commute only", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "blocked"}
+  ],
+  "no_train_days": ["2026-06-30", "2026-07-02"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "DISTANCE CAP on Run #13 Sunday: STRICT 4 km maximum. Run #12 (7.5 km vs 4 km planned) repeated the exact overreach pattern that ended the March 2025 comeback at week 8-10. Set Garmin distance alert at 4.0 km. Walk back if distance reached.",
+      "measurable": "Run #13 distance <= 4.0 km; suffer score <= 20",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "HRV recovery priority: weekly avg at 34 ms with 6/7 days UNBALANCED/LOW — multi-week decline from 39-40 ms. Hold ALL sessions Z1-Z2, target sleep >= 7.5h, hydrate aggressively through heatwave (>= 3L/day + electrolytes). No intensity until weekly avg returns >= 37 ms.",
+      "measurable": "HRV weekly avg >= 37 ms within 10 days; zero UNBALANCED/LOW days for 3+ consecutive",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Protein intake to >= 150g/day — averaging 119g/day. At 103.7 kg during running comeback, insufficient protein impairs tendon collagen synthesis and slows body recomposition. Target >= 30g protein per meal, 4-5 meals/day.",
+      "measurable": "Daily protein >= 140g for 5+ of next 7 days",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "run_distance_discipline",
+      "threshold": "Any run exceeding planned distance by >25% triggers immediate next-run pause",
+      "reason": "Run #12 overreach (7.5 km vs 4 km = +88%) mirrors March 2025 failure pattern at the same comeback stage (week 8-10)"
+    },
+    {
+      "marker": "hrv_7d_avg",
+      "threshold": "Alert if drops below 30 ms or fails to recover toward 37 ms by July 5",
+      "reason": "Multi-week decline from 39-40 to 34 ms; sustained UNBALANCED/LOW suggests cumulative autonomic fatigue"
+    },
+    {
+      "marker": "weight_trend",
+      "threshold": "Alert if 2+ consecutive readings above 104 kg",
+      "reason": "Weight reversed +1 kg (102.6 to 103.7) on high-calorie days; protein under target"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/67"
+}
