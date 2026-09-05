@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-08-28",
+  "bootstrap": false,
+  "situational_context": "Running comeback in C4 block W35 DELOAD (sessions #21-40, targeting 12 km Beaumonts ~30/10). Recovery metrics significantly degraded: RHR sustained at 54 bpm (6+ consecutive days, +4 vs 50 bpm baseline, +2.1σ), HRV weekly avg declined to 32 ms (LOW status, -1.9σ vs 90d baseline of 35.4). Run #29 (Aug 22, 7.04 km) exceeded C4 HR caps (avg 146 vs 145, max 163 vs 158), triggering sustained parasympathetic suppression through deload. W35 execution: 1/3 sessions completed (Run #31 3.79 km); Run #32 skipped Aug 27 (readiness 37, sleep 4.95 hrs). Today's data shows partial recovery (body battery 53.8 up from 36, sleep 7.9 hrs), but HRV/RHR have not improved. DELOAD GATE Run #33 tomorrow (Sat Aug 29): current pre-gate metrics (HRV weekly 32, RHR 54) are in deload-prolonge territory. W36 sessions contingent on post-gate recovery assessment. Chronic load continues downtrend (18.95, from 24.7 on Aug 14, from 30.6 in late July). ACWR 1.26 within comeback band. Body weight ~100.7 kg (last reading Aug 12). VO2max running 42.5. Vitamin D retest 6+ weeks overdue. Nutrition logging lapsed 5 days. Wegovy follow-up Sep 3.",
+  "acute_load_7d": 23.8,
+  "chronic_load_28d": 18.95,
+  "distance_from_peak_pct": 1.18,
+  "hrv_7d_avg": 32,
+  "rhr_7d_avg": 54.1,
+  "sleep_hours_7d_avg": 7.25,
+  "weight_kg_7d_avg": 100.68,
+  "last_session": {
+    "date": "2026-08-28",
+    "type": "EBikeRide (commute)",
+    "duration_min": 55,
+    "training_load": 7
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-08-28", "day": "Vendredi", "time": "-", "type": "Repos (sur site)", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-08-29", "day": "Samedi", "time": "11:00", "type": "Run #33 — 7,0 km easy plat (PORTE DELOAD)", "duration_min": 52, "target_load": 30, "calendar_event_id": "iq83p7ojps35kmlusrri05kr3o", "status": "planned"},
+    {"date": "2026-08-30", "day": "Dimanche", "time": "11:00", "type": "Vélo easy 45 min Z1-Z2", "duration_min": 45, "target_load": 15, "calendar_event_id": "m66a6d3fur8p210asqq9g137ck", "status": "planned"},
+    {"date": "2026-08-31", "day": "Lundi", "time": "12:00", "type": "W36 Run — 5,5 km easy (contingent porte deload)", "duration_min": 40, "target_load": 22, "calendar_event_id": "l57b6kl838qunbe4ljahcf8q7c", "status": "planned"},
+    {"date": "2026-09-01", "day": "Mardi", "time": "-", "type": "Repos (sur site)", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-09-02", "day": "Mercredi", "time": "12:00", "type": "W36 Run — 6,5 km easy (contingent porte deload)", "duration_min": 48, "target_load": 28, "calendar_event_id": "kqkobsuio1h14hkskr8bot351s", "status": "planned"},
+    {"date": "2026-09-03", "day": "Jeudi", "time": "-", "type": "Repos (sur site + Suivi Wegovy)", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "blocked"}
+  ],
+  "no_train_days": ["2026-08-28", "2026-09-01", "2026-09-03"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Execute Run #33 (gate session) tomorrow with strict FC adherence (avg ≤ 140 bpm). Post-run, assess deload gate: current pre-gate metrics (HRV weekly 32, RHR 54) indicate deload-prolonge. If post-Run #33 metrics remain at HRV ≤32 OR RHR ≥54, postpone W36 by one full week.",
+      "measurable": "Run #33 completed at ≤140 bpm avg HR; post-gate assessment Sunday AM determines W36 start",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P1",
+      "text": "Schedule Vitamin D blood panel — retest was due ~July 2026, now 6+ weeks overdue. Current level 27 ng/mL (Dec 2025) insufficient. Bring weight curve and tolerance report to Wegovy teleconsultation Sep 3.",
+      "measurable": "Lab order placed within 48h; result logged before next monthly refresh",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P2",
+      "text": "Resume nutrition logging — 5 consecutive days without data makes caloric adequacy assessment impossible during this critical deload-recovery period. Protein averaging 125 g/day when logged, below ~160 g target.",
+      "measurable": "5 of next 7 days with meals_logged >= 1",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "rhr_7d_avg",
+      "threshold": "Must return to ≤51 bpm before W36 can start. Currently 54.1 — 6+ consecutive days above baseline.",
+      "reason": "Sustained +4 bpm above 50 bpm baseline (+2.1σ). Comeback §4B red flag borderline (>5 bpm for 3+ days: currently +4)."
+    },
+    {
+      "marker": "hrv_weekly_avg",
+      "threshold": "Must return to ≥36 for full W36 start, or ≥33 for cautious start. Currently 32.",
+      "reason": "Declining trend (35→34→34→33→33→32) across 2 weeks during deload — pattern consistent with post-Run #29 parasympathetic suppression."
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "At 18.95, declining continuously from 30.6 (late July). Must stabilize for 12 km objective timeline.",
+      "reason": "Every missed or shortened session erodes the chronic base that W36 sessions need to build from."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/129"
+}

@@ -1,0 +1,72 @@
+{
+  "as_of_date": "2026-06-27",
+  "bootstrap": false,
+  "situational_context": "Running comeback day 55 (12 runs since May 3). Run #12 overreach on Jun 21 (7.5 km vs 4 km planned, suffer 36) triggered extended recovery — 6 rest days since Jun 23 (only ebike commutes). HRV persistently depressed: 7 consecutive UNBALANCED/LOW days, weekly avg 33 ms (down from 36 two weeks ago, 17% below May baseline of 39-40). Pattern echoes the failed March 2025 comeback — erratic distance compliance is the primary behavioral risk. ACWR 1.21 (last computed Jun 23). Currently at Hotel Mercure Chantilly for weekend stay (Jun 26-29) — forest training environment available. Canicule breaking: 37C today to 27C Sunday, 23C by Monday. Weight 103.67 kg (Jun 21), fat ratio improving (26.3% vs 26.8%), muscle mass up +1.16 kg — body recomposition underway. No new labs since Dec 2025; Vitamin D retest overdue. Body battery chronically low (<50), likely baby-related sleep fragmentation contribution.",
+  "acute_load_7d": 23,
+  "chronic_load_28d": 19,
+  "distance_from_peak_pct": 1.2,
+  "hrv_7d_avg": 33,
+  "rhr_7d_avg": 50,
+  "sleep_hours_7d_avg": 7.47,
+  "weight_kg_7d_avg": 103.67,
+  "last_session": {
+    "date": "2026-06-23",
+    "type": "EBikeRide (commute)",
+    "duration_min": 73,
+    "training_load": 16
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-06-27", "day": "Samedi", "time": "11:30", "type": "Velo gravel/ebike Z1-Z2 (Foret de Chantilly)", "duration_min": 60, "target_load": 12, "calendar_event_id": "sm1bvahm3qonm84euiluk9ftl4", "status": "planned"},
+    {"date": "2026-06-28", "day": "Dimanche", "time": "12:00", "type": "Run #13 — 4 km Z2 strict (Foret de Chantilly)", "duration_min": 35, "target_load": 14, "calendar_event_id": "r6d61t9ourbgg7s35dt9taod44", "status": "planned"},
+    {"date": "2026-06-29", "day": "Lundi", "time": null, "type": "Sur site — EBike commute (~38 km)", "duration_min": 120, "target_load": 16, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-06-30", "day": "Mardi", "time": null, "type": "Repos", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-07-01", "day": "Mercredi", "time": "12:00", "type": "Run #14 — 4 km Z2 conditionnel", "duration_min": 35, "target_load": 14, "calendar_event_id": "c5lvjfcs4ttto181jv8kc2k334", "status": "planned"},
+    {"date": "2026-07-02", "day": "Jeudi", "time": null, "type": "Sur site — EBike commute (~38 km)", "duration_min": 120, "target_load": 16, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-07-03", "day": "Vendredi", "time": null, "type": "Repos", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"}
+  ],
+  "no_train_days": ["2026-06-29", "2026-07-02"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "DISTANCE COMPLIANCE IS THE #1 RISK. Run #12 (7.5 km vs 4 km planned) exactly mirrors the pattern that derailed the March 2025 comeback. For Run #13 (Sun) and Run #14 (Wed): set Garmin distance alert at 4.0 km, WALK home after alert. No negotiation.",
+      "measurable": "Run #13 and #14 both <= 4.0 km",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P1",
+      "text": "HRV weekly avg at 33 ms (down from 36 two weeks ago, 17% below May baseline). Seven consecutive UNBALANCED/LOW days. Body battery chronically <50. Prioritize 7.5+ hours sleep, hydrate aggressively. If HRV weekly avg drops to <=30, skip all running until recovery.",
+      "measurable": "HRV weekly avg >= 35 within 7 days; body battery reaching >= 50 at least 2/7 days",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Vitamin D retest NOW overdue (was due ~July 2026). At 103+ kg with active running, insufficient Vitamin D (27 ng/mL in Dec 2025) doubles stress fracture risk. Schedule blood panel this week.",
+      "measurable": "Lab order placed by July 4, 2026",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "hrv_weekly_avg",
+      "threshold": "Alert if drops to <= 30 ms or fails to recover toward >= 35 within 7 days",
+      "reason": "Currently 33 ms, declining trend. 7 consecutive UNBALANCED/LOW days."
+    },
+    {
+      "marker": "run_distance_compliance",
+      "threshold": "Any run exceeding planned distance by >500m triggers next run skip",
+      "reason": "Run #12 overreach (+88%) is the primary behavioral risk factor for comeback failure"
+    },
+    {
+      "marker": "body_battery_max",
+      "threshold": "Alert if max body battery remains <50 for 7+ consecutive days",
+      "reason": "Currently 0/7 days reaching 50. Chronic low energy reserve."
+    },
+    {
+      "marker": "post_run_pain",
+      "threshold": "Any localized joint/tendon pain lasting >24h triggers skip of next run",
+      "reason": "Tissue tolerance critical at 103.67 kg body weight during comeback week 8"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/68"
+}

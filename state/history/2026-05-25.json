@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-05-25",
+  "bootstrap": false,
+  "situational_context": "Running comeback week 4, consolidated at 5 km. Run #5 (May 23) showed clear cardiac adaptation: avg HR 136 / suffer 19 vs Run #4 avg HR 140 / suffer 26 at identical distance. Chronic load 18.7 (declining from 22.3 as cycling volume reduced in favor of structured running). E-bike commuting continues on sur-site days (~38 km round trip, suffer 8-12). Weight stable at 103.84 kg. ACWR 0.89 — safe rebuild zone. Readiness HIGH today (77). No red flags active. Next milestone: confirm 5 km consolidation with Run #6 (May 28), then evaluate distance progression to 6 km.",
+  "acute_load_7d": 16.6,
+  "chronic_load_28d": 18.7,
+  "distance_from_peak_pct": 1.2,
+  "hrv_7d_avg": 36,
+  "rhr_7d_avg": 50,
+  "sleep_hours_7d_avg": 7.11,
+  "weight_kg_7d_avg": 103.84,
+  "last_session": {
+    "date": "2026-05-23",
+    "type": "Run",
+    "duration_min": 41,
+    "training_load": 19
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-05-25", "day": "Dimanche", "time": "12:00", "type": "Vélo endurance Z2", "duration_min": 50, "target_load": 15, "calendar_event_id": "ghentpl944kml4953a9ocbg16o", "status": "planned"},
+    {"date": "2026-05-26", "day": "Lundi", "time": null, "type": "Sur site (commute ebike)", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-05-27", "day": "Mardi", "time": null, "type": "Repos", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-05-28", "day": "Mercredi", "time": "12:00", "type": "Run #6 — 5 km Z1-Z2", "duration_min": 45, "target_load": 18, "calendar_event_id": "3ua5vo8c0m59nglc8i37rm1vbg", "status": "planned"},
+    {"date": "2026-05-29", "day": "Jeudi", "time": "12:00", "type": "Vélo facile Z1-Z2", "duration_min": 30, "target_load": 10, "calendar_event_id": "nitu7moo6mq72kdfb1reeiikf4", "status": "planned"},
+    {"date": "2026-05-30", "day": "Vendredi", "time": null, "type": "Repos", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-05-31", "day": "Samedi", "time": "12:00", "type": "Run #7 — 5 km Z1-Z2", "duration_min": 45, "target_load": 18, "calendar_event_id": "usilp815jojoukd3jp2o1h324s", "status": "planned"}
+  ],
+  "no_train_days": ["2026-05-26"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Execute today's vélo endurance Z2 (50 min, FC 120-140 bpm). Readiness is HIGH (77) — best training window this week. If any residual lower-limb soreness from Run #5 (May 23), default to 30 min Z1.",
+      "measurable": "Session completed with avg HR 120-140 bpm and training load 13-17",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Maintain strict 72h gap before Run #6 (Wednesday). The Tuesday rest is non-negotiable for tissue recovery at 104 kg body weight — tendons need time between impact sessions regardless of cardiovascular readiness.",
+      "measurable": "No running between today and May 28",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Address protein deficit before nutritionist appointment (May 28). Weekly average is 133 g/day vs 150 g target. Prioritize distribution: aim for 35-40 g per meal (4 meals) rather than concentrating at lunch.",
+      "measurable": "Average protein ≥145 g/day over May 25-27",
+      "evidence_class": "RCT"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "run_adaptation_hr",
+      "threshold": "Run #6 avg HR should be ≤138 bpm at 5 km. If >140, flag potential overreach.",
+      "reason": "Runs #4→#5 showed clear HR decline (140→136). Continuation of trend confirms tissue and cardiac adaptation."
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Currently 18.7 and declining. This week's 4 sessions should stabilize or begin reversing the decline.",
+      "reason": "Declining from 22.3 (May 14) as cycling volume reduced. Need to arrest decline to maintain fitness base."
+    },
+    {
+      "marker": "sleep_consistency",
+      "threshold": "Flag if ≥2 nights <6h in next 7 days",
+      "reason": "One poor night (5.95h on May 24) in last 7. Baby-related disruption normal but accumulation risks recovery."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/35"
+}

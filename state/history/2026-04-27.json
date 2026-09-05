@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-04-27",
+  "bootstrap": false,
+  "situational_context": "Early rebuild phase with ACWR spike requiring absorption. Gravel ride on Apr 25 (load 57, suffer 57) spiked ACWR to 1.44 against a low chronic base of 22. Training readiness recovered from 25 to 75 in 48h — autonomic system coping well. Chronic load rising (17.8→22 over 8 days), first real progress since extended detraining period. E-bike commuting continues as baseline activity on 'sur site' days (38 km round trip, load ~10-15). Weight trending down nicely: 106.89→104.55 kg over 12 days. Young baby continues to create scheduling variability — skipped sessions are expected and not concerning. HRV stable at 38 ms (7d avg), RHR improved from 53→50 bpm. Strategy: Z1-only until ACWR normalises below 1.3 (expected by May 1-2), then resume Z2 build. Weekend double sessions per user preference.",
+  "acute_load_7d": 31.67,
+  "chronic_load_28d": 22,
+  "distance_from_peak_pct": 1.4,
+  "hrv_7d_avg": 38,
+  "rhr_7d_avg": 50,
+  "sleep_hours_7d_avg": 7.66,
+  "weight_kg_7d_avg": 104.89,
+  "last_session": {
+    "date": "2026-04-25",
+    "type": "GravelRide",
+    "duration_min": 51,
+    "training_load": 57
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-04-27", "day": "Mon", "time": null, "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-04-28", "day": "Tue", "time": null, "type": "Sur site — commute e-bike probable", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-04-29", "day": "Wed", "time": "12:00", "type": "Zwift Récup Z1", "duration_min": 30, "target_load": 10, "calendar_event_id": "povq9lsag6oqlbdajhju1ttm10", "status": "planned"},
+    {"date": "2026-04-30", "day": "Thu", "time": null, "type": "Sur site — commute e-bike probable", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-05-01", "day": "Fri", "time": "11:00", "type": "Sortie vélo endurance Z2", "duration_min": 60, "target_load": 18, "calendar_event_id": "t0jforto8j77dufii0jv8o51g8", "status": "planned"},
+    {"date": "2026-05-02", "day": "Sat", "time": "11:00", "type": "Sortie longue Z2", "duration_min": 75, "target_load": 25, "calendar_event_id": "r22o9g67fjatm4tp3qvfendq08", "status": "planned"},
+    {"date": "2026-05-03", "day": "Sun", "time": "12:00", "type": "Sortie récup Z1-Z2", "duration_min": 45, "target_load": 15, "calendar_event_id": "j21spceejm3ecvso081j2da93o", "status": "planned"}
+  ],
+  "no_train_days": ["2026-04-28", "2026-04-30"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Respect ACWR absorption: Z1-only until Wed-Thu, then Z2 from Friday onward. If Tuesday/Thursday gravel commute suffer score >30, cancel the next planned session and add a rest day.",
+      "measurable": "ACWR below 1.3 by May 1; no session above load 15 before Wednesday",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Protein intake consistency: hit ≥150g/day on training days, ≥130g on rest days. Last 7d average was 128g — below target for a 105 kg athlete in rebuild phase.",
+      "measurable": "7d protein average ≥140g by next digest",
+      "evidence_class": "RCT"
+    },
+    {
+      "priority": "P2",
+      "text": "Continue weight trajectory — current -2 kg/12d pace is sustainable. Maintain caloric awareness without aggressive restriction; the deficit appears to come naturally from activity + logging discipline.",
+      "measurable": "Weight 7d avg ≤105 kg by next week while maintaining training load",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "acwr",
+      "threshold": "Must return to [0.8, 1.3] band within 5-7 days",
+      "reason": "Currently 1.44 after gravel spike — elevated injury risk until absorbed"
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Target gradual increase toward 35-40 over next 2 weeks",
+      "reason": "At 22, still only 1.4% of historical peak (1608). Structured sessions + commutes should push this up"
+    },
+    {
+      "marker": "rhr_7d_avg",
+      "threshold": "Sustain at or below 50 bpm",
+      "reason": "Improved from 53 to 50 over 8 days — positive cardiac adaptation signal"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/8"
+}

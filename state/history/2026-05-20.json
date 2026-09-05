@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-05-20",
+  "bootstrap": false,
+  "situational_context": "Running comeback week 5: 4 runs completed (May 3, 9, 15, 18). Run #4 reached 5.0 km (exceeded 3.5 km plan — distance discipline flagged but HR stayed in Z2, avg 140 bpm). Primary modality still e-bike commuting (~38 km/day round trip on sur-site days). Gravel Z2 ride added May 16 (14.3 km, load 17). Chronic load 20.8 (down from 22.3 on May 14 — trailing effect of rest days rolling in). ACWR 0.75, safely in rebuild zone. HRV 7d avg 36 (down from 40, but at 90-day personal baseline — driven by sleep decline, not overtraining). RHR stable at 50 bpm. VO2max running improved to 38.7 (+0.4). Weight continuing to drop: 103.6 kg (vs 104.1 on May 14). Sleep declining: 6.9h avg (vs 7.2h — baby-related fragmentation). Congés May 22. Two sur-site days this week (May 21, 26). Comeback protocol active — consolidate at 5 km before increasing. Next nutritionist RDV May 28 (Lucie UGUEN).",
+  "acute_load_7d": 15.6,
+  "chronic_load_28d": 20.8,
+  "distance_from_peak_pct": 1.3,
+  "hrv_7d_avg": 36,
+  "rhr_7d_avg": 50,
+  "sleep_hours_7d_avg": 6.92,
+  "weight_kg_7d_avg": 103.56,
+  "last_session": {
+    "date": "2026-05-20",
+    "type": "EBikeRide",
+    "duration_min": 12,
+    "training_load": 2
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-05-20", "day": "Wed", "time": "—", "type": "Rest/Light", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"},
+    {"date": "2026-05-21", "day": "Thu", "time": "—", "type": "Sur site commute", "duration_min": 120, "target_load": 16, "calendar_event_id": "", "status": "blocked"},
+    {"date": "2026-05-22", "day": "Fri", "time": "13:00", "type": "Sortie vélo endurance Z2", "duration_min": 50, "target_load": 18, "calendar_event_id": "1qvtb1vbspdmhkc216soitae74", "status": "planned"},
+    {"date": "2026-05-23", "day": "Sat", "time": "12:00", "type": "Run #5 consolidation ≤5 km Z1-Z2", "duration_min": 45, "target_load": 22, "calendar_event_id": "2gh25jhdrvih06is7hj12nsp24", "status": "planned"},
+    {"date": "2026-05-24", "day": "Sun", "time": "12:00", "type": "Sortie vélo endurance Z2", "duration_min": 50, "target_load": 18, "calendar_event_id": "irsb93a8mprc38vvvrpvqqa2ko", "status": "planned"},
+    {"date": "2026-05-25", "day": "Mon", "time": "—", "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"},
+    {"date": "2026-05-26", "day": "Tue", "time": "—", "type": "Sur site commute", "duration_min": 120, "target_load": 16, "calendar_event_id": "", "status": "blocked"}
+  ],
+  "no_train_days": ["2026-05-21", "2026-05-26"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Consolidate at 5 km for Run #5 (May 23): do NOT increase distance beyond 5 km. Run #4 jumped +43% from Run #3 (3.53 to 5.01 km) — tissue needs to adapt at 103.6 kg body weight before any further increase. If May 21 gravel commute suffer >30, reduce Run #5 to 3-4 km.",
+      "measurable": "Run #5 completed at ≤5 km, no post-run pain lasting >24h",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Prioritize sleep duration: target ≥7h/night. Sleep has dropped from 7.2 to 6.9h avg, contributing to HRV decline (36 vs 40). Earlier bedtime on non-baby-disruption nights. This is the single highest-leverage recovery lever available.",
+      "measurable": "7d sleep avg ≥7.0h by next digest",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Continue eccentric calf raises 3x/week and Vitamin D supplementation daily. Body weight dropping well (103.6 kg, -1.5 kg over 3 weeks at ~0.5 kg/week) — do not accelerate deficit. Prepare nutrition export for Lucie UGUEN RDV (May 28).",
+      "measurable": "Calf raise sessions logged; weight loss ≤0.5 kg/week sustained; nutrition export ready by May 26",
+      "evidence_class": "RCT"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "hrv_7d_avg",
+      "threshold": "Alert if HRV weekly avg drops below 33 for ≥3 consecutive days",
+      "reason": "Currently at 36 (90-day baseline); further decline concurrent with rising RHR would indicate overreach or illness"
+    },
+    {
+      "marker": "sleep_hours_7d_avg",
+      "threshold": "Alert if 7d avg drops below 6.5h or ≥3 nights <6h",
+      "reason": "Sleep declining (6.9h from 7.2h); further drops compound recovery deficit and inflate post-run tissue risk at 103.6 kg"
+    },
+    {
+      "marker": "post_run_pain",
+      "threshold": "Any localized joint/tendon pain lasting >24h after Run #5 triggers skip of next run",
+      "reason": "Run #4 distance jump was aggressive (+43%); consolidation run must be pain-free to validate the new 5 km plateau"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/30"
+}

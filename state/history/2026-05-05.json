@@ -1,0 +1,135 @@
+{
+  "as_of_date": "2026-05-05",
+  "bootstrap": false,
+  "situational_context": "Early structured rebuild with return-to-running protocol initiated (Week 1 since May 3, first run in 182 days: 2.47 km, load 7). Chronic load rising from ultra-low base (23.7, 1.5% of historical peak 1608). Training pattern: gravel commute spikes (suffer 55-57) + e-bike commutes (suffer 6-14) + first tentative run. Weight trending down (-2.1 kg in 18d to 104.78 kg). HRV stable (38 avg), RHR improved (53->49). Readiness high today (82, BB 65). VO2max running recalibrated 40.9->38.6 post-first-run (expected). Primary constraint: tissue tolerance at 105 kg after 182-day running gap. Vitamin D insufficient (27 ng/mL, Dec 2025) — supplementation started. Young baby (Leonie, ~4 months) — expect occasional sleep fragmentation.",
+  "acute_load_7d": 25,
+  "chronic_load_28d": 23.7,
+  "distance_from_peak_pct": 1.47,
+  "hrv_7d_avg": 38,
+  "rhr_7d_avg": 49,
+  "sleep_hours_7d_avg": 7.72,
+  "weight_kg_7d_avg": 104.78,
+  "last_session": {
+    "date": "2026-05-03",
+    "type": "Run",
+    "duration_min": 21,
+    "training_load": 7
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-05-05",
+      "day": "Tue",
+      "time": "11:00",
+      "type": "Endurance velo Z2",
+      "duration_min": 45,
+      "target_load": 15,
+      "calendar_event_id": "uu3jtiqjg0o0kcc01a1d0ksfsc",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-06",
+      "day": "Wed",
+      "time": "",
+      "type": "Sur site (commute ebike or gravel)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "",
+      "status": "blocked"
+    },
+    {
+      "date": "2026-05-07",
+      "day": "Thu",
+      "time": "",
+      "type": "Sur site (commute ebike or gravel)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "",
+      "status": "blocked"
+    },
+    {
+      "date": "2026-05-08",
+      "day": "Fri",
+      "time": "12:00",
+      "type": "Recuperation active Z1-Z2 velo",
+      "duration_min": 45,
+      "target_load": 12,
+      "calendar_event_id": "p9uduferkvv5c4rta89d7i4ekg",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-09",
+      "day": "Sat",
+      "time": "12:00",
+      "type": "Endurance Z2 velo ou run court (2e run semaine 1)",
+      "duration_min": 45,
+      "target_load": 12,
+      "calendar_event_id": "04qpo5crol1aun7n5c1gga9pm8",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-10",
+      "day": "Sun",
+      "time": "13:00",
+      "type": "Endurance Z2 velo",
+      "duration_min": 60,
+      "target_load": 15,
+      "calendar_event_id": "ai4f5u6ua325j9k2hpi5ol57k4",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-11",
+      "day": "Mon",
+      "time": "",
+      "type": "Sur site (commute ebike or gravel)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "",
+      "status": "blocked"
+    }
+  ],
+  "no_train_days": ["2026-05-06", "2026-05-07", "2026-05-11"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Continue return-to-running protocol Week 1: attempt second short run on Saturday May 9 (2.5-3 km, 20-25 min, Z1-Z2, soft surface Bois de Vincennes) ONLY if no localized pain persists from the May 3 run. If any Achilles/patellar/tibial discomfort, default to cycling.",
+      "measurable": "Complete second run <=3 km without tissue complaint, or consciously default to cycling if symptomatic",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Moderate gravel commute intensity on May 6-7. The May 1 gravel (suffer 55) crashed readiness to 25 for 2 days. Two consecutive high-intensity gravel commutes would compromise the weekend sessions. Aim for at least one ebike day, or keep gravel in Z2 (no sprints) to cap suffer below 30.",
+      "measurable": "Training readiness >=50 on Friday May 8, enabling the weekend sessions",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Increase daily protein to 150g+ (currently averaging 126g, 16% below target). At 105 kg during return-to-running, 1.4-1.6 g/kg/day optimizes tendon and muscle tissue remodeling. Prioritize protein at breakfast and post-session.",
+      "measurable": ">=5 of next 7 days with protein >=140g logged",
+      "evidence_class": "RCT"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "tissue_feedback_post_run",
+      "threshold": "Any localized pain (Achilles, patellar, tibial, plantar) lasting >24h after the May 3 run",
+      "reason": "At 105 kg after 182-day gap, tissue tolerance is the rate-limiter. Pain >24h = skip Saturday run."
+    },
+    {
+      "marker": "vo2max_running",
+      "threshold": "Currently 38.6, dropped from 40.9. Watch for stabilization or further decline over next 2-3 runs.",
+      "reason": "Garmin recalibrated after seeing running performance post-layoff. Should stabilize as run consistency builds."
+    },
+    {
+      "marker": "acwr_post_commute",
+      "threshold": "ACWR should stay <=1.30 after commute days are factored in",
+      "reason": "Two gravel commutes (suffer 55 each) would add ~110 load. If ACWR >1.30, cancel Friday session and reduce weekend."
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Target gradual increase toward 35-40 over next 2 weeks",
+      "reason": "Currently at 23.7 (1.5% of historical peak). Any structured consistency will drive this up."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/15"
+}

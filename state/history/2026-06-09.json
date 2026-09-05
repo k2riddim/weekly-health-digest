@@ -1,0 +1,72 @@
+{
+  "as_of_date": "2026-06-09",
+  "bootstrap": false,
+  "situational_context": "Running comeback week 6: 8 runs completed since May 3 gap-break (was 2 runs at last digest May 14). Distance consolidated at 5+ km — runs #4-8: 5.01, 5.02, 3.78, 5.23, 5.56 km. VO2max running improved from 38.3 to 40.3 (+2.0). Primary modality remains ebike commuting (~38 km round trip on sur-site days). ACWR 1.34 — slightly above 1.3 threshold due to two solid runs (loads 27+26) in a 4-day window plus ebike commuting. HRV trending LOW 5+ consecutive days (weekly avg 33 vs 90d baseline 36.3); body battery depleted (1/8 days ≥50). Pattern consistent with functional overreaching — Run #8 showed improving cardiac efficiency (HR 138 avg at 5.56 km vs HR 140 at 5.23 km). Weight declining steadily: 102.62 kg (down 1.48 kg in 26 days). No new labs since Dec 2025. Comeback protocol active — holding at 5 km until ACWR and recovery markers improve.",
+  "acute_load_7d": 22,
+  "chronic_load_28d": 16.4,
+  "distance_from_peak_pct": 1.02,
+  "hrv_7d_avg": 33,
+  "rhr_7d_avg": 50.3,
+  "sleep_hours_7d_avg": 7.04,
+  "weight_kg_7d_avg": 102.62,
+  "last_session": {
+    "date": "2026-06-09",
+    "type": "EBikeRide",
+    "duration_min": 69,
+    "training_load": 11
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-06-09", "day": "Tuesday", "time": "—", "type": "EBikeRide commute (sur site)", "duration_min": 122, "target_load": 19, "calendar_event_id": "r1qrp54q19vjeogro3t20l02tk", "status": "blocked"},
+    {"date": "2026-06-10", "day": "Wednesday", "time": "12:00", "type": "Run #9 — 5 km Z2", "duration_min": 45, "target_load": 18, "calendar_event_id": "h5k8mtgpnkqlhadk0tvef1tsh0", "status": "planned"},
+    {"date": "2026-06-11", "day": "Thursday", "time": "—", "type": "EBikeRide commute (sur site)", "duration_min": 120, "target_load": 16, "calendar_event_id": "", "status": "blocked"},
+    {"date": "2026-06-12", "day": "Friday", "time": "—", "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"},
+    {"date": "2026-06-13", "day": "Saturday", "time": "11:30", "type": "Gravel endurance Z1-Z2 — 60 min", "duration_min": 60, "target_load": 16, "calendar_event_id": "k8a6ga7t9qa7knkq6d93jo4bfk", "status": "planned"},
+    {"date": "2026-06-14", "day": "Sunday", "time": "11:30", "type": "Run #10 — 5 km Z2", "duration_min": 45, "target_load": 18, "calendar_event_id": "rjjjug0p9j0gv3et996jsn3r3g", "status": "planned"},
+    {"date": "2026-06-15", "day": "Monday", "time": "—", "type": "Rest / active recovery", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"}
+  ],
+  "no_train_days": ["2026-06-09", "2026-06-11"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Hold running distance at 5 km — do not increase until ACWR returns below 1.3 and body battery shows ≥50 on 4+ of 7 days. Runs #9 and #10 both at 5 km Z2 with strict HR cap 135 bpm.",
+      "measurable": "ACWR < 1.3 by Jun 15; body battery ≥50 on 3+ days this week",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Prioritize sleep quantity — HRV has been LOW for 5+ days with body battery consistently under 50. Target ≥7.5h nightly. Avoid screens after 22:00 on training-eve nights (Tue, Fri, Sat).",
+      "measurable": "Sleep 7d avg ≥7.3h by Jun 15; HRV weekly avg ≥35",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Increase daily protein to hit 150g target — current 7d avg is 132g, consistently below target. Focus on breakfast and dinner protein additions. Each 10g increase supports tendon remodeling during the running comeback.",
+      "measurable": "Protein 7d avg ≥145g by Jun 15",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "acwr",
+      "threshold": "Alert if ACWR stays >1.3 for 3+ consecutive days",
+      "reason": "Currently 1.34. Should resolve as high-load Run #7 (Jun 3, load 27) ages out of the 7-day window by Wed Jun 10"
+    },
+    {
+      "marker": "body_battery",
+      "threshold": "Alert if max <50 for 7+ consecutive days (currently 8 days sub-50 except Jun 2)",
+      "reason": "Persistent depletion despite adequate sleep — cumulative fatigue from ebike commute + running"
+    },
+    {
+      "marker": "hrv_weekly_avg",
+      "threshold": "Alert if drops below 30 (currently 33, 90d baseline 36.3)",
+      "reason": "Sustained LOW since Jun 4; further decline would suggest inadequate recovery"
+    },
+    {
+      "marker": "post_run_pain",
+      "threshold": "Any localized pain lasting >24h after a run → skip next run",
+      "reason": "Tissue tolerance remains the limiting factor at 102.6 kg body weight"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/49"
+}

@@ -1,0 +1,57 @@
+{
+  "week_ending": "2026-04-19",
+  "bootstrap": false,
+  "situational_context": "Early rebuild phase, Week 1 of structured training reintroduction. First Zwift session (Climb On Lite, load 15) added alongside e-bike commuting. Chronic load at 18.8 (1.2% of 2023 peak). HRV showed intra-week decline from 42 to 32, attributed to regression from transient high plus first multi-session training day, not illness. RHR stable (avg 52.9) with one-day spike to 56 on Apr 18 coinciding with body battery nadir (28). Cohabitant disruption: night of Apr 18-19 heavily fragmented (5 wakings in first 2.5h). Sleep adequate most nights (7.22h avg) but variable (5.95-8.29h). Weight down ~1 kg to 105.85 (only 2 data points). Protein intake consistently below target (avg 119g vs 142g). Readiness consistently high — autonomic capacity for load increase confirmed. VO2max stable: running 40.9, cycling 39.",
+  "acute_load_7d": 18.0,
+  "chronic_load_28d": 18.8,
+  "distance_from_peak_pct": 1.17,
+  "hrv_7d_avg": 37.0,
+  "rhr_7d_avg": 52.9,
+  "sleep_hours_7d_avg": 7.22,
+  "weight_kg_7d_avg": 106.37,
+  "sessions_completed": 3,
+  "sessions_scheduled_next_week": [
+    {"day": "Tuesday 2026-04-21", "time": "07:30", "type": "VirtualRide", "duration_min": 40, "target_load": 13},
+    {"day": "Thursday 2026-04-23", "time": "07:30", "type": "VirtualRide", "duration_min": 35, "target_load": 13},
+    {"day": "Saturday 2026-04-25", "time": "08:00", "type": "VirtualRide", "duration_min": 45, "target_load": 15}
+  ],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Complete all 3 scheduled Zwift sessions this week — consistency is the rate-limiting factor for rebuild at this stage",
+      "measurable": "3/3 scheduled sessions completed, acute load ≥18",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Hit protein target (≥140g/day) on all days, especially training days — current deficit (avg 119g) will limit adaptation as load increases",
+      "measurable": "≥5 days with protein ≥140g logged in OH",
+      "evidence_class": "RCT"
+    },
+    {
+      "priority": "P2",
+      "text": "Discuss recent weight trend and general fatigue patterns at Wednesday GP appointment — opportunity to mention interest in routine bloodwork given rebuild phase",
+      "measurable": "GP visit completed, any ordered labs noted",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "hrv_7d_avg",
+      "threshold": "Sustaining >35 ms confirms recovery capacity; drop below 32 for 3+ days warrants deload",
+      "reason": "Late-week dip to 32-34 needs monitoring to confirm it was transient"
+    },
+    {
+      "marker": "protein_daily_avg",
+      "threshold": "Target ≥140g/day average for the week",
+      "reason": "Persistent protein deficit at 84% of target will become rate-limiting as training load increases"
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Target gradual increase toward 25-30 over next 2 weeks",
+      "reason": "Currently at 1.2% of historical peak — structured sessions should begin moving this"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/1"
+}

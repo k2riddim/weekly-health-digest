@@ -1,0 +1,120 @@
+{
+  "as_of_date": "2026-07-07",
+  "bootstrap": false,
+  "situational_context": "Running comeback day 66 (week 10), 14 runs completed. ACWR normalized to 0.96 (safe, down from 1.35 on Jun 14). HRV 7d avg recovered to 37 ms (up from 35). Weight slightly reversed to 103.67 kg (+1 kg vs Jun 7). Third heatwave of 2026 starting today — Vigilance Orange, 35-38°C expected through Jul 12, RED zone for outdoor training at preferred hours (11am-3pm). Post-heatwave modifier active from June canicule. Vacation to Saint-Malo Jul 12-27 (cooler coastal climate). Training this week constrained to e-bike commutes on sur site days + rest/indoor on free days. No new labs since Dec 2025; Vitamin D retest overdue.",
+  "acute_load_7d": 20,
+  "chronic_load_28d": 20.73,
+  "distance_from_peak_pct": 1.3,
+  "hrv_7d_avg": 37,
+  "rhr_7d_avg": 49,
+  "sleep_hours_7d_avg": 7.40,
+  "weight_kg_7d_avg": 103.67,
+  "last_session": {
+    "date": "2026-07-05",
+    "type": "Run",
+    "duration_min": 47,
+    "training_load": 30
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-07-07",
+      "day": "Mardi",
+      "time": "commute",
+      "type": "E-bike commute (sur site)",
+      "duration_min": 120,
+      "target_load": 16,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-07-08",
+      "day": "Mercredi",
+      "time": "11:00",
+      "type": "Repos canicule / treadmill indoor si dispo",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "0jf3215bpejrtipi2vodkp3uts",
+      "status": "rest"
+    },
+    {
+      "date": "2026-07-09",
+      "day": "Jeudi",
+      "time": "commute",
+      "type": "E-bike commute (sur site)",
+      "duration_min": 120,
+      "target_load": 16,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-07-10",
+      "day": "Vendredi",
+      "time": "-",
+      "type": "Repos actif — pic canicule 38°C",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-07-11",
+      "day": "Samedi",
+      "time": "11:00",
+      "type": "Vélo adapté canicule — 40 min Z1-Z2",
+      "duration_min": 40,
+      "target_load": 12,
+      "calendar_event_id": "6aos77mggr9mma4f9oq9irljb8",
+      "status": "planned"
+    },
+    {
+      "date": "2026-07-12",
+      "day": "Dimanche",
+      "time": "11:15",
+      "type": "Marche rapide optionnelle (avant train Saint-Malo)",
+      "duration_min": 30,
+      "target_load": 5,
+      "calendar_event_id": "ged3o7i2cgd0uqcbk8ec2to4ac",
+      "status": "planned"
+    }
+  ],
+  "no_train_days": ["2026-07-07", "2026-07-09"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Canicule RED zone — no outdoor running or intense cycling at 11am-3pm this week. E-bike commutes on sur site days are acceptable (wind cooling, moderate effort). Relocate any scheduled run to indoor treadmill with AC or convert to rest. Saint-Malo (Jul 12+) will offer cooler coastal conditions to resume outdoor training.",
+      "measurable": "Zero outdoor runs during heatwave (Jul 7-12); resume outdoor running in Saint-Malo if feels-like ≤ 26°C",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Weight trend has reversed: 102.62 → 103.67 kg (+1 kg in 2 weeks). Nutrition logging shows avg ~2555 cal/day (close to 2500 target) but with high-variance days (3563 cal Jul 1). Tighten consistency, especially dinner portions which spike above 1000 cal on some days. Next weigh-in scheduled Jul 12.",
+      "measurable": "Weigh-in Jul 12 ≤ 103.5 kg; no daily intake > 2800 cal this week",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Vitamin D retest overdue (was due ~Jul 1, last value 27 ng/mL in Dec 2025). Schedule blood panel during Saint-Malo vacation or upon return. Continue supplementation in the meantime.",
+      "measurable": "Lab order placed before Jul 31",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "weight_trend",
+      "threshold": "Alert if Jul 12 weigh-in > 104 kg (confirming reversal)",
+      "reason": "Single reading reversal at 103.67 kg after prior downtrend; could be transient — needs confirmation"
+    },
+    {
+      "marker": "heat_recovery",
+      "threshold": "Monitor HRV and RHR during heatwave — alert if HRV drops < 34 or RHR rises > 53 for 3+ days",
+      "reason": "Heatwave strain can suppress HRV and elevate RHR even without exercise; current values acceptable (HRV 37, RHR 49)"
+    },
+    {
+      "marker": "post_run_pain",
+      "threshold": "Any localized joint/tendon pain lasting > 24h after Run #14 triggers skip of next run",
+      "reason": "Run #14 was 6 km (50% above 4 km calendar target), suffer 30 — tissue response should be monitored"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/78"
+}

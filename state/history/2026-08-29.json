@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-08-29",
+  "bootstrap": false,
+  "situational_context": "Running comeback in extended deload. W35 deload week (Aug 24-30) executed only 1 run (Run #31, 3.79 km unplanned) vs 3 planned — Runs #32 and #33 both skipped. Deload gate for W36 ⛔ TRIGGERED: HRV weekly avg 31 ms (≤32 threshold) and RHR 7d avg 53.9 bpm (≥54 threshold). Root cause identified: Run #29 (Aug 22, suffer 51, HR 146.2) was a C4 spike violation (+48% vs trailing-4-session cap of 34.5), triggering a sustained autonomic stress response — RHR elevated to 54 bpm for 6 consecutive days (Aug 23-28), HRV weekly declining from 36 to 31 over 3 weeks. Recovery signs emerging: today's RHR dropped to 52, body battery recovered to 52.5 (from 21.5 on Aug 23), training readiness improved to 68. W36 start delayed — first contingent run Wed Sep 2 (5.0 km, if HRV ≥32 + RHR ≤53). 12 km Beaumonts objective deferred until markers recover. Post-heatwave modifier expired Aug 28 — normal heat bands apply. Training status improved from 'Detraining' to 'Maintaining'. No new weight data since Aug 12 (100.68 kg). Nutrition logging stopped since Aug 23. Vitamin D retest still overdue (due Jul 2026, no new labs since Dec 2025). VO2max running declining slightly (42.9→42.5); cycling still at 42.9 (diverging from running — artifact partially resolved).",
+  "acute_load_7d": 23.8,
+  "chronic_load_28d": 19.0,
+  "distance_from_peak_pct": 1.18,
+  "hrv_7d_avg": 31,
+  "rhr_7d_avg": 53.9,
+  "sleep_hours_7d_avg": 7.25,
+  "weight_kg_7d_avg": 100.68,
+  "last_session": {
+    "date": "2026-08-25",
+    "type": "Run",
+    "duration_min": 28,
+    "training_load": 22
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-08-29", "day": "Sat", "time": null, "type": "rest", "duration_min": 0, "target_load": 0, "calendar_event_id": "iq83p7ojps35kmlusrri05kr3o", "status": "rest"},
+    {"date": "2026-08-30", "day": "Sun", "time": "11:00", "type": "Vélo easy Z1-Z2", "duration_min": 45, "target_load": 15, "calendar_event_id": "m66a6d3fur8p210asqq9g137ck", "status": "planned"},
+    {"date": "2026-08-31", "day": "Mon", "time": null, "type": "rest", "duration_min": 0, "target_load": 0, "calendar_event_id": "l57b6kl838qunbe4ljahcf8q7c", "status": "rest"},
+    {"date": "2026-09-01", "day": "Tue", "time": null, "type": "blocked (sur site)", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-09-02", "day": "Wed", "time": "12:00", "type": "Run 5.0 km easy plat (contingent)", "duration_min": 38, "target_load": 18, "calendar_event_id": "kqkobsuio1h14hkskr8bot351s", "status": "planned"},
+    {"date": "2026-09-03", "day": "Thu", "time": null, "type": "blocked (sur site + Wegovy)", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-09-04", "day": "Fri", "time": "12:00", "type": "Run 5.5 km easy plat (contingent)", "duration_min": 42, "target_load": 22, "calendar_event_id": "kcpnjft731u8299dpnat9kmonc", "status": "planned"}
+  ],
+  "no_train_days": ["2026-09-01", "2026-09-03"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Vitamin D retest overdue since July 2026 (last result Dec 2025: 27 ng/mL, insufficient). The Wegovy follow-up on Thu Sep 3 is the ideal opportunity — mention it naturally. Ask about ordering a panel that includes 25(OH)D, given the comeback and tissue-tolerance demands.",
+      "measurable": "Lab order placed during or immediately after the Sep 3 teleconsultation",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Extended deload in effect — do NOT resume running until Wed Sep 2, and only if HRV ≥ 32 + RHR ≤ 53. The Run #29 spike (suffer 51, +48% vs C4 session cap) caused a 6-day autonomic stress response. Recovery is happening but slowly. Cycling (Sun) is fine as active recovery.",
+      "measurable": "HRV weekly avg ≥ 32 and RHR ≤ 53 by Sep 2 morning; first run back completed at HR avg ≤ 138 without pain",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Resume nutrition logging — zero data since Aug 23. Protein intake (target 150g/day) is critical during this recovery-rebuild phase for tendon adaptation at 100+ kg body weight. The logged days (Aug 21-22) showed 112-142g protein — slightly below target.",
+      "measurable": "≥5 of next 7 days logged with ≥120g protein recorded",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "hrv_weekly_avg",
+      "threshold": "Must reach ≥ 32 by Sep 2 for first run back; target ≥ 36 for full W36 resumption",
+      "reason": "Declined from 36 (stable through Aug 13) to 31 over 3 weeks. Garmin status LOW for 4 consecutive days. Needs to reverse before adding training stress."
+    },
+    {
+      "marker": "rhr_7d_avg",
+      "threshold": "Must reach ≤ 53 by Sep 2 for first run back; target ≤ 51 for full W36",
+      "reason": "Plateaued at 54 bpm for 6 days post-Run #29 spike. Dropped to 52 today (first improvement). Baseline was 49 bpm in early Aug."
+    },
+    {
+      "marker": "vo2max_running",
+      "threshold": "Flag if it drops below 42.0",
+      "reason": "Declined from 42.9 to 42.5 during the low-volume period. Expected to stabilize once regular running resumes."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/130"
+}

@@ -1,0 +1,133 @@
+{
+  "as_of_date": "2026-05-21",
+  "bootstrap": false,
+  "situational_context": "Running comeback week 3: 4 runs completed since May 3 (2.47, 2.01, 3.53, 5.01 km). Run #4 (May 18) was aggressive at +43% distance; consolidation needed before further progression. Primary modality remains eBike commuting (~38 km/day on-site). Chronic load declining to 20.9 (was 22.3 on May 14), training status: Detraining. ACWR 0.78 — below safe zone lower bound, rebuild bias. HRV 7d avg 35.7 (at 90d baseline 36.4, BALANCED). RHR stable at 50.4. VO2max running improved to 38.7. Weight declining: 103.6 kg (from 104.1). Sleep slightly degraded at 6.92h 7d avg (baby-related). Next 3 sessions planned: velo Z2 Friday (conges), Run #5 consolidation Saturday, velo Z2 Sunday. Vitamin D retest due ~July 2026.",
+  "acute_load_7d": 16.3,
+  "chronic_load_28d": 20.9,
+  "distance_from_peak_pct": 1.3,
+  "hrv_7d_avg": 35.7,
+  "rhr_7d_avg": 50.4,
+  "sleep_hours_7d_avg": 6.92,
+  "weight_kg_7d_avg": 103.6,
+  "last_session": {
+    "date": "2026-05-21",
+    "type": "EBikeRide",
+    "duration_min": 58,
+    "training_load": 12
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-05-21",
+      "day": "Thu",
+      "time": "—",
+      "type": "eBike commute (sur site)",
+      "duration_min": 113,
+      "target_load": 20,
+      "calendar_event_id": "—",
+      "status": "blocked"
+    },
+    {
+      "date": "2026-05-22",
+      "day": "Fri",
+      "time": "13:00",
+      "type": "Sortie velo endurance Z2 — 50 min (conges)",
+      "duration_min": 50,
+      "target_load": 17,
+      "calendar_event_id": "1qvtb1vbspdmhkc216soitae74",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-23",
+      "day": "Sat",
+      "time": "12:00",
+      "type": "RETOUR RUNNING — Run #5 ≤5 km Z1-Z2 (consolidation)",
+      "duration_min": 45,
+      "target_load": 22,
+      "calendar_event_id": "2gh25jhdrvih06is7hj12nsp24",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-24",
+      "day": "Sun",
+      "time": "12:00",
+      "type": "Sortie velo endurance Z2 — 50 min",
+      "duration_min": 50,
+      "target_load": 17,
+      "calendar_event_id": "irsb93a8mprc38vvvrpvqqa2ko",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-25",
+      "day": "Mon",
+      "time": "—",
+      "type": "Repos",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "—",
+      "status": "rest"
+    },
+    {
+      "date": "2026-05-26",
+      "day": "Tue",
+      "time": "—",
+      "type": "eBike commute (sur site)",
+      "duration_min": 110,
+      "target_load": 16,
+      "calendar_event_id": "—",
+      "status": "blocked"
+    },
+    {
+      "date": "2026-05-27",
+      "day": "Wed",
+      "time": "—",
+      "type": "Repos (Run #6 possible si Run #5 sans douleur, gap ≥4j)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "—",
+      "status": "rest"
+    }
+  ],
+  "no_train_days": [
+    "2026-05-21",
+    "2026-05-26"
+  ],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Run #5 Saturday: consolidate at ≤5 km Z1-Z2. Do NOT increase distance — Run #4's +43% jump needs a stabilization run at the same distance. Walk if HR >145. Post-run tissue check: any localized pain >24h → skip next run.",
+      "measurable": "Run #5 completed ≤5 km, avg HR ≤145, no post-run pain >24h",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Protect sleep quantity this weekend — 7d avg has dropped to 6.92h from 7.23h. Target ≥7.5h Friday and Saturday nights to rebuild the buffer before next sur-site week.",
+      "measurable": "Sleep ≥7.5h on 2+ of next 3 nights",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Continue eccentric calf raises ≥3x/week. At 103.6 kg with running volume increasing, Achilles load management is the primary injury-prevention lever. Heavy slow resistance (Beyer 2015) protocol preferred.",
+      "measurable": "≥3 calf-raise sessions in next 7 days",
+      "evidence_class": "RCT"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "post_run_tissue_pain",
+      "threshold": "Any localized pain >24h after Run #5 → skip next run",
+      "reason": "Run #4 was an aggressive +43% distance jump at 103.6 kg; tissue tolerance is the bottleneck"
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Should stabilize near 20 then start rising with 3-session weeks",
+      "reason": "Currently declining (22.3 → 20.9) despite active training — need consistent session cadence to reverse"
+    },
+    {
+      "marker": "sleep_hours_7d_avg",
+      "threshold": "Alert if drops below 6.5h for 3+ consecutive days",
+      "reason": "Currently 6.92h, down from 7.23h — approaching the zone where recovery is compromised"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/31"
+}

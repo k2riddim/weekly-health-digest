@@ -1,0 +1,130 @@
+{
+  "as_of_date": "2026-04-29",
+  "bootstrap": false,
+  "situational_context": "Early rebuild phase: first significant effort (gravel ride, load 57 on Apr 25) absorbed well — training readiness rebounded to 76, HRV stable at 38. ACWR elevated at 1.44 due to spike against low chronic base (22.7). Weight trending down (-2.3 kg over 12 days to 104.6 kg). Activity profile remains dominated by e-bike commuting (3 sur-site days/week, load 17-24/day) with occasional structured sessions. Baby-driven life constraints continuing — missed sessions expected and acceptable. Chronic load at 1.4% of 2023 historical peak (1608); rebuild trajectory positive but very early.",
+  "acute_load_7d": 32.67,
+  "chronic_load_28d": 22.7,
+  "distance_from_peak_pct": 1.41,
+  "hrv_7d_avg": 38,
+  "rhr_7d_avg": 50,
+  "sleep_hours_7d_avg": 7.62,
+  "weight_kg_7d_avg": 104.89,
+  "last_session": {
+    "date": "2026-04-28",
+    "type": "EBikeRide",
+    "duration_min": 121,
+    "training_load": 24
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-04-29",
+      "day": "Wed",
+      "time": "12:00",
+      "type": "Zwift Récup Z1",
+      "duration_min": 30,
+      "target_load": 10,
+      "calendar_event_id": "povq9lsag6oqlbdajhju1ttm10",
+      "status": "planned"
+    },
+    {
+      "date": "2026-04-30",
+      "day": "Thu",
+      "time": null,
+      "type": "Sur site — e-bike commute attendu",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-05-01",
+      "day": "Fri",
+      "time": "11:00",
+      "type": "Endurance Z2 vélo — Jour férié",
+      "duration_min": 50,
+      "target_load": 15,
+      "calendar_event_id": "t0jforto8j77dufii0jv8o51g8",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-02",
+      "day": "Sat",
+      "time": "11:00",
+      "type": "Sortie longue Z2 — Week-end jour 1",
+      "duration_min": 60,
+      "target_load": 20,
+      "calendar_event_id": "r22o9g67fjatm4tp3qvfendq08",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-03",
+      "day": "Sun",
+      "time": "12:00",
+      "type": "Récup active Z1-Z2 — Week-end jour 2",
+      "duration_min": 45,
+      "target_load": 12,
+      "calendar_event_id": "j21spceejm3ecvso081j2da93o",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-04",
+      "day": "Mon",
+      "time": null,
+      "type": "Repos",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-05-05",
+      "day": "Tue",
+      "time": "11:30",
+      "type": "Endurance légère Z1-Z2 — Congés",
+      "duration_min": 45,
+      "target_load": 12,
+      "calendar_event_id": null,
+      "status": "planned"
+    }
+  ],
+  "no_train_days": ["2026-04-30"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Keep all sessions at Z1-Z2 this week to let ACWR normalize below 1.3. No intervals or tempo until ACWR < 1.2.",
+      "measurable": "ACWR below 1.3 by May 2 when the gravel spike exits the 7-day window",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Increase daily protein intake toward 150g target — currently averaging 120g/day (80% adherence). Add a protein-rich snack or increase lunch portion.",
+      "measurable": "7-day protein average >=140g by next digest",
+      "evidence_class": "RCT"
+    },
+    {
+      "priority": "P2",
+      "text": "If commuting sur site Thursday, prefer e-bike over gravel to avoid another ACWR spike. If gravel chosen (suffer >30), reduce Friday session to Z1 recovery only.",
+      "measurable": "Thursday commute suffer score <20 if e-bike; adjust Friday plan if >30",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "acwr",
+      "threshold": "Should drop below 1.3 by May 2",
+      "reason": "Gravel ride (load 57) exits 7-day window on May 2; moderate planned sessions should bring ratio back to safe zone"
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Target 30+ within 2 weeks",
+      "reason": "Currently at 22.7 — sustained moderate sessions will gradually build the denominator"
+    },
+    {
+      "marker": "body_composition_variability",
+      "threshold": "Fat% fluctuated 27.7-30.3% between two readings 2 days apart",
+      "reason": "Withings impedance sensitive to hydration; true trend requires 3+ consistent readings at same time of day"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/10"
+}

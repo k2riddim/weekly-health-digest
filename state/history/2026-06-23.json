@@ -1,0 +1,120 @@
+{
+  "as_of_date": "2026-06-23",
+  "bootstrap": false,
+  "situational_context": "Running comeback day 51 (12 runs completed). Run #12 on June 21 was a significant overreach: 7.5 km vs 4 km planned (suffer 36). ACWR self-corrected from 1.35 to 1.21 over 9-day digest gap. HRV 7d avg 34 ms (down from 35), 2 consecutive UNBALANCED days at 32 ms — consistent with acute fatigue from run overreach + extreme heatwave (39-40C Paris). RHR stable at 50 bpm. Body battery hasn't reached 50 in 7 days (max 47) — chronic fatigue signal. VO2max running improved to 40.8. Weight rebounded +1.05 kg (102.62 to 103.67) — likely heat/hydration, body composition improved (muscle +1.16 kg, fat -0.17 kg). Hotel stay at Chantilly Jun 26-29 provides better outdoor training (forest trails, shade). No new labs since Dec 2025; Vitamin D retest due July 2026.",
+  "acute_load_7d": 23,
+  "chronic_load_28d": 19,
+  "distance_from_peak_pct": 1.2,
+  "hrv_7d_avg": 34,
+  "rhr_7d_avg": 50,
+  "sleep_hours_7d_avg": 7.43,
+  "weight_kg_7d_avg": 103.67,
+  "last_session": {
+    "date": "2026-06-23",
+    "type": "EBikeRide (commute x2, sur site)",
+    "duration_min": 131,
+    "training_load": 16
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-06-23",
+      "day": "Tue",
+      "time": null,
+      "type": "Sur site — ebike commute",
+      "duration_min": 131,
+      "target_load": 16,
+      "calendar_event_id": null,
+      "status": "done"
+    },
+    {
+      "date": "2026-06-24",
+      "day": "Wed",
+      "time": "12:00",
+      "type": "Run #13 — 4 km Z2 (conditionnel, canicule 40C)",
+      "duration_min": 35,
+      "target_load": 12,
+      "calendar_event_id": "2jurvde9vndpjakmvjionr1u50",
+      "status": "planned"
+    },
+    {
+      "date": "2026-06-25",
+      "day": "Thu",
+      "time": null,
+      "type": "Sur site — ebike commute",
+      "duration_min": 120,
+      "target_load": 15,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-06-26",
+      "day": "Fri",
+      "time": null,
+      "type": "Repos / Trajet Chantilly",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-06-27",
+      "day": "Sat",
+      "time": "11:30",
+      "type": "Sortie velo — 60 min gravel/ebike Z1-Z2 (Foret de Chantilly)",
+      "duration_min": 60,
+      "target_load": 10,
+      "calendar_event_id": "sm1bvahm3qonm84euiluk9ftl4",
+      "status": "planned"
+    },
+    {
+      "date": "2026-06-28",
+      "day": "Sun",
+      "time": "12:00",
+      "type": "Run #14 — 4-5 km Z2 (Foret de Chantilly)",
+      "duration_min": 40,
+      "target_load": 14,
+      "calendar_event_id": "r6d61t9ourbgg7s35dt9taod44",
+      "status": "planned"
+    }
+  ],
+  "no_train_days": ["2026-06-23", "2026-06-25"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Run #13 tomorrow (Wed 24) is conditional on heat: if Paris hits 40C at noon, downgrade to 30 min walk in shade. If running, cap at 4 km and 122 bpm max. Carry 750+ mL water + electrolytes. Today's ebike commute was low-load (suffer 16), no gravel-adjustment needed.",
+      "measurable": "Run #13 executed at 4 km or less at FC 122 or less, or safely deferred to walk/rest if temp above 40C",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Body battery has not reached 50 in 7 days (max 47). Prioritize sleep quality and hydration — heat-induced dehydration suppresses both HRV and body battery. Target 2.5+ L water/day + electrolytes on sur site days and training days.",
+      "measurable": "Body battery at or above 50 at least 2 of next 7 days; HRV 7d avg at or above 35 ms",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Vitamin D retest due July 2026 (Dec 2025: 27 ng/mL insufficient, target 40+). Schedule blood panel before mid-July.",
+      "measurable": "Lab order placed before mid-July 2026",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "body_battery_max",
+      "threshold": "Alert if body battery max stays below 50 for another 7 days",
+      "reason": "7 consecutive days without reaching 50 indicates chronic fatigue accumulation; may indicate need for deload"
+    },
+    {
+      "marker": "hrv_7d_avg",
+      "threshold": "Alert if HRV 7d avg drops below 32 ms or fails to recover toward 36 ms over next 7 days",
+      "reason": "Currently 34 ms (2 consecutive UNBALANCED days at 32); need reversal before increasing run volume"
+    },
+    {
+      "marker": "weight_trend",
+      "threshold": "Monitor next Withings weigh-in — if weight above 104 kg, investigate hydration/nutrition",
+      "reason": "Rebounded +1.05 kg in 2 weeks; likely heat/hydration but could indicate nutrition overshoot (fat intake 2x target)"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/64"
+}

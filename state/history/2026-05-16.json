@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-05-16",
+  "bootstrap": false,
+  "situational_context": "Running comeback progressing well: 3 runs completed since gap broken on 2026-05-03 (after 182 days off). Run #1: 2.47 km (May 3), Run #2: 2.01 km (May 9), Run #3: 3.53 km (May 15). Run #3 exceeded protocol max (2.5 km) by 41% but FC well-controlled in Z2 (avg 139 bpm) — consolidation needed before further distance increase. Primary modality remains gravel/e-bike commuting. Today's gravel session (14.3 km, 49 min, Z2) replaces planned road velo. Chronic load flat at 22.0 (down from 22.3 two days ago) — detraining phase as April's big gravels exit the 28d window. ACWR at 0.75 — safely in rebuild zone. HRV stable (weekly avg 39, BALANCED); RHR slightly up to 50 bpm (was 49). VO2max running improved to 38.7 post-Run #3. Weight at new low 103.32 kg (down 0.78 kg since May 8) — trajectory excellent for -10 kg goal. Sleep marginally short last night (6.4h) but 7d avg adequate at 7.06h. No new labs since Dec 2025. Comeback protocol (return-to-running.md) active — tissue tolerance, not cardio, is the limiting factor. Birthday party blocks Saturday training; plan adapted. Vitamin D retest due ~July 2026.",
+  "acute_load_7d": 16.5,
+  "chronic_load_28d": 22.0,
+  "distance_from_peak_pct": 1.4,
+  "hrv_7d_avg": 39,
+  "rhr_7d_avg": 50,
+  "sleep_hours_7d_avg": 7.06,
+  "weight_kg_7d_avg": 103.32,
+  "last_session": {
+    "date": "2026-05-16",
+    "type": "GravelRide",
+    "duration_min": 49,
+    "training_load": 17
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-05-16", "day": "Vendredi", "time": "12:00", "type": "GravelRide Z2", "duration_min": 49, "target_load": 17, "calendar_event_id": "4b87dm11dh8pa57mq62i66ci5k", "status": "done"},
+    {"date": "2026-05-17", "day": "Samedi", "time": null, "type": "Repos", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-05-18", "day": "Dimanche", "time": "12:00", "type": "Run Z1-Z2", "duration_min": 25, "target_load": 15, "calendar_event_id": "hj3iqcb1tshb0gqmbh3811irbs", "status": "planned"},
+    {"date": "2026-05-19", "day": "Lundi", "time": null, "type": "Commute (sur site)", "duration_min": 120, "target_load": 16, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-05-20", "day": "Mardi", "time": null, "type": "Repos", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-05-21", "day": "Mercredi", "time": null, "type": "Commute (sur site)", "duration_min": 120, "target_load": 16, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-05-22", "day": "Jeudi", "time": "13:00", "type": "Velo endurance Z2", "duration_min": 50, "target_load": 18, "calendar_event_id": "1qvtb1vbspdmhkc216soitae74", "status": "planned"}
+  ],
+  "no_train_days": ["2026-05-19", "2026-05-21"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Execute Run #4 Sunday (May 18): consolidate at 3.5 km max, do NOT increase distance. Run #3 exceeded protocol — tissue needs time to adapt at 103 kg. Maintain 72h inter-run spacing.",
+      "measurable": "Run #4 completed Sunday, distance <=3.5 km, no post-run pain lasting >24h",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Eccentric calf raises 3x/week — critical injury prevention for Achilles at current body weight during running comeback. Heavy Slow Resistance protocol preferred.",
+      "measurable": ">=3 calf-raise sessions logged in the next 7 days",
+      "evidence_class": "RCT"
+    },
+    {
+      "priority": "P2",
+      "text": "Reduce caloric surplus: 7d avg intake ~2910 kcal vs 2500 target (+410 kcal/day). Fat intake particularly elevated. Weight still declining (103.3 kg, new low) so deficit exists, but tightening adherence would accelerate toward 95 kg goal.",
+      "measurable": "7d avg calories <=2700 kcal next week, fat <=100g/day",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "post_run_pain",
+      "threshold": "Any localized joint/tendon pain lasting >24h after Run #3 or #4 triggers skip of next run",
+      "reason": "Run #3 exceeded protocol by 41% — monitoring tissue response at 103 kg is critical"
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Alert if drops below 20 (currently 22.0, declining as April gravels exit window)",
+      "reason": "Detraining status confirmed — need consistent sessions to arrest decline"
+    },
+    {
+      "marker": "rhr_7d_avg",
+      "threshold": "Alert if RHR rises >5 bpm above 50 bpm baseline for 3+ consecutive days",
+      "reason": "RHR slightly up from 49 to 50-51; could indicate cumulative fatigue from adding running back"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": ""
+}

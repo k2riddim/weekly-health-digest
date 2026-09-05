@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-07-26",
+  "bootstrap": false,
+  "situational_context": "Running comeback 84 days in, 20 runs completed. Breakthrough Run #20: 10.5 km on Jul 25 in Saint-Malo (longest comeback run, nearly doubling the 5.8 km ceiling from Jun 14). Distances progressed from 4.9 km (Run #10) to 10.5 km (Run #20) over 42 days. VO2max running up to 42.1 (from 40.6 at last digest, 38.3 at comeback start). ACWR at 1.33 — within comeback band <=1.50. Chronic load rebuilt from 17.5 to 28.6 (+63%). HRV 7d avg recovered to 38 ms (from 35 at last digest). Returning from Saint-Malo vacation (Jul 12-27) to Paris. Sur site days Jul 28 and Jul 30 with ebike/gravel commute. Jul 6-15 heatwave passed; post-heatwave modifier expired Jul 25. No Withings weight data since Jun 21 (vacation without scale). No new labs since Dec 2025; Vitamin D retest overdue. Baby (Léonie, 6.5 months) — baby MCP not available this session; sleep appears adequate based on Benjamin's own sleep quality. Nutrition logging inactive.",
+  "acute_load_7d": 38,
+  "chronic_load_28d": 28.6,
+  "distance_from_peak_pct": 1.8,
+  "hrv_7d_avg": 38,
+  "rhr_7d_avg": 48,
+  "sleep_hours_7d_avg": 8.08,
+  "weight_kg_7d_avg": null,
+  "last_session": {
+    "date": "2026-07-25",
+    "type": "Run",
+    "duration_min": 73,
+    "training_load": 70
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-07-26", "day": "Sun", "time": "11:00", "type": "Recovery walk/swim", "duration_min": 60, "target_load": 5, "calendar_event_id": "c7238cfjoea7kk2t40ihs6mie0", "status": "planned"},
+    {"date": "2026-07-27", "day": "Mon", "time": null, "type": "Rest — travel Saint-Malo → Paris", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-07-28", "day": "Tue", "time": null, "type": "Sur site — ebike/gravel commute", "duration_min": 120, "target_load": 15, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-07-29", "day": "Wed", "time": "11:00", "type": "Run #21 — 7 km Z2 outdoor", "duration_min": 50, "target_load": 40, "calendar_event_id": "34pgbv6h2q9kk5nnvonrd14044", "status": "planned"},
+    {"date": "2026-07-30", "day": "Thu", "time": null, "type": "Sur site — ebike/gravel commute", "duration_min": 120, "target_load": 15, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-07-31", "day": "Fri", "time": null, "type": "Rest + mobility (heat RED 31°C)", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-08-01", "day": "Sat", "time": "11:00", "type": "Run #22 — 8-9 km Z2 weekend", "duration_min": 65, "target_load": 45, "calendar_event_id": "cdh2ph6k4rvh2ro4pj7sqrd9rs", "status": "planned"}
+  ],
+  "no_train_days": ["2026-07-28", "2026-07-30"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Recovery priority after Run #20 breakthrough (10.5 km, suffer 70). Training readiness crashed to 9 on Jul 25, body battery at 31 today. Allow 4 full days before next run (Jul 29). If readiness is still <35 on Jul 29 morning, reduce Run #21 to 5 km or rest.",
+      "measurable": "Training readiness >=35 by Jul 29; body battery >=40 by Jul 29",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P1",
+      "text": "Weigh in on return to Paris. No Withings data since Jun 21 (103.67 kg). The last digest showed 102.62 kg 7d avg. Re-establish weight tracking this week to monitor body composition trajectory during the comeback.",
+      "measurable": "Withings weigh-in completed by Aug 2 (Sunday pesée hebdo)",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P2",
+      "text": "Vitamin D retest is now overdue (was due ~July 2026, 8 weeks post-comeback start). Schedule blood panel to confirm levels rising toward 40 ng/mL target. Last reading Dec 2025: 27 ng/mL (insufficient). Stress-fracture risk remains elevated at current BW.",
+      "measurable": "Lab order placed by Aug 8",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "post_run20_tissue_response",
+      "threshold": "Any localized pain lasting >24h after Run #20 (10.5 km) triggers skip of next 2 runs",
+      "reason": "Run #20 was 75% longer than Run #19 (6 km) — largest single-run jump of the comeback. Tissue tolerance at 102+ kg is the bottleneck."
+    },
+    {
+      "marker": "body_battery_recovery",
+      "threshold": "Body battery should return to >=45 within 3 days (by Jul 28). If stuck <35 for 4+ days, flag overreaching.",
+      "reason": "Body battery dropped from 55 (Jul 20) to 31 (Jul 26) — consistent downtrend through the vacation running block."
+    },
+    {
+      "marker": "acwr",
+      "threshold": "Alert if ACWR exceeds 1.50 (comeback upper bound) for >3 consecutive days",
+      "reason": "Currently 1.33; the big Run #20 load (70) will drop out of the 7d window by Aug 1, so ACWR should naturally decrease."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/98"
+}

@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-07-01",
+  "bootstrap": false,
+  "situational_context": "Running comeback Day 59 (13 runs since May 3, 2026). ACWR 0.72 — below 0.8 safe zone, detraining risk from a quiet recent week after Run #12 overshoot (7.5 km, suffer 36, June 21) was absorbed. Readiness signals are the best in weeks: HRV BALANCED (first time since June 24), training readiness 91, body battery 61. Run #13 (3.5 km, suffer 13, June 28) was appropriately conservative. VO2max running improved to 41.1 (from 40.6 at June 14 state). Weight 103.67 kg with favorable recomposition (+1.16 kg muscle, -0.17 kg fat vs June 7). HRV 7d avg stable at 35 ms — still below 37 target but overnight reading BALANCED. Sleep excellent (8.11h 7d avg). E-bike commuting remains primary modality (2 round trips since last state). Protein intake averaging 107g/day vs 150g target — persistent deficit. Vitamin D retest now overdue (July 2026 target reached). No new labs since Dec 2025. Baby (Léonie, 18 months) — cohabitant data unavailable this run.",
+  "acute_load_7d": 14.3,
+  "chronic_load_28d": 19.9,
+  "distance_from_peak_pct": 1.24,
+  "hrv_7d_avg": 35,
+  "rhr_7d_avg": 48,
+  "sleep_hours_7d_avg": 8.11,
+  "weight_kg_7d_avg": 103.67,
+  "last_session": {
+    "date": "2026-06-28",
+    "type": "Run",
+    "duration_min": 27,
+    "training_load": 13
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-07-01", "day": "Wednesday", "time": "12:00", "type": "Run #14 — 4 km Z2", "duration_min": 35, "target_load": 14, "calendar_event_id": "c5lvjfcs4ttto181jv8kc2k334", "status": "planned"},
+    {"date": "2026-07-02", "day": "Thursday", "time": null, "type": "Sur site — commute ebike/gravel (38 km)", "duration_min": 120, "target_load": 14, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-07-03", "day": "Friday", "time": null, "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-07-04", "day": "Saturday", "time": "11:00", "type": "Sortie gravel/ebike — 60-75 min Z2", "duration_min": 70, "target_load": 15, "calendar_event_id": "cctjli6irt2pa6a7u88akl8cd4", "status": "planned"},
+    {"date": "2026-07-05", "day": "Sunday", "time": "11:30", "type": "Run #15 — 4 km Z2", "duration_min": 35, "target_load": 14, "calendar_event_id": "t01iq61r5ah9i94sha4ao5m7a8", "status": "planned"},
+    {"date": "2026-07-06", "day": "Monday", "time": null, "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-07-07", "day": "Tuesday", "time": null, "type": "Sur site — commute ebike/gravel (38 km)", "duration_min": 120, "target_load": 14, "calendar_event_id": null, "status": "blocked"}
+  ],
+  "no_train_days": ["2026-07-02", "2026-07-07"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "ACWR at 0.72 (below 0.8 safe zone) — execute Run #14 today to begin rebuilding acute load. Maintain 3 structured sessions this week (Wed run, Sat gravel/ebike, Sun run) plus commute days to project ACWR toward 0.8+ by next week.",
+      "measurable": "ACWR >= 0.8 by July 8",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Protein intake averaging 107g/day vs 150g target (71% adherence). At 103.67 kg during running comeback with muscle-gain trajectory, aim for >= 1.4 g/kg = 145g/day. Add a protein-rich snack or shake to close the gap.",
+      "measurable": "Average daily protein >= 140g over next 7 days",
+      "evidence_class": "RCT"
+    },
+    {
+      "priority": "P2",
+      "text": "Vitamin D retest overdue (due July 2026 per P2 from June 14). Last measured 27 ng/mL (Dec 2025, insufficient). Schedule blood panel this week to confirm supplementation is raising levels toward 40 ng/mL target.",
+      "measurable": "Lab order placed by July 7, 2026",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "acwr",
+      "threshold": "Alert if ACWR remains below 0.8 for more than 7 additional days after resuming structured training",
+      "reason": "Currently 0.72; need to rebuild acute load to exit detraining zone without overshooting past 1.3"
+    },
+    {
+      "marker": "hrv_7d_avg",
+      "threshold": "Alert if HRV 7d avg drops below 32 ms or fails to reach 37 ms by July 15",
+      "reason": "Persistent at 35 ms for 3+ weeks despite improving overnight readings; today's BALANCED is encouraging"
+    },
+    {
+      "marker": "post_run_pain",
+      "threshold": "Any localized joint/tendon pain lasting >24h after a run triggers skip of next run",
+      "reason": "Tissue tolerance bottleneck at 103.67 kg body weight; Run #12 overshoot (7.5 km) was 10 days ago"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/72"
+}

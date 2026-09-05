@@ -1,0 +1,110 @@
+{
+  "as_of_date": "2026-06-03",
+  "bootstrap": false,
+  "situational_context": "Running comeback Week 5: 7 runs completed since gap broken May 3 (after 182-day layoff). Latest Run #7 (Jun 3): 5.23 km, FC 140, max 161, suffer 27 — 2nd successful 5 km validation (Run #5 was first on May 23). VO2max running improved to 39.9 (from 38.3 at restart). Primary modality remains e-bike commuting on 'sur site' days (~38 km RT). Chronic load declining to 15.6 (from 22.3 on May 14) due to fewer commute days and training gaps — needs stabilization. ACWR 0.88 — in safe rebuild zone. Weight continuing to decline: 103.0 kg (down from 104.1 at May 14). HRV stable at 36 (BALANCED). Training readiness 57 (moderate, post-Run #7). Young baby (Léonie, 17 months) — sleep adequate but activity adherence flexed around family constraints. Vitamin D retest due ~July 2026.",
+  "acute_load_7d": 13.75,
+  "chronic_load_28d": 15.61,
+  "distance_from_peak_pct": 0.97,
+  "hrv_7d_avg": 36,
+  "rhr_7d_avg": 49,
+  "sleep_hours_7d_avg": 7.79,
+  "weight_kg_7d_avg": 102.97,
+  "last_session": {
+    "date": "2026-06-03",
+    "type": "Run",
+    "duration_min": 41,
+    "training_load": 27
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-06-03",
+      "day": "Wednesday",
+      "time": "14:37",
+      "type": "Run #7 — 5.2 km Z2 (comeback)",
+      "duration_min": 41,
+      "target_load": 19,
+      "calendar_event_id": "tkg8tsgthe416kafhsdvl73lg4",
+      "status": "completed"
+    },
+    {
+      "date": "2026-06-04",
+      "day": "Thursday",
+      "time": "-",
+      "type": "Sur site — commute ebike/gravel (~38 km RT)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "",
+      "status": "blocked"
+    },
+    {
+      "date": "2026-06-05",
+      "day": "Friday",
+      "time": "-",
+      "type": "Sur site — commute ebike/gravel (~38 km RT)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "",
+      "status": "blocked"
+    },
+    {
+      "date": "2026-06-06",
+      "day": "Saturday",
+      "time": "11:00",
+      "type": "Sortie gravel endurance Z2 — 50 min",
+      "duration_min": 50,
+      "target_load": 17,
+      "calendar_event_id": "4nbgbluuctq748tei69h8qqj2g",
+      "status": "planned"
+    },
+    {
+      "date": "2026-06-07",
+      "day": "Sunday",
+      "time": "11:30",
+      "type": "Run #8 — 5 km Z1-Z2 (comeback consolidation)",
+      "duration_min": 45,
+      "target_load": 19,
+      "calendar_event_id": "mv6pqpgi9hmah19pad4kjm3v3s",
+      "status": "planned"
+    }
+  ],
+  "no_train_days": ["2026-06-04", "2026-06-05"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Execute Run #8 on Sunday only if zero pain 48h+ after Run #7. Target FC ≤137 bpm. If any Achilles/patellar discomfort persists from today's run, replace with 30-min easy bike or walk. Two clean 5 km runs validate the distance plateau before any progression.",
+      "measurable": "Run #8 completed at 5 km, avg HR ≤137 bpm, zero post-run pain >24h",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Monitor Run #7 cardiac cost trend: FC 140 and max HR 161 are elevated vs Run #5 (FC 136, max 153). If Run #8 also shows FC >140 at same pace, investigate accumulated fatigue, dehydration, or heat. Consider adding a recovery week before progressing distance.",
+      "measurable": "Run #8 avg HR ≤137 bpm at similar pace; flag if >140 again",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Rebuild chronic load consistency: decline from 22.3 to 15.6 over 3 weeks reflects irregular activity. Prioritize e-bike commutes on all sur site days and both weekend sessions to stabilize and reverse the chronic load trend.",
+      "measurable": "Chronic load ≥16 by June 10",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "run_cardiac_cost",
+      "threshold": "Avg HR >140 bpm for two consecutive 5 km runs at similar pace",
+      "reason": "Run #7 showed elevated cardiac cost (FC 140, max 161) vs Run #5 (FC 136, max 153). Upward trend could signal fatigue accumulation or insufficient recovery."
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Below 15 = extended detraining; target gradual increase to 20+ over next 2 weeks",
+      "reason": "Dropped from 22.3 (May 14) to 15.6 (Jun 3). Continued decline widens gap from historical peak (currently 0.97%)."
+    },
+    {
+      "marker": "post_run_pain",
+      "threshold": "Any localized joint/tendon pain lasting >24h after a run triggers skip of next run",
+      "reason": "At 103 kg with increasing run distance (5+ km), tissue tolerance remains the key constraint per return-to-running protocol."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/43"
+}

@@ -1,0 +1,130 @@
+{
+  "as_of_date": "2026-07-08",
+  "bootstrap": false,
+  "situational_context": "Running comeback Day 66 (14 runs since May 3). ACWR normalized to 1.06 (was 1.35 on Jun 14) — safe zone. HRV 7d avg recovered to 37 ms (was 35). VO2max running 41.5 (from 38.3 at comeback start). Longest demonstrated run: 7.5 km (Run #12, Jun 21). Most recent: Run #14, 6.0 km on Jul 5 (suffer 30, well-tolerated). Paris under canicule orange alert Jul 8-11 (33-38°C), all outdoor training RED zone. Traveling to Saint-Malo (Brittany coast) Jul 12 — 20-23°C Green/Yellow conditions will allow Run #15 on Jul 13. Training status back to Maintaining after Detraining dip late June. E-bike commuting on sur-site days. Weight 103.67 kg (single reading Jun 21 — weigh-in adherence low). Vitamin D retest overdue (was due Jul 2026). No new labs since Dec 2025.",
+  "acute_load_7d": 20.0,
+  "chronic_load_28d": 18.9,
+  "distance_from_peak_pct": 1.18,
+  "hrv_7d_avg": 37,
+  "rhr_7d_avg": 49.6,
+  "sleep_hours_7d_avg": 7.24,
+  "weight_kg_7d_avg": 103.67,
+  "last_session": {
+    "date": "2026-07-08",
+    "type": "EBikeRide (commute x2)",
+    "duration_min": 118,
+    "training_load": 14
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-07-08",
+      "day": "Wed",
+      "time": "—",
+      "type": "Repos canicule + commute e-bike",
+      "duration_min": 0,
+      "target_load": 14,
+      "calendar_event_id": "0jf3215bpejrtipi2vodkp3uts",
+      "status": "rest"
+    },
+    {
+      "date": "2026-07-09",
+      "day": "Thu",
+      "time": "—",
+      "type": "Sur site — commute e-bike uniquement",
+      "duration_min": 0,
+      "target_load": 14,
+      "calendar_event_id": "",
+      "status": "blocked"
+    },
+    {
+      "date": "2026-07-10",
+      "day": "Fri",
+      "time": "—",
+      "type": "Repos — Pic canicule 38°C",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "o9agul7skt4gq2uatr57vug4v4",
+      "status": "rest"
+    },
+    {
+      "date": "2026-07-11",
+      "day": "Sat",
+      "time": "11:00",
+      "type": "Home trainer indoor 40 min Z1-Z2",
+      "duration_min": 40,
+      "target_load": 12,
+      "calendar_event_id": "6aos77mggr9mma4f9oq9irljb8",
+      "status": "planned"
+    },
+    {
+      "date": "2026-07-12",
+      "day": "Sun",
+      "time": "11:15",
+      "type": "Marche rapide / footing optionnel 30 min (avant train Saint-Malo)",
+      "duration_min": 30,
+      "target_load": 5,
+      "calendar_event_id": "ged3o7i2cgd0uqcbk8ec2to4ac",
+      "status": "planned"
+    },
+    {
+      "date": "2026-07-13",
+      "day": "Mon",
+      "time": "11:00",
+      "type": "Run #15 — 6-7 km Z2 bord de mer (Saint-Malo)",
+      "duration_min": 50,
+      "target_load": 28,
+      "calendar_event_id": "nqrefo9gkqmva7jm24ium4h79s",
+      "status": "planned"
+    },
+    {
+      "date": "2026-07-14",
+      "day": "Tue",
+      "time": "11:00",
+      "type": "Marche côtière / footing optionnel 30-40 min (Saint-Malo, Fête Nationale)",
+      "duration_min": 35,
+      "target_load": 5,
+      "calendar_event_id": "keb9dbfomgvssokvq7sh56nn1c",
+      "status": "planned"
+    }
+  ],
+  "no_train_days": ["2026-07-08", "2026-07-09"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Resume running at Saint-Malo Monday Jul 13 — Run #15, 6-7 km Z2 bord de mer. ACWR safe (1.06), readiness HIGH (89), HRV recovered. Anchor to demonstrated 6 km tolerance (Run #14); allow natural extension to 7 km. Coastal 20-23°C = Green/Yellow zone — first real outdoor opportunity in 2 weeks.",
+      "measurable": "Run #15 completed 6-7 km, avg HR ≤145, no tissue pain >24h post",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Schedule Vitamin D retest blood panel — now overdue (was due Jul 2026, last value 27 ng/mL in Dec 2025). Arrange at Saint-Malo or upon return to Paris. Target ≥40 ng/mL.",
+      "measurable": "Blood panel drawn by Jul 20",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P2",
+      "text": "Restore weekly weigh-in consistency — only 1 Withings reading in 28 days (Jun 21: 103.67 kg). Pesée Withings event on Jul 12 is set. Weight trend is untrackable without data.",
+      "measurable": "Withings reading logged Jul 12 + weekly thereafter",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "post_run_tissue_response",
+      "threshold": "Any localized pain lasting >24h after Run #15",
+      "reason": "First run after 10-day gap (last was Jul 5), at ~103.67 kg. Tissue deconditioning risk from the break."
+    },
+    {
+      "marker": "hrv_weekly_avg",
+      "threshold": "Alert if drops below 34 ms (>8% from current 37)",
+      "reason": "Recovered from June dip; heat stress + travel could re-challenge."
+    },
+    {
+      "marker": "acwr",
+      "threshold": "Alert if exceeds 1.30 after Saint-Malo sessions resume",
+      "reason": "Currently safe at 1.06. Resuming running after rest week could spike acute load. Comeback cap: 1.50."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/79"
+}

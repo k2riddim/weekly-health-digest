@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-08-01",
+  "bootstrap": false,
+  "situational_context": "Running comeback consolidated into structured C4 block #21-40: 22 runs completed since May 3 (90 days). Demonstrated 10.5 km tolerance (Run #20, Jul 25, Saint-Malo côte). VO2max running improved to 42.4 (from 38.3 at comeback start). W31 deload nearly complete (2/3 runs done, Run #23 tomorrow). ACWR 1.06 — well controlled. Chronic load rebuilt to 29.7 (from 17.5 at last state Jun 14, +70%). 4th canicule ending — post-heatwave modifier active until ~Aug 10. HRV weekly avg 36 ms (down from 40 in mid-July, likely heat-related). No Withings weighing in 5+ weeks — last reading 103.67 kg (Jun 21). W32 starts Aug 3 (first post-deload build week: 3 runs, ~21 km, first côte RECON session for Beaumonts 12 km objective).",
+  "acute_load_7d": 31.4,
+  "chronic_load_28d": 29.7,
+  "distance_from_peak_pct": 1.85,
+  "hrv_7d_avg": 35.4,
+  "rhr_7d_avg": 48.6,
+  "sleep_hours_7d_avg": 8.09,
+  "weight_kg_7d_avg": null,
+  "last_session": {
+    "date": "2026-07-31",
+    "type": "Run",
+    "duration_min": 35,
+    "training_load": 19
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-08-01", "day": "Vendredi", "time": "—", "type": "Repos", "duration_min": 0, "target_load": 0, "calendar_event_id": "v8gv8rvlre5hk0jgup8apdpq3s", "status": "rest"},
+    {"date": "2026-08-02", "day": "Samedi", "time": "11:30", "type": "Run #23 — 5 km Z2 plat intérieur (deload W31 clôture)", "duration_min": 40, "target_load": 27, "calendar_event_id": "f74r5678m0mn8ubt0kh2dnobto", "status": "planned"},
+    {"date": "2026-08-03", "day": "Dimanche", "time": "11:00", "type": "Récupération active — vélo léger ou renforcement (weekend jour 2)", "duration_min": 60, "target_load": 10, "calendar_event_id": "onf7ur28rnc5ek3349tohqit7o", "status": "planned"},
+    {"date": "2026-08-04", "day": "Lundi", "time": "—", "type": "Sur site — e-bike commute uniquement", "duration_min": 0, "target_load": 0, "calendar_event_id": "5h4a8ign80flev3ie8c7ae26rg_20260804", "status": "blocked"},
+    {"date": "2026-08-05", "day": "Mardi", "time": "11:00", "type": "Run #24 — 5,5 km Z2 plat intérieur (W32 début)", "duration_min": 40, "target_load": 30, "calendar_event_id": "ma3itaf2rc6pmgbho2t8udaltk", "status": "planned"},
+    {"date": "2026-08-06", "day": "Jeudi", "time": "—", "type": "Sur site — e-bike commute uniquement", "duration_min": 0, "target_load": 0, "calendar_event_id": "5h4a8ign80flev3ie8c7ae26rg_20260806", "status": "blocked"},
+    {"date": "2026-08-07", "day": "Vendredi", "time": "11:00", "type": "Run #25 — 6,5 km côte RECON Beaumonts (W32)", "duration_min": 50, "target_load": 40, "calendar_event_id": "trj81ttdarapjo1116cn8rg1nk", "status": "planned"}
+  ],
+  "no_train_days": ["2026-08-04", "2026-08-06"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Resume Withings weighing tomorrow (Aug 2, pesée hebdo event at 11:00). 5+ weeks without body composition data is a blind spot during a running comeback at ~104 kg where each kg materially affects tissue loading. Weight trajectory directly informs run progression decisions.",
+      "measurable": "Withings reading logged on 2026-08-02; weekly weighing restored from Aug 2 onward",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P1",
+      "text": "Post-heatwave recovery: HRV weekly avg has drifted from 40 to 36 ms over the last 10 days (4th canicule). Maintain hydration and sleep quality >8h through the post-heatwave window (~Aug 10). The deload week absorbs training stress; the residual heat adaptation stress needs active sleep/hydration management.",
+      "measurable": "HRV weekly avg recovers to ≥38 ms by Aug 8; sleep 7d avg stays ≥8h",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Vitamin D retest overdue — was due ~July 2026 (8 weeks post-comeback). Schedule blood panel to confirm levels rising toward 40 ng/mL target. Critical for bone/tendon resilience during the current running volume buildup at 104 kg.",
+      "measurable": "Lab order placed before Aug 15; results confirm Vitamin D ≥35 ng/mL (improving from 27 ng/mL in Dec 2025)",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "hrv_weekly_avg",
+      "threshold": "Alert if HRV weekly avg drops below 34 ms or fails to recover toward 38+ ms by Aug 8",
+      "reason": "Down from 40 to 36 over the heatwave period; post-heatwave recovery expected but needs tracking. Below 34 would indicate accumulated fatigue requiring load adjustment."
+    },
+    {
+      "marker": "withings_weight",
+      "threshold": "Restore weekly weighing — last reading Jun 21 (103.67 kg), 5+ weeks gap",
+      "reason": "Body weight is a primary input for tissue-load calculations during running comeback. Cannot assess weight trajectory without data."
+    },
+    {
+      "marker": "run25_côte_recon",
+      "threshold": "Run #25 (Aug 7): first côte session — monitor HR response to elevation, gait quality on descent",
+      "reason": "W32 introduces hill running for the first time in the comeback. At ~104 kg, eccentric loading on descents is the primary injury vector. FC moy ≤ 148 bpm, pointes ≤ 158 en montée (C4 block rule)."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/104"
+}

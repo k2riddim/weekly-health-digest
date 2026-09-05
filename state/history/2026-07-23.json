@@ -1,0 +1,132 @@
+{
+  "as_of_date": "2026-07-23",
+  "bootstrap": false,
+  "situational_context": "Running comeback Day 81, Run #19 completed (19 structured runs since May 3). Currently on vacation in Saint-Malo (since Jul 12, returns Jul 27). Distances consistently 5-8 km range with longest run 8 km (Run #16, Jul 15) absorbed cleanly. VO2max running improved to 42 (from 38.3 at comeback start). ACWR normalized to 1.25 (within comeback band <=1.50). HRV weekly avg recovered to 38 ms from June dip. RHR improved to 47 bpm (from 50). Sleep excellent at 8.3h avg (vacation effect). Weight ~103.7 kg (last Withings Jun 21, no scale on vacation). No e-bike commuting during Saint-Malo stay. Training readiness volatile (39 today post-run, range 26-79 over the week). Vitamin D retest overdue (was due Jul 2026). No new labs since Dec 2025. Paris return Jul 27 — heat protocol applies for outdoor sessions.",
+  "acute_load_7d": 34.5,
+  "chronic_load_28d": 27.5,
+  "distance_from_peak_pct": 1.7,
+  "hrv_7d_avg": 38,
+  "rhr_7d_avg": 47,
+  "sleep_hours_7d_avg": 8.29,
+  "weight_kg_7d_avg": 103.67,
+  "last_session": {
+    "date": "2026-07-23",
+    "type": "Run",
+    "duration_min": 43,
+    "training_load": 45
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-07-23",
+      "day": "Thu",
+      "time": "08:50",
+      "type": "Run #19 — 6 km Z2 (Saint-Malo)",
+      "duration_min": 43,
+      "target_load": 45,
+      "calendar_event_id": "lef1kis1arj3v0hlhkuq8bc1j8",
+      "status": "executed"
+    },
+    {
+      "date": "2026-07-24",
+      "day": "Fri",
+      "time": null,
+      "type": "Rest",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-07-25",
+      "day": "Sat",
+      "time": "11:00",
+      "type": "Run #20 — 8 km Z2 long run (Saint-Malo, weekend)",
+      "duration_min": 65,
+      "target_load": 45,
+      "calendar_event_id": "qj5eujaj0kd3h0764ahbd5e8e4",
+      "status": "planned"
+    },
+    {
+      "date": "2026-07-26",
+      "day": "Sun",
+      "time": "11:00",
+      "type": "Récupération active — marche côtière ou natation",
+      "duration_min": 60,
+      "target_load": 10,
+      "calendar_event_id": "c7238cfjoea7kk2t40ihs6mie0",
+      "status": "planned"
+    },
+    {
+      "date": "2026-07-27",
+      "day": "Mon",
+      "time": null,
+      "type": "Travel Saint-Malo → Paris",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-07-28",
+      "day": "Tue",
+      "time": null,
+      "type": "Sur site — trajet vélo (e-bike ou gravel)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-07-29",
+      "day": "Wed",
+      "time": "11:00",
+      "type": "Run #21 — 6 km Z2 (Paris, indoor si chaleur >26°C ressenti)",
+      "duration_min": 45,
+      "target_load": 35,
+      "calendar_event_id": "34pgbv6h2q9kk5nnvonrd14044",
+      "status": "planned"
+    }
+  ],
+  "no_train_days": [
+    "2026-07-28"
+  ],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Run #20 samedi : maintenir 8 km Z2 facile sur sentier côtier Saint-Malo. FC cible <= 145 bpm. 9 km autorisé si excellentes sensations et Run #19 absorbé sans plainte tissulaire. Jour de repos vendredi entre les runs est critique.",
+      "measurable": "Run #20 completed at 8 km Z2 with HR avg <= 145 bpm and no post-run pain >24h",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Bilan sanguin vitamine D en retard (objectif juillet 2026, dernière valeur 27 ng/mL en décembre 2025). Programmer une prise de sang dans les 2 prochaines semaines pour vérifier la progression vers 40 ng/mL après 8+ mois de supplémentation.",
+      "measurable": "Lab order placed and blood drawn by Aug 6, 2026",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P2",
+      "text": "Protocole chaleur pour le retour à Paris (28 juil+) : prévisions 28-33°C. Run #21 le 29 juil doit être en intérieur (tapis en clim) si le ressenti à 11h dépasse 26°C. La substitution indoor est la bonne atténuation vu la préférence horaire 11h-15h.",
+      "measurable": "Run #21 executed safely — indoor if feels-like >26C, outdoor if <=26C",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "training_readiness",
+      "threshold": "Alert if training readiness stays below 40 for 3+ consecutive days",
+      "reason": "Currently 39 post-run; range 26-79 over the week. Should recover on rest days."
+    },
+    {
+      "marker": "weight_trend",
+      "threshold": "Weigh in on Withings Sunday Jul 26 (pesée hebdo). Alert if >104.5 kg",
+      "reason": "Last measurement 103.67 kg on Jun 21 — 32 days without data. Vacation eating may have shifted weight."
+    },
+    {
+      "marker": "vitamin_d_retest",
+      "threshold": "Lab order must be placed within 14 days",
+      "reason": "Dec 2025 value 27 ng/mL (insufficient). 8 months of supplementation — retest overdue."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/95"
+}

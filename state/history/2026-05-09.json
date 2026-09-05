@@ -1,0 +1,130 @@
+{
+  "as_of_date": "2026-05-09",
+  "bootstrap": false,
+  "situational_context": "Early structured rebuild — Week 2 of return-to-running protocol. Run #2 completed today (2.01 km, 18 min, avg HR 144, max HR 174, suffer 15). HR response elevated vs Run #1 (avg 135, max 148, suffer 7) despite slower pace — likely fewer walk breaks and possible residual fatigue from yesterday's gravel. Chronic load at 22.7 (1.4% of historical peak 1608). Weight trending down: 106.9→104.1 kg in 3 weeks (~0.93 kg/week). RHR improved 53→49 bpm. ACWR 0.67 — below optimal band (0.8-1.3), acute load dipped as big gravel sessions rotated out of 7-day window. Two 'sur site' days ahead (Mon-Tue) will contribute commute load. Baby Léonie (4 months) — sleep adequate.",
+  "acute_load_7d": 15.2,
+  "chronic_load_28d": 22.7,
+  "distance_from_peak_pct": 1.4,
+  "hrv_7d_avg": 37.4,
+  "rhr_7d_avg": 48.9,
+  "sleep_hours_7d_avg": 7.63,
+  "weight_kg_7d_avg": 104.44,
+  "last_session": {
+    "date": "2026-05-09",
+    "type": "Run",
+    "duration_min": 18,
+    "training_load": 15
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-05-09",
+      "day": "Saturday",
+      "time": "09:47",
+      "type": "Run — Retour running #2",
+      "duration_min": 18,
+      "target_load": 15,
+      "calendar_event_id": "04qpo5crol1aun7n5c1gga9pm8",
+      "status": "executed"
+    },
+    {
+      "date": "2026-05-10",
+      "day": "Sunday",
+      "time": "13:00",
+      "type": "Endurance vélo Z2",
+      "duration_min": 60,
+      "target_load": 15,
+      "calendar_event_id": "ai4f5u6ua325j9k2hpi5ol57k4",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-11",
+      "day": "Monday",
+      "time": null,
+      "type": "Sur site — commute eBike/gravel",
+      "duration_min": null,
+      "target_load": null,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-05-12",
+      "day": "Tuesday",
+      "time": null,
+      "type": "Sur site — commute eBike/gravel",
+      "duration_min": null,
+      "target_load": null,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-05-13",
+      "day": "Wednesday",
+      "time": "12:00",
+      "type": "Récupération active Z1-Z2 vélo",
+      "duration_min": 45,
+      "target_load": 12,
+      "calendar_event_id": "s3c1gsv2j2tntn4mah63art6kc",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-14",
+      "day": "Thursday",
+      "time": "12:00",
+      "type": "Endurance vélo Z2",
+      "duration_min": 45,
+      "target_load": 15,
+      "calendar_event_id": "ggh1p6fbqmuah0n461c44no9s0",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-15",
+      "day": "Friday",
+      "time": "12:00",
+      "type": "Run #3 conditionnel OU Endurance vélo Z2",
+      "duration_min": 25,
+      "target_load": 10,
+      "calendar_event_id": "7bb0sc9o9ak1upro4g03p4be9o",
+      "status": "planned"
+    }
+  ],
+  "no_train_days": ["2026-05-11", "2026-05-12"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Monitor Run #2 tissue feedback over next 24-48h. Elevated HR (144 avg vs 135 on Run #1) at slower pace needs watching. If any localized pain (Achilles, patellar, tibia, plantar) persists >24h, skip Run #3 Friday and substitute cycling",
+      "measurable": "Zero localized pain >24h post-Run #2; if clear, proceed to Run #3 on May 15",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Increase protein intake toward 150g/day target. Current 7-day average is 124g (83% of target). At 104 kg with active rebuild, 1.4-1.6 g/kg/day supports tendon and muscle adaptation",
+      "measurable": "Average protein ≥140g/day over the next 7 days",
+      "evidence_class": "RCT"
+    },
+    {
+      "priority": "P2",
+      "text": "Rebuild acute load toward ACWR 0.8+ by maintaining consistent daily activity. Current ACWR 0.67 is below optimal band. Sunday cycling + commute rides Mon-Tue + Wed/Thu sessions should restore the ratio naturally",
+      "measurable": "ACWR ≥0.75 by May 16",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "run_hr_response",
+      "threshold": "Run #3 avg HR should be ≤145 bpm at similar pace/distance to Run #2",
+      "reason": "Run #2 showed elevated HR (144 avg) vs Run #1 (135 avg) at slower pace. If Run #3 shows further elevation, cardiovascular adaptation to running impact is lagging"
+    },
+    {
+      "marker": "acwr",
+      "threshold": "Target 0.8-1.3 range",
+      "reason": "Currently 0.67 — below optimal. Big gravel sessions rotating out of 7-day window caused the drop. Consistent training should restore it"
+    },
+    {
+      "marker": "weight_trend",
+      "threshold": "Maintain downward trend, not >1 kg/week loss",
+      "reason": "Losing at ~0.93 kg/week — right at the edge. Faster loss compromises tendon adaptation during return to running"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/19"
+}

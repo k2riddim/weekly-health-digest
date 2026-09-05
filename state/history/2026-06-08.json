@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-06-08",
+  "bootstrap": false,
+  "situational_context": "Running comeback week 6: 8 runs completed since May 3 (182-day gap broken). 5 km plateau validated with 3 consecutive 5+ km runs (Run #5 May 23, #7 Jun 3, #8 Jun 7). Latest Run #8: 5.56 km, FC 138, max 153, suffer 26 — best max HR control yet. VO2max running improved to 40.3 (was 38.3 at May 14). Chronic load declining (16.18, down from 22.3 on May 14) due to fewer ebike commute days — overall volume reduced despite running comeback. ACWR 1.19 within safe bounds. HRV weekly avg dipped to 34 (from 40 on May 14), sub-threshold but watch-listed. Body battery chronically low (only 2/7 days >= 50 — RED per return-to-running protocol) though trending up (53 today). Weight steady decline: 102.62 kg (down from 104.1 at May 14, -1.5 kg). Baby Leonie 5 months — recovery impact via sleep fragmentation. Tissue tolerance holding — no injury signals reported. Next gate: 2 more weeks consolidating 5 km before considering 6 km.",
+  "acute_load_7d": 19.25,
+  "chronic_load_28d": 16.18,
+  "distance_from_peak_pct": 1.0,
+  "hrv_7d_avg": 34,
+  "rhr_7d_avg": 50,
+  "sleep_hours_7d_avg": 7.19,
+  "weight_kg_7d_avg": 102.62,
+  "last_session": {
+    "date": "2026-06-07",
+    "type": "Run",
+    "duration_min": 44.5,
+    "training_load": 26
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-06-08", "day": "Monday", "time": null, "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-06-09", "day": "Tuesday", "time": null, "type": "Sur site — ebike commute", "duration_min": 120, "target_load": 14, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-06-10", "day": "Wednesday", "time": "12:00", "type": "Run #9 — 5 km Z2", "duration_min": 50, "target_load": 19, "calendar_event_id": "h5k8mtgpnkqlhadk0tvef1tsh0", "status": "planned"},
+    {"date": "2026-06-11", "day": "Thursday", "time": null, "type": "Sur site — ebike commute", "duration_min": 120, "target_load": 14, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-06-12", "day": "Friday", "time": null, "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-06-13", "day": "Saturday", "time": "11:30", "type": "Sortie gravel endurance Z1-Z2 — 60 min", "duration_min": 60, "target_load": 16, "calendar_event_id": "k8a6ga7t9qa7knkq6d93jo4bfk", "status": "planned"},
+    {"date": "2026-06-14", "day": "Sunday", "time": "11:30", "type": "Run #10 — 5.5 km Z2", "duration_min": 50, "target_load": 19, "calendar_event_id": "rjjjug0p9j0gv3et996jsn3r3g", "status": "planned"}
+  ],
+  "no_train_days": ["2026-06-09", "2026-06-11"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Monitor body battery before Run #9 (Wed): if max body battery hasn't reached 50 by Wednesday morning, downgrade to 3 km walk/jog or postpone to Thursday. Body battery was RED this week (only 2/7 days >= 50 per return-to-running protocol).",
+      "measurable": "Body battery >= 50 on morning of Run #9; if not, session downgraded",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Maintain the 5 km consolidation plateau — no distance increase this week. Three consecutive 5+ km runs is promising but target 5 consecutive before considering 6 km. Tissue tolerance is the gate, not cardio.",
+      "measurable": "Run #9 and #10 completed at 5-5.5 km, HR <= 140 bpm, no post-run pain > 24h",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P2",
+      "text": "Address calorie surplus: 7d avg 3039 cal vs 2500 target (+22%). Fat intake averaging 163g/day (target 80g). Reduce dinner portions and fat-heavy meals to restore weight loss trajectory.",
+      "measurable": "7d calorie avg <= 2700 by next digest; fat avg <= 120g/day",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "body_battery_max",
+      "threshold": "Alert if < 50 for >= 4 of 7 days",
+      "reason": "Currently RED per return-to-running protocol (2/7 days >= 50). Must improve before volume progression."
+    },
+    {
+      "marker": "hrv_7d_avg",
+      "threshold": "Alert if drops below 31 (10% below 4-week baseline ~34.5)",
+      "reason": "HRV weekly avg declined from 40 to 34 over 3 weeks. Sub-threshold but persistent downtrend."
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Target stabilization >= 16, ideally rising toward 20+",
+      "reason": "Chronic load dropped from 22.3 to 16.18 — fewer commute days driving decline despite running comeback."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/48"
+}

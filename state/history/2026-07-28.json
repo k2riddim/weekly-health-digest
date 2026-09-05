@@ -1,0 +1,133 @@
+{
+  "as_of_date": "2026-07-28",
+  "bootstrap": false,
+  "situational_context": "Running comeback consolidated at 20 structured runs (87 days in, since May 3). Distances progressed to 10.5 km (Run #20, Saint-Malo, July 25) with clean 3-day recovery (readiness 9→31→62→79). ACWR normalized to 1.08 (from 1.35 at June 14 checkpoint). Chronic load rebuilt from 17.5 to 29.7 (+70%). HRV stable BALANCED at 36 ms weekly avg. VO2max running improved to 42.1 (+3.7% since June). Last weighed 103.67 kg on June 21 — 5+ weeks without weighing. Active canicule (4th heatwave, July 29–Aug 3+, peak 38-40°C Paris) is the dominant planning constraint. E-bike commuting remains secondary modality. Vitamin D retest was due July 2026 — no new lab data. Baby (Léonie, ~18.5 months) — sleep data unavailable this session.",
+  "acute_load_7d": 32,
+  "chronic_load_28d": 29.7,
+  "distance_from_peak_pct": 1.85,
+  "hrv_7d_avg": 36,
+  "rhr_7d_avg": 48,
+  "sleep_hours_7d_avg": 8.12,
+  "weight_kg_7d_avg": 103.67,
+  "last_session": {
+    "date": "2026-07-28",
+    "type": "EBikeRide (commute x2)",
+    "duration_min": 122,
+    "training_load": 12
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-07-28",
+      "day": "Mardi",
+      "time": "-",
+      "type": "Sur site (e-bike commute done)",
+      "duration_min": 122,
+      "target_load": 12,
+      "calendar_event_id": "-",
+      "status": "blocked"
+    },
+    {
+      "date": "2026-07-29",
+      "day": "Mercredi",
+      "time": "11:00",
+      "type": "Run #21 — 7 km Z2 indoor (canicule)",
+      "duration_min": 50,
+      "target_load": 38,
+      "calendar_event_id": "34pgbv6h2q9kk5nnvonrd14044",
+      "status": "planned"
+    },
+    {
+      "date": "2026-07-30",
+      "day": "Jeudi",
+      "time": "-",
+      "type": "Sur site (e-bike commute)",
+      "duration_min": 120,
+      "target_load": 12,
+      "calendar_event_id": "-",
+      "status": "blocked"
+    },
+    {
+      "date": "2026-07-31",
+      "day": "Vendredi",
+      "time": "-",
+      "type": "Repos ou mobilité/renforcement",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-08-01",
+      "day": "Samedi",
+      "time": "11:00",
+      "type": "Run #22 — 8 km Z2 indoor/tôt (post-canicule)",
+      "duration_min": 55,
+      "target_load": 42,
+      "calendar_event_id": "cdh2ph6k4rvh2ro4pj7sqrd9rs",
+      "status": "planned"
+    },
+    {
+      "date": "2026-08-02",
+      "day": "Dimanche",
+      "time": "11:00",
+      "type": "Récupération active — marche/renfo/natation",
+      "duration_min": 45,
+      "target_load": 8,
+      "calendar_event_id": "ur06tkrr04dus8e5c31pt19hco",
+      "status": "planned"
+    },
+    {
+      "date": "2026-08-03",
+      "day": "Lundi",
+      "time": "-",
+      "type": "Repos",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    }
+  ],
+  "no_train_days": [
+    "2026-07-28",
+    "2026-07-30"
+  ],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "CANICULE active (38-40°C peak Jul 29-31) — no outdoor running this week. All runs on treadmill in AC. Pre-hydrate 500 mL + electrolytes for runs >40 min.",
+      "measurable": "Zero outdoor runs during canicule; all planned sessions completed indoors",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Schedule Vitamin D retest — it was due July 2026 (8 weeks post-supplementation start). Dec 2025 level was 27 ng/mL (insufficient); target ≥40 ng/mL. This is overdue.",
+      "measurable": "Blood panel ordered before Aug 15, 2026",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P2",
+      "text": "Resume weekly weighing — last Withings reading was June 21 (103.67 kg), now 5+ weeks without data. The Saturday Aug 2 Pesée hebdo Withings calendar event is a good restart.",
+      "measurable": "Withings weigh-in completed on Aug 2",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "post_heatwave_recovery",
+      "threshold": "Monitor RHR and HRV for 10 days after canicule ends; if RHR stays >52 or HRV drops <32 for 3+ days, reduce training",
+      "reason": "Heat stress accumulates; recovery markers may lag the thermometer by several days"
+    },
+    {
+      "marker": "post_10km_tissue_tolerance",
+      "threshold": "Any localized pain (Achilles, patellar, tibia) lasting >24h after a run triggers skip of next run",
+      "reason": "Run #20 was 10.5 km — the longest comeback run by far at 103+ kg body weight. Tissue tolerance needs validation over next 2-3 runs"
+    },
+    {
+      "marker": "weight_data_gap",
+      "threshold": "If no Withings reading by Aug 9, flag data pipeline issue",
+      "reason": "5+ weeks without weighing; body composition trajectory unknown"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/100"
+}

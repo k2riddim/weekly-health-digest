@@ -1,0 +1,115 @@
+{
+  "as_of_date": "2026-05-27",
+  "bootstrap": false,
+  "situational_context": "Running comeback week 4: 5 runs completed since May 3 (after 182-day gap). Run #5 (May 23): 5.02 km, HR avg 136, max 153, suffer 19 — best execution yet at 5 km, showing clear cardiac efficiency gains vs Run #4 (HR 140, suffer 26). Primary modality remains eBike commuting (~38 km round trip on sur-site days). Chronic load declining (17.9, down from 22.3 on May 14) as early-May higher loads exit the 28-day window — not alarming given stable acute load and optimal ACWR (0.95). Training readiness excellent (87, HIGH). HRV stable at 37 (BALANCED). RHR 48 bpm — lowest reading in weeks. Weight stable ~103.8 kg (-0.3 vs May 14). Paris heatwave this week (33-34C Wed-Fri, cooling to 24C Sunday). Conges Thu-Fri allow ideal session placement. Nutritionist RDV May 28 (Lucie UGUEN). Comeback protocol active — consolidating at 5 km before progression.",
+  "acute_load_7d": 17,
+  "chronic_load_28d": 17.9,
+  "distance_from_peak_pct": 1.1,
+  "hrv_7d_avg": 37,
+  "rhr_7d_avg": 49,
+  "sleep_hours_7d_avg": 7.23,
+  "weight_kg_7d_avg": 103.84,
+  "last_session": {
+    "date": "2026-05-27",
+    "type": "EBikeRide",
+    "duration_min": 112,
+    "training_load": 14
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-05-27",
+      "day": "Mercredi",
+      "time": "-",
+      "type": "Sur site (eBike commute)",
+      "duration_min": 112,
+      "target_load": 14,
+      "calendar_event_id": "-",
+      "status": "blocked"
+    },
+    {
+      "date": "2026-05-28",
+      "day": "Jeudi",
+      "time": "12:00",
+      "type": "Run #6 — 5 km Z1-Z2 (consolidation comeback)",
+      "duration_min": 45,
+      "target_load": 18,
+      "calendar_event_id": "3ua5vo8c0m59nglc8i37rm1vbg",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-29",
+      "day": "Vendredi",
+      "time": "12:00",
+      "type": "Sortie velo facile Z1-Z2 — 30 min (conges)",
+      "duration_min": 30,
+      "target_load": 10,
+      "calendar_event_id": "nitu7moo6mq72kdfb1reeiikf4",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-30",
+      "day": "Samedi",
+      "time": "11:00",
+      "type": "Sortie velo endurance Z2 — 50 min",
+      "duration_min": 50,
+      "target_load": 15,
+      "calendar_event_id": "53bkapck6tonusivbpnnn6cdfo",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-31",
+      "day": "Dimanche",
+      "time": "12:00",
+      "type": "Run #7 — 5 km Z1-Z2 (consolidation comeback)",
+      "duration_min": 45,
+      "target_load": 18,
+      "calendar_event_id": "usilp815jojoukd3jp2o1h324s",
+      "status": "planned"
+    }
+  ],
+  "no_train_days": ["2026-05-27"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Execute Run #6 tomorrow (May 28) at 12:00: 5 km Z1-Z2, HR target <=138 bpm. Canicule precautions mandatory (34C) — hydrate 500 ml pre-run, carry water, shaded paths (Bois de Vincennes), reduce pace if HR >145 (heat drift). Stop if dizziness/nausea. Today's eBike commute was light (suffer 14) — no adjustment needed.",
+      "measurable": "Run #6 completed at <=5 km, avg HR <=140, zero localized pain at 24h",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Discuss protein distribution with nutritionist Lucie UGUEN (May 28, 10:15): trailing 7d average is 135g/day vs 150g target. Most deficit at breakfast. Discuss 0.4g/kg/repas threshold for MPS optimization at 104 kg body weight.",
+      "measurable": "7d protein avg >=140g by next week; actionable plan from nutritionist",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Execute both weekend sessions (Sat velo Z2 50 min + Sun Run #7 5 km). If Saturday storms force cancellation, shift velo to Sun AM and run to Sun PM with >=3h gap. Continue daily Vitamin D supplementation.",
+      "measurable": "Both weekend sessions executed; Vitamin D supplementation confirmed daily",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Watch for stabilization above 17; if continues below 16, reassess weekly volume",
+      "reason": "Chronic load declined from 22.3 to 17.9 over 13 days as early-May loads roll out — expected decay, but continued decline signals insufficient stimulus"
+    },
+    {
+      "marker": "rhr_7d_avg",
+      "threshold": "Alert if RHR rises >5 bpm above current 49 bpm for 3+ consecutive days",
+      "reason": "RHR at 48 bpm — excellent. Elevation would indicate overload or illness during heatwave"
+    },
+    {
+      "marker": "post_run_pain",
+      "threshold": "Any localized joint/tendon pain lasting >24h after Run #6 triggers skip of Run #7",
+      "reason": "Tissue tolerance bottleneck at 103.8 kg; heatwave adds thermal stress on top of mechanical load"
+    },
+    {
+      "marker": "heat_adaptation",
+      "threshold": "If HR during Run #6 is >10 bpm above Run #5 at similar pace, attribute to heat drift not fitness loss",
+      "reason": "34C expected Thursday; cardiac drift of 5-10 bpm is normal in heat"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/37"
+}

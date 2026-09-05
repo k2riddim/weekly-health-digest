@@ -1,0 +1,72 @@
+{
+  "as_of_date": "2026-08-23",
+  "bootstrap": false,
+  "situational_context": "Running comeback day 113 (30 runs since May 3). Active C4 block (#21-40, rev 2026-07-29) targeting 12 km Beaumonts (~30/10). W34 re-entry week completed: 3 runs (#28 5.06 km, #29 7.04 km, #30 5.01 km) totaling 17.11 km under the 18.8 km blank-week reentry cap. Run #29 logged anomalous suffer 51 with HR avg 146.2 exceeding C4 flat cap 145; Run #30 clean (HR 136.4, suffer 17). Training status upgraded 'Detraining' → 'Maintaining'. ACWR recovered 0.59 → 1.12 — within comeback band. HRV has declined 4 consecutive weeks (38 → 34), status BALANCED → LOW/UNBALANCED since Aug 13. RHR spiked to 55 today after back-to-back weekend runs; body battery 26, training readiness 51. Entering W35 deload (Aug 24-30), timely given fatigue markers. Chronic load continues to decline (24.7 → 19.9) as old weeks drop out of 28d window — expected. Weight stable 100.68 kg. No new labs since Dec 2025; Vitamin D retest >2 months overdue. VO2max running dipped to 42.4 (from 42.9). Sur site days: Aug 25, 27. Paris 34°C forecast Wed Aug 26 with post-heatwave shift active until ~Aug 28.",
+  "acute_load_7d": 22.2,
+  "chronic_load_28d": 19.9,
+  "distance_from_peak_pct": 1.24,
+  "hrv_7d_avg": 34,
+  "rhr_7d_avg": 51.9,
+  "sleep_hours_7d_avg": 7.26,
+  "weight_kg_7d_avg": 100.68,
+  "last_session": {
+    "date": "2026-08-23",
+    "type": "Run",
+    "duration_min": 37,
+    "training_load": 17
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-08-24", "day": "Lundi", "time": "-", "type": "Repos", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"},
+    {"date": "2026-08-25", "day": "Mardi", "time": "-", "type": "Sur site (e-bike commute attendu)", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "blocked"},
+    {"date": "2026-08-26", "day": "Mercredi", "time": "11:00", "type": "Run #31 — 5,0 km indoor tapis ou easy plat (porte chaleur 34°C)", "duration_min": 37, "target_load": 20, "calendar_event_id": "8llvg3ahu1bdeh8ego94dvt9ao", "status": "planned"},
+    {"date": "2026-08-27", "day": "Jeudi", "time": "-", "type": "Sur site (e-bike commute attendu)", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "blocked"},
+    {"date": "2026-08-28", "day": "Vendredi", "time": "11:00", "type": "Run #32 — 6,0 km easy plat", "duration_min": 45, "target_load": 25, "calendar_event_id": "mrtm8k0pg5m5ml8t495b2vivlc", "status": "planned"},
+    {"date": "2026-08-29", "day": "Samedi", "time": "-", "type": "Repos", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"},
+    {"date": "2026-08-30", "day": "Dimanche", "time": "11:00", "type": "Run #33 — 7,0 km easy plat", "duration_min": 52, "target_load": 30, "calendar_event_id": "iq83p7ojps35kmlusrri05kr3o", "status": "planned"}
+  ],
+  "no_train_days": ["2026-08-25", "2026-08-27"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Vitamin D retest is now >2 months overdue (due ~July 2026). Last value 27 ng/mL (Dec 2025) — insufficient. Stress-fracture risk elevated at this level with increasing running volume on a 101 kg frame. Schedule blood draw this week.",
+      "measurable": "Lab order placed and blood drawn by Aug 30; result logged within 2 weeks",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "HRV has declined 4 consecutive weeks (weekly avg 38 → 34, BALANCED → LOW/UNBALANCED). Combined with RHR spike to 55 bpm and body battery crash to 26 after back-to-back weekend runs, this signals accumulated fatigue. Complete the W35 deload without extra volume. If HRV weekly avg hasn't recovered toward ≥36 by Aug 30, extend deload 1 additional week before resuming W36.",
+      "measurable": "HRV weekly avg ≥36 and RHR 7d avg ≤51 by Aug 30",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Run #29 suffer score (51) was 3× higher than comparable-distance easy runs (#28: 17, #30: 17), HR avg 146.2 exceeded C4 flat cap 145. Monitor the next 2 runs for repeat. If HR avg exceeds 143 again at easy pace, investigate: cardiac drift from dehydration, insufficient recovery, or pace creep.",
+      "measurable": "Next 2 runs completed with HR avg ≤143 bpm at easy pace",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "hrv_weekly_avg",
+      "threshold": "Must recover to ≥36 by end of deload (Aug 30). If still ≤34 → extend deload 1 week.",
+      "reason": "4-week sustained decline from 38 to 34; consistently LOW/UNBALANCED — accumulated allostatic load"
+    },
+    {
+      "marker": "rhr_today",
+      "threshold": "Alert if RHR ≥55 for 2+ consecutive days, or 7d avg ≥53",
+      "reason": "Spiked to 55 today after back-to-back runs; isolated vs sustained determines overreach classification"
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Expected to bottom out ~18-19 by mid-deload; should start climbing after W36. If still declining past Sept 7 → block progression failing",
+      "reason": "19.9 and declining as old high-load weeks exit the 28d window"
+    },
+    {
+      "marker": "vo2max_running",
+      "threshold": "Watch for further drops below 42.0",
+      "reason": "Dropped 42.9 → 42.4; could be noise or early detraining signal"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/125"
+}

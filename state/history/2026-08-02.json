@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-08-02",
+  "bootstrap": false,
+  "situational_context": "Running comeback consolidated into C4 structured block (#21-40): 23 runs completed since May 3 (91 days), distances up to 10.5 km (Run #20, Jul 25, Saint-Malo côte). W31 deload completed successfully (3 runs, 17.1 km, load 82 vs ≤95 budget). W32 starts Aug 3 with 3 runs planned (#24 5.5 km plat, #25 6.5 km côte RECON Beaumonts, #26 SL 9.0 km plat — 21 km total). ACWR dropped to 0.74 after deload — below 0.8 lower bound, expected, will self-correct with W32. Chronic load risen to 29.0 (from 17.5 on Jun 14, +66%). VO2max running improved to 42.5 (from 40.6 Jun 14, 38.3 at comeback start May 3). Post-heatwave modifier active (-3°C on heat bands). No Withings weight data since Jun 21 (6+ weeks gap). No nutrition logging active. Vitamin D retest overdue (target was July 2026). Baby Léonie ~7 months old. Sur site Tue/Thu — e-bike commute only (low suffer, ~12 load/day).",
+  "acute_load_7d": 21.4,
+  "chronic_load_28d": 29.0,
+  "distance_from_peak_pct": 1.8,
+  "hrv_7d_avg": 36,
+  "rhr_7d_avg": 48.6,
+  "sleep_hours_7d_avg": 8.14,
+  "weight_kg_7d_avg": 103.67,
+  "last_session": {
+    "date": "2026-08-02",
+    "type": "Run",
+    "duration_min": 37,
+    "training_load": 20
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-08-03", "day": "Mon", "time": "11:00", "type": "Recovery active — vélo léger ou renforcement", "duration_min": 60, "target_load": 10, "calendar_event_id": "onf7ur28rnc5ek3349tohqit7o", "status": "planned"},
+    {"date": "2026-08-04", "day": "Tue", "time": "-", "type": "Sur site (e-bike commute ~38 km)", "duration_min": 120, "target_load": 12, "calendar_event_id": "5h4a8ign80flev3ie8c7ae26rg_20260804", "status": "blocked"},
+    {"date": "2026-08-05", "day": "Wed", "time": "11:00", "type": "Run #24 — 5.5 km Z2 plat (intérieur tapis)", "duration_min": 40, "target_load": 30, "calendar_event_id": "ma3itaf2rc6pmgbho2t8udaltk", "status": "planned"},
+    {"date": "2026-08-06", "day": "Thu", "time": "-", "type": "Sur site (e-bike commute ~38 km)", "duration_min": 120, "target_load": 12, "calendar_event_id": "5h4a8ign80flev3ie8c7ae26rg_20260806", "status": "blocked"},
+    {"date": "2026-08-07", "day": "Fri", "time": "11:00", "type": "Run #25 — 6.5 km côte RECON Beaumonts", "duration_min": 50, "target_load": 40, "calendar_event_id": "trj81ttdarapjo1116cn8rg1nk", "status": "planned"},
+    {"date": "2026-08-08", "day": "Sat", "time": "11:00", "type": "Recovery active — vélo léger ou renforcement", "duration_min": 60, "target_load": 10, "calendar_event_id": "91kv9vk43ao362u9hp7sol0u58", "status": "planned"},
+    {"date": "2026-08-09", "day": "Sun", "time": "11:15", "type": "Run #26 — SL 9.0 km Z2 plat", "duration_min": 65, "target_load": 50, "calendar_event_id": "42gonf5bop238grsr4ptlq6df4", "status": "planned"}
+  ],
+  "no_train_days": ["2026-08-04", "2026-08-06"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "ACWR at 0.74 (below 0.8, detraining territory) after W31 deload. Execute all 3 planned W32 runs (#24, #25, #26) to restore ACWR to the 0.8-1.5 comeback band. Do not skip runs unless tissue feedback (pain >24h post-run) or illness warrants it.",
+      "measurable": "ACWR ≥ 0.8 by end of W32 (Aug 9)",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Resume Withings weight tracking immediately — no readings in 6+ weeks makes body composition trend assessment impossible. Complete today's scheduled pesée and maintain weekly cadence. Weight trajectory is critical for managing tissue load during the running comeback at ~104 kg.",
+      "measurable": "Weight reading logged today and every subsequent week",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Vitamin D retest overdue (target was July 2026). Last value 27 ng/mL (Dec 2025) was insufficient. Schedule blood panel to confirm levels trending toward 40 ng/mL — insufficiency at this body weight doubles stress-fracture risk during running comeback (Burgi 2011).",
+      "measurable": "Blood drawn before Aug 15",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "acwr",
+      "threshold": "Alert if ACWR remains below 0.8 beyond Aug 9 (end of W32)",
+      "reason": "Currently 0.74 after deload; must recover to 0.8+ to exit detraining. W32's 3 runs should restore it."
+    },
+    {
+      "marker": "hrv_weekly_avg",
+      "threshold": "Alert if HRV weekly avg drops below 33 ms (>1 SD below 90d baseline of 36.3)",
+      "reason": "Currently 36 ms — within normal range but dropped from 38 (Jul 25). Monitor during W32 re-loading."
+    },
+    {
+      "marker": "post_run_tissue_feedback",
+      "threshold": "Any localized joint/tendon pain lasting >24h after a run, especially post-Run #25 (côte RECON)",
+      "reason": "First côte RECON introduces downhill eccentric loading at ~104 kg — highest risk for Achilles/patellar/tibial stress. The descent at Beaumonts is the primary injury vector."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/105"
+}

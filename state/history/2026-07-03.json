@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-07-03",
+  "bootstrap": false,
+  "situational_context": "Running comeback week 9 (61 days since May 3 restart, 13 runs completed). ACWR has swung from 1.35 (spike, June 14) to 0.72 (detraining, July 2) — a natural correction after Run #12's excessive 7.5 km / load-36 session on June 21. HRV weekly avg recovering: 33 to 36 over 8 days, now BALANCED. Training readiness 75, body battery 55. E-bike commuting remains primary modality with 2 sur site days per week. Run #14 (planned July 1) was skipped — likely life/baby constraints. No runs since Run #13 (June 28, 3.5 km). Weight 103.67 kg (last weigh-in June 21). Vitamin D retest overdue (was due July 2026). Priority: resume structured running this weekend to arrest detraining trend.",
+  "acute_load_7d": 14.3,
+  "chronic_load_28d": 20.0,
+  "distance_from_peak_pct": 1.24,
+  "hrv_7d_avg": 36,
+  "rhr_7d_avg": 48,
+  "sleep_hours_7d_avg": 7.77,
+  "weight_kg_7d_avg": 103.67,
+  "last_session": {
+    "date": "2026-07-02",
+    "type": "EBikeRide (commute)",
+    "duration_min": 93,
+    "training_load": 9
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-07-03", "day": "Vendredi", "time": "-", "type": "Repos", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-07-04", "day": "Samedi", "time": "11:00", "type": "Sortie gravel/ebike — 60-75 min Z2", "duration_min": 75, "target_load": 15, "calendar_event_id": "cctjli6irt2pa6a7u88akl8cd4", "status": "planned"},
+    {"date": "2026-07-05", "day": "Dimanche", "time": "11:30", "type": "Retour running — Run #14 — 4 km Z2", "duration_min": 35, "target_load": 14, "calendar_event_id": "t01iq61r5ah9i94sha4ao5m7a8", "status": "planned"},
+    {"date": "2026-07-06", "day": "Lundi", "time": "-", "type": "Repos / marche active optionnelle", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-07-07", "day": "Mardi", "time": "-", "type": "Sur site — commute ebike/gravel", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-07-08", "day": "Mercredi", "time": "11:00", "type": "Retour running — Run #15 — 4 km Z2", "duration_min": 35, "target_load": 14, "calendar_event_id": "0jf3215bpejrtipi2vodkp3uts", "status": "planned"},
+    {"date": "2026-07-09", "day": "Jeudi", "time": "-", "type": "Sur site — commute ebike/gravel", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "blocked"}
+  ],
+  "no_train_days": ["2026-07-07", "2026-07-09"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "ACWR is 0.72 (detraining, below 0.8 floor) — resume structured running this weekend. Run #14 on Sunday at 4 km Z2 rebuilds acute load toward 0.8+ ACWR band. Do not exceed 4 km or 135 bpm. Monitor tissue response post-run.",
+      "measurable": "ACWR >= 0.80 within 10 days; zero post-run pain >24h",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Vitamin D retest overdue (recommended for July 2026, 7 months since last test at 27 ng/mL). Running at 103 kg with suboptimal Vitamin D carries approximately 2x stress fracture risk. Schedule blood panel this week.",
+      "measurable": "Blood draw completed before July 15",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P2",
+      "text": "Protein intake averaging 115 g/day (1.1 g/kg) — below the 1.5 g/kg threshold for tissue repair during running comeback at high body weight. Prioritize protein at each meal to reach 150+ g/day.",
+      "measurable": "7d average protein >= 140 g/day by next digest",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "acwr",
+      "threshold": "Alert if ACWR remains below 0.8 for >7 more days despite resumed running",
+      "reason": "Currently 0.72 (detraining); structured running resumption should bring it back to 0.8-1.0 range"
+    },
+    {
+      "marker": "hrv_weekly_avg",
+      "threshold": "Alert if HRV weekly avg drops below 34 ms (reversal of current positive trend)",
+      "reason": "Currently improving (33 to 36 over 8 days); reversal would suggest recovery capacity compromised"
+    },
+    {
+      "marker": "post_run_pain",
+      "threshold": "Any localized joint/tendon pain lasting >24h after a run triggers skip of next run",
+      "reason": "5-day gap since last run; tissue readiness needs confirmation at 103 kg body weight"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/73"
+}

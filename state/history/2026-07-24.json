@@ -1,0 +1,130 @@
+{
+  "as_of_date": "2026-07-24",
+  "bootstrap": false,
+  "situational_context": "Running comeback day 83 (19 runs completed since May 3, 2026). Distances progressed to 5-8 km range; longest run 8.0 km (Run #16, Jul 15). Currently on vacation in Saint-Malo, returning to Paris Jul 27. VO2max running improved to 42.0 (from 38.3 at comeback start). HRV 7d avg recovered to 38 ms (was 35 ms in mid-June). ACWR at 1.31 — within comeback band (<=1.50). Chronic load built steadily from 17.5 to 25.5. No weight data since Jun 21 (103.67 kg — away from Withings scale during vacation). Heatwave forecast for Paris Jul 28-30 (32-38C feels-like) — RED heat protocol active for Wed run, indoor treadmill only. Vitamin D retest overdue (~July 2026). E-bike commuting paused during vacation; will resume with sur site days Jul 28/30.",
+  "acute_load_7d": 33.25,
+  "chronic_load_28d": 25.46,
+  "distance_from_peak_pct": 1.58,
+  "hrv_7d_avg": 38,
+  "rhr_7d_avg": 47.7,
+  "sleep_hours_7d_avg": 8.06,
+  "weight_kg_7d_avg": null,
+  "last_session": {
+    "date": "2026-07-24",
+    "type": "Swim",
+    "duration_min": 10,
+    "training_load": 1
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-07-24",
+      "day": "Fri",
+      "time": "-",
+      "type": "Rest (baignade done, load 1)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "pde7haea6k2qseb55knnv1ul54",
+      "status": "rest"
+    },
+    {
+      "date": "2026-07-25",
+      "day": "Sat",
+      "time": "11:00",
+      "type": "Run #20 — 8 km Z2 long run (Saint-Malo, sentier cotier)",
+      "duration_min": 65,
+      "target_load": 45,
+      "calendar_event_id": "qj5eujaj0kd3h0764ahbd5e8e4",
+      "status": "planned"
+    },
+    {
+      "date": "2026-07-26",
+      "day": "Sun",
+      "time": "11:00",
+      "type": "Recuperation active — marche/natation (Saint-Malo)",
+      "duration_min": 60,
+      "target_load": 10,
+      "calendar_event_id": "c7238cfjoea7kk2t40ihs6mie0",
+      "status": "planned"
+    },
+    {
+      "date": "2026-07-27",
+      "day": "Mon",
+      "time": "-",
+      "type": "Travel day (Saint-Malo -> Paris)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-07-28",
+      "day": "Tue",
+      "time": "-",
+      "type": "Sur site (e-bike/gravel commute ~38 km)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-07-29",
+      "day": "Wed",
+      "time": "11:00",
+      "type": "Run #21 — 6 km Z2 indoor treadmill (heatwave RED, 38C)",
+      "duration_min": 45,
+      "target_load": 35,
+      "calendar_event_id": "34pgbv6h2q9kk5nnvonrd14044",
+      "status": "planned"
+    },
+    {
+      "date": "2026-07-30",
+      "day": "Thu",
+      "time": "-",
+      "type": "Sur site (e-bike/gravel commute ~38 km)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "blocked"
+    }
+  ],
+  "no_train_days": ["2026-07-28", "2026-07-30"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Heatwave RED protocol for Paris Jul 28-30 (feels-like 32-38C). Run #21 on Jul 29 MUST be indoor treadmill in AC. No outdoor running during heatwave. Post-heatwave modifier active for 10 days after (all heat bands shift 3C cooler until ~Aug 9).",
+      "measurable": "Run #21 completed indoors; no outdoor running Jul 28-30",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Vitamin D retest is overdue — was due ~July 2026 (8 weeks post-comeback). Last level was 27 ng/mL (insufficient, target >=40). Schedule blood panel next week when back in Paris.",
+      "measurable": "Lab order placed by Aug 1, 2026",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P2",
+      "text": "Resume weight tracking when back in Paris — no Withings data since Jun 21 (103.67 kg). 34 days without data. Confirm scale access upon return and log weekly.",
+      "measurable": "Withings reading within 3 days of return to Paris (by Jul 30)",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "heatwave_impact",
+      "threshold": "Monitor RHR and HRV through Jul 28 - Aug 7 (heatwave + 10-day post-heatwave window). Alert if RHR rises >5 bpm above 47.7 baseline or HRV drops below 32 ms.",
+      "reason": "Heatwave arriving Paris Jul 28; heat stress can suppress HRV and elevate RHR for days beyond the peak"
+    },
+    {
+      "marker": "acwr",
+      "threshold": "Alert if ACWR exceeds 1.50 (comeback upper bound)",
+      "reason": "Currently 1.31; resumed commuting post-vacation could spike acute load if not managed"
+    },
+    {
+      "marker": "weight_trend",
+      "threshold": "Confirm weight upon return to Paris — last reading 103.67 kg (Jun 21). Alert if >105 kg or <100 kg.",
+      "reason": "34 days without data; vacation eating patterns unknown"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/96"
+}

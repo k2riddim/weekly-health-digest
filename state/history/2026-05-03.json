@@ -1,0 +1,130 @@
+{
+  "as_of_date": "2026-05-03",
+  "bootstrap": false,
+  "situational_context": "Active rebuild phase with return to running initiated today (first run in 182 days: 2.5 km Z2, conservative). Chronic load rising from near-zero baseline (23.7, up from 17.8 at bootstrap). Body weight 104.8 kg (+20 kg vs peak running era) creates elevated musculoskeletal risk per return-to-running protocol. ACWR normalized to 1.06 after May 1 gravel spike (1.49). Vitamin D insufficient (27 ng/mL, Dec 2025) remains a stress fracture risk factor. Young baby (Léonie, 4 months) — expect occasional training disruptions, missed sessions are normal. Cycling remains primary modality; running being layered in cautiously with minimum 48h between sessions and strict tissue-feedback gating.",
+  "acute_load_7d": 25,
+  "chronic_load_28d": 23.7,
+  "distance_from_peak_pct": 1.5,
+  "hrv_7d_avg": 38,
+  "rhr_7d_avg": 49.4,
+  "sleep_hours_7d_avg": 7.75,
+  "weight_kg_7d_avg": 104.67,
+  "last_session": {
+    "date": "2026-05-03",
+    "type": "Run",
+    "duration_min": 21,
+    "training_load": 7
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-05-03",
+      "day": "Dimanche",
+      "time": "11:23",
+      "type": "Run Z2 — Retour course jour 1",
+      "duration_min": 21,
+      "target_load": 7,
+      "calendar_event_id": "j21spceejm3ecvso081j2da93o",
+      "status": "executed"
+    },
+    {
+      "date": "2026-05-04",
+      "day": "Lundi",
+      "time": "-",
+      "type": "Repos — récupération tissulaire post-run",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "",
+      "status": "rest"
+    },
+    {
+      "date": "2026-05-05",
+      "day": "Mardi",
+      "time": "11:00",
+      "type": "Endurance vélo Z2",
+      "duration_min": 45,
+      "target_load": 15,
+      "calendar_event_id": "uu3jtiqjg0o0kcc01a1d0ksfsc",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-06",
+      "day": "Mercredi",
+      "time": "-",
+      "type": "Sur site — trajet possible (eBike ~10 / gravel ~50)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "",
+      "status": "blocked"
+    },
+    {
+      "date": "2026-05-07",
+      "day": "Jeudi",
+      "time": "-",
+      "type": "Sur site — trajet possible (eBike ~10 / gravel ~50)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "",
+      "status": "blocked"
+    },
+    {
+      "date": "2026-05-08",
+      "day": "Vendredi",
+      "time": "-",
+      "type": "Repos ou marche légère — absorption charge semaine",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "",
+      "status": "rest"
+    },
+    {
+      "date": "2026-05-09",
+      "day": "Samedi",
+      "time": "12:00",
+      "type": "Endurance Z2 vélo ou run court si tissus OK",
+      "duration_min": 45,
+      "target_load": 12,
+      "calendar_event_id": "04qpo5crol1aun7n5c1gga9pm8",
+      "status": "planned"
+    }
+  ],
+  "no_train_days": ["2026-05-06", "2026-05-07"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Follow return-to-running protocol strictly: no second run before Saturday May 9 at earliest, only if zero residual pain (Achilles, patellar, tibia, plantar) at 48h. If any localized pain persists >24h post-run, skip running next week entirely and substitute cycling.",
+      "measurable": "Zero localized musculoskeletal pain 48h after today's run; maximum 1 additional run this week",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Manage total weekly load around commute choices: if gravel commuting on sur site days (May 6-7), reduce or cancel Saturday session. Ebike commute is compatible with full plan. Target acute load <=27.5.",
+      "measurable": "Acute 7d load <=27.5; ACWR stays within [0.8, 1.3]",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P2",
+      "text": "Increase protein intake to consistently hit 150g/day — 7d average is 127g (85% of target). Critical during return-to-running for collagen synthesis and tendon remodeling at current body weight.",
+      "measurable": ">=5 of 7 days with protein >=140g in the coming week",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "post_run_tissue_response",
+      "threshold": "Zero localized pain at 48h post-run (by May 5)",
+      "reason": "First run in 182 days at 105 kg — Achilles, patellar tendon, plantar fascia, tibia are high-risk; Vitamin D 27 ng/mL doubles stress fracture risk"
+    },
+    {
+      "marker": "acwr",
+      "threshold": "Stay within [0.8, 1.3] — currently 1.06",
+      "reason": "Running adds a new impact modality on top of cycling base; gravel commutes on sur site days can spike acute load"
+    },
+    {
+      "marker": "vo2max_running",
+      "threshold": "Track trajectory — dropped 40.9 to 38.6 after first run",
+      "reason": "Garmin recalibrated from frozen estimate to actual running performance; expect gradual improvement"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/13"
+}

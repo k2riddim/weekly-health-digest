@@ -1,0 +1,130 @@
+{
+  "as_of_date": "2026-06-11",
+  "bootstrap": false,
+  "situational_context": "Running comeback week 6: 9 runs completed (2.47 to 5.79 km), progressing well but ACWR elevated at 1.36 (above 1.3 threshold). HRV depressed 8+ consecutive days (weekly avg 35 vs 37 late-May baseline), status LOW/UNBALANCED. VO2max running improved to 40.4 (+2.1 since May). Body battery and training readiness recovering (53.5/60 today vs 24.5/25 trough Jun 4-6). Primary risk: tissue overload at 102.6 kg with 3 runs in 7 days on diminished chronic load base (17.4, down from 22.3 in May due to low-activity weeks). Ebike commuting continues on sur site days (~38 km round trip). Weight trend favorable (-1.5 kg/month, now 102.6 kg). Strategy: maintain current volume, no progression until ACWR normalizes below 1.3 and HRV recovers toward BALANCED. Run #10 planned Sunday at reduced 4.5 km. Vitamin D retest due ~July 2026.",
+  "acute_load_7d": 23.75,
+  "chronic_load_28d": 17.41,
+  "distance_from_peak_pct": 1.08,
+  "hrv_7d_avg": 35,
+  "rhr_7d_avg": 50,
+  "sleep_hours_7d_avg": 7.25,
+  "weight_kg_7d_avg": 102.62,
+  "last_session": {
+    "date": "2026-06-10",
+    "type": "Run",
+    "duration_min": 45,
+    "training_load": 34
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-06-11",
+      "day": "Thursday",
+      "time": null,
+      "type": "Sur site (ebike commute only)",
+      "duration_min": 60,
+      "target_load": 10,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-06-12",
+      "day": "Friday",
+      "time": null,
+      "type": "Rest",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-06-13",
+      "day": "Saturday",
+      "time": "11:30",
+      "type": "Sortie ebike endurance Z1 — 45 min",
+      "duration_min": 45,
+      "target_load": 12,
+      "calendar_event_id": "k8a6ga7t9qa7knkq6d93jo4bfk",
+      "status": "planned"
+    },
+    {
+      "date": "2026-06-14",
+      "day": "Sunday",
+      "time": "11:30",
+      "type": "Run #10 — 4.5 km Z2 consolidation",
+      "duration_min": 35,
+      "target_load": 16,
+      "calendar_event_id": "rjjjug0p9j0gv3et996jsn3r3g",
+      "status": "planned"
+    },
+    {
+      "date": "2026-06-15",
+      "day": "Monday",
+      "time": null,
+      "type": "Rest",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-06-16",
+      "day": "Tuesday",
+      "time": null,
+      "type": "Sur site (ebike commute only)",
+      "duration_min": 60,
+      "target_load": 10,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-06-17",
+      "day": "Wednesday",
+      "time": null,
+      "type": "Rest / light walk",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    }
+  ],
+  "no_train_days": ["2026-06-11", "2026-06-16", "2026-06-18"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Allow ACWR to normalize: maintain current run distance (max 5 km), do NOT increase frequency beyond 2 runs/week until ACWR drops below 1.3. Run #10 Sunday at 4.5 km with strict FC cap of 135 bpm. Run #9 was 142 bpm — discipline needed. Heat at 27C will elevate HR naturally, so pace conservatively.",
+      "measurable": "ACWR below 1.3 by June 18; Run #10 avg HR at or below 135 bpm",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Saturday cycling must be ebike, not gravel — Run #9 suffer was 34, HRV is LOW, body is absorbing the acute spike. Easy Z1 45 min, suffer target 14 or less. Save gravel rides for when ACWR normalizes and HRV returns to BALANCED.",
+      "measurable": "Saturday suffer score 14 or less; body battery 40 or above before Sunday run",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Increase protein toward 150g/day — current 7d average is 130g, 13% short. At 102.6 kg in a running comeback, protein supports tendon remodeling. Add one protein-rich snack daily (Greek yogurt 170g = 17g protein, or 2 eggs = 12g protein).",
+      "measurable": "Average daily protein 140g or above over next 7 days",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "acwr",
+      "threshold": "Must return below 1.3 within 7-10 days",
+      "reason": "Currently 1.36 — elevated injury risk zone. Maintaining (not increasing) load lets chronic load absorb recent runs."
+    },
+    {
+      "marker": "hrv_weekly_avg",
+      "threshold": "Watch for recovery back toward 36-37 baseline within 5-7 days",
+      "reason": "Currently 35 after 8+ days of LOW/UNBALANCED. If no improvement by June 16, add extra rest day."
+    },
+    {
+      "marker": "post_run_pain",
+      "threshold": "Any localized joint/tendon pain lasting >24h after Run #10 triggers skip of next run",
+      "reason": "Tissue tolerance is the bottleneck at 102.6 kg; 3 runs in 8 days was high frequency."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/51"
+}

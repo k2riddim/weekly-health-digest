@@ -1,0 +1,130 @@
+{
+  "as_of_date": "2026-07-05",
+  "bootstrap": false,
+  "situational_context": "Running comeback weeks 9-10: 14 structured runs since May 3 (63 days in). Distances progressed to 6 km (Run #14 today, though prescribed was 4 km — persistent overshoot pattern: Run #12 was 7.5 km vs ~4 km, Run #14 was 6 km vs 4 km). VO2max running 41.5 (up from 38.3 at start, +3.2). ACWR normalized to 0.96 (was 1.35 at last check Jun 14). HRV 7d avg 36 ms (BALANCED, recovering from UNBALANCED in late June). Weight 103.67 kg with favorable recomposition (fat% 26.3%, muscle 72.62 kg — muscle +1.16 kg vs Jun 7). E-bike commuting remains primary volume contributor (~38 km round trip, ~14 load per commute day). Vacation starts Jul 12 (Saint-Malo by train). 2 sur-site days this week (Mon Jul 7, Wed Jul 9). No new labs since Dec 2025; Vitamin D retest overdue (target was July 2026). Protein intake averaging 108g/day vs 150g target — chronically low.",
+  "acute_load_7d": 20.0,
+  "chronic_load_28d": 20.73,
+  "distance_from_peak_pct": 1.3,
+  "hrv_7d_avg": 36,
+  "rhr_7d_avg": 49,
+  "sleep_hours_7d_avg": 7.76,
+  "weight_kg_7d_avg": 103.67,
+  "last_session": {
+    "date": "2026-07-05",
+    "type": "Run",
+    "duration_min": 46,
+    "training_load": 30
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-07-05",
+      "day": "Sat",
+      "time": "11:30",
+      "type": "Run #14 — 6 km Z2 (exécuté, dépassement)",
+      "duration_min": 46,
+      "target_load": 30,
+      "calendar_event_id": "t01iq61r5ah9i94sha4ao5m7a8",
+      "status": "executed"
+    },
+    {
+      "date": "2026-07-06",
+      "day": "Sun",
+      "time": "11:00",
+      "type": "Sortie vélo weekend — gravel/ebike 60 min Z2",
+      "duration_min": 60,
+      "target_load": 15,
+      "calendar_event_id": "94jian4a94td9d7j46dtqb72fg",
+      "status": "planned"
+    },
+    {
+      "date": "2026-07-07",
+      "day": "Mon",
+      "time": "-",
+      "type": "Sur site — e-bike commute",
+      "duration_min": 120,
+      "target_load": 14,
+      "calendar_event_id": "",
+      "status": "blocked"
+    },
+    {
+      "date": "2026-07-08",
+      "day": "Tue",
+      "time": "11:00",
+      "type": "Run #15 — 3-4 km Z2 consolidation stricte",
+      "duration_min": 30,
+      "target_load": 13,
+      "calendar_event_id": "0jf3215bpejrtipi2vodkp3uts",
+      "status": "planned"
+    },
+    {
+      "date": "2026-07-09",
+      "day": "Wed",
+      "time": "-",
+      "type": "Sur site — e-bike commute",
+      "duration_min": 120,
+      "target_load": 14,
+      "calendar_event_id": "",
+      "status": "blocked"
+    },
+    {
+      "date": "2026-07-10",
+      "day": "Thu",
+      "time": "-",
+      "type": "Repos — récupération avant voyage",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "",
+      "status": "rest"
+    },
+    {
+      "date": "2026-07-11",
+      "day": "Fri",
+      "time": "-",
+      "type": "Repos — jour de voyage (location voiture)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "",
+      "status": "rest"
+    }
+  ],
+  "no_train_days": ["2026-07-07", "2026-07-09"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "STRICT DISTANCE DISCIPLINE on Run #15 (Tue Jul 8): 3-4 km maximum, no exceptions. Run #14 today was 50% over target (6 km vs 4 km plan, suffer 30 vs 13-15). At 103.67 kg, repeated overshoot elevates Achilles/patellar tendon injury risk. Set a GPS alarm at 2 km to force turnaround.",
+      "measurable": "Run #15 distance ≤ 4.0 km and suffer score ≤ 18",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Increase daily protein intake to ≥ 130g (current 7d avg: 108g vs 150g target). During running comeback with muscle recomposition at 103.67 kg, inadequate protein delays tendon adaptation and recovery. Prioritize 30-40g protein at post-workout meal.",
+      "measurable": "7-day protein average ≥ 130g by Jul 12",
+      "evidence_class": "RCT"
+    },
+    {
+      "priority": "P2",
+      "text": "Schedule Vitamin D retest — now overdue (planned for July 2026). Last value 27 ng/mL (Dec 2025) was insufficient. At current body weight, sub-40 ng/mL approximately doubles stress fracture risk during running rebuild (Burgi 2011, Miller 2016).",
+      "measurable": "Blood draw scheduled before Jul 15",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "distance_overshoot",
+      "threshold": "Alert if Run #15 exceeds 4.0 km",
+      "reason": "Persistent pattern: Run #12 (7.5 km vs ~4 km), Run #14 (6 km vs 4 km). At 103.67 kg, tissue tolerance is the limiting factor, not cardiovascular fitness"
+    },
+    {
+      "marker": "hrv_7d_avg",
+      "threshold": "Alert if HRV 7d avg drops below 33 ms or fails to recover toward 37+ within 7 days",
+      "reason": "Currently 36 (BALANCED), recovering from late-June dip to 34. Watch for regression after today's high-load run (suffer 30)"
+    },
+    {
+      "marker": "post_run_soreness",
+      "threshold": "Any localized Achilles/patellar tendon pain lasting >24h after Run #14 → skip Run #15 Tuesday",
+      "reason": "6 km at 103.67 kg with suffer 30 = high impact load; tissue response over next 48h is critical"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/75"
+}

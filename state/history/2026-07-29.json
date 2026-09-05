@@ -1,0 +1,72 @@
+{
+  "as_of_date": "2026-07-29",
+  "bootstrap": false,
+  "situational_context": "Running comeback month 3 (87 days, 21 structured runs since May 3). C4 bloc #21-40 active; W31 deload in progress (Run #21 done today, #22 and #23 remaining). Distances have progressed from 2 km to 10.5 km (Run #20, July 25 — longest comeback run). VO2max running improved to 42.2 (from 38.3 at comeback start, +3.9). ACWR normalized to 1.12 after peaking at 1.35 in mid-June — well within comeback range (<=1.50). Chronic load 28d has nearly doubled to 30.6 (from 17.5 on June 14), training status shifted from 'Functional Overreaching' to 'Maintaining'. 4th canicule active in Paris (38C today); all runs this week indoor treadmill or dawn anti-canicule timing. HRV weekly avg stable at 36 ms (BALANCED). Weight data stale — last Withings June 21 (103.67 kg); pesee hebdo resuming Aug 2. No new labs since Dec 2025; Vitamin D retest overdue (was due July). E-bike commuting continues on sur-site days. Benjamin was in Saint-Malo mid-July (Runs #15-20 coastal).",
+  "acute_load_7d": 34.2,
+  "chronic_load_28d": 30.6,
+  "distance_from_peak_pct": 1.9,
+  "hrv_7d_avg": 36,
+  "rhr_7d_avg": 48,
+  "sleep_hours_7d_avg": 8.06,
+  "weight_kg_7d_avg": null,
+  "last_session": {
+    "date": "2026-07-29",
+    "type": "Run",
+    "duration_min": 49,
+    "training_load": 43
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-07-29", "day": "Wed", "time": "06:27", "type": "Run #21 — 7 km Z2 (done)", "duration_min": 49, "target_load": 43, "calendar_event_id": "34pgbv6h2q9kk5nnvonrd14044", "status": "executed"},
+    {"date": "2026-07-30", "day": "Thu", "time": null, "type": "Sur site — e-bike commute only", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-07-31", "day": "Fri", "time": "11:00", "type": "Run #22 — 4.5 km Z2 plat interieur (deload)", "duration_min": 35, "target_load": 25, "calendar_event_id": "9bomro77drdh1m0r4j5u0ehld0", "status": "planned"},
+    {"date": "2026-08-01", "day": "Sat", "time": "11:00", "type": "Recuperation active — marche ou renforcement", "duration_min": 60, "target_load": 8, "calendar_event_id": "v8gv8rvlre5hk0jgup8apdpq3s", "status": "planned"},
+    {"date": "2026-08-02", "day": "Sun", "time": "11:00", "type": "Run #23 — 5 km Z2 plat interieur (deload, cloture W31)", "duration_min": 40, "target_load": 27, "calendar_event_id": "f74r5678m0mn8ubt0kh2dnobto", "status": "planned"},
+    {"date": "2026-08-03", "day": "Mon", "time": null, "type": "Repos — transition W31 -> W32", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-08-04", "day": "Tue", "time": null, "type": "Sur site — e-bike commute only", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "blocked"}
+  ],
+  "no_train_days": ["2026-07-30", "2026-08-04"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Complete W31 deload on schedule (Run #22 Fri, Run #23 Sun) — all sessions indoor treadmill due to 4th canicule / post-canicule modifier. Total week charge must stay <= 95. This deload prepares tissue and nervous system for W32 hill introduction (Beaumonts recon).",
+      "measurable": "Run #22 + #23 executed with total W31 charge <= 95; no pain reported",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Resume Withings weigh-ins on Aug 2 (pesee hebdo). Last data Jun 21 (103.67 kg) — 5+ weeks gap. Weight trend is critical for monitoring tissue-loading risk at ~103 kg and tracking body composition progress during comeback.",
+      "measurable": "Withings measurement recorded on Aug 2",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Schedule Vitamin D retest — was due July 2026 (8 weeks post-comeback). Dec 2025 level was 27 ng/mL (insufficient). Supplementation ongoing. Confirm levels approaching 40 ng/mL target before W32-W36 volume increase, given stress fracture risk at current body weight.",
+      "measurable": "Lab order placed or blood drawn before Aug 15",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "post_run_20_tissue_feedback",
+      "threshold": "Any localized pain lasting >24h after Run #20 (10.5 km, suffer 70, Jul 25) or Run #21 (7 km, suffer 43, Jul 29)",
+      "reason": "Run #20 was the longest comeback run at 10.5 km with 74m D+ at ~103 kg body weight — significant tissue loading. Run #21 done 4 days later. Monitor Achilles, patellar, plantar fascia response."
+    },
+    {
+      "marker": "hrv_weekly_avg",
+      "threshold": "Alert if HRV weekly avg drops below 33 ms or fails to hold >= 35 ms through the deload",
+      "reason": "Currently 36 ms (BALANCED); deload should allow recovery. If HRV drops during deload, suspect accumulated heat stress or non-training stressor."
+    },
+    {
+      "marker": "training_readiness_pattern",
+      "threshold": "Alert if readiness < 40 on 3+ days in the next 7",
+      "reason": "Readiness was 9 on Jul 25 (day of Run #20), took 3 days to recover to 79. Deload should keep readiness moderate-high. Persistent low readiness during deload = red flag."
+    },
+    {
+      "marker": "weight_trend",
+      "threshold": "Alert if Aug 2 weigh-in shows > 105 kg or > +2 kg from Jun 21 (103.67 kg)",
+      "reason": "5-week data gap; need to re-establish trajectory. Rapid gain would increase tissue-loading risk for upcoming W32 volume."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/101"
+}

@@ -1,0 +1,72 @@
+{
+  "as_of_date": "2026-08-19",
+  "bootstrap": false,
+  "situational_context": "Running comeback active, governed by C4 block #21-40 (protocols/active_block.md, rev 2026-07-29). 28 runs logged since May 3, 2026 (108 days in); longest 10.5 km (Run #20, Jul 25). Run #28 executed Aug 18 (5.06 km, HR 137, easy) — first run after 6-day gap caused by Saint-Malo travel (Aug 14-16) + heatwave cancellations (Aug 17-19). Heatwave now breaking — temps dropping from 34°C to 23-27°C, further cooling to 21-24°C by weekend. Post-heatwave modifier active until ~Aug 28 (10-day window). W34 governed by semaine blanche rule (≤18.8 km, no SL) following near-blank W33. ACWR at 0.48 (deepening detraining). Chronic load 28d fell to 21.7 (from ~30.6 late July peak — 29% decline in 3 weeks due to travel + heatwave). RHR improving: today 50 bpm, first sub-52 reading in 8 days, resolving the travel-related spike to 52-55. HRV weekly avg dropped to 33 (from 36 pre-travel, from 40 in late July — cumulative heat/travel stress, not illness). Training readiness jumped to 78 (best in 2+ weeks). Body battery 60.5 (best in 2 weeks). Sleep solid at 7.9h/88 score. Weekend runs (Sat 6.5 km, Sun 6.0 km) look favorable with post-heatwave Yellow conditions. Weight 100.68 kg (stable). No new labs since Dec 2025; Vitamin D retest overdue.",
+  "acute_load_7d": 10.5,
+  "chronic_load_28d": 21.68,
+  "distance_from_peak_pct": 1.35,
+  "hrv_7d_avg": 33,
+  "rhr_7d_avg": 52.71,
+  "sleep_hours_7d_avg": 7.71,
+  "weight_kg_7d_avg": 100.68,
+  "last_session": {
+    "date": "2026-08-19",
+    "type": "EBikeRide (commute x2)",
+    "duration_min": 112,
+    "training_load": 12
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-08-19", "day": "Wed", "time": "-", "type": "Rest (sur site, e-bike commute done)", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "blocked"},
+    {"date": "2026-08-20", "day": "Thu", "time": "-", "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"},
+    {"date": "2026-08-21", "day": "Fri", "time": "-", "type": "Rest (sur site, e-bike commute)", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "blocked"},
+    {"date": "2026-08-22", "day": "Sat", "time": "11:00", "type": "Run #29 — 6.5 km easy plat", "duration_min": 50, "target_load": 30, "calendar_event_id": "3rrqtqq619mf8qv8mus9jn5bt4", "status": "planned"},
+    {"date": "2026-08-23", "day": "Sun", "time": "11:00", "type": "Run #30 — 6.0 km easy plat (conditionnel)", "duration_min": 45, "target_load": 28, "calendar_event_id": "bh27hup66p2kuocdnt6tq2gm88", "status": "planned"},
+    {"date": "2026-08-24", "day": "Mon", "time": "-", "type": "Rest (transition W35 deload)", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"},
+    {"date": "2026-08-25", "day": "Tue", "time": "-", "type": "Rest (sur site, e-bike commute)", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "blocked"}
+  ],
+  "no_train_days": ["2026-08-19", "2026-08-21", "2026-08-25"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Resume running this weekend (Sat + Sun). Readiness is the highest in 2+ weeks (78), RHR dropped to 50 today, body battery at 60.5. The 4-day rest gap (Wed-Fri) after Run #28 provides ample recovery. Execute Run #29 (6.5 km Sat) and conditional Run #30 (6.0 km Sun) per the semaine blanche W34 plan. Hydrate reinforced (post-heatwave window active).",
+      "measurable": "Both weekend runs executed with FC avg ≤145, no pain >3/10, no gait alteration",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P1",
+      "text": "Vitamin D retest was due ~July 2026 and has not been logged — no new lab data since Dec 2025 (27 ng/mL, insufficient). Now >6 weeks overdue. Schedule the blood panel this week.",
+      "measurable": "Lab order placed within 1 week; result logged within 3 weeks",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P2",
+      "text": "HRV weekly avg has declined steadily from 40 (late July) to 33 (today) — a 17.5% drop over 4 weeks, status LOW. Coincides with heatwave + travel disruption, consistent with cumulative heat stress + detraining, not illness (no skin temp spikes, no symptoms). Monitor for recovery as heatwave breaks and training resumes. If HRV weekly avg does not rebound to ≥35 within 10 days, escalate.",
+      "measurable": "HRV weekly avg ≥35 by Aug 29; if not, flag for deeper investigation",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "hrv_weekly_avg",
+      "threshold": "Alert if HRV weekly avg stays ≤33 for >7 more days (past Aug 26) after heatwave breaks and training resumes",
+      "reason": "Declined 40→33 over 4 weeks. Expected to rebound with cooler weather + resumed training. Failure to rebound would suggest a deeper recovery issue."
+    },
+    {
+      "marker": "rhr_7d_avg",
+      "threshold": "Confirm RHR 7d avg returns to ≤51 within 5 days; re-alert if any single day exceeds 54 bpm",
+      "reason": "Today's 50 bpm suggests the 52-55 travel-related spike is resolving, but 7d avg still 52.7"
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Must stabilize or reverse decline by end of W35 (Aug 30); flag if it drops below 20",
+      "reason": "Fell 30.6 → 21.7 in 3 weeks. Two back-to-back missed weeks (travel + heatwave). Weekend runs + W35 sessions should arrest the decline."
+    },
+    {
+      "marker": "vo2max_cycling",
+      "threshold": "Confirm it diverges from the running VO2max value (42.9)",
+      "reason": "Still identical to running VO2max since Aug 11 — likely Garmin artifact"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/121"
+}

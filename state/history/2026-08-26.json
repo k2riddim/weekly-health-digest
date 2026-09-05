@@ -1,0 +1,72 @@
+{
+  "as_of_date": "2026-08-26",
+  "bootstrap": false,
+  "situational_context": "Running comeback W35 deload week of C4 block (#21-40). Training status improved from 'Detraining' to 'Maintaining' — acute load recovered to 23.8 (ACWR 1.26 within comeback band). However, recovery markers are degraded: RHR 7d avg 52.9 bpm (4 days at 54-55, up from 50 baseline), HRV weekly avg 33 (down from 35, status LOW/UNBALANCED), body battery persistently low (21-35). Run #29 (Aug 22, 7.04 km, load 51) exceeded C4 HR caps (avg 146 > 145, max 163 > 158) and likely drove this recovery dip. W34 sessions fell short of the block plan (especially the 11 km SL reduced to 5 km). Deload gate for W36 currently looks borderline-to-failing: HRV 33 < 36 gate, RHR 52.9 > 51 gate. Chronic load 28d continues to decline (18.95, down from 24.74 at last state). Vitamin D retest remains overdue (~8 months since last panel Dec 2025). Body weight trend positive: 100.68 kg (Aug 11), continuing gradual decline. No new labs.",
+  "acute_load_7d": 23.8,
+  "chronic_load_28d": 18.95,
+  "distance_from_peak_pct": 1.18,
+  "hrv_7d_avg": 33,
+  "rhr_7d_avg": 52.9,
+  "sleep_hours_7d_avg": 7.56,
+  "weight_kg_7d_avg": 100.68,
+  "last_session": {
+    "date": "2026-08-25",
+    "type": "Run",
+    "duration_min": 28,
+    "training_load": 22
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-08-26", "day": "mercredi", "time": "-", "type": "rest (sur site + eBike commute)", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "blocked"},
+    {"date": "2026-08-27", "day": "jeudi", "time": "11:00", "type": "Run 6.0 km easy flat", "duration_min": 50, "target_load": 25, "calendar_event_id": "qcl2huc5mf3061v8vbrdjr6s98", "status": "planned"},
+    {"date": "2026-08-28", "day": "vendredi", "time": "-", "type": "rest (sur site + eBike commute)", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "blocked"},
+    {"date": "2026-08-29", "day": "samedi", "time": "11:00", "type": "Run 7.0 km easy flat + PORTE DELOAD", "duration_min": 55, "target_load": 30, "calendar_event_id": "iq83p7ojps35kmlusrri05kr3o", "status": "planned"},
+    {"date": "2026-08-30", "day": "dimanche", "time": "-", "type": "rest / marche légère optionnelle", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"},
+    {"date": "2026-08-31", "day": "lundi", "time": "TBD", "type": "Conditionnel — dépend de la porte deload samedi", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "planned"},
+    {"date": "2026-09-01", "day": "mardi", "time": "-", "type": "rest (sur site)", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "blocked"}
+  ],
+  "no_train_days": ["2026-08-26", "2026-08-28", "2026-09-01"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Vitamin D retest is now ~8 months overdue (last panel Dec 2025, 27 ng/mL insufficient). No new lab data has landed. Schedule blood panel immediately — stress fracture risk remains elevated at current Vitamin D levels during a running comeback at 101 kg body weight.",
+      "measurable": "Lab order placed and result logged within 2 weeks",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Prioritize recovery through the remaining deload (W35). RHR has been at 54-55 bpm for 4 consecutive days (alert threshold crossed at 55 bpm on Aug 22). Body battery persistently below 35. Do not accelerate W36 entry: if Saturday (Aug 29) post-run markers still show HRV weekly < 36 or RHR 7d avg > 51, extend the deload by at least 3 days before the next run.",
+      "measurable": "RHR 7d avg ≤ 51 bpm and HRV weekly avg ≥ 36 before W36 resumption",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Run #29 (Aug 22) exceeded C4 HR caps: avg 146 > 145, max 163 > 158. Flag as intensity violation — future sessions must stay strictly within Z1-Z2 (avg ≤ 140 during deload, ≤ 145 flat normally). The excessive intensity likely caused the 4-day recovery dip.",
+      "measurable": "Next 2 runs both complete with avg HR ≤ 140 and max HR ≤ 155",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "rhr_7d_avg",
+      "threshold": "Must return to ≤ 51 bpm before W36 resumption. Single-day alert at ≥ 55 bpm (triggered Aug 22).",
+      "reason": "4 consecutive days at 54-55 bpm. Elevated above 50 bpm baseline. Cross-validates with HRV suppression and low body battery — genuine recovery deficit."
+    },
+    {
+      "marker": "hrv_weekly_avg",
+      "threshold": "Deload gate requires ≥ 36 for normal W36 entry. Currently 33.",
+      "reason": "Dropped from 35 to 33. Status LOW/UNBALANCED for 8+ days. Must recover before resuming block volume."
+    },
+    {
+      "marker": "body_battery",
+      "threshold": "Should see ≥ 50 on at least 4/7 days before W36 entry.",
+      "reason": "Persistently 21-35 since Aug 22 (Run #29). Below the 50 threshold from return-to-running protocol."
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Watch for continued decline below 18. Rebuild toward 25+ required for block progression.",
+      "reason": "Dropped 23% from 24.74 to 18.95 over 12 days despite training status improving to Maintaining."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/127"
+}

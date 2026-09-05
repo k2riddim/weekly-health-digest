@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-05-26",
+  "bootstrap": false,
+  "situational_context": "Running comeback week 4: 5 runs completed since gap broken on 2026-05-03. Run #5 (May 23, 5.02 km, FC 136, suffer 19) confirmed cardiac adaptation at 5 km distance — FC down from 140 (Run #4), suffer down from 26. Consolidation phase at 5 km before considering distance progression. Primary modality remains e-bike commuting (~38 km/day round trip on sur-site days). Acute load declined to 14 (detraining territory) after a low-activity week — Sunday vélo session skipped for heatwave. Chronic load 18.2, ACWR 0.77 (below 0.80 safe zone, rebuild expected). Heatwave in Paris this week (33-34°C through May 28, easing to 27°C by Sunday). HRV stable (weekly avg 37, BALANCED); RHR improved to 48 bpm. VO2max running 38.9. Weight steady at 103.84 kg (down from 104.1 on May 14). Sleep adequate at 7.18h 7d avg despite baby. No new labs since Dec 2025. Comeback protocol (return-to-running.md) active — tissue tolerance, not cardio, remains the limiting factor. Vitamin D retest due ~July 2026. RDV nutritionniste Lucie UGUEN scheduled May 28.",
+  "acute_load_7d": 14,
+  "chronic_load_28d": 18.2,
+  "distance_from_peak_pct": 1.1,
+  "hrv_7d_avg": 37,
+  "rhr_7d_avg": 50,
+  "sleep_hours_7d_avg": 7.18,
+  "weight_kg_7d_avg": 103.84,
+  "last_session": {
+    "date": "2026-05-26",
+    "type": "EBikeRide (commute x2)",
+    "duration_min": 108,
+    "training_load": 15
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-05-26", "day": "Mardi", "time": "—", "type": "E-bike commute (done)", "duration_min": 108, "target_load": 15, "calendar_event_id": "j7m5ub7krq1585vo3l6l3gvi44", "status": "blocked"},
+    {"date": "2026-05-27", "day": "Mercredi", "time": "—", "type": "E-bike commute (sur site)", "duration_min": 110, "target_load": 15, "calendar_event_id": "", "status": "blocked"},
+    {"date": "2026-05-28", "day": "Jeudi", "time": "12:00", "type": "Run #6 — 5 km Z1-Z2", "duration_min": 45, "target_load": 18, "calendar_event_id": "3ua5vo8c0m59nglc8i37rm1vbg", "status": "planned"},
+    {"date": "2026-05-29", "day": "Vendredi", "time": "12:00", "type": "Vélo facile Z1-Z2 — 30 min", "duration_min": 30, "target_load": 11, "calendar_event_id": "nitu7moo6mq72kdfb1reeiikf4", "status": "planned"},
+    {"date": "2026-05-30", "day": "Samedi", "time": "11:00", "type": "Sortie vélo endurance Z2 — 50 min", "duration_min": 50, "target_load": 15, "calendar_event_id": "53bkapck6tonusivbpnnn6cdfo", "status": "planned"},
+    {"date": "2026-05-31", "day": "Dimanche", "time": "12:00", "type": "Run #7 — 5 km Z1-Z2", "duration_min": 45, "target_load": 18, "calendar_event_id": "usilp815jojoukd3jp2o1h324s", "status": "planned"},
+    {"date": "2026-06-01", "day": "Lundi", "time": "—", "type": "Repos", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"}
+  ],
+  "no_train_days": ["2026-05-26", "2026-05-27"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Execute Run #6 Thursday with heat precautions: hydrate 500 ml+ beforehand, carry water, abort if nausea/dizziness. If May 27 commute is gravel (suffer >15/leg), reduce to 3 km. FC ceiling 145 bpm (heat cardiac drift).",
+      "measurable": "Run #6 completed, FC avg ≤145 bpm, no post-run pain >24h",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Complete both weekend sessions (Sat cycling + Sun Run #7) to arrest the detraining trajectory. ACWR at 0.77 needs gentle upward pressure. Saturday cycling prioritises aerobic volume; Sunday run consolidates 5 km distance.",
+      "measurable": "Both sessions executed, projected ACWR trending toward 0.80+",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Prepare nutrition discussion points for RDV Lucie UGUEN (May 28, 10h15): protein distribution across meals (current avg 138 g/d vs 150 g target), fat consistently over target (145 g avg vs 80 g target), caloric surplus on rest days.",
+      "measurable": "Discussion points prepared, actionable changes agreed with nutritionist",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "acwr",
+      "threshold": "Currently 0.77 — target return to 0.80+ within 7 days through planned sessions",
+      "reason": "Below safe zone lower bound; continued decline signals detraining risk"
+    },
+    {
+      "marker": "rhr_7d_avg",
+      "threshold": "Alert if RHR rises >5 bpm above 50 bpm baseline for 3+ consecutive days",
+      "reason": "Slight uptick to 50 (from 49); could indicate heat stress or early overload during comeback"
+    },
+    {
+      "marker": "post_run_tissue_feedback",
+      "threshold": "Any localized joint/tendon pain lasting >24h after Run #6 or #7 triggers skip of next run",
+      "reason": "Tissue tolerance is the bottleneck at 103.8 kg; heat compounds inflammation risk"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/36"
+}

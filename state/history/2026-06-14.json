@@ -1,0 +1,73 @@
+{
+  "as_of_date": "2026-06-14",
+  "bootstrap": false,
+  "situational_context": "Running comeback Week 7, consolidation phase. 10 runs completed since gap broken May 3 (2.5 km → 5.8 km progression). ACWR elevated at 1.35 after Run #9 spike (load 34) — consolidating at reduced volume to bring ratio below 1.3. Run #10 today (4.9 km, FC 136, suffer 18) confirmed controlled effort. Chronic load paradoxically lower than May (17.5 vs 22.3) due to inconsistent weekly volume. Weight continues steady decline: 102.6 kg (-1.5 kg since May 14). VO2max running improved to 40.6 (was 38.3 at comeback start). Body battery consistently low (38-48 range, never ≥50 this week) — accumulated fatigue signal. HRV 7d avg 35.5, within 1σ of 90d baseline (36.3 ± 3.2) but trending low. Training status: Functional Overreaching (Garmin). Heat wave incoming Jun 17-20 (33-37°C Paris) — all outdoor sessions need heat adaptation. Primary modality remains e-bike commuting (~38 km round trip on 'sur site' days). Léonie ~5 months old.",
+  "acute_load_7d": 23.67,
+  "chronic_load_28d": 17.5,
+  "distance_from_peak_pct": 1.1,
+  "hrv_7d_avg": 35.5,
+  "rhr_7d_avg": 50,
+  "sleep_hours_7d_avg": 7.45,
+  "weight_kg_7d_avg": 102.62,
+  "last_session": {
+    "date": "2026-06-14",
+    "type": "Run",
+    "duration_min": 38,
+    "training_load": 18
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-06-14", "day": "Dim", "time": "09:20", "type": "Run #10 Z2 consolidation", "duration_min": 38, "target_load": 18, "calendar_event_id": "rjjjug0p9j0gv3et996jsn3r3g", "status": "executed"},
+    {"date": "2026-06-15", "day": "Lun", "time": null, "type": "Repos", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-06-16", "day": "Mar", "time": null, "type": "Commute ebike (sur site)", "duration_min": 120, "target_load": 15, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-06-17", "day": "Mer", "time": "11:30", "type": "Run #11 Z2 consolidation", "duration_min": 40, "target_load": 14, "calendar_event_id": "bq4h9cudqsm9duem8pk2jvev5o", "status": "planned"},
+    {"date": "2026-06-18", "day": "Jeu", "time": null, "type": "Commute ebike (sur site)", "duration_min": 120, "target_load": 15, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-06-19", "day": "Ven", "time": null, "type": "Repos (canicule 37°C)", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-06-20", "day": "Sam", "time": "11:30", "type": "Balade ebike Z1", "duration_min": 45, "target_load": 8, "calendar_event_id": "htge0trofvj84q6kd129bl3lm8", "status": "planned"},
+    {"date": "2026-06-21", "day": "Dim", "time": "12:00", "type": "Run #12 Z2 consolidation", "duration_min": 35, "target_load": 14, "calendar_event_id": "u98g4brlhab37mo6g8pofpqht0", "status": "planned"}
+  ],
+  "no_train_days": ["2026-06-16", "2026-06-18"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Consolidate ACWR before increasing running volume. Maintain runs at 4-4.5 km until ACWR drops below 1.2. Use ebike (not gravel) for sur site commutes to limit additional load.",
+      "measurable": "ACWR ≤ 1.20 by Jun 21. No run > 4.5 km this week.",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Heat adaptation protocol for all outdoor sessions Jun 17-21: carry ≥500 mL water, reduce FC targets by 5-10 bpm, prefer shaded routes (Bois de Vincennes sous-bois), abort if FC exceeds zone ceiling despite slowing.",
+      "measurable": "No session with average HR >5 bpm above zone target during heat wave.",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Protein intake averaging 129 g/day vs 150 g target. At 102.6 kg during a running comeback with weight loss, protein ≥1.6 g/kg (164 g) is ideal for preserving muscle mass. Prioritise protein at breakfast (currently lowest meal at ~250 kcal).",
+      "measurable": "≥4 days this week with protein ≥150 g. Track via oh_daily_nutrition_summary.",
+      "evidence_class": "RCT"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "acwr",
+      "threshold": "Alert if ACWR remains > 1.30 for >5 consecutive days",
+      "reason": "Currently 1.35, above safe zone. Return-to-running protocol: 1.30-1.50 → reduce cycling/running volume."
+    },
+    {
+      "marker": "body_battery",
+      "threshold": "Alert if body battery max stays <50 for >7 consecutive days",
+      "reason": "Has been <50 all week (38-48 range). Indicates accumulated fatigue. Combined with Functional Overreaching status."
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Target gradual increase back toward 20-25 over next 2 weeks",
+      "reason": "Dropped from 22.3 (May 14) to 17.5 — inconsistent weekly volume. Need more consistent baseline."
+    },
+    {
+      "marker": "heat_impact",
+      "threshold": "HR drift >10 bpm above normal for same effort in heat (>32°C)",
+      "reason": "Heat wave Jun 17-20. Cardiac drift in heat is expected; excessive drift signals dehydration or heat stress."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/54"
+}

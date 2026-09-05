@@ -1,0 +1,130 @@
+{
+  "as_of_date": "2026-04-30",
+  "bootstrap": false,
+  "situational_context": "Early rebuild phase with first real training stimulus. The Apr 25 gravel ride (load 57, suffer 57) broke a months-long pattern of e-bike-only activity. Chronic load rose from 18 to 22 over 11 days. ACWR temporarily elevated at 1.43 due to single gravel spike against low chronic base — self-correcting as the session exits the 7-day window by May 2. Body absorbing load well: HRV stable at 38 (BALANCED), RHR improved from 53 to 49, training readiness recovered from post-gravel low of 25 to 80. Weight trending down (-2.3 kg in 2 weeks, 106.9 to 104.6). Life-constrained training continues with young baby — missed sessions expected and acceptable. E-bike commuting provides consistent low-load base on sur site days.",
+  "acute_load_7d": 31.7,
+  "chronic_load_28d": 22.2,
+  "distance_from_peak_pct": 1.4,
+  "hrv_7d_avg": 38,
+  "rhr_7d_avg": 49,
+  "sleep_hours_7d_avg": 7.32,
+  "weight_kg_7d_avg": 104.9,
+  "last_session": {
+    "date": "2026-04-30",
+    "type": "EBikeRide",
+    "duration_min": 111,
+    "training_load": 14
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-04-30",
+      "day": "Thu",
+      "time": "-",
+      "type": "Sur site - e-bike commute",
+      "duration_min": 111,
+      "target_load": 14,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-05-01",
+      "day": "Fri",
+      "time": "11:00",
+      "type": "Endurance velo Z2",
+      "duration_min": 50,
+      "target_load": 15,
+      "calendar_event_id": "t0jforto8j77dufii0jv8o51g8",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-02",
+      "day": "Sat",
+      "time": "11:00",
+      "type": "Sortie longue Z2",
+      "duration_min": 60,
+      "target_load": 20,
+      "calendar_event_id": "r22o9g67fjatm4tp3qvfendq08",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-03",
+      "day": "Sun",
+      "time": "12:00",
+      "type": "Recup active Z1-Z2",
+      "duration_min": 45,
+      "target_load": 12,
+      "calendar_event_id": "j21spceejm3ecvso081j2da93o",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-04",
+      "day": "Mon",
+      "time": "-",
+      "type": "Repos",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-05-05",
+      "day": "Tue",
+      "time": "11:00",
+      "type": "Endurance velo Z2",
+      "duration_min": 50,
+      "target_load": 15,
+      "calendar_event_id": "uu3jtiqjg0o0kcc01a1d0ksfsc",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-06",
+      "day": "Wed",
+      "time": "-",
+      "type": "Sur site - e-bike commute",
+      "duration_min": 110,
+      "target_load": 14,
+      "calendar_event_id": null,
+      "status": "blocked"
+    }
+  ],
+  "no_train_days": ["2026-04-30", "2026-05-06"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Execute the May 1 Z2 endurance session as planned. Keep HR strictly below 140 bpm to stay in Z2 and allow ACWR to normalize. This is the first structured session since the Apr 25 gravel ride.",
+      "measurable": "May 1 session logged with avg HR at or below 140 bpm and training load 12-18",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Increase daily protein intake toward 150g target. Currently averaging 117g (78% adherence). Add a protein-rich snack or post-training shake to close the gap. Critical for muscle preservation during concurrent rebuild and weight loss.",
+      "measurable": "Average daily protein at or above 135g over next 7 days",
+      "evidence_class": "RCT"
+    },
+    {
+      "priority": "P2",
+      "text": "Prioritize 7+ hours sleep tonight. Last night was 6.27h with sleep score 79, the lowest this week. Training quality on May 1 depends on adequate recovery.",
+      "measurable": "Tonight sleep at or above 7h",
+      "evidence_class": "RCT"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "ACWR",
+      "threshold": "Should drop below 1.3 by May 2 as gravel session exits 7-day window",
+      "reason": "Currently 1.43. Elevated but self-correcting. Flag if still above 1.3 on May 3."
+    },
+    {
+      "marker": "weight_trend",
+      "threshold": "Monitor if rate exceeds 1 kg/week sustained beyond 3 weeks",
+      "reason": "Currently losing approximately 1.1 kg/week. Borderline per rebuild red flags. Watch for energy complaints or performance decline."
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Target gradual increase toward 30+ by mid-May",
+      "reason": "At 22.2 now (1.4% of historical peak). Each week of consistent training should add 2-3 points."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/11"
+}

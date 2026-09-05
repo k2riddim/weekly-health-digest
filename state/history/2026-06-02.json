@@ -1,0 +1,71 @@
+{
+  "as_of_date": "2026-06-02",
+  "bootstrap": false,
+  "situational_context": "Running comeback week 5: 6 protocol runs completed (Runs #1–#6) since gap broken on 2026-05-03 (182 days off). Run #6 (May 31) shortened to 3.78 km; first successful 5 km consolidation was Run #5 (May 23). Unplanned 1.25 km run to RER this morning (non-protocol). VO2max running improving: 38.3→39.6. Primary modality remains e-bike commuting on sur-site days (~38 km RT). Chronic load declining: 22.3→15.28 over 19 days — training status DETRAINING. ACWR 0.687 (below 0.8 lower bound) driven by sparse activity in late May. Weight continuing downward: 104.1→102.97 kg. Two sur-site days ahead (Thu 4 + Fri 5 Jun) will contribute commute load. HRV stable BALANCED (weekly avg 36). Baby (Léonie, 5 months) sleep currently stable — not disrupting recovery. No new labs since Dec 2025; Vitamin D retest due ~July 2026.",
+  "acute_load_7d": 10.5,
+  "chronic_load_28d": 15.28,
+  "distance_from_peak_pct": 0.95,
+  "hrv_7d_avg": 36,
+  "rhr_7d_avg": 48.6,
+  "sleep_hours_7d_avg": 7.73,
+  "weight_kg_7d_avg": 102.97,
+  "last_session": {
+    "date": "2026-06-02",
+    "type": "Run",
+    "duration_min": 8.6,
+    "training_load": 8
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-06-02", "day": "Tue", "time": "06:50", "type": "Run (non-protocol)", "duration_min": 9, "target_load": 8, "calendar_event_id": "gbm9at1g631j36bio18quhg6uk", "status": "completed"},
+    {"date": "2026-06-03", "day": "Wed", "time": "12:00", "type": "Run #7 — 5 km Z1-Z2 (comeback)", "duration_min": 45, "target_load": 18, "calendar_event_id": "tkg8tsgthe416kafhsdvl73lg4", "status": "planned"},
+    {"date": "2026-06-04", "day": "Thu", "time": null, "type": "Sur site — commute ebike/gravel", "duration_min": 120, "target_load": 14, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-06-05", "day": "Fri", "time": null, "type": "Sur site — commute ebike/gravel", "duration_min": 120, "target_load": 14, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-06-06", "day": "Sat", "time": "11:00", "type": "Sortie gravel endurance Z2 — 50 min", "duration_min": 50, "target_load": 16, "calendar_event_id": "4nbgbluuctq748tei69h8qqj2g", "status": "planned"},
+    {"date": "2026-06-07", "day": "Sun", "time": "11:30", "type": "Run #8 — 5 km Z1-Z2 (comeback)", "duration_min": 45, "target_load": 18, "calendar_event_id": "mv6pqpgi9hmah19pad4kjm3v3s", "status": "planned"}
+  ],
+  "no_train_days": ["2026-06-04", "2026-06-05"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Execute Run #7 tomorrow (Wed) if zero post-Run #6 pain at 48h+. Today's 1.25 km mini-run was non-protocol and does not reset the 48h inter-run gap (only 8.6 min, suffer 8). Target 5 km at ≤137 bpm avg HR. This is consolidation run #2 at the 5 km plateau — need 2 consecutive clean 5 km runs to validate the distance step.",
+      "measurable": "Run #7 completed at 5 km with avg HR ≤140 bpm and no pain during or 24h post",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Arrest the detraining slide — acute load (10.5) and chronic load (15.28) have both declined ~30% since May 14. Commit to minimum 3 sessions this week. The commute days (Thu/Fri) count as passive load contribution. Do not skip the Saturday gravel and Sunday run unless readiness or weather forces it.",
+      "measurable": "Acute load ≥12.0 by end of week; chronic load stabilised or beginning to uptick by Jun 9",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Increase daily protein toward 150g target. Last 7d average was ~115g — 24% below target. At 103 kg body weight in a comeback phase, protein supports both tendon remodeling and lean mass preservation during the ongoing weight cut. Target ≥30g protein at each of 3 main meals plus a post-training snack.",
+      "measurable": "≥4 days this week with protein ≥140g",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "acwr",
+      "threshold": "Currently 0.687 — target return to ≥0.80 within 10 days",
+      "reason": "Below lower bound of healthy ACWR band; indicates detraining. Load needs gradual rebuilding."
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Currently 15.28, declining. Alert if drops below 12.",
+      "reason": "At 0.95% of historical peak (1608). Needs to stabilise before any progression is possible."
+    },
+    {
+      "marker": "hrv_weekly_avg",
+      "threshold": "Currently 36. Alert if drops below 32 for 3+ consecutive days.",
+      "reason": "Down from 40 on May 14. Still BALANCED but lower tail of personal range. Further decline would indicate accumulated fatigue."
+    },
+    {
+      "marker": "post_run_pain",
+      "threshold": "Any localized joint/tendon pain lasting >24h after a run triggers skip of next run",
+      "reason": "Return-to-running protocol: tissue tolerance is the limiter at 103 kg. Run #6 was shortened — need to verify clean 5 km execution."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/42"
+}

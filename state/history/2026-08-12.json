@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-08-12",
+  "bootstrap": false,
+  "situational_context": "Running comeback mature — 27 structured runs since May 3, now in C4 active block #21–40 (W33). Distances have progressed to 10.5 km (Run #20, Saint-Malo côte). VO2max running improved to 42.9 (from 38.3 at comeback start, +4.6). Weight breakthrough: 100.68 kg (first time below 101, down from 104.8 at comeback start, −4.1 kg). ACWR at 0.78 — temporarily below the 0.8 lower bound due to 5th heatwave of 2026 forcing reduced sessions. Chronic load 25.7 (up from 17.5 on Jun 14, +47%). Training status 'Detraining' reflects the heatwave-driven acute load dip, not a structural decline. HRV stable at 36 ms (BALANCED). W33 plan: Run #27 executed today (4.23 km, shortened from 6 km due to RED heatwave), Runs #28-29 scheduled in Saint-Malo this weekend (cooler conditions, Yellow band). No new labs since Dec 2025 — Vitamin D retest overdue (was due July 2026). Baby (Léonie, 19 months) — cohabitant data unavailable this session.",
+  "acute_load_7d": 20,
+  "chronic_load_28d": 25.7,
+  "distance_from_peak_pct": 1.6,
+  "hrv_7d_avg": 36,
+  "rhr_7d_avg": 50,
+  "sleep_hours_7d_avg": 8.0,
+  "weight_kg_7d_avg": 100.68,
+  "last_session": {
+    "date": "2026-08-12",
+    "type": "Run",
+    "duration_min": 30,
+    "training_load": 10
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-08-12", "day": "Wed", "time": "05:57", "type": "Run #27 — 4.23 km plat (Bois de Vincennes)", "duration_min": 30, "target_load": 10, "calendar_event_id": "scd8n0eum6gkij4f63016s2k3g", "status": "done"},
+    {"date": "2026-08-13", "day": "Thu", "time": null, "type": "Sur site — e-bike commute", "duration_min": 110, "target_load": 13, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-08-14", "day": "Fri", "time": null, "type": "Travel Paris → Saint-Malo (TGV 12:10)", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-08-15", "day": "Sat", "time": "11:00", "type": "Run #28 — 7.0 km côte Saint-Malo (2 montées)", "duration_min": 55, "target_load": 35, "calendar_event_id": "slq4ot0uhiq5lkimrb83i9qtqg", "status": "planned"},
+    {"date": "2026-08-16", "day": "Sun", "time": "11:00", "type": "Run #29 SL — 10.0 km Saint-Malo (1 montée intégrée)", "duration_min": 80, "target_load": 55, "calendar_event_id": "grcq5aiuu06nti4hs9dad99qag", "status": "planned"},
+    {"date": "2026-08-17", "day": "Mon", "time": null, "type": "Rest — post-SL recovery", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-08-18", "day": "Tue", "time": null, "type": "Sur site — e-bike commute", "duration_min": 110, "target_load": 13, "calendar_event_id": null, "status": "blocked"}
+  ],
+  "no_train_days": ["2026-08-13", "2026-08-18"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Execute W33 runs #28–#29 in Saint-Malo as planned — the cooler Breton conditions (21–23°C, Yellow band with post-heatwave modifier) are the best training window this week. Respect Z2 ceiling (FC moy ≤ 148 côte / ≤ 145 plat), hydrate ≥ 500–750 mL + electrolytes. If any post-Run #28 tissue pain, downgrade Run #29 to 7 km flat.",
+      "measurable": "Run #28 completed at ≤ 7 km with FC moy ≤ 148; Run #29 SL completed at ≤ 10 km with FC moy ≤ 145. Both logged on Strava.",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Schedule Vitamin D blood test — retest was due July 2026 (8 weeks post-comeback start) and is now 6 weeks overdue. At 27 ng/mL (December 2025), supplementation should have moved the needle but confirmation is needed before training volume increases further in the active block.",
+      "measurable": "Lab appointment booked before August 22; results available by end of August.",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P2",
+      "text": "Increase protein intake — 7-day average is ~114 g/day vs 150 g target (76% adherence). At 100.7 kg during active weight loss + running comeback, protein is the macro that protects muscle mass and supports tendon remodeling. Add ~35 g/day (e.g., extra serving of Greek yogurt or whey post-run).",
+      "measurable": "Protein 7d avg ≥ 140 g by next week's digest.",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "acwr",
+      "threshold": "Alert if ACWR remains below 0.8 for >5 consecutive days after the heatwave breaks",
+      "reason": "Currently 0.78 — below lower bound but expected during heatwave compliance. Should rebound after Saint-Malo weekend sessions. If it stays low post-heatwave, indicates genuine detraining."
+    },
+    {
+      "marker": "vo2max_cycling",
+      "threshold": "Confirm whether 42.9 value persists or reverts to ~38.6",
+      "reason": "Sudden +4.3 jump on Aug 12 (38.6 → 42.9, now equals VO2max running). Likely Garmin recalculation artifact. Flag if it persists — could indicate a data pipeline issue."
+    },
+    {
+      "marker": "vitamin_d",
+      "threshold": "No new lab data since Dec 2025. Retest overdue.",
+      "reason": "At 27 ng/mL, stress fracture risk ~2× elevated (Burgi 2011). Critical during a running comeback at 100 kg body weight."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/115"
+}

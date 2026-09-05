@@ -1,0 +1,68 @@
+{
+  "as_of_date": "2026-07-12",
+  "bootstrap": false,
+  "situational_context": "Running comeback 70 days in (since May 3), 14 runs completed. Longest run 7.5 km (Run #12, June 21). Last run: Run #14, 6.0 km on July 5 — 7-day gap due to Paris heatwave RED alert (3rd wave since May, July 6-13) + Saint-Malo weekend trip. ACWR normalized from 1.35 (June 14) to 0.85 — entering detraining territory; must resume running mid-week. HRV stable at 35 ms (BALANCED), recovered from UNBALANCED period in late June. VO2max running 41.5 (up from 40.6). Weight: 103.67 kg (3-week-old reading, June 21). Post-heatwave modifier active (~10 days from heatwave end ~July 14): all heat bands lowered 3°C. Paris cooling from 36°C to 28°C by July 18 — indoor sessions early week, outdoor possible by weekend. Vitamin D retest overdue (was due July 2026). Baby Léonie 18 months — normal sleep disruption.",
+  "acute_load_7d": 16,
+  "chronic_load_28d": 18.8,
+  "distance_from_peak_pct": 1.17,
+  "hrv_7d_avg": 35,
+  "rhr_7d_avg": 50,
+  "sleep_hours_7d_avg": 7.14,
+  "weight_kg_7d_avg": 103.67,
+  "last_session": {
+    "date": "2026-07-05",
+    "type": "Run",
+    "duration_min": 46,
+    "training_load": 30
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-07-12", "day": "dimanche", "time": "-", "type": "Repos (voyage Saint-Malo)", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"},
+    {"date": "2026-07-13", "day": "lundi", "time": "-", "type": "Repos (retour Paris)", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"},
+    {"date": "2026-07-14", "day": "mardi", "time": "11:00", "type": "Récupération indoor optionnelle — home trainer Z1 ou mobilité", "duration_min": 25, "target_load": 5, "calendar_event_id": "keb9dbfomgvssokvq7sh56nn1c", "status": "planned"},
+    {"date": "2026-07-15", "day": "mercredi", "time": "11:30", "type": "Run #15 — tapis roulant Z2 indoor", "duration_min": 45, "target_load": 25, "calendar_event_id": "ouhmc27dle5on8u512t5uaipok", "status": "planned"},
+    {"date": "2026-07-16", "day": "jeudi", "time": "commute", "type": "Ebike commute sur site (~38 km)", "duration_min": 120, "target_load": 16, "calendar_event_id": "", "status": "planned"},
+    {"date": "2026-07-17", "day": "vendredi", "time": "-", "type": "Repos", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"},
+    {"date": "2026-07-18", "day": "samedi", "time": "11:00", "type": "Run #16 — 5-6 km Z2 outdoor (Vincennes)", "duration_min": 50, "target_load": 25, "calendar_event_id": "9fod0ffae5f59r072kj8qudsto", "status": "planned"},
+    {"date": "2026-07-19", "day": "dimanche", "time": "11:00", "type": "Sortie vélo Z2 outdoor — 45-50 min", "duration_min": 50, "target_load": 15, "calendar_event_id": "hf0h1hnldp2lslfbnpsjosmsbg", "status": "planned"}
+  ],
+  "no_train_days": [],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Resume running mid-week (Run #15, indoor treadmill Wednesday July 15) to prevent ACWR from sliding below 0.80 detraining threshold. 7-day gap is the longest since comeback began May 3. Anchor to demonstrated tolerance: 5 km / 40-45 min Z2 (FC ≤145 bpm). Indoor due to post-heatwave heat.",
+      "measurable": "Run #15 executed by July 15; ACWR >= 0.90 by end of week",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Schedule Vitamin D blood panel retest. Supplementation active since December 2025, last test 27 ng/mL (insufficient, target >=40 ng/mL). 7 months of supplementation should show improvement. GP seed: 'Je prends de la vitamine D depuis décembre, je voudrais vérifier le taux actuel.'",
+      "measurable": "Lab order placed before end of July 2026",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P2",
+      "text": "Restore Withings weighing cadence — last reading June 21 (3 weeks ago, 103.67 kg). Without weight data, body composition trend is blind. The weekly pesée event is on Sunday mornings.",
+      "measurable": "Withings weight reading logged by July 13",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "acwr",
+      "threshold": "Alert if ACWR drops below 0.80 (detraining) or exceeds 1.30 after resuming running",
+      "reason": "Currently 0.85 — lower edge of safe zone. 7-day gap risks further decline. Must resume activity."
+    },
+    {
+      "marker": "hrv_7d_avg",
+      "threshold": "Alert if HRV 7d avg drops below 32 ms or fails to recover toward 37+ ms",
+      "reason": "Stable at 35 ms (BALANCED). Monitor for impact of resuming running after gap + post-heatwave stress."
+    },
+    {
+      "marker": "post_heatwave_recovery",
+      "threshold": "Monitor body battery, sleep quality, RHR for 10 days post-heatwave end (~until July 24)",
+      "reason": "3rd heatwave since May with RED alert. Even after temps drop, cumulative heat stress may linger."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/83"
+}

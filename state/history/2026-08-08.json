@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-08-08",
+  "bootstrap": false,
+  "situational_context": "Running comeback deep into structured C4 block (sessions #21–40, currently W32). 25 runs completed in 97 days since May 3 comeback. Distances progressed from 2 km to 10.5 km (Run #20, Saint-Malo). VO2max running improved to 42.8 (from 38.3 at comeback start). Weight trending down to 101.2 kg (−3.6 kg from 104.8 start). ACWR at 0.74 — below lower bound 0.80, expected post-deload W31 (charge hebdo 82 vs ≤95 cap). HRV 7d avg stable at 36 ms (BALANCED). Massive heatwave Aug 8–14 in Paris (33–39°C) — all outdoor running in RED band, post-heatwave modifier active (bandes −3°C). Two 'sur site' days (Aug 11, 13) block training. Train to Saint-Malo Aug 14. Active block W32 on track: #24 ✓ 6.1 km, #25 ✓ 4.8 km côte RECON Beaumonts (87m D+), #26 planned Aug 9 (SL 9 km treadmill). Vitamin D retest still overdue (due July 2026). No new labs since Dec 2025. Nutrition logging sporadic — protein intake averaging 117g vs 150g target on logged days.",
+  "acute_load_7d": 21.4,
+  "chronic_load_28d": 28.8,
+  "distance_from_peak_pct": 1.79,
+  "hrv_7d_avg": 36,
+  "rhr_7d_avg": 49.6,
+  "sleep_hours_7d_avg": 8.05,
+  "weight_kg_7d_avg": 101.6,
+  "last_session": {
+    "date": "2026-08-07",
+    "type": "Run",
+    "duration_min": 35,
+    "training_load": 28
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-08-08", "day": "samedi", "time": null, "type": "Repos / récupération active (post-Run #25 côte)", "duration_min": 0, "target_load": 0, "calendar_event_id": "91kv9vk43ao362u9hp7sol0u58", "status": "rest"},
+    {"date": "2026-08-09", "day": "dimanche", "time": "11:00", "type": "Run #26 — SL 9,0 km Z2 plat tapis roulant 🌡️", "duration_min": 65, "target_load": 48, "calendar_event_id": "42gonf5bop238grsr4ptlq6df4", "status": "planned"},
+    {"date": "2026-08-10", "day": "lundi", "time": null, "type": "Repos (post-SL)", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-08-11", "day": "mardi", "time": null, "type": "Sur site — e-bike commute (~38 km)", "duration_min": 120, "target_load": 12, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-08-12", "day": "mercredi", "time": "11:00", "type": "Run #27 — 6,0 km Z2 plat tapis roulant 🌡️", "duration_min": 45, "target_load": 25, "calendar_event_id": "scd8n0eum6gkij4f63016s2k3g", "status": "planned"},
+    {"date": "2026-08-13", "day": "jeudi", "time": null, "type": "Sur site — e-bike commute (~38 km)", "duration_min": 120, "target_load": 12, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-08-14", "day": "vendredi", "time": null, "type": "Repos / voyage Saint-Malo (train 12h10)", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"}
+  ],
+  "no_train_days": ["2026-08-11", "2026-08-13"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Run #26 SL 9 km tomorrow (dimanche) on treadmill — RED heat band all week, no outdoor running. Z2 ≤145 bpm, 1% incline, hydrate ≥750 mL. If any tissue discomfort from Run #25 eccentric descent (87m D+ Beaumonts), reduce to 6 km flat or rest. First SL of the C4 block — key session for the 12 km Beaumonts objective.",
+      "measurable": "Run #26 completed at ≤145 bpm avg HR, 9 km, no pain during or post",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Protein intake is averaging 117g/day vs 150g target on logged days. At 101 kg during a running comeback with eccentric loading (hills), tendon/muscle repair requires ≥1.4 g/kg/day (~140g). Prioritise protein at every meal — especially post-run recovery window. Fat intake is significantly exceeding target (137g avg vs 80g).",
+      "measurable": "Protein ≥140g on each logged day over the next 7 days",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Vitamin D retest is now overdue (was due July 2026, ~12 weeks post-comeback start). Dec 2025 level was 27 ng/mL (insufficient, goal ≥40 ng/mL). Schedule blood panel before Saint-Malo trip or immediately after. Ongoing supplementation should have moved the needle by now.",
+      "measurable": "Lab order placed by Aug 18",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "acwr",
+      "threshold": "Alert if ACWR remains below 0.80 for more than 7 consecutive days",
+      "reason": "Currently 0.74 post-deload; should recover to ≥0.80 as W32 #26 and W33 loads accumulate. Sustained low ACWR = detraining risk"
+    },
+    {
+      "marker": "post_run_25_tissue_feedback",
+      "threshold": "Any localized pain (Achilles, patellar, tibia, calves) lasting >24h after Run #25 côte RECON",
+      "reason": "Run #25 was the first côte session — 87m D+ eccentric descent at 101 kg is peak tissue stress. Pain before Run #26 SL → reduce or skip #26"
+    },
+    {
+      "marker": "heatwave_duration",
+      "threshold": "Post-heatwave modifier active until at least Aug 18 (10 days after heatwave end, if the current wave peaks Aug 13-14)",
+      "reason": "All outdoor running in RED band. Monitor Saint-Malo coastal conditions for potential outdoor running Aug 15-16"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/111"
+}

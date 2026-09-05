@@ -1,0 +1,72 @@
+{
+  "as_of_date": "2026-06-28",
+  "bootstrap": false,
+  "situational_context": "Running comeback day 56, 13 runs completed. Run #13 executed today (3.5 km, suffer 13) — conservative after Run #12 overshoot (7.5 km, suffer 36 on Jun 21). ACWR dropped to 0.71 (below 0.8 lower bound) after forced heatwave inactivity (5-day gap Jun 23-27). HRV weekly avg 34 ms (UNBALANCED/LOW 7 of 7 days) but overnight HRV recovering to 37 and RHR at 47 bpm (best in 2 weeks) — consistent with residual heat stress dissipating, not overtraining. VO2max running improved to 41.1 (from 40.6). Weight reversed to 103.67 kg (+1 kg from 102.62 in early June). Heatwave ending: 27°C today dropping to 23°C tomorrow. Sur site Mon Jun 29 and Thu Jul 2. Priority: carefully ramp acute load back above 0.8 ACWR while respecting return-to-running tissue tolerance constraints at 103+ kg.",
+  "acute_load_7d": 14.5,
+  "chronic_load_28d": 20.4,
+  "distance_from_peak_pct": 1.27,
+  "hrv_7d_avg": 34,
+  "rhr_7d_avg": 49,
+  "sleep_hours_7d_avg": 7.68,
+  "weight_kg_7d_avg": 103.67,
+  "last_session": {
+    "date": "2026-06-28",
+    "type": "Run",
+    "duration_min": 27,
+    "training_load": 13
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-06-28", "day": "Sun", "time": "06:14", "type": "Run #13 — 3.5 km Z2", "duration_min": 27, "target_load": 13, "calendar_event_id": "r6d61t9ourbgg7s35dt9taod44", "status": "executed"},
+    {"date": "2026-06-29", "day": "Mon", "time": null, "type": "Sur site — e-bike commute", "duration_min": 120, "target_load": 14, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-06-30", "day": "Tue", "time": null, "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-07-01", "day": "Wed", "time": "12:00", "type": "Run #14 — 4 km Z2 conditionnel", "duration_min": 35, "target_load": 13, "calendar_event_id": "c5lvjfcs4ttto181jv8kc2k334", "status": "planned"},
+    {"date": "2026-07-02", "day": "Thu", "time": null, "type": "Sur site — e-bike commute", "duration_min": 120, "target_load": 14, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-07-03", "day": "Fri", "time": null, "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-07-04", "day": "Sat", "time": "11:00", "type": "Sortie vélo weekend — 60-75 min gravel Z2", "duration_min": 75, "target_load": 14, "calendar_event_id": "cctjli6irt2pa6a7u88akl8cd4", "status": "planned"}
+  ],
+  "no_train_days": ["2026-06-29", "2026-07-02"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "ACWR 0.71 — below the 0.8 safe floor. Carefully ramp acute load: execute Run #14 (Wed Jul 1) and cycling session (Sat Jul 4) to bring ACWR back toward 0.8+. Do not overcorrect — tissue tolerance at 103 kg remains the bottleneck. Max single-session load 14-15.",
+      "measurable": "ACWR ≥ 0.8 by Jul 5; no session load > 15",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "HRV weekly avg 34 ms with 7/7 UNBALANCED/LOW days. RHR improving (47 bpm, best in 2 weeks) and VO2max up (41.1) — consistent with heatwave-related autonomic stress, not overtraining (ACWR too LOW). Expect natural recovery as temperatures normalize to 23-26°C. If HRV weekly avg fails to return to ≥35 by Jul 5, reduce training volume.",
+      "measurable": "HRV weekly avg ≥ 35 ms by Jul 5",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Weight reversed to 103.67 kg (+1 kg in 2 weeks). Protein intake averaging 116g/day, well below 150g target. Prioritize protein (≥150g/day) and moderate total calories on rest days (<2500 kcal). Each kg lost ≈ 3 kg less peak impact force per stride.",
+      "measurable": "Protein ≥ 150g/day avg; weight trend back to ≤ 103 kg by mid-July",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "acwr",
+      "threshold": "Alert if ACWR remains below 0.8 for more than 7 additional days",
+      "reason": "Currently 0.71 — detraining territory. Need gradual ramp-up without spiking above 1.3."
+    },
+    {
+      "marker": "hrv_weekly_avg",
+      "threshold": "Alert if HRV weekly avg drops below 32 ms or fails to recover to ≥35 by Jul 5",
+      "reason": "Currently 34 ms, 7/7 days UNBALANCED/LOW. Expect recovery as heatwave ends."
+    },
+    {
+      "marker": "post_run_pain",
+      "threshold": "Any localized joint/tendon pain lasting >24h after Run #13 or #14 triggers skip of next run",
+      "reason": "Tissue tolerance remains the bottleneck at 103+ kg body weight; pain signals early overload."
+    },
+    {
+      "marker": "weight_trend",
+      "threshold": "Alert if weight > 104 kg on next Withings reading (Jul 5 pesée)",
+      "reason": "Current trajectory reversing the prior downtrend. Heatwave fluid retention vs genuine regain needs tracking."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/69"
+}

@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-05-06",
+  "bootstrap": false,
+  "situational_context": "Return-to-running protocol Week 1 initiated. First run in 182 days completed May 3 (2.47 km, 21 min, HR avg 135, suffer 7 — no pain reported). Chronic load rising slowly (17.8 -> 23.5 over 17 days, +32%) but still at 1.5% of 2023 historical peak (1608). ACWR normalized to 1.03 after May 1 gravel spike (load 55). Primary activities: ebike commuting on sur-site days (2-3x/week), one gravel commute, one return run. Readiness consistently high (training readiness 83 today, body battery 62). RHR improved from 53 to 49 bpm. Weight trending down -2.1 kg in 3 weeks (106.9 -> 104.8). VO2max running recalibrated from 40.9 to 38.6 after first run. Baby (Leonie, 16 months) is scheduling constraint, not recovery bottleneck. Vitamin D 27 ng/mL (Dec 2025) — stress fracture risk factor, supplementation ongoing.",
+  "acute_load_7d": 24.25,
+  "chronic_load_28d": 23.46,
+  "distance_from_peak_pct": 1.5,
+  "hrv_7d_avg": 38,
+  "rhr_7d_avg": 49,
+  "sleep_hours_7d_avg": 7.63,
+  "weight_kg_7d_avg": 104.78,
+  "last_session": {
+    "date": "2026-05-06",
+    "type": "EBikeRide",
+    "duration_min": 66,
+    "training_load": 10
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-05-06", "day": "Wednesday", "time": null, "type": "EBikeRide commute (done)", "duration_min": 134, "target_load": 21, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-05-07", "day": "Thursday", "time": null, "type": "Sur site commute (ebike or gravel TBD)", "duration_min": 120, "target_load": 14, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-05-08", "day": "Friday", "time": "12:00", "type": "Recuperation active Z1-Z2 velo", "duration_min": 45, "target_load": 12, "calendar_event_id": "p9uduferkvv5c4rta89d7i4ekg", "status": "planned"},
+    {"date": "2026-05-09", "day": "Saturday", "time": "12:00", "type": "Retour running #2 OU Endurance velo Z2", "duration_min": 25, "target_load": 10, "calendar_event_id": "04qpo5crol1aun7n5c1gga9pm8", "status": "planned"},
+    {"date": "2026-05-10", "day": "Sunday", "time": "13:00", "type": "Endurance velo Z2", "duration_min": 60, "target_load": 15, "calendar_event_id": "ai4f5u6ua325j9k2hpi5ol57k4", "status": "planned"},
+    {"date": "2026-05-11", "day": "Monday", "time": null, "type": "Sur site commute only", "duration_min": 120, "target_load": 14, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-05-12", "day": "Tuesday", "time": null, "type": "Sur site commute only", "duration_min": 120, "target_load": 14, "calendar_event_id": null, "status": "blocked"}
+  ],
+  "no_train_days": ["2026-05-06", "2026-05-07", "2026-05-11", "2026-05-12"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Continue return-to-running protocol: attempt 2nd short run (2-3 km, Z1-Z2) Saturday May 9 if no localized pain since May 3 run. Surface souple, marche intercalee si HR >145. Max 25 min.",
+      "measurable": "Complete 1 run of 2-3 km at HR avg <145 bpm without post-run pain lasting >24h",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Increase daily protein intake to >=150g — current 7d avg is 124g (18% below target). Critical for tendon collagen synthesis during running rebuild, especially at 105 kg body weight.",
+      "measurable": "7d avg protein >= 140g by next digest",
+      "evidence_class": "RCT"
+    },
+    {
+      "priority": "P2",
+      "text": "Confirm May 7 commute mode before Friday session planning. If gravel with suffer >30, convert Friday to rest and prioritize weekend sessions. If ebike, proceed with Friday Z2 as planned.",
+      "measurable": "Friday session decision made by Thursday evening based on commute data",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "post_run_tissue_response",
+      "threshold": "Any localized pain (Achilles, patellar, plantar, tibia) lasting >24h after May 3 or May 9 run",
+      "reason": "105 kg BW + 182-day gap = elevated tendon/bone stress fracture risk. Vitamin D 27 ng/mL compounds risk."
+    },
+    {
+      "marker": "vo2max_running",
+      "threshold": "Stabilization or uptick from 38.6 over next 2-3 weeks",
+      "reason": "Recalibrated down from 40.9 after first run — expected, but persistent decline would signal cardio detraining beyond expected."
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Target gradual increase toward 30+ over next 2 weeks",
+      "reason": "At 1.5% of historical peak — structured sessions should move this meaningfully."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/16"
+}

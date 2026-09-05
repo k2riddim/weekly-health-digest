@@ -1,0 +1,145 @@
+{
+  "as_of_date": "2026-06-07",
+  "bootstrap": false,
+  "situational_context": "Running comeback week 5+: 8 runs completed since May 3 gap break (182 days off). Progressed from 2-3 km to consistent 5+ km at Z2. Run #8 today: 5.56 km, HR 138, suffer 26. HRV recovering after 4-day dip (28-31-33-36) post-Run #7 — consistent with normal post-exercise recovery, not overtraining. VO2max running improved to 40.3 (+2.0 since comeback start at 38.3). Chronic load declining to 16.18 due to 28d window shift — earlier higher-load periods have fallen off, not actual detraining. ACWR 1.19 — within safe band but on the higher side. Weight 102.62 kg (down 1.48 kg in 3 weeks, fat 26.8%). Primary cross-training: e-bike commuting on sur site days (~38 km round trip). Young baby (Leonie, ~5 months) occasionally fragments sleep but not currently a major bottleneck. No new labs since Dec 2025. Vitamin D retest due ~July 2026.",
+  "acute_load_7d": 19.25,
+  "chronic_load_28d": 16.18,
+  "distance_from_peak_pct": 1.01,
+  "hrv_7d_avg": 34,
+  "rhr_7d_avg": 49.9,
+  "sleep_hours_7d_avg": 7.05,
+  "weight_kg_7d_avg": 102.62,
+  "last_session": {
+    "date": "2026-06-07",
+    "type": "Run",
+    "duration_min": 44.5,
+    "training_load": 26
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-06-07",
+      "day": "Dim",
+      "time": "15:34",
+      "type": "Run #8 — 5,6 km Z2",
+      "duration_min": 45,
+      "target_load": 26,
+      "calendar_event_id": "mv6pqpgi9hmah19pad4kjm3v3s",
+      "status": "executed"
+    },
+    {
+      "date": "2026-06-08",
+      "day": "Lun",
+      "time": null,
+      "type": "Repos",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-06-09",
+      "day": "Mar",
+      "time": null,
+      "type": "Sur site — trajet ebike",
+      "duration_min": 120,
+      "target_load": 16,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-06-10",
+      "day": "Mer",
+      "time": "12:00",
+      "type": "Run #9 — 5 km Z2",
+      "duration_min": 50,
+      "target_load": 19,
+      "calendar_event_id": "h5k8mtgpnkqlhadk0tvef1tsh0",
+      "status": "planned"
+    },
+    {
+      "date": "2026-06-11",
+      "day": "Jeu",
+      "time": null,
+      "type": "Sur site — trajet ebike",
+      "duration_min": 120,
+      "target_load": 16,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-06-12",
+      "day": "Ven",
+      "time": null,
+      "type": "Repos",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-06-13",
+      "day": "Sam",
+      "time": "11:30",
+      "type": "Sortie gravel endurance Z1-Z2 — 60 min",
+      "duration_min": 60,
+      "target_load": 17,
+      "calendar_event_id": "k8a6ga7t9qa7knkq6d93jo4bfk",
+      "status": "planned"
+    },
+    {
+      "date": "2026-06-14",
+      "day": "Dim",
+      "time": "11:30",
+      "type": "Run #10 — 5,5 km Z2",
+      "duration_min": 50,
+      "target_load": 19,
+      "calendar_event_id": "rjjjug0p9j0gv3et996jsn3r3g",
+      "status": "planned"
+    }
+  ],
+  "no_train_days": ["2026-06-09", "2026-06-11"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Continue running comeback at 5 km plateau — maintain 2-3 runs/week at Z2, max 5.5 km, spacing >=48h between runs. Do not increase to 6 km until 3 consecutive runs at 5+ km completed pain-free with HR staying in 130-137 target.",
+      "measurable": "Run #9 and #10 completed this week at 5-5.5 km, avg HR <=137, no post-run pain >24h",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Prioritize sleep >7h to support HRV recovery. The 4-day HRV dip (28-33 range, Jun 4-6) is recovering but signals marginal recovery capacity. Target >=7.5h on non-sur-site nights.",
+      "measurable": "HRV weekly avg stabilizes at >=34, sleep 7d avg >7.2h by next digest",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Increase daily protein intake — 7d avg is 138g vs 150g target. Jun 6 was critically low at 85g. At 102.6 kg during running comeback, adequate protein is essential for tendon and muscle tissue adaptation.",
+      "measurable": "Protein >=150g/day on >=5 of next 7 days",
+      "evidence_class": "RCT"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "hrv_weekly_avg",
+      "threshold": "Alert if drops below 32 for 3+ consecutive days",
+      "reason": "Currently 34, recovering from 4-day dip. Further decline below 32 would indicate recovery capacity exceeded — swap a run for cycling or rest."
+    },
+    {
+      "marker": "ACWR",
+      "threshold": "Alert if exceeds 1.25",
+      "reason": "Currently 1.19 — within safe band but elevated. Chronic denominator is very low (16.18) making the ratio sensitive to any acute spike."
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Target stabilization above 16 and gradual increase toward 20+ over next 2 weeks",
+      "reason": "Dropped from 22.3 (May 14) to 16.18 (Jun 7) as the 28d window shifted. Consistent sessions this week should stabilize it."
+    },
+    {
+      "marker": "post_run_pain",
+      "threshold": "Any localized joint/tendon pain lasting >24h after a run",
+      "reason": "Tissue tolerance remains the bottleneck at 102.6 kg. Pain signals trigger immediate skip of next run per return-to-running protocol."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/47"
+}

@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-07-19",
+  "bootstrap": false,
+  "situational_context": "Running comeback Day 77 (17 runs since May 3, 2026). On vacation in Saint-Malo, Bretagne (Jul 12-27) — e-bike commuting paused, running sole modality. Distances progressed to 8 km (Run #16, Jul 15). VO2max running improved to 42 (from 38.3 at comeback start). HRV 7d avg recovered to 39 ms (from 35 at Jun 14 low). ACWR at 1.43 — within comeback ceiling of 1.50. Chronic load 25.1 — up 43% from Jun 14 (17.5), trending correctly. Weight unknown — 28+ days without weigh-in (last: 103.67 kg on Jun 21). Nutrition logging abandoned. Vitamin D retest overdue (was due ~July 2026). Potential Paris heatwave Jul 20-26 irrelevant while in Saint-Malo (GREEN weather). Returns to Paris Jul 27.",
+  "acute_load_7d": 36,
+  "chronic_load_28d": 25.1,
+  "distance_from_peak_pct": 1.56,
+  "hrv_7d_avg": 39,
+  "rhr_7d_avg": 48,
+  "sleep_hours_7d_avg": 7.87,
+  "weight_kg_7d_avg": null,
+  "last_session": {
+    "date": "2026-07-18",
+    "type": "Run",
+    "duration_min": 52,
+    "training_load": 51
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-07-19", "day": "Sunday", "time": "-", "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": "hf0h1hnldp2lslfbnpsjosmsbg", "status": "rest"},
+    {"date": "2026-07-20", "day": "Monday", "time": "-", "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-07-21", "day": "Tuesday", "time": "11:00", "type": "Run #18 — 7 km Z2 easy", "duration_min": 55, "target_load": 30, "calendar_event_id": "d23mi3f85sorc9q1f5lgljj098", "status": "planned"},
+    {"date": "2026-07-22", "day": "Wednesday", "time": "-", "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-07-23", "day": "Thursday", "time": "11:00", "type": "Run #19 — 6 km Z2 recovery", "duration_min": 48, "target_load": 25, "calendar_event_id": "lef1kis1arj3v0hlhkuq8bc1j8", "status": "planned"},
+    {"date": "2026-07-24", "day": "Friday", "time": "-", "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-07-25", "day": "Saturday", "time": "11:00", "type": "Run #20 — 8 km Z2 long run", "duration_min": 65, "target_load": 35, "calendar_event_id": "qj5eujaj0kd3h0764ahbd5e8e4", "status": "planned"}
+  ],
+  "no_train_days": [],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Weigh in ASAP. 28+ days without a weigh-in (last: 103.67 kg on Jun 21). Body composition tracking is critical during a running comeback at this weight. If no Withings scale at Saint-Malo, weigh in immediately upon return to Paris (Jul 27).",
+      "measurable": "At least one Withings weigh-in by Jul 28",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Vitamin D retest is now overdue (was due ~July 2026). At 27 ng/mL in Dec 2025, this is critical for bone health during a running comeback at 103+ kg. Schedule the blood panel this week or immediately after return.",
+      "measurable": "Lab order placed by Jul 28",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P2",
+      "text": "Resume nutrition logging. Zero days logged in the visible window. Impossible to assess caloric adequacy, protein targets, or body composition trajectory without data. Even rough vacation estimates are better than nothing.",
+      "measurable": "3+ days of nutrition logging this week",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "acwr",
+      "threshold": "Alert if ACWR exceeds 1.50 (comeback ceiling)",
+      "reason": "Currently at 1.43 with 3 runs planned this week. Should moderate as heavy loads (Run #16: 57, Run #17: 51) drop out of the 7d window."
+    },
+    {
+      "marker": "weight_data_gap",
+      "threshold": "Flag if no weigh-in by Jul 28 (return to Paris)",
+      "reason": "28+ days without data. Cannot track body composition trajectory during comeback."
+    },
+    {
+      "marker": "post_run_pain",
+      "threshold": "Any localized joint/tendon pain lasting >24h after a run triggers skip of next run",
+      "reason": "Tissue tolerance is the bottleneck at ~103 kg. Runs now reaching 7-8 km — highest load of the comeback."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/91"
+}

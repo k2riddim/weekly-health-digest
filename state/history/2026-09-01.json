@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-09-01",
+  "bootstrap": false,
+  "situational_context": "Running comeback C4 block (#21-40) significantly under-executed: W33-W35 had 5 skipped runs, distances consistently below targets. Extended deload triggered by persistent autonomic suppression — HRV weekly avg dropped from 36 (BALANCED) to 30 (LOW) over 3 weeks since mid-August, paired with RHR drift from 49→53 bpm and body battery depression (avg ~38 vs ~45 in July). Run #29 (Aug 22, 7.04 km, suffer 51) exceeded C4 HR caps and was never properly recovered from. Chronic load declined 26% (24.7→18.2) since Aug 14. ACWR recovered from 0.59 to 0.82 — just above the 0.8 floor but only because chronic base dropped. Training status shifted from 'Detraining' to 'Maintaining' with ebike commutes providing baseline load. Now on congés Sep 1-11 (Léonie daycare adaptation) — no 'sur site' constraints, flexible schedule for gentle re-entry. The 12 km Beaumonts objective (block W36) is deferred; focus this week is rebuilding consistent run volume from the 3.5 km deload baseline. VO2max running dipped slightly to 42.5 (from 42.9). Vitamin D retest still overdue (no labs since Dec 2025). No nutrition logging for 2+ weeks.",
+  "acute_load_7d": 15,
+  "chronic_load_28d": 18.21,
+  "distance_from_peak_pct": 1.13,
+  "hrv_7d_avg": 30,
+  "rhr_7d_avg": 53.4,
+  "sleep_hours_7d_avg": 7.36,
+  "weight_kg_7d_avg": 100.68,
+  "last_session": {
+    "date": "2026-08-30",
+    "type": "Run",
+    "duration_min": 26.5,
+    "training_load": 8
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-09-01", "day": "Mardi", "time": null, "type": "Repos", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-09-02", "day": "Mercredi", "time": "11:00", "type": "Run 5,0 km easy plat", "duration_min": 38, "target_load": 18, "calendar_event_id": "kqkobsuio1h14hkskr8bot351s", "status": "planned"},
+    {"date": "2026-09-03", "day": "Jeudi", "time": null, "type": "Repos", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-09-04", "day": "Vendredi", "time": "12:00", "type": "Run 5,5 km easy plat", "duration_min": 42, "target_load": 22, "calendar_event_id": "kcpnjft731u8299dpnat9kmonc", "status": "planned"},
+    {"date": "2026-09-05", "day": "Samedi", "time": "11:00", "type": "Vélo easy 45 min Z1-Z2", "duration_min": 45, "target_load": 13, "calendar_event_id": "1bpnufqmv4642g0sekbjqhnh18", "status": "planned"},
+    {"date": "2026-09-06", "day": "Dimanche", "time": "11:00", "type": "Run 6,5 km easy plat", "duration_min": 50, "target_load": 25, "calendar_event_id": "1uh8esqs4q6nine281ugvk2vd0", "status": "planned"},
+    {"date": "2026-09-07", "day": "Lundi", "time": null, "type": "Repos", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"}
+  ],
+  "no_train_days": [],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Vitamin D retest is now 2+ months overdue (last panel Dec 2025, 27 ng/mL insufficient). Congés this week provides a window to schedule a blood draw. Insufficient Vitamin D at this body weight roughly doubles stress-fracture risk during the running comeback (Burgi 2011).",
+      "measurable": "Lab order placed this week; result logged within 10 days",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "HRV weekly avg has been persistently LOW (30 ms) for 2+ weeks, down 17% from the early-August BALANCED baseline of 36. Paired with RHR elevation (+3-4 bpm) and depressed body battery. Accept HRV 28-30 as the current operating baseline rather than waiting for full recovery to 36 — use training readiness (≥60) + RHR (≤54) as the run/no-run gate. Prioritize sleep consistency (the Aug 27 night at 4.95h was a setback) and stress management during congés.",
+      "measurable": "HRV weekly avg stabilises at ≥30 (no further decline); RHR 7d avg ≤53 sustained for 5+ days",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Resume nutrition logging — no meals have been logged for 2+ weeks. At ~101 kg during a running comeback, protein intake (target ≥150g/day) and hydration are critical for tissue adaptation and recovery. The gap makes it impossible to assess nutritional contributions to the autonomic suppression.",
+      "measurable": "≥3 days of complete nutrition logging this week",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "hrv_weekly_avg",
+      "threshold": "Alert if HRV weekly avg drops below 28 (further decline from current 30)",
+      "reason": "Already persistently LOW for 2+ weeks; further suppression would suggest illness or overload beyond cumulative stress"
+    },
+    {
+      "marker": "rhr_7d_avg",
+      "threshold": "Alert if RHR 7d avg exceeds 55 bpm or any single day > 57 bpm",
+      "reason": "Currently 53.4, elevated +3-4 bpm from July baseline of ~49; further rise would trigger red-flag protocol"
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Flag if chronic load continues declining past 16 (currently 18.2, down from 24.7 on Aug 14)",
+      "reason": "26% decline in 17 days; ebike commutes during congés will be absent, removing baseline load"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/133"
+}

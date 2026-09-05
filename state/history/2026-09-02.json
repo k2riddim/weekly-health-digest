@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-09-02",
+  "bootstrap": false,
+  "situational_context": "Running comeback in a recovery valley — 19-day gap since last digest (Aug 14). HRV weekly avg has declined from 36 (early Aug) to 30 (personal low for the comeback), status LOW for 7+ consecutive days. RHR persistently elevated at 53-55 bpm (vs 48-50 Jun-Jul baseline). The Run #29 effort spike (7.04 km, load 51, avg HR 146/163 on Aug 22) was the likely trigger — a >3× load spike that coincided with the onset of HRV/RHR deterioration. Chronic load has eroded from 24.7 to 18.2 despite continued eBike commuting and sporadic runs. C4 block W36 objective attempt (12 km Beaumonts) not feasible — block effectively paused pending recovery marker normalization. On vacation (adaptation crèche Léonie, Sep 1-12) with flexible schedule. Vitamin D retest still overdue (no labs since Dec 2025). Weight plateaued at ~101 kg (Sep 2: 101.15 kg). VO2max running dropped 42.9→42.5.",
+  "acute_load_7d": 15,
+  "chronic_load_28d": 18.21,
+  "distance_from_peak_pct": 1.13,
+  "hrv_7d_avg": 30,
+  "rhr_7d_avg": 53.4,
+  "sleep_hours_7d_avg": 7.19,
+  "weight_kg_7d_avg": 101.15,
+  "last_session": {
+    "date": "2026-08-30",
+    "type": "Run",
+    "duration_min": 26.5,
+    "training_load": 8
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-09-02", "day": "Wed", "time": null, "type": "rest", "duration_min": 0, "target_load": 0, "calendar_event_id": "kqkobsuio1h14hkskr8bot351s", "status": "rest"},
+    {"date": "2026-09-03", "day": "Thu", "time": null, "type": "rest", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-09-04", "day": "Fri", "time": "12:00", "type": "Run 5.0 km easy plat", "duration_min": 38, "target_load": 18, "calendar_event_id": "kcpnjft731u8299dpnat9kmonc", "status": "planned"},
+    {"date": "2026-09-05", "day": "Sat", "time": "11:00", "type": "Vélo easy 45 min Z1-Z2", "duration_min": 45, "target_load": 13, "calendar_event_id": "1bpnufqmv4642g0sekbjqhnh18", "status": "planned"},
+    {"date": "2026-09-06", "day": "Sun", "time": "11:00", "type": "Run 5.5 km easy plat", "duration_min": 42, "target_load": 20, "calendar_event_id": "1uh8esqs4q6nine281ugvk2vd0", "status": "planned"},
+    {"date": "2026-09-07", "day": "Mon", "time": null, "type": "rest", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-09-08", "day": "Tue", "time": null, "type": "rest", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"}
+  ],
+  "no_train_days": [],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Address recovery deficit before progressing volume. HRV weekly avg has dropped from 36 to 30 (−17%) over 3 weeks, with concurrent RHR elevation to 53-55 bpm and body battery consistently <50. Hold running at ≤5.5 km easy until HRV weekly avg recovers to ≥32 and RHR 7d avg returns below 52 bpm. Friday's run is contingent on same-morning markers (TR ≥60, RHR ≤54, no pain).",
+      "measurable": "HRV weekly avg ≥32 AND RHR 7d avg ≤52 on two consecutive days before any volume increase",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P1",
+      "text": "Vitamin D retest is now 3+ months overdue (last value 27 ng/mL, Dec 2025, insufficient). At 101 kg with an active running comeback and stress-fracture risk factors (BW, age, Vit D insufficiency), schedule the blood panel this week.",
+      "measurable": "Lab order placed within 7 days; result logged",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P2",
+      "text": "C4 block 12 km objective is not feasible on the current timeline (W36). Defer the Beaumonts attempt until recovery markers normalize and ≥2 consecutive weeks of 3 runs/week are completed at ≥5 km each. The block should be revised or a new block planned after marker normalization.",
+      "measurable": "Objective attempt rescheduled after ≥2 clean weeks of 3×5+ km runs with no recovery red flags",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "hrv_weekly_avg",
+      "threshold": "Recovery target: ≥32 sustained for 3+ days before any volume increase. Alert if drops below 28.",
+      "reason": "Currently at 30, down from 36 in early Aug — a 17% decline indicating recovery deficit. All 7 days at LOW status."
+    },
+    {
+      "marker": "rhr_7d_avg",
+      "threshold": "Target: ≤52 bpm. Alert if any single day exceeds 56 bpm.",
+      "reason": "Currently 53.4 bpm avg, elevated from 48-50 baseline in Jun-Jul. Persistent elevation for 2+ weeks confirms recovery deficit."
+    },
+    {
+      "marker": "body_battery_max",
+      "threshold": "Target: max ≥50 on at least 4/7 days. Currently 0/7 days above 50.",
+      "reason": "Consistently low (30-46 range) for the past week, indicating chronic autonomic suppression."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/134"
+}

@@ -1,0 +1,135 @@
+{
+  "as_of_date": "2026-05-28",
+  "bootstrap": false,
+  "situational_context": "Running comeback week 4, consolidating at 5 km. Five runs completed since May 3 (after 182-day gap). Run #5 (May 23) was best execution: 5.02 km at HR 136, max 153, suffer 19 — cardiac efficiency improving run over run. Primary modality remains e-bike commuting (~38 km/day on work days, suffer ~14 per round trip). Chronic load declining (17.9, down from 22.3 two weeks ago) as older higher-load days roll off the 28-day window; this is expected, not a red flag. Acute load 17 with ACWR 0.95 — healthy building ratio. Training readiness 87 (HIGH), body battery 55.5 — best readings of the month, indicating strong recovery capacity. HRV stable (weekly avg 37, BALANCED). RHR 48-49 bpm (stable/improving). Weight steady at 103.8 kg (-0.3 from May 14). VO2max running improved to 38.9 (from 38.3 at comeback start). Heatwave in Paris (34°C May 28, orange alert) — heat precautions mandatory for outdoor sessions through May 29. Storms expected Saturday May 30, cooler 24°C by Sunday. Baby (Léonie, ~4.5 months) — one night <6h in last 7 but overall sleep adequate. No new labs. Vitamin D retest due ~July 2026.",
+  "acute_load_7d": 17,
+  "chronic_load_28d": 17.94,
+  "distance_from_peak_pct": 1.12,
+  "hrv_7d_avg": 37,
+  "rhr_7d_avg": 49,
+  "sleep_hours_7d_avg": 7.25,
+  "weight_kg_7d_avg": 103.84,
+  "last_session": {
+    "date": "2026-05-28",
+    "type": "EBikeRide",
+    "duration_min": 14,
+    "training_load": 1
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-05-28",
+      "day": "Thu",
+      "time": "12:00",
+      "type": "Run #6 — 5 km Z1-Z2 (consolidation comeback)",
+      "duration_min": 45,
+      "target_load": 18,
+      "calendar_event_id": "3ua5vo8c0m59nglc8i37rm1vbg",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-29",
+      "day": "Fri",
+      "time": "12:00",
+      "type": "Sortie vélo facile Z1-Z2 (récupération)",
+      "duration_min": 30,
+      "target_load": 11,
+      "calendar_event_id": "nitu7moo6mq72kdfb1reeiikf4",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-30",
+      "day": "Sat",
+      "time": "11:00",
+      "type": "Sortie vélo endurance Z2 (week-end jour 1)",
+      "duration_min": 50,
+      "target_load": 15,
+      "calendar_event_id": "53bkapck6tonusivbpnnn6cdfo",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-31",
+      "day": "Sun",
+      "time": "12:00",
+      "type": "Run #7 — 5 km Z1-Z2 (consolidation comeback)",
+      "duration_min": 45,
+      "target_load": 18,
+      "calendar_event_id": "usilp815jojoukd3jp2o1h324s",
+      "status": "planned"
+    },
+    {
+      "date": "2026-06-01",
+      "day": "Mon",
+      "time": null,
+      "type": "Repos / trajet e-bike commute",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-06-02",
+      "day": "Tue",
+      "time": null,
+      "type": "Repos / trajet e-bike commute",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-06-03",
+      "day": "Wed",
+      "time": null,
+      "type": "Repos / trajet e-bike commute",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    }
+  ],
+  "no_train_days": [],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Execute Run #6 today at 12:00 with heat precautions (34°C canicule). Hydrate 500 ml minimum in the 2h before. Target HR ≤138 bpm; abort if HR stays >145 bpm for 5+ min (cardiac drift from heat). Bois de Vincennes, shaded paths. This consolidates the 5 km tier — 4th run at this distance.",
+      "measurable": "Run #6 completed ≤5 km, avg HR ≤138, no post-run pain lasting >24h",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Maintain ≥48h between runs through Sunday. Run #6 (Thu) → Run #7 (Sun) = 72h gap. Continue eccentric calf raises on non-run days (Fri, Sat) to support tendon adaptation during comeback.",
+      "measurable": "Calf raises done 2× before Run #7; zero localized pain between runs",
+      "evidence_class": "RCT"
+    },
+    {
+      "priority": "P2",
+      "text": "Protein intake averaging 131g vs 150g target. On training days (today, Sunday), aim for ≥150g with a post-run protein dose within 2h. Weight trend steady at 103.8 kg — good trajectory.",
+      "measurable": "≥150g protein on May 28 and May 31 training days",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "rhr_7d_avg",
+      "threshold": "Alert if RHR rises >5 bpm above 49 bpm baseline for 3+ consecutive days",
+      "reason": "RHR stable at 48-49 bpm; elevation would indicate overload or illness during comeback"
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Expect stabilization around 17-20 this week, then gradual increase as consistent training fills the window",
+      "reason": "Chronic load decline from 22 to 18 is expected window rolloff — actual daily training load is maintained"
+    },
+    {
+      "marker": "post_run_pain",
+      "threshold": "Any localized joint/tendon pain lasting >24h after Run #6 triggers skip of Run #7",
+      "reason": "At 103.8 kg, tissue tolerance remains the limiting factor; 5th and 6th runs at 5 km are still consolidation"
+    },
+    {
+      "marker": "heat_response",
+      "threshold": "HR drift >15 bpm from first km to last km during Run #6 in 34°C heat",
+      "reason": "First run in heatwave conditions — monitor cardiac drift as a heat tolerance signal"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/38"
+}

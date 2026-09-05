@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-06-25",
+  "bootstrap": false,
+  "situational_context": "Running comeback week 8-9: 12 structured runs since May 3 (54 days in). Run #12 on June 21 was a significant overreach at 7.5 km (target 4 km, suffer score 36). Run #13 cancelled June 24 due to extreme heatwave (41°C Paris). ACWR improved from 1.35 to 1.21, now within safe [0.8-1.3] band as chronic load caught up. HRV 7d avg declined further to 34 ms — 5 of 7 last days UNBALANCED, driven by accumulated fatigue + extreme heat stress. VO2max running improved to 40.8. Weight 103.67 kg (up ~1 kg, likely heat-related water retention). Body battery consistently low (only 1/7 days >=50). Currently in exceptional heatwave (red alert Paris, 37-41°C), easing toward weekend. Benjamin at Hotel Mercure Chantilly June 26-29 — forested trails available for cooler training. E-bike commuting remains primary activity modality. No new labs since Dec 2025; Vitamin D retest due ~July 2026.",
+  "acute_load_7d": 23,
+  "chronic_load_28d": 19,
+  "distance_from_peak_pct": 1.2,
+  "hrv_7d_avg": 34,
+  "rhr_7d_avg": 50.6,
+  "sleep_hours_7d_avg": 7.42,
+  "weight_kg_7d_avg": 103.67,
+  "last_session": {
+    "date": "2026-06-23",
+    "type": "EBikeRide (commute)",
+    "duration_min": 129,
+    "training_load": 16
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-06-25", "day": "Thu", "time": "-", "type": "Commute ebike/gravel (sur site)", "duration_min": 120, "target_load": 16, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-06-26", "day": "Fri", "time": "-", "type": "Rest / travel to Chantilly", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-06-27", "day": "Sat", "time": "11:30", "type": "Vélo 60 min Z1-Z2 (Forêt de Chantilly)", "duration_min": 60, "target_load": 12, "calendar_event_id": "sm1bvahm3qonm84euiluk9ftl4", "status": "planned"},
+    {"date": "2026-06-28", "day": "Sun", "time": "12:00", "type": "Run #13 — 4 km Z2 strict (Forêt de Chantilly)", "duration_min": 35, "target_load": 13, "calendar_event_id": "r6d61t9ourbgg7s35dt9taod44", "status": "planned"},
+    {"date": "2026-06-29", "day": "Mon", "time": "-", "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-06-30", "day": "Tue", "time": "-", "type": "Commute ebike (sur site)", "duration_min": 120, "target_load": 16, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-07-01", "day": "Wed", "time": "-", "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"}
+  ],
+  "no_train_days": ["2026-06-25", "2026-06-30"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "HRV recovery is the priority — 7d avg at 34 ms (below 37 target), 5/7 days UNBALANCED. Combined training fatigue + heat stress. Maintain current load, do not increase running distance beyond 4 km for Run #13 Sunday. If Saturday bike causes HRV to drop below 30 on Sunday morning, downgrade Run #13 to a 30-min forest walk.",
+      "measurable": "HRV 7d avg >= 36 ms within 7 days; no more than 2 consecutive UNBALANCED days next week",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Enforce distance discipline after Run #12 overreach (7.5 km vs 4 km target). Run #13 capped at 4 km strict. If today's commute is gravel (suffer > 25), reduce Sunday to 3 km. Overreach pattern mirrors March 2025 comeback failure — erratic distance jumps preceded injury at week 10.",
+      "measurable": "Run #13 distance <= 4 km; no unplanned distance extensions for next 2 weeks",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Heat management: Paris heatwave (37-41°C) suppressing HRV and body battery. Chantilly forest (June 27-28) provides shade and cooler microclimate (~3-5°C less). Hydrate >= 750 mL + electrolytes for any session. Schedule Vitamin D retest for early July — due at 8-week mark.",
+      "measurable": "No training in ambient >35°C without shade; Vitamin D lab ordered by July 7",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "hrv_7d_avg",
+      "threshold": "Alert if HRV 7d avg drops below 30 ms or fails to recover toward 36+ ms by July 2",
+      "reason": "Persistent UNBALANCED status (5/7 days) — combined training fatigue + heat stress. Should recover as heatwave breaks."
+    },
+    {
+      "marker": "body_battery_max",
+      "threshold": "Alert if body battery max fails to reach >= 50 on at least 3/7 days next week",
+      "reason": "Only 1/7 days hit >= 50 this week — chronically low. Heat likely the driver; monitor as temperatures drop."
+    },
+    {
+      "marker": "post_run_pain",
+      "threshold": "Any localized joint/tendon pain lasting >24h after Run #13 triggers skip of next run",
+      "reason": "Post-overreach (Run #12, 7.5 km) tissue monitoring critical at 103.7 kg body weight"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/66"
+}

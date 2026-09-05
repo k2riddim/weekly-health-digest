@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-07-04",
+  "bootstrap": false,
+  "situational_context": "Running comeback week 9 (13 runs since May 3). ACWR has swung from 1.35 (June 14) to 0.72 (July 2) — now in detraining territory after a too-long gap between structured sessions. The June 21 spike (Run #12: 7.5 km, load 36 — far above protocol) likely forced an extended recovery that depressed acute load. HRV has recovered (35→36, BALANCED) and readiness is HIGH (82) — the body is ready to absorb load again. Key priority: halt detraining with consistent moderate sessions (2 runs + commutes/cycling per week). Weight ticked up +1.05 kg (102.62→103.67) between June 7 and June 21 — next weigh-in July 5 will clarify if this is noise or a trend reversal. Vitamin D retest still due. Baby (Léonie, 18 months) sleep data unavailable but Benjamin's sleep averaging 7.82h suggests manageable disruption.",
+  "acute_load_7d": 14.3,
+  "chronic_load_28d": 20.0,
+  "distance_from_peak_pct": 1.2,
+  "hrv_7d_avg": 36,
+  "rhr_7d_avg": 48,
+  "sleep_hours_7d_avg": 7.82,
+  "weight_kg_7d_avg": 103.67,
+  "last_session": {
+    "date": "2026-07-02",
+    "type": "EBikeRide (commute)",
+    "duration_min": 77,
+    "training_load": 16
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-07-04", "day": "Samedi", "time": "11:00", "type": "Sortie gravel/ebike — 60-75 min Z2", "duration_min": 75, "target_load": 18, "calendar_event_id": "cctjli6irt2pa6a7u88akl8cd4", "status": "planned"},
+    {"date": "2026-07-05", "day": "Dimanche", "time": "11:30", "type": "Run #14 — 4 km Z2", "duration_min": 35, "target_load": 14, "calendar_event_id": "t01iq61r5ah9i94sha4ao5m7a8", "status": "planned"},
+    {"date": "2026-07-06", "day": "Lundi", "time": null, "type": "Repos", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-07-07", "day": "Mardi", "time": null, "type": "Sur site — commute ebike (~38 km)", "duration_min": 120, "target_load": 16, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-07-08", "day": "Mercredi", "time": "11:00", "type": "Run #15 — 4 km Z2", "duration_min": 35, "target_load": 14, "calendar_event_id": "0jf3215bpejrtipi2vodkp3uts", "status": "planned"},
+    {"date": "2026-07-09", "day": "Jeudi", "time": null, "type": "Sur site — commute ebike (~38 km)", "duration_min": 120, "target_load": 16, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-07-10", "day": "Vendredi", "time": null, "type": "Repos (33°C prévu)", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"}
+  ],
+  "no_train_days": ["2026-07-07", "2026-07-09"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Execute today's gravel ride (readiness 82, BB 59.5, HRV 38 BALANCED — all green). Favor gravel over ebike: the higher load (~18-22) helps arrest detraining. If suffer score > 20, reduce tomorrow's Run #14 from 4 km to 3 km.",
+      "measurable": "Activity logged today with suffer ≥ 12; ACWR trending toward 0.8 over next 7 days",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Maintain running consistency this week: Run #14 (Sun) + Run #15 (Wed) are non-negotiable for halting detraining, unless tissue pain > 24h or body battery < 35. ACWR recovery from 0.72 requires 2-3 weeks of consistent moderate loads — skipping runs perpetuates the detraining cycle.",
+      "measurable": "Both runs executed within ±1 km of target; no pain > 24h post-run",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Protein intake averaging 112g/day (last 6 days) vs ~165-170g target for 103 kg in a running rebuild. Prioritize 30-40g protein at each meal. Weight ticked up +1.05 kg — tomorrow's weigh-in will clarify trend.",
+      "measurable": "Average daily protein ≥ 140g over next 7 days; weight ≤ 103.5 kg at July 5 weigh-in",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "acwr",
+      "threshold": "Track trajectory toward 0.8 over next 2 weeks; alert if it drops below 0.65",
+      "reason": "Currently 0.72 (detraining); consistent sessions should lift it but chronic is also decaying"
+    },
+    {
+      "marker": "weight_trend",
+      "threshold": "Alert if July 5 weigh-in > 104 kg or if 2-week trend reversal confirmed",
+      "reason": "+1.05 kg between June 7 and June 21; need next data point to distinguish noise from trend"
+    },
+    {
+      "marker": "post_run_pain",
+      "threshold": "Any localized pain > 24h after Run #14 or #15 triggers skip of subsequent run",
+      "reason": "103.67 kg body weight × Z2 running = high tissue stress; comeback protocol demands caution"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/74"
+}

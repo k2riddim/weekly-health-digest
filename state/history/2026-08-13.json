@@ -1,0 +1,133 @@
+{
+  "as_of_date": "2026-08-13",
+  "bootstrap": false,
+  "situational_context": "Running comeback day 102 (May 3 → Aug 13), 27 structured runs completed. C4 bloc #21-40 active, currently in W33. Weight broke under 101 kg (100.68, −1.9 kg since Jun 14). VO2max running improved to 42.9 (from 40.6 at Jun 14). ACWR normalized to 0.79 (down from 1.35 in June — chronic load built from 17.5 to 24.9 while acute held steady). HRV stable at 36 ms BALANCED. Active heatwave in Paris (5th of summer, vigilance orange/jaune, highs 35-39°C this week) — runs shifted to dawn or indoor. Weekend trip to Saint-Malo (Aug 14-16) provides favorable 23°C conditions for W33 key sessions (#28 côte, #29 SL 10 km). Beaumonts RECON completed Aug 7 (Run #25: 87m D+ in 4.81 km). No new labs since Dec 2025; Vitamin D retest overdue (was due ~Jul 2026). E-bike commuting remains primary daily modality (~19 km each way, loads 4-8).",
+  "acute_load_7d": 19.8,
+  "chronic_load_28d": 24.9,
+  "distance_from_peak_pct": 1.55,
+  "hrv_7d_avg": 36,
+  "rhr_7d_avg": 51,
+  "sleep_hours_7d_avg": 7.95,
+  "weight_kg_7d_avg": 100.92,
+  "last_session": {
+    "date": "2026-08-13",
+    "type": "EBikeRide (commute)",
+    "duration_min": 57,
+    "training_load": 11
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-08-13",
+      "day": "Thu",
+      "time": null,
+      "type": "rest",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-08-14",
+      "day": "Fri",
+      "time": null,
+      "type": "rest (travel Paris → Saint-Malo)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-08-15",
+      "day": "Sat",
+      "time": "11:00",
+      "type": "Run #28 — 7.0 km côte Saint-Malo (2 montées, W33 C4)",
+      "duration_min": 55,
+      "target_load": 35,
+      "calendar_event_id": "slq4ot0uhiq5lkimrb83i9qtqg",
+      "status": "planned"
+    },
+    {
+      "date": "2026-08-16",
+      "day": "Sun",
+      "time": "11:00",
+      "type": "Run #29 SL — 10.0 km Saint-Malo (1 montée, W33 C4)",
+      "duration_min": 80,
+      "target_load": 55,
+      "calendar_event_id": "grcq5aiuu06nti4hs9dad99qag",
+      "status": "planned"
+    },
+    {
+      "date": "2026-08-17",
+      "day": "Mon",
+      "time": null,
+      "type": "rest (recovery post-travel)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-08-18",
+      "day": "Tue",
+      "time": null,
+      "type": "rest",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-08-19",
+      "day": "Wed",
+      "time": "11:00",
+      "type": "Run #30 — 6.0 km plat (W34 C4, heat-dependent)",
+      "duration_min": 45,
+      "target_load": 25,
+      "calendar_event_id": null,
+      "status": "planned"
+    }
+  ],
+  "no_train_days": [
+    "2026-08-13",
+    "2026-08-18"
+  ],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Execute W33 key sessions in Saint-Malo — Run #28 (7.0 km côte, Sat) and Run #29 SL (10.0 km, Sun). Coastal Brittany conditions (23°C, Yellow band) are dramatically better than Paris heatwave. Hydrate ≥ 750 mL + electrolytes for the SL. FC moy ≤ 145 bpm plat, ≤ 148 côte. Descentes : foulée courte, marche autorisée.",
+      "measurable": "Both sessions completed with FC within C4 bloc targets, no tissue pain >24h post-run",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Schedule Vitamin D retest ASAP — was due ~July 2026, now 6 weeks overdue. Last value 27 ng/mL (insufficient, target ≥ 40 ng/mL). At 100.7 kg body weight with increasing running volume and hill work ahead (W34-W36 toward 12 km Beaumonts), adequate Vitamin D is critical for bone health and stress fracture prevention.",
+      "measurable": "Blood draw scheduled within 2 weeks; result ≥ 35 ng/mL showing supplementation response",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P2",
+      "text": "Protein intake is inconsistent (78-157g/day vs 150g target). At 100.7 kg in a caloric deficit, protein ≥ 150g/day is essential to preserve lean mass. Focus on protein-rich meals especially on run days and the day after.",
+      "measurable": "≥ 5 of next 7 logged days hitting 150g protein target",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "rhr_trend",
+      "threshold": "Alert if RHR remains ≥ 53 bpm for 3+ consecutive days",
+      "reason": "Today's RHR 54 bpm is elevated vs 7d avg 51 — single-day spike likely heat stress, but persistent elevation would suggest overtraining or subclinical illness"
+    },
+    {
+      "marker": "run_distance_undershoot",
+      "threshold": "Flag if ≥ 2 of next 3 runs are > 20% below target distance",
+      "reason": "W32-W33 runs consistently shorter than C4 block targets (Run #26: 5.89 vs 9.0 km SL, Run #27: 4.23 vs 6.0 km). Pattern may indicate targets too ambitious or heat forcing cuts"
+    },
+    {
+      "marker": "vitamin_d_retest",
+      "threshold": "If not scheduled by 2026-08-27, escalate to P0",
+      "reason": "27 ng/mL (Dec 2025) → insufficient for bone health during running comeback at 100+ kg body weight. Retest overdue by 6 weeks"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/116"
+}

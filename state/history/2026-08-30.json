@@ -1,0 +1,72 @@
+{
+  "as_of_date": "2026-08-30",
+  "bootstrap": false,
+  "situational_context": "Running comeback stalled — extended recovery phase. Run #29 (Aug 22, suffer 51, avg HR 146, max 163) breached C4 HR caps and triggered a recovery deficit that hasn't resolved through 8 days of reduced volume. HRV has declined from 35 (weekly avg at last state) to 31, with nightly scores hitting 28 — Garmin status LOW since Aug 25. RHR elevated at 53.9 bpm (7d avg), with today at 55 bpm. Body battery and training readiness remain depressed (39.5 / 54 today). Deload gate ⛔ NOT cleared (need HRV ≥32 AND RHR ≤53). W35 deload partially executed: 2 of 3 planned runs completed, both well below target distances (Run #31: 3.79 km vs 5.0 planned; Run #34: 3.50 km vs 6.0 planned). Runs #32 and #33 skipped. W36 (tentative 12 km Beaumonts) postponed indefinitely. Chronic load continues eroding: 24.74 → 18.33 (1.14% of historical peak, down from 1.54%). Training status improved from 'Detraining' to 'Maintaining' but on a substantially lower base. The athlete is self-regulating to very short, easy efforts — Run #34 today was unplanned, early morning (5:58 AM, against time preference), 3.5 km at HR 132.5 (well within Z1-Z2). VO2max running dipped slightly (42.9 → 42.5). Nutrition logging has stopped entirely for 7+ days (last logged Aug 23). No new weight reading since Aug 12 (18 days). Vitamin D retest still overdue (due ~July 2026, no labs since Dec 2025). Wegovy follow-up teleconsultation scheduled Sep 3 — key touchpoint for weight management and Vitamin D follow-up. Post-heatwave modifier expired Aug 28. Weather forecast for the planning horizon is mild (22-27°C), Green-to-Yellow band — no heat constraint on training.",
+  "acute_load_7d": 14.75,
+  "chronic_load_28d": 18.33,
+  "distance_from_peak_pct": 1.14,
+  "hrv_7d_avg": 31.1,
+  "rhr_7d_avg": 53.9,
+  "sleep_hours_7d_avg": 7.25,
+  "weight_kg_7d_avg": 100.68,
+  "last_session": {
+    "date": "2026-08-30",
+    "type": "Run",
+    "duration_min": 26,
+    "training_load": 8
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-08-30", "day": "Samedi", "time": "05:58", "type": "Run #34 (exécuté)", "duration_min": 26, "target_load": 8, "calendar_event_id": "3ocr48rk41jjm3epco7vldr2o8", "status": "executed"},
+    {"date": "2026-08-31", "day": "Dimanche", "time": "11:00", "type": "Vélo easy Z1-Z2", "duration_min": 45, "target_load": 15, "calendar_event_id": "7u8bh62hac59ti44eikorr43rc", "status": "planned"},
+    {"date": "2026-09-01", "day": "Lundi", "time": null, "type": "Sur site — e-bike commute", "duration_min": 0, "target_load": 0, "calendar_event_id": "5h4a8ign80flev3ie8c7ae26rg_20260901", "status": "blocked"},
+    {"date": "2026-09-02", "day": "Mardi", "time": "12:00", "type": "Run 5.0 km easy plat (contingent — HRV ≥32 ET RHR ≤53)", "duration_min": 38, "target_load": 18, "calendar_event_id": "kqkobsuio1h14hkskr8bot351s", "status": "planned"},
+    {"date": "2026-09-03", "day": "Mercredi", "time": null, "type": "Sur site + Suivi Wegovy — e-bike commute", "duration_min": 0, "target_load": 0, "calendar_event_id": "5h4a8ign80flev3ie8c7ae26rg_20260903", "status": "blocked"},
+    {"date": "2026-09-04", "day": "Jeudi", "time": "12:00", "type": "Run 5.5 km easy plat (contingent — résultat Sep 2 + RHR ≤53)", "duration_min": 42, "target_load": 22, "calendar_event_id": "kcpnjft731u8299dpnat9kmonc", "status": "planned"},
+    {"date": "2026-09-05", "day": "Vendredi", "time": null, "type": "Repos", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"}
+  ],
+  "no_train_days": ["2026-09-01", "2026-09-03"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Vitamin D retest is now critically overdue — due ~July 2026, no labs since Dec 2025 (27 ng/mL, insufficient). The Wegovy follow-up teleconsultation on Sep 3 is the ideal touchpoint: mention the overdue Vitamin D panel, ask for a blood draw order. Bring weight trend data (104.8 → 100.7 kg since May, -4.1 kg).",
+      "measurable": "Lab order placed during or after Sep 3 teleconsultation; result logged within 2 weeks",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Continue extended deload until recovery markers clear the gate (HRV ≥32 AND RHR ≤53). The Run #29 spike (suffer 51, HR 146/163) triggered a genuine recovery deficit — HRV dropped from 35→31 weekly avg, RHR elevated to 53.9 (7d avg). Do NOT force W36 progression. The 12 km Beaumonts objective timeline must shift right. Prioritize the Sep 2 contingent run ONLY if morning markers pass the gate.",
+      "measurable": "HRV weekly avg ≥32 AND RHR 7d avg ≤53 for 2 consecutive days before resuming structured running",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Resume nutrition logging immediately. Seven consecutive days with zero meals logged (since Aug 23) creates a data gap that undermines TDEE calibration and weight management tracking — especially critical with the Wegovy follow-up on Sep 3.",
+      "measurable": "≥1 meal logged per day for the next 7 days; calorie adherence data available for Wegovy teleconsultation",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "hrv_weekly_avg",
+      "threshold": "Alert if HRV weekly avg stays ≤31 for more than 3 additional days (i.e., through Sep 2)",
+      "reason": "HRV has been declining since Aug 22 (post Run #29 spike): 35→34→33→32→31. Currently 31, nightly scores 28-30 (LOW). This is the key recovery gate — must trend up before resuming volume."
+    },
+    {
+      "marker": "rhr_7d_avg",
+      "threshold": "Alert if RHR 7d avg stays ≥54 through Sep 2, or any single day ≥56",
+      "reason": "Elevated at 53.9 (7d avg), with today spiking to 55 (possibly influenced by early-AM run). Baseline was 50-51 bpm. Must return toward ≤53 to clear deload gate."
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Flag if it drops below 15 — at that level the comeback's physiological base is effectively erased",
+      "reason": "Currently 18.33, down from 24.74 (Aug 14) and the late-July peak of 30.6. Eroding steadily during the extended deload."
+    },
+    {
+      "marker": "nutrition_logging",
+      "threshold": "Flag if still zero meals logged by Sep 2",
+      "reason": "7+ consecutive days with no nutrition data logged. Compromises TDEE calibration and makes it impossible to assess caloric adequacy during the recovery phase."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/131"
+}

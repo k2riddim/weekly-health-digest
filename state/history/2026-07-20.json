@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-07-20",
+  "bootstrap": false,
+  "situational_context": "Running comeback at Run #18 (78 days in, since May 3). Distances progressed from 2 km to 8 km peak (Run #16, Jul 15). On vacation in Saint-Malo (Jul 12-27), running coastal trails — soft surface, cooler weather (~18-21 C, GREEN band). No e-bike commuting while away. ACWR at 1.49 (comeback upper bound 1.50) — acute load spiked from 3 runs in 7 days; 48-72h rest needed before next run. HRV weekly avg recovered to 40 ms (from 33-35 in late June), best level since early May. VO2max running improved to 42 (from 40.6 at last state Jun 14). Training readiness low today (32) reflecting accumulated fatigue from recent cluster. Weight ~103.7 kg (last reading Jun 21, no Withings scale in Saint-Malo). No new labs since Dec 2025; Vitamin D retest overdue. Leonie ~6 months old, sleep impact manageable.",
+  "acute_load_7d": 37.5,
+  "chronic_load_28d": 25.1,
+  "distance_from_peak_pct": 1.56,
+  "hrv_7d_avg": 40,
+  "rhr_7d_avg": 48,
+  "sleep_hours_7d_avg": 7.95,
+  "weight_kg_7d_avg": 103.67,
+  "last_session": {
+    "date": "2026-07-20",
+    "type": "Run",
+    "duration_min": 36,
+    "training_load": 36
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-07-20", "day": "Mon", "time": "08:22", "type": "Run #18 — 5 km Z2 (done)", "duration_min": 36, "target_load": 36, "calendar_event_id": "t70tattn9uheh6v61h9u4m3dns", "status": "done"},
+    {"date": "2026-07-21", "day": "Tue", "time": null, "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-07-22", "day": "Wed", "time": null, "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-07-23", "day": "Thu", "time": "11:00", "type": "Run #19 — 6 km Z2 recovery", "duration_min": 48, "target_load": 25, "calendar_event_id": "lef1kis1arj3v0hlhkuq8bc1j8", "status": "planned"},
+    {"date": "2026-07-24", "day": "Fri", "time": null, "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-07-25", "day": "Sat", "time": "11:00", "type": "Run #20 — 8 km Z2 long run", "duration_min": 65, "target_load": 35, "calendar_event_id": "qj5eujaj0kd3h0764ahbd5e8e4", "status": "planned"},
+    {"date": "2026-07-26", "day": "Sun", "time": "11:00", "type": "Recovery active — walk/swim", "duration_min": 60, "target_load": 10, "calendar_event_id": "c7238cfjoea7kk2t40ihs6mie0", "status": "planned"}
+  ],
+  "no_train_days": [],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "ACWR at 1.49 (comeback ceiling 1.50) — two full rest days (Tue-Wed) before Run #19 on Thursday. No unplanned activity. Let Run #16's high load (57) roll out of the 7-day window.",
+      "measurable": "ACWR <= 1.40 by Thu Jul 23",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Vitamin D blood panel now overdue (was due ~July 2026). Schedule at a lab in Saint-Malo this week or immediately upon return to Paris (Jul 27+). At 27 ng/mL (Dec 2025), ~2x stress-fracture risk below 40 ng/mL.",
+      "measurable": "Blood drawn before Jul 31",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P2",
+      "text": "Resume nutrition logging — 36+ days of zero data makes TDEE tracking, protein adequacy, and hydration assessment impossible. Critical for a 103 kg athlete targeting a modest deficit while rebuilding running volume.",
+      "measurable": ">=2 meals logged/day for 5 of next 7 days",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "acwr",
+      "threshold": "Alert if ACWR stays > 1.45 for more than 3 consecutive days after rest",
+      "reason": "Currently at 1.49; should drop with 48-72h rest. If it doesn't, reduce next run distance."
+    },
+    {
+      "marker": "training_readiness",
+      "threshold": "Alert if training readiness stays < 40 for 3+ consecutive days",
+      "reason": "Currently at 32; lowest in observation window. If it fails to recover with rest, skip Thu run."
+    },
+    {
+      "marker": "weight",
+      "threshold": "Resume weekly weighing on Withings upon return to Paris (Jul 27+)",
+      "reason": "29 days without a weight reading; last at 103.67 kg. Trend monitoring paused."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/92"
+}

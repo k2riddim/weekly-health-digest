@@ -1,0 +1,130 @@
+{
+  "as_of_date": "2026-08-11",
+  "bootstrap": false,
+  "situational_context": "Running comeback day 100 (26 runs since May 3, 2026). C4 structured block active (sessions #21–40), currently entering W33. Distances have progressed from 2 km to 10.5 km range (Run #20: 10.5 km at Saint-Malo on Jul 25). VO2max running improved to 42.8 (from 38.3 at comeback start). Weight trending down to 101.2 kg (from 104.8 at comeback start, −3.6 kg in 100 days). ACWR normalized to 0.86 — solidly in safe zone [0.8–1.3] after June spike to 1.35. Chronic load rebuilt from 17.5 → 28.2 (+61% since Jun 14). HRV stable at 37 ms weekly avg, all BALANCED status. W33 features Saint-Malo trip (Aug 14–16) with two outdoor runs there. Paris heatwave active Aug 11–14 (feels-like 33–39°C) → treadmill mandated for Wed session. Post-heatwave modifier active through ~Aug 21. Vitamin D retest overdue (was due July 2026, last value 27 ng/mL Dec 2025). No new labs since Dec 2025.",
+  "acute_load_7d": 24.2,
+  "chronic_load_28d": 28.2,
+  "distance_from_peak_pct": 1.75,
+  "hrv_7d_avg": 37,
+  "rhr_7d_avg": 50,
+  "sleep_hours_7d_avg": 8.03,
+  "weight_kg_7d_avg": 101.59,
+  "last_session": {
+    "date": "2026-08-11",
+    "type": "EBikeRide (commute × 2)",
+    "duration_min": 122,
+    "training_load": 13
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-08-11",
+      "day": "Tue",
+      "time": "—",
+      "type": "Sur site (e-bike commute done)",
+      "duration_min": 122,
+      "target_load": 13,
+      "calendar_event_id": "—",
+      "status": "blocked"
+    },
+    {
+      "date": "2026-08-12",
+      "day": "Wed",
+      "time": "11:00",
+      "type": "Run #27 — 6,0 km Z2 plat (tapis roulant, canicule)",
+      "duration_min": 45,
+      "target_load": 25,
+      "calendar_event_id": "scd8n0eum6gkij4f63016s2k3g",
+      "status": "planned"
+    },
+    {
+      "date": "2026-08-13",
+      "day": "Thu",
+      "time": "—",
+      "type": "Sur site (repos / e-bike commute)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "—",
+      "status": "blocked"
+    },
+    {
+      "date": "2026-08-14",
+      "day": "Fri",
+      "time": "—",
+      "type": "Voyage Paris → Saint-Malo (repos)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "—",
+      "status": "rest"
+    },
+    {
+      "date": "2026-08-15",
+      "day": "Sat",
+      "time": "11:00",
+      "type": "Run #28 — 7,0 km côte Saint-Malo (2 montées)",
+      "duration_min": 55,
+      "target_load": 35,
+      "calendar_event_id": "slq4ot0uhiq5lkimrb83i9qtqg",
+      "status": "planned"
+    },
+    {
+      "date": "2026-08-16",
+      "day": "Sun",
+      "time": "11:00",
+      "type": "Run #29 SL — 10,0 km Saint-Malo (1 montée intégrée)",
+      "duration_min": 80,
+      "target_load": 55,
+      "calendar_event_id": "grcq5aiuu06nti4hs9dad99qag",
+      "status": "planned"
+    },
+    {
+      "date": "2026-08-17",
+      "day": "Mon",
+      "time": "—",
+      "type": "Repos post-SL",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "—",
+      "status": "rest"
+    }
+  ],
+  "no_train_days": ["2026-08-11", "2026-08-13"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Vitamin D retest is now overdue (due July 2026, last value 27 ng/mL in Dec 2025). Schedule blood panel this week. At 27 ng/mL, stress-fracture risk remains ~2× elevated (Burgi 2011). Running volume is now 15–23 km/week — tissue protection from adequate Vitamin D is more critical than ever at this load.",
+      "measurable": "Blood panel ordered by Aug 15",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Protein intake consistently below target — 7-day avg ~118g vs 150g target (79% adherence). At 101 kg in a running comeback with weight loss, protein needs are high for tissue repair and muscle preservation. Front-load 30–40g at breakfast and post-run.",
+      "measurable": "Protein 7d avg ≥ 140g within 7 days",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "W33 SL (Run #29, 10 km) is a large jump from last executed SL (Run #26, 5.89 km). Justified by demonstrated tolerance (Run #20, 10.5 km, absorbed cleanly), but monitor tissue feedback post-run carefully. If any localized pain >24h after Saturday's Run #28, downgrade Sunday's SL to 7 km flat.",
+      "measurable": "Run #29 completed at ≤145 bpm avg, no pain >24h post",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "vitamin_d",
+      "threshold": "Retest before end of August",
+      "reason": "At 27 ng/mL (Dec 2025), running volume now 15–23 km/week increases stress-fracture risk at this body weight"
+    },
+    {
+      "marker": "tissue_feedback_post_SL",
+      "threshold": "Any localized pain >24h after Run #28 or #29 → skip next run",
+      "reason": "10 km SL at 101 kg with post-heatwave physiology — monitor Achilles, patellar, plantar"
+    },
+    {
+      "marker": "max_heart_rate_spikes",
+      "threshold": "Max HR >165 bpm on flat Z2 runs warrants investigation",
+      "reason": "Run #26 (flat, Z2 target) had max HR 171 bpm — possible sensor artifact or genuine spike; if repeated, investigate cardiac drift or hydration"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/114"
+}

@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-05-12",
+  "bootstrap": false,
+  "situational_context": "Early rebuild phase with return-to-running protocol active (week 3, Run #2 completed May 9, Run #3 conditional for May 15). Chronic load slowly increasing (22.8, 1.4% of historical peak) but ACWR at 0.75 indicates insufficient acute stimulus. Training status: Detraining. Weight trending down nicely (-2.8 kg over 28d, now 104.1 kg). Activity mix is primarily ebike commuting (2x/week sur site) + structured cycling + biweekly short runs. HRV stable at 38, readiness consistently high (75-92). Sleep mostly adequate (7.4h avg) but variable with occasional baby-disrupted nights. Sur site days with ebike commute provide light active recovery (suffer 7-9 per leg). Vitamin D supplementation ongoing.",
+  "acute_load_7d": 17.0,
+  "chronic_load_28d": 22.8,
+  "distance_from_peak_pct": 1.42,
+  "hrv_7d_avg": 38,
+  "rhr_7d_avg": 49,
+  "sleep_hours_7d_avg": 7.44,
+  "weight_kg_7d_avg": 104.1,
+  "last_session": {
+    "date": "2026-05-12",
+    "type": "EBikeRide",
+    "duration_min": 54,
+    "training_load": 7
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-05-12", "day": "Tuesday", "time": "-", "type": "Sur site (ebike commute)", "duration_min": 54, "target_load": 7, "calendar_event_id": "5h4a8ign80flev3ie8c7ae26rg_20260512", "status": "blocked"},
+    {"date": "2026-05-13", "day": "Wednesday", "time": "12:00", "type": "Récupération active Z2 vélo", "duration_min": 45, "target_load": 13, "calendar_event_id": "s3c1gsv2j2tntn4mah63art6kc", "status": "planned"},
+    {"date": "2026-05-14", "day": "Thursday", "time": "12:00", "type": "Endurance vélo Z2", "duration_min": 45, "target_load": 15, "calendar_event_id": "ggh1p6fbqmuah0n461c44no9s0", "status": "planned"},
+    {"date": "2026-05-15", "day": "Friday", "time": "12:00", "type": "Run #3 conditionnel OU Endurance vélo Z2", "duration_min": 25, "target_load": 10, "calendar_event_id": "7bb0sc9o9ak1upro4g03p4be9o", "status": "planned"},
+    {"date": "2026-05-16", "day": "Saturday", "time": "12:00", "type": "Endurance vélo Z2 — Week-end jour 1", "duration_min": 55, "target_load": 16, "calendar_event_id": "4b87dm11dh8pa57mq62i66ci5k", "status": "planned"},
+    {"date": "2026-05-17", "day": "Sunday", "time": "13:00", "type": "Endurance vélo Z1-Z2 — Week-end jour 2", "duration_min": 50, "target_load": 14, "calendar_event_id": "nbkfqeb6h09ssdsd913r0178i0", "status": "planned"},
+    {"date": "2026-05-18", "day": "Monday", "time": "-", "type": "Congés — repos", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"}
+  ],
+  "no_train_days": ["2026-05-12"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Execute all 5 planned sessions this week (Wed-Sun) to rebuild acute load toward ACWR 0.80. Prioritize consistency over intensity — completing 4/5 is acceptable given baby constraints, but skipping 2+ sessions compounds the detraining signal.",
+      "measurable": "Acute load 7d ≥15 by Sunday with ≥4 completed sessions",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Prioritize sleep recovery after tonight's 5.9h — target ≥7.5h the next 3 nights before Friday's Run #3. Short sleep before impact activity compounds tissue stress at 104 kg body weight.",
+      "measurable": "≥7h sleep on 5+ of next 7 nights; zero nights below 6h",
+      "evidence_class": "RCT"
+    },
+    {
+      "priority": "P2",
+      "text": "Increase daily protein intake toward 150g target. Current 7d average is 120g (80% adherence). Distribute across 4 meals with ≥30g per sitting to support musculoskeletal adaptation during return-to-running.",
+      "measurable": "7d protein average ≥140g by Sunday",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "hrv_7d_avg",
+      "threshold": "Sustaining ≥35 ms confirms stable recovery; drop below 33 would flag overreaching",
+      "reason": "HRV steady at 37-38 for 3+ weeks; any dip post-Run #3 warrants load reduction"
+    },
+    {
+      "marker": "acwr",
+      "threshold": "Target gradual increase toward 0.80+ over next 2 weeks",
+      "reason": "Currently 0.75, below optimal band; consistent sessions should close the gap"
+    },
+    {
+      "marker": "run_hr_response",
+      "threshold": "Run #3 FC avg ≤145 bpm at 8:30-9:00/km pace",
+      "reason": "Run #2 FC avg was 144 (+9 vs Run #1); if Run #3 FC >150 at same pace, extend spacing to 8+ days"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/21"
+}

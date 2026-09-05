@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-08-20",
+  "bootstrap": false,
+  "situational_context": "Running comeback day 109, active C4 block (#21-40) targeting 12 km Beaumonts (~30/10). 28 runs logged since May 3. Fifth heatwave of summer 2026 (Aug 11-18, Météo-France orange alert) forced a near-blank W33 and curtailed W34 — chronic load dropped to 21.7 (from late-July peak ~30.6), training status 'Detraining', ACWR 0.48. Post-heatwave recovery underway: RHR back to 50-51 (from 52-55 spike Aug 13-18), body battery 56 (from lows of 26-30), training readiness 81 (best in 2 weeks). HRV weekly avg declined to 33 (from 36 pre-heatwave), status LOW — expected lagging indicator of heat stress, should recover within days. W34 under 'semaine blanche' reentry rule (≤18.8 km, no SL): Run #28 done (5.06 km Aug 18), Run #29 (6.5 km Sat 22) and Run #30 (6.0 km Sun 23, conditional) planned. W35 deload begins Aug 24 with Run #31 (5.0 km Wed 26). Post-heatwave shift on heat bands active until ~Aug 28. Weight stable at 100.7 kg (last reading Aug 12). No new labs — Vitamin D retest overdue since July. VO2max cycling artifact (42.9 = running figure) persists.",
+  "acute_load_7d": 10.5,
+  "chronic_load_28d": 21.68,
+  "distance_from_peak_pct": 1.35,
+  "hrv_7d_avg": 33,
+  "rhr_7d_avg": 52.3,
+  "sleep_hours_7d_avg": 7.83,
+  "weight_kg_7d_avg": 100.68,
+  "last_session": {
+    "date": "2026-08-19",
+    "type": "EBikeRide (commute x2)",
+    "duration_min": 111,
+    "training_load": 12
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-08-20", "day": "Thu", "time": "—", "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"},
+    {"date": "2026-08-21", "day": "Fri", "time": "—", "type": "Sur site (e-bike commute)", "duration_min": 0, "target_load": 0, "calendar_event_id": "5h4a8ign80flev3ie8c7ae26rg_20260820", "status": "blocked"},
+    {"date": "2026-08-22", "day": "Sat", "time": "11:00", "type": "Run #29 — 6,5 km easy plat (Bois de Vincennes)", "duration_min": 50, "target_load": 30, "calendar_event_id": "3rrqtqq619mf8qv8mus9jn5bt4", "status": "planned"},
+    {"date": "2026-08-23", "day": "Sun", "time": "11:00", "type": "Run #30 — 6,0 km easy plat (CONDITIONNEL)", "duration_min": 45, "target_load": 28, "calendar_event_id": "bh27hup66p2kuocdnt6tq2gm88", "status": "planned"},
+    {"date": "2026-08-24", "day": "Mon", "time": "—", "type": "Rest (post-B2B recovery)", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"},
+    {"date": "2026-08-25", "day": "Tue", "time": "—", "type": "Sur site (e-bike commute)", "duration_min": 0, "target_load": 0, "calendar_event_id": "5h4a8ign80flev3ie8c7ae26rg_20260825", "status": "blocked"},
+    {"date": "2026-08-26", "day": "Wed", "time": "12:00", "type": "Run #31 — 5,0 km easy plat (W35 deload)", "duration_min": 37, "target_load": 20, "calendar_event_id": "8llvg3ahu1bdeh8ego94dvt9ao", "status": "planned"}
+  ],
+  "no_train_days": ["2026-08-21", "2026-08-25"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Vitamin D retest overdue since July 2026. Last measured 27 ng/mL (Dec 2025, insufficient — optimal 40-60). No new labs in 8+ months. Schedule blood panel this week.",
+      "measurable": "Lab order placed and result logged within 2 weeks",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Execute the weekend back-to-back (Run #29 Sat + Run #30 Sun conditional) to reverse the detraining trajectory. ACWR 0.48 provides maximum headroom. Recovery markers are green: readiness 81, RHR 50-51, body battery 56. Respect the RHR gate: RHR ≥53 Saturday morning → reduce Run #29 to 5 km. Any pain >3/10 or gait alteration → cancel Run #30.",
+      "measurable": "Both sessions completed at target distance, FC ≤145 bpm avg, no pain >3/10",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "HRV weekly avg declined from 36 to 33, status LOW for 3 consecutive days. Body battery and readiness are recovering strongly — HRV is the expected lagging indicator of post-heatwave autonomic recovery. Monitor but do not reduce training unless HRV stays ≤32 for 3+ more days with declining readiness (<70).",
+      "measurable": "HRV weekly avg rebounds to ≥34 within 5 days, or readiness stays ≥70",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "hrv_weekly_avg",
+      "threshold": "Alert if stays ≤32 for 3+ consecutive days with declining readiness (<70)",
+      "reason": "Dropped from 36 to 33 during/after heatwave; status LOW for 3 days. Body battery and readiness recovering — expect HRV to follow with 2-3 day lag."
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Must begin rising within 2 weeks (target: back to ≥25 by early September)",
+      "reason": "Fell from 24.7 to 21.7 due to heatwave-forced gap. Detraining status active. Weekend sessions should begin reversing this."
+    },
+    {
+      "marker": "vo2max_cycling",
+      "threshold": "Check if it diverges from running VO2max (42.9) on next data pull",
+      "reason": "Still identical to running figure since Aug 11 — likely Garmin algorithm artifact, not real gain"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/122"
+}

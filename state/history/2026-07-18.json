@@ -1,0 +1,72 @@
+{
+  "as_of_date": "2026-07-18",
+  "bootstrap": false,
+  "situational_context": "Running comeback consolidating strongly: 17 structured runs since May 3, 2026 (76 days in). Distances progressed from 2 km to 8 km (Run #16 record, Jul 15). Currently on vacation in Saint-Malo (Jul 12-27) with ideal training conditions (cool coastal weather 19-24°C, soft sentier côtier surface). VO2max running improved to 42 (from 40.6 at last state Jun 14, from 38.3 at comeback start May 3). HRV weekly avg recovered to 39 ms (from 35 on Jun 14). Chronic load building at 25.1 (up 43% from 17.5 on Jun 14). ACWR at 1.43 — within comeback band (≤1.50). Weight stale at 103.67 kg (last measured Jun 21 — 27 days ago). Nutrition logging completely absent since at least Jul 10. Vitamin D retest overdue (was due ~July 2026). E-bike commuting paused during Saint-Malo vacation. No 'sur site' days — full vacation flexibility.",
+  "acute_load_7d": 36,
+  "chronic_load_28d": 25.1,
+  "distance_from_peak_pct": 1.56,
+  "hrv_7d_avg": 39,
+  "rhr_7d_avg": 49,
+  "sleep_hours_7d_avg": 7.58,
+  "weight_kg_7d_avg": 103.67,
+  "last_session": {
+    "date": "2026-07-18",
+    "type": "Run",
+    "duration_min": 49,
+    "training_load": 51
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-07-18", "day": "Sat", "time": "09:09", "type": "Run #17 — 7 km Z2", "duration_min": 49, "target_load": 51, "calendar_event_id": "9fod0ffae5f59r072kj8qudsto", "status": "executed"},
+    {"date": "2026-07-19", "day": "Sun", "time": "11:00", "type": "Marche côtière 45 min", "duration_min": 45, "target_load": 10, "calendar_event_id": "hf0h1hnldp2lslfbnpsjosmsbg", "status": "planned"},
+    {"date": "2026-07-20", "day": "Mon", "time": null, "type": "Repos", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-07-21", "day": "Tue", "time": "11:00", "type": "Run #18 — 7 km Z2", "duration_min": 55, "target_load": 30, "calendar_event_id": "d23mi3f85sorc9q1f5lgljj098", "status": "planned"},
+    {"date": "2026-07-22", "day": "Wed", "time": null, "type": "Repos", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-07-23", "day": "Thu", "time": "11:00", "type": "Run #19 — 5 km Z2 récup", "duration_min": 40, "target_load": 20, "calendar_event_id": "lef1kis1arj3v0hlhkuq8bc1j8", "status": "planned"},
+    {"date": "2026-07-24", "day": "Fri", "time": null, "type": "Repos", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"}
+  ],
+  "no_train_days": [],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "PESÉE DEMAIN (dimanche) — 28 jours sans mesure Withings. Sans pesée régulière, impossible de calibrer le TDEE ni de vérifier que la perte de poids reste modeste (objectif -3 à -5 kg sur le comeback). Reprendre le logging nutrition immédiatement — zero meals logged depuis au moins 9 jours.",
+      "measurable": "Pesée Withings dimanche 19/07 ; au moins 2 repas loggés par jour dès demain",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P1",
+      "text": "Vitamin D retest urgent — overdue since July 1. Dernier dosage 27 ng/mL (Dec 2025) était INSUFFISANT. À 103 kg avec reprise course à pied, le risque de fracture de stress est ~2× élevé sous 40 ng/mL (Burgi 2011). Programmer prise de sang cette semaine ou dès retour à Paris le 27/07.",
+      "measurable": "Prise de sang programmée avant fin juillet 2026",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P2",
+      "text": "Maintenir la fréquence de 3 runs/semaine et la progression du long run vers 9-10 km. L'ACWR est à 1.43 et le chronic load monte bien (+43% en 34 jours). La semaine prochaine est un step-back naturel (~95 de charge projetée vs ~144 cette semaine) — excellent timing pour laisser le chronic rattraper.",
+      "measurable": "3 runs exécutés la semaine du 20-26/07 ; long run samedi 25/07 ≥ 8 km",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "acwr",
+      "threshold": "Alert if ACWR exceeds 1.50 (comeback upper bound) for more than 3 consecutive days",
+      "reason": "Currently at 1.43; step-back week should bring it toward 1.2-1.3"
+    },
+    {
+      "marker": "weight_compliance",
+      "threshold": "Alert if no Withings reading by Sunday July 19",
+      "reason": "28 days without weighing — TDEE calibration impossible, body composition trend unknown"
+    },
+    {
+      "marker": "nutrition_logging",
+      "threshold": "Alert if zero meals logged for another 48h",
+      "reason": "Cannot assess caloric balance, protein intake, or hydration without logging"
+    },
+    {
+      "marker": "vitamin_d_retest",
+      "threshold": "Schedule blood panel before end of July 2026",
+      "reason": "Last result 27 ng/mL (insufficient); supplementation active since Dec 2025; retest window passed"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/90"
+}

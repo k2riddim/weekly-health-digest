@@ -1,0 +1,135 @@
+{
+  "as_of_date": "2026-05-23",
+  "bootstrap": false,
+  "situational_context": "Running comeback week 3: 5 runs completed since May 3 gap-break (Run #1: 2.47 km, #2: 2.01 km, #3: 3.53 km, #4: 5.01 km, #5: 5.02 km). Run #5 shows clear cardiovascular adaptation — same 5 km distance as Run #4 but avg HR 136 vs 140, max HR 153 vs 175, suffer 19 vs 26. VO2max running ticked up to 38.9 (first improvement since comeback start). Primary modality remains e-bike commuting on sur-site days (~38 km round trip). Chronic load declining (22.3 → 18.7) as older high-load days roll off the 28d window — ACWR improving to 0.89 (entered optimal band [0.8–1.3]). HRV weekly avg stable at 36 (at 90d baseline), sleep trending below target at 6.84h 7d avg. Weight continues gradual decline: ~103.6 kg. Training readiness low at 50 — body battery depleted from accumulated sleep debt. Congés Thu–Fri May 28–29 offer training windows. Nutritionist appointment May 28 (Lucie UGUEN). Return-to-running protocol active: tissue tolerance, not cardio, remains the limiter at 103+ kg.",
+  "acute_load_7d": 16.6,
+  "chronic_load_28d": 18.7,
+  "distance_from_peak_pct": 1.16,
+  "hrv_7d_avg": 36,
+  "rhr_7d_avg": 50.3,
+  "sleep_hours_7d_avg": 6.84,
+  "weight_kg_7d_avg": 103.6,
+  "last_session": {
+    "date": "2026-05-23",
+    "type": "Run",
+    "duration_min": 41,
+    "training_load": 19
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-05-23",
+      "day": "Saturday",
+      "time": "08:30",
+      "type": "Run #5 (5 km Z1-Z2 consolidation)",
+      "duration_min": 42,
+      "target_load": 19,
+      "calendar_event_id": "2gh25jhdrvih06is7hj12nsp24",
+      "status": "executed"
+    },
+    {
+      "date": "2026-05-24",
+      "day": "Sunday",
+      "time": "12:00",
+      "type": "Sortie vélo endurance Z2 (50 min)",
+      "duration_min": 50,
+      "target_load": 17,
+      "calendar_event_id": "irsb93a8mprc38vvvrpvqqa2ko",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-25",
+      "day": "Monday",
+      "time": null,
+      "type": "Repos",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-05-26",
+      "day": "Tuesday",
+      "time": null,
+      "type": "Sur site (e-bike commute ~38 km, passive load ~16–20)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-05-27",
+      "day": "Wednesday",
+      "time": null,
+      "type": "Repos",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-05-28",
+      "day": "Thursday",
+      "time": "12:00",
+      "type": "Run #6 (5 km Z1-Z2 consolidation)",
+      "duration_min": 45,
+      "target_load": 19,
+      "calendar_event_id": "3ua5vo8c0m59nglc8i37rm1vbg",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-29",
+      "day": "Friday",
+      "time": "12:00",
+      "type": "Sortie vélo facile Z1-Z2 (30 min)",
+      "duration_min": 30,
+      "target_load": 12,
+      "calendar_event_id": "nitu7moo6mq72kdfb1reeiikf4",
+      "status": "planned"
+    }
+  ],
+  "no_train_days": ["2026-05-26"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Continue running consolidation at 5 km: Run #5 confirmed cardiovascular adaptation (HR avg 136 vs 140, suffer 19 vs 26 at identical distance). Run #6 scheduled May 28 (congés), same 5 km, only if zero localized pain 48h+ post-Run #5. Do not increase distance until 2 consecutive pain-free 5 km runs.",
+      "measurable": "Run #6 completed at 5 km, HR avg ≤137 bpm, no post-run pain >24h",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Prioritize sleep recovery: 7d average has dropped to 6.84h (below 90d baseline of 7.17h). HRV weekly avg declined from 40 to 36 in parallel. Aim for ≥7.5h on 5+ nights this week to restore recovery capacity before Thursday's Run #6.",
+      "measurable": "Sleep 7d avg ≥7.0h by May 28",
+      "evidence_class": "RCT"
+    },
+    {
+      "priority": "P2",
+      "text": "Increase daily protein toward 150g target — averaging ~126g/day over last 7 days (84% adherence). Critical during running comeback at 103+ kg for tendon and muscle tissue repair. Focus on lunch and dinner protein anchors.",
+      "measurable": "≥140g protein on 5+ days this week",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "hrv_7d_avg",
+      "threshold": "Alert if HRV drops below 33 (>1 sigma below 90d baseline of 36.5)",
+      "reason": "HRV weekly avg declined 40 to 36 over 9 days, now at baseline floor. Further decline suggests recovery debt."
+    },
+    {
+      "marker": "training_readiness",
+      "threshold": "Alert if training readiness stays <50 for 3+ consecutive days",
+      "reason": "Currently at 50, lowest in the week. Body battery depleted. Needs sleep recovery."
+    },
+    {
+      "marker": "post_run_pain",
+      "threshold": "Any localized joint/tendon pain lasting >24h after Run #5 triggers skip of Run #6",
+      "reason": "Tissue tolerance remains the bottleneck at 103+ kg body weight. Run #5 was the 5th impact session in 20 days."
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Monitor for stabilization — currently declining (22.3 to 18.7) as older high-load days roll off",
+      "reason": "ACWR improving (0.89) but chronic load base eroding. Consistent sessions needed to rebuild chronic floor."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/33"
+}
