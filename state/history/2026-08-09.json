@@ -1,0 +1,68 @@
+{
+  "as_of_date": "2026-08-09",
+  "bootstrap": false,
+  "situational_context": "Running comeback day 98 (26 runs since May 3). C4 block #21-40 active — W32 completed, entering W33. Distances progressed to 10.5 km (Run #20, Saint-Malo côte Jul 25); regular runs in the 5-7 km range. VO2max running improved to 42.8 (from 38.3 at comeback start, +4.5). ACWR normalized to 0.84 after W31 deload — well within comeback band [0.8-1.5]. Chronic load 28d at 29.2, nearly doubled from 17.5 on Jun 14 — excellent base-building. Weight trending to 101.2 kg (-3.6 kg from comeback start 104.8 kg). 5th heatwave of summer approaching Aug 11-13 — post-heatwave modifier active, all Paris runs must be indoor. Saint-Malo trip Aug 14-16 opens outdoor training window (coastal ~21°C). HRV stable at 36 ms (BALANCED), sleep excellent (8.02h avg). Vitamin D retest overdue (was due Jul 2026). No new labs since Dec 2025. Protein intake consistently under target (~118g vs 150g).",
+  "acute_load_7d": 24.4,
+  "chronic_load_28d": 29.2,
+  "distance_from_peak_pct": 1.82,
+  "hrv_7d_avg": 36,
+  "rhr_7d_avg": 49.7,
+  "sleep_hours_7d_avg": 8.02,
+  "weight_kg_7d_avg": 101.59,
+  "last_session": {
+    "date": "2026-08-09",
+    "type": "Run",
+    "duration_min": 42,
+    "training_load": 35
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-08-09", "day": "Dimanche", "time": "08:44", "type": "Run #26 — 5,89 km Z2 matin (Bois de Vincennes)", "duration_min": 42, "target_load": 35, "calendar_event_id": "42gonf5bop238grsr4ptlq6df4", "status": "executed"},
+    {"date": "2026-08-10", "day": "Lundi", "time": null, "type": "Repos", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-08-11", "day": "Mardi", "time": null, "type": "Sur site — commute e-bike/gravel (~38 km)", "duration_min": 120, "target_load": 12, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-08-12", "day": "Mercredi", "time": "11:00", "type": "Run #27 — 6,0 km Z2 plat tapis roulant (W33)", "duration_min": 45, "target_load": 25, "calendar_event_id": "scd8n0eum6gkij4f63016s2k3g", "status": "planned"},
+    {"date": "2026-08-13", "day": "Jeudi", "time": null, "type": "Sur site — commute e-bike/gravel (~38 km)", "duration_min": 120, "target_load": 12, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-08-14", "day": "Vendredi", "time": null, "type": "Voyage Paris → Saint-Malo (TGV 12h10)", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-08-15", "day": "Samedi", "time": "11:00", "type": "Run #28 — 7,0 km côte Saint-Malo (2 montées, W33)", "duration_min": 55, "target_load": 35, "calendar_event_id": "slq4ot0uhiq5lkimrb83i9qtqg", "status": "planned"},
+    {"date": "2026-08-16", "day": "Dimanche", "time": "10:00", "type": "Run #29 SL — 10,0 km Saint-Malo (1 montée intégrée, W33)", "duration_min": 75, "target_load": 55, "calendar_event_id": "grcq5aiuu06nti4hs9dad99qag", "status": "planned"}
+  ],
+  "no_train_days": ["2026-08-11", "2026-08-13"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Maintain C4 block W33 progression. Run #27 indoor treadmill Wednesday (canicule). Runs #28-#29 outdoor at Saint-Malo where coastal temps (~21°C) are in the Yellow band — Z1-Z2, ease pace, pre-hydrate. The SL 10 km on Sunday is the week's key session — target ≤ 145 bpm avg, 1 côte intégrée.",
+      "measurable": "3 runs executed in W33, total ≥ 20 km, SL ≥ 9 km, ACWR stays within [0.8, 1.5]",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Protein intake averaging ~118g/day vs 150g target — 21% deficit. At 101 kg during a running comeback, adequate protein is critical for tissue remodeling (tendons, muscle repair). Add a protein-rich snack (30-40g) post-training and prioritize protein at each meal.",
+      "measurable": "Daily protein ≥ 140g on training days over the next 7 days",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Vitamin D retest overdue — was due ~July 2026 (8 weeks post-comeback). Last reading 27 ng/mL (insufficient). At 101 kg with active running comeback, confirmed insufficiency raises stress fracture risk (~2× per Burgi 2011). Schedule blood panel this week or in Saint-Malo.",
+      "measurable": "Lab order placed before end of August 2026",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "acwr",
+      "threshold": "Monitor if ACWR exceeds 1.3 during W33 volume ramp — currently 0.84, safe margin",
+      "reason": "Coming off deload week, volumes increasing per C4 block progression"
+    },
+    {
+      "marker": "hrv_7d_avg",
+      "threshold": "Alert if HRV 7d avg drops below 32 ms or remains flat at 36 despite improved sleep",
+      "reason": "Stable at 36 ms for 6+ weeks — not declining but not recovering toward the 38-40 range seen in May"
+    },
+    {
+      "marker": "run_25_recon_hr_spike",
+      "threshold": "FC max 163 bpm on Run #25 Beaumonts RECON exceeded the C4 bloc hill spike limit (158 bpm)",
+      "reason": "Beaumonts gradient steeper than hypothesized (87m D+ in 4.81 km ≈ 18 m/km vs expected 12-15 m/km). Adjust D+ estimates in C4 block table."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/112"
+}
