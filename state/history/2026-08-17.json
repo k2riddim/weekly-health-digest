@@ -1,0 +1,138 @@
+{
+  "as_of_date": "2026-08-17",
+  "bootstrap": false,
+  "situational_context": "Running comeback day 106 (27 runs logged since May 3). C4 active block (#21-40) in W34 but operating under 'blank week reentry' rule after a near-blank W33 (only Run #27 at 4.23 km + sea swim; runs #28 and #29 skipped due to Saint-Malo travel + canicule). W34 opened with another skip (Run #28 rescheduled from Aug 15→17, skipped again today). Last run: Aug 12 (Run #27, 4.23 km easy, HR 133). Heatwave ended ~Aug 14-15; post-heatwave modifier active (bands -3°C) until ~Aug 24. Garmin now shows 'Detraining' with acute ~8-10 (estimated, dropping from 14.6 on Aug 14), chronic ~23.5, ACWR ~0.38 — deepest detraining since the comeback started. HRV shifted to UNBALANCED (Aug 15-16, weekly avg 34, down from 37 on Aug 10). RHR still elevated at 52-53 (5-day streak ≥52, up from 50 baseline), but training readiness recovered to 74 (best in a week). Weight stable at 100.68 kg (Aug 12, only recent reading; trend continues down from 102.6 in June). Sleep adequate at 7.9h avg. Vitamin D retest still overdue — no labs since Dec 2025. Two 'sur site' days this week (Tue 18, Thu 20) with habitual e-bike commute (light, suffer scores 4-8 per leg). Plan: conservative 2-run reentry (Fri 21 + Sat 22, 6.0 km easy plat each, ~12 km total, well under the 18.8 km blank-week cap) pending RHR/HRV trend improvement. The 12 km Beaumonts objective (W36, ~Aug 31) is under schedule pressure — two near-blank weeks mean the progression ladder has stalled. Reassess after W34 execution whether W36 needs to slip.",
+  "acute_load_7d": 8.5,
+  "chronic_load_28d": 23.5,
+  "distance_from_peak_pct": 1.46,
+  "hrv_7d_avg": 34,
+  "rhr_7d_avg": 52.4,
+  "sleep_hours_7d_avg": 7.93,
+  "weight_kg_7d_avg": 100.68,
+  "last_session": {
+    "date": "2026-08-14",
+    "type": "Swim",
+    "duration_min": 13,
+    "training_load": 2
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-08-17",
+      "day": "Mon",
+      "time": "-",
+      "type": "Skipped (Run #28 rescheduled, not executed)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "3oc6jnsj6uhucasqfgpve052jg",
+      "status": "rest"
+    },
+    {
+      "date": "2026-08-18",
+      "day": "Tue",
+      "time": "-",
+      "type": "Sur site (e-bike commute)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "",
+      "status": "blocked"
+    },
+    {
+      "date": "2026-08-19",
+      "day": "Wed",
+      "time": "-",
+      "type": "Rest (post-heatwave ORANGE at preferred hours)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "9nuj1l8s5v63v0pffi45pl3ga4",
+      "status": "rest"
+    },
+    {
+      "date": "2026-08-20",
+      "day": "Thu",
+      "time": "-",
+      "type": "Sur site (e-bike commute)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "",
+      "status": "blocked"
+    },
+    {
+      "date": "2026-08-21",
+      "day": "Fri",
+      "time": "11:00",
+      "type": "Run #28 — 6.0 km easy plat (Bois de Vincennes)",
+      "duration_min": 45,
+      "target_load": 28,
+      "calendar_event_id": "3grkaf3vu8qeh6tn04bbe6tais",
+      "status": "planned"
+    },
+    {
+      "date": "2026-08-22",
+      "day": "Sat",
+      "time": "11:00",
+      "type": "Run #29 — 6.0 km easy plat (Bois de Vincennes)",
+      "duration_min": 45,
+      "target_load": 28,
+      "calendar_event_id": "3rrqtqq619mf8qv8mus9jn5bt4",
+      "status": "planned"
+    },
+    {
+      "date": "2026-08-23",
+      "day": "Sun",
+      "time": "-",
+      "type": "Rest (consolidate after back-to-back) + pesée Withings",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "",
+      "status": "rest"
+    }
+  ],
+  "no_train_days": [
+    "2026-08-18",
+    "2026-08-20"
+  ],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Vitamin D retest now 3+ weeks overdue (was due ~July 2026, last result 27 ng/mL insufficient, Dec 2025). No new lab data in 8 months. Schedule blood draw this week.",
+      "measurable": "Lab order placed and blood drawn by Aug 24; result logged within 2 weeks",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Execute both planned reentry runs (Fri 21 + Sat 22, 6.0 km easy plat each). ACWR has dropped to ~0.36 — two near-blank weeks have stalled the C4 block progression and put the W36 12 km Beaumonts objective under schedule pressure. 12 km total is deliberately conservative under the blank-week reentry cap.",
+      "measurable": "Both runs completed at >=5.5 km, HR avg <=145, no tissue complaints",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Monitor RHR + HRV through the reentry. RHR 7d avg 52.4 (5+ days >=52, vs 50 baseline). HRV shifted to UNBALANCED (weekly avg 34, down from 37). Training readiness recovered to 74 — encouraging. If post-run RHR spikes to >=55 or HRV drops below 30, scale Sat's run to 4 km or convert to walk.",
+      "measurable": "RHR 7d avg trending toward <=51 by end of W34; HRV weekly avg stable or improving",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "rhr_7d_avg",
+      "threshold": "Alert if RHR 7d avg stays >=53 bpm through W34, or any single day exceeds 56 bpm",
+      "reason": "5+ consecutive days >=52 (up from 50 baseline in late July). Currently 52.4 avg. Not clearly training-induced — may be post-travel/heat/sub-clinical."
+    },
+    {
+      "marker": "hrv_weekly_avg",
+      "threshold": "Flag if HRV weekly avg drops below 32 or stays UNBALANCED for 5+ consecutive days",
+      "reason": "Shifted from BALANCED (37) to UNBALANCED (34) over the last week. First sustained UNBALANCED status in recent data. Correlates with RHR elevation."
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Flag if it drops below 20 — would represent a >35% decline from the late-July peak of 30.6",
+      "reason": "Currently ~23.5, declining steadily. C4 block assumes a building base toward the 12 km objective."
+    },
+    {
+      "marker": "vo2max_cycling",
+      "threshold": "Confirm it diverges from the running VO2max value (42.9) on next data pull",
+      "reason": "Still showing identical 42.9 since Aug 11 — likely Garmin artifact"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/119"
+}
