@@ -1,0 +1,130 @@
+{
+  "as_of_date": "2026-05-07",
+  "bootstrap": false,
+  "situational_context": "Active rebuild, Week 1 of return-to-running protocol (first run May 3 after 182-day gap). Chronic load climbing from ultra-low base (17.8→23.46, 1.46% of 2023 peak). ACWR normalized at 1.055 after May 1 gravel spike. HRV stable (38 weekly avg), RHR improved significantly (53→49 bpm). Training readiness high (92). Weight trending down at safe rate (-2.1 kg over 18 days, 104.78 kg). Life-constrained by young baby (4 months) and 3x/week sur site ebike commuting, but training engagement clearly increasing with gravel ride and first comeback run logged. Nutrition: protein consistently below 150g target. No injuries or pain reported post-run.",
+  "acute_load_7d": 24.75,
+  "chronic_load_28d": 23.46,
+  "distance_from_peak_pct": 1.46,
+  "hrv_7d_avg": 38.14,
+  "rhr_7d_avg": 48.86,
+  "sleep_hours_7d_avg": 7.84,
+  "weight_kg_7d_avg": 104.78,
+  "last_session": {
+    "date": "2026-05-07",
+    "type": "EBikeRide",
+    "duration_min": 128,
+    "training_load": 16
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-05-07",
+      "day": "Jeudi",
+      "time": "-",
+      "type": "EBike commutes (sur site)",
+      "duration_min": 128,
+      "target_load": 16,
+      "calendar_event_id": "",
+      "status": "blocked"
+    },
+    {
+      "date": "2026-05-08",
+      "day": "Vendredi",
+      "time": "12:00",
+      "type": "Récupération active Z1-Z2 vélo",
+      "duration_min": 45,
+      "target_load": 12,
+      "calendar_event_id": "p9uduferkvv5c4rta89d7i4ekg",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-09",
+      "day": "Samedi",
+      "time": "12:00",
+      "type": "Retour running #2 OU Endurance vélo Z2",
+      "duration_min": 60,
+      "target_load": 10,
+      "calendar_event_id": "04qpo5crol1aun7n5c1gga9pm8",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-10",
+      "day": "Dimanche",
+      "time": "13:00",
+      "type": "Endurance vélo Z2",
+      "duration_min": 60,
+      "target_load": 15,
+      "calendar_event_id": "ai4f5u6ua325j9k2hpi5ol57k4",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-11",
+      "day": "Lundi",
+      "time": "-",
+      "type": "EBike commutes (sur site)",
+      "duration_min": 120,
+      "target_load": 16,
+      "calendar_event_id": "",
+      "status": "blocked"
+    },
+    {
+      "date": "2026-05-12",
+      "day": "Mardi",
+      "time": "-",
+      "type": "EBike commutes (sur site)",
+      "duration_min": 120,
+      "target_load": 16,
+      "calendar_event_id": "",
+      "status": "blocked"
+    },
+    {
+      "date": "2026-05-13",
+      "day": "Mercredi",
+      "time": "12:00",
+      "type": "Récupération active Z1-Z2 vélo",
+      "duration_min": 45,
+      "target_load": 12,
+      "calendar_event_id": "s3c1gsv2j2tntn4mah63art6kc",
+      "status": "planned"
+    }
+  ],
+  "no_train_days": ["2026-05-07", "2026-05-11", "2026-05-12"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Continue return-to-running protocol: execute Saturday's run #2 (20-25 min, Z1-Z2, soft surface, Bois de Vincennes) if zero pain from May 3 run. If any localized pain, swap to 45 min bike Z2.",
+      "measurable": "Complete 2nd return-to-running session by May 10 with 0 pain episodes lasting >24h post-run",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Increase daily protein to ≥140g. Current 7d avg is ~119g vs 150g target. Add high-protein breakfast (30g+) and post-training snack (20g+).",
+      "measurable": "Average daily protein ≥140g over next 7 days",
+      "evidence_class": "RCT"
+    },
+    {
+      "priority": "P2",
+      "text": "Maintain weight trajectory at -0.5 to -0.7 kg/week. Current rate is safe for tendon adaptation during running rebuild. Do not accelerate deficit beyond -1 kg/week.",
+      "measurable": "Weight ≤104.5 kg at next Withings scan (May 10), no single-week drop >1 kg",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "post_run_tissue_response",
+      "threshold": "Zero localized pain lasting >24h after Saturday's run #2",
+      "reason": "Return-to-running at 104.78 kg after 182-day gap. Tissue tolerance is the bottleneck per protocol."
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Target gradual increase toward 30+ over next 2 weeks",
+      "reason": "At 23.46 (1.46% of 2023 peak). Ebike commutes + structured sessions building base."
+    },
+    {
+      "marker": "rhr_7d_avg",
+      "threshold": "Should remain ≤52 bpm",
+      "reason": "RHR improved from 53 to 49 bpm, reflecting improving fitness. Reversal would indicate overtraining or illness."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/17"
+}
