@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-06-17",
+  "bootstrap": false,
+  "situational_context": "Running comeback Week 7 (45 days in, 10 structured runs completed). ACWR improving 1.35->1.32, still marginally above 1.3 upper bound but trajectory favorable — Run #9 high load (34) exits the acute window today, which should pull ACWR below 1.3 within 24h. HRV 7d avg recovered to 36.1 ms (from 35), though overnight HRV dipped to 31 (UNBALANCED) — likely heat-related transient given stable RHR 50 and good sleep 8.1h. Heatwave persists in Paris (31-36C through June 21), constraining outdoor sessions to mid-day with reduced HR targets. Weight stable at 102.6 kg (trend -1.2 kg over 3 weeks). E-bike commuting remains primary base activity. VO2max running steady at 40.6. Protein intake chronically below 150g target (~114g avg) — recovery risk during active rebuild. Thursday June 18 sur site: if gravel commute (suffer >25), Saturday Run #12 downgrades to 3 km or walk.",
+  "acute_load_7d": 22.3,
+  "chronic_load_28d": 16.9,
+  "distance_from_peak_pct": 1.05,
+  "hrv_7d_avg": 36.1,
+  "rhr_7d_avg": 50,
+  "sleep_hours_7d_avg": 7.61,
+  "weight_kg_7d_avg": 102.62,
+  "last_session": {
+    "date": "2026-06-16",
+    "type": "EBikeRide (commute x2, sur site)",
+    "duration_min": 124,
+    "training_load": 15
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-06-17", "day": "Wed", "time": "11:30", "type": "Run #11 — 4 km Z2 (canicule 31C)", "duration_min": 40, "target_load": 13, "calendar_event_id": "bq4h9cudqsm9duem8pk2jvev5o", "status": "planned"},
+    {"date": "2026-06-18", "day": "Thu", "time": "-", "type": "Sur site — ebike commute expected", "duration_min": 120, "target_load": 15, "calendar_event_id": "", "status": "blocked"},
+    {"date": "2026-06-19", "day": "Fri", "time": "-", "type": "Rest day", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"},
+    {"date": "2026-06-20", "day": "Sat", "time": "11:30", "type": "Run #12 — 4 km Z2 (canicule 33C)", "duration_min": 40, "target_load": 13, "calendar_event_id": "htge0trofvj84q6kd129bl3lm8", "status": "planned"},
+    {"date": "2026-06-21", "day": "Sun", "time": "11:30", "type": "Sortie velo ebike — 60 min Z1-Z2 (canicule 36C)", "duration_min": 60, "target_load": 11, "calendar_event_id": "u98g4brlhab37mo6g8pofpqht0", "status": "planned"},
+    {"date": "2026-06-22", "day": "Mon", "time": "-", "type": "Rest day", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"},
+    {"date": "2026-06-23", "day": "Tue", "time": "-", "type": "Sur site — ebike commute expected", "duration_min": 120, "target_load": 15, "calendar_event_id": "", "status": "blocked"}
+  ],
+  "no_train_days": ["2026-06-18", "2026-06-23"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "ACWR at 1.32 — continue load consolidation. Keep Run #11 and #12 at 4 km Z2 with heat-reduced HR cap (128 bpm max). No distance increases until ACWR drops below 1.2. Run #9 high load (34) exits the acute window today, naturally pulling ACWR below 1.3.",
+      "measurable": "ACWR below 1.2 by June 20; no run above 4 km until cleared",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Protein intake averaging 114g/day vs 150g target — a 24% shortfall impairs recovery and lean mass preservation during weight loss at 102 kg. Add 30-40g protein daily via post-workout shake or extra portion at lunch/dinner.",
+      "measurable": "7d protein average at or above 140g by June 24",
+      "evidence_class": "RCT"
+    },
+    {
+      "priority": "P2",
+      "text": "Heatwave protocol through June 21: all outdoor sessions before 12:30. Carry at least 750 mL water. If Thursday commute is gravel (Strava suffer >25), downgrade Saturday Run #12 to 3 km or 30 min walk. If body battery <35 or HRV <28 any morning, skip that day's session entirely.",
+      "measurable": "No heat-related session abort; HR stays at or below 128 bpm during runs",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "acwr",
+      "threshold": "Alert if ACWR rises back above 1.35",
+      "reason": "Currently 1.32 and improving; should drop below 1.3 within 24h as Run #9 load exits the acute window"
+    },
+    {
+      "marker": "hrv_overnight",
+      "threshold": "Alert if HRV overnight stays below 33 for 2 more consecutive days",
+      "reason": "Today 31 is a dip from recent 37-38 range; if heat-related should recover within 1-2 days"
+    },
+    {
+      "marker": "protein_intake",
+      "threshold": "Alert if 7d protein average stays below 130g",
+      "reason": "Chronic undershoot during active rebuild risks muscle loss during weight cut"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/58"
+}
