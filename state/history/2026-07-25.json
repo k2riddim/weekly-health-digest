@@ -1,0 +1,74 @@
+{
+  "as_of_date": "2026-07-25",
+  "bootstrap": false,
+  "situational_context": "Running comeback day 83 (20 runs since May 3). Run #20 today: breakthrough 10.5 km at Saint-Malo (longest comeback run, +31% over 8 km target, suffer 70, avg HR 145). Demonstrated tolerance now 10.5 km. Returning to Paris Jul 27. CRITICAL: 4th heatwave arriving Jul 28-31+ (35-45°C in Paris) — RED band, no outdoor running, post-heatwave modifier active ~10 days after. Sur site Jul 28 + Jul 30 (commute days). ACWR estimated elevated post-Run #20. Chronic load trending up. HRV stable at 38 ms (BALANCED) as of Jul 24. Weight trend not available (biometrics MCP unavailable). Vitamin D retest overdue (~July 2026 target). DATA LIMITATION: biometrics MCP unavailable this run — numeric metrics below are best-available estimates from Jul 24 calendar reference data; actual values may differ.",
+  "acute_load_7d": null,
+  "chronic_load_28d": null,
+  "distance_from_peak_pct": null,
+  "hrv_7d_avg": 38,
+  "rhr_7d_avg": 47.7,
+  "sleep_hours_7d_avg": null,
+  "weight_kg_7d_avg": null,
+  "last_session": {
+    "date": "2026-07-25",
+    "type": "Run",
+    "duration_min": 73,
+    "training_load": null,
+    "strava_id": "19456069218",
+    "distance_km": 10.5,
+    "avg_hr": 145,
+    "max_hr": 165,
+    "suffer_score": 70,
+    "elevation_gain_m": 74,
+    "note": "Run #20 — longest comeback run. Saint-Malo côte. Training_load null: biometrics MCP unavailable, cannot resolve Garmin training load."
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-07-25", "day": "Sat", "time": "08:31", "type": "Run #20 — 10.5 km Z2-Z3 trail côtier Saint-Malo", "duration_min": 73, "target_load": null, "calendar_event_id": "qj5eujaj0kd3h0764ahbd5e8e4", "status": "completed"},
+    {"date": "2026-07-26", "day": "Sun", "time": "11:00", "type": "Récupération active — marche/natation", "duration_min": 60, "target_load": 10, "calendar_event_id": "c7238cfjoea7kk2t40ihs6mie0", "status": "planned"},
+    {"date": "2026-07-27", "day": "Mon", "time": null, "type": "Repos — retour Paris depuis Saint-Malo", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-07-28", "day": "Tue", "time": null, "type": "Sur site — commute e-bike/gravel (38 km)", "duration_min": null, "target_load": null, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-07-29", "day": "Wed", "time": "11:00", "type": "Run #21 — 6 km Z2 INDOOR treadmill (canicule RED)", "duration_min": 45, "target_load": 35, "calendar_event_id": "34pgbv6h2q9kk5nnvonrd14044", "status": "planned"},
+    {"date": "2026-07-30", "day": "Thu", "time": null, "type": "Sur site — commute e-bike/gravel (38 km)", "duration_min": null, "target_load": null, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-07-31", "day": "Fri", "time": null, "type": "Repos — pic canicule (45°C ressenti). Stretching/mobilité intérieur optionnel.", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"}
+  ],
+  "no_train_days": ["2026-07-28", "2026-07-30"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Monitor recovery from Run #20 (10.5 km, suffer 70 — biggest comeback run). Check for any localized pain >24h (Achilles, patellar, tibia). If clean, this confirms 10.5 km as the new demonstrated tolerance floor. If ANY tissue discomfort: skip Run #21, substitute with indoor walking or rest.",
+      "measurable": "No localized pain by Monday morning (Jul 27); next-morning HRV and RHR within normal range",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Heatwave RED protocol active Jul 28-31+. Zero outdoor running. Run #21 (Wed Jul 29) must be indoor treadmill with AC. Post-heatwave modifier (-3°C on all band thresholds) will be active ~10 days after heatwave ends (~Aug 8-13). Plan all sessions accordingly.",
+      "measurable": "No outdoor running sessions Jul 28-Aug 8. All runs indoor or at coolest hour post-modifier.",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Vitamin D retest is significantly overdue (target was July 2026, now end of July). Schedule blood panel immediately upon return to Paris. Critical for stress-fracture risk mitigation at 103 kg body weight during running comeback.",
+      "measurable": "Blood draw scheduled by week of Aug 3",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "post_run_20_tissue_feedback",
+      "threshold": "Any localized pain (Achilles, patellar, tibia, plantar, ITB) lasting >24h post-Run #20",
+      "reason": "Biggest run of comeback (10.5 km, suffer 70, +31% overshoot). At 103 kg, tissue tolerance is the bottleneck. Must verify clean absorption before progressing."
+    },
+    {
+      "marker": "acwr",
+      "threshold": "ACWR likely elevated post-Run #20 (suffer 70 on ~1.31 base). Verify stays ≤1.50 (comeback band).",
+      "reason": "Cannot compute exactly without biometrics MCP. Next run should verify ACWR before scheduling further progression."
+    },
+    {
+      "marker": "heatwave_recovery_markers",
+      "threshold": "RHR elevation >5 bpm or HRV drop >10% during/after heatwave (Jul 28+)",
+      "reason": "Heat stress compounds training fatigue. Monitor via Garmin when biometrics access restored."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/97"
+}
