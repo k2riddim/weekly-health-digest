@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-07-14",
+  "bootstrap": false,
+  "situational_context": "Running comeback well established: 15 runs since May 3 (72 days in). Currently on vacation in Saint-Malo (Jul 12-26). Run #15 completed yesterday (4.5 km, Saint-Malo, suffer 30). ACWR normalized to 1.04 (down from 1.35 on Jun 14) — well within safe zone. HRV weekly avg declining to 34 ms (from 37 early July) with UNBALANCED status on Jul 13 — warrants monitoring. Training readiness crashed to 50 (from 76-90 range), likely travel fatigue + residual Parisian heatwave strain. Body battery trending low (23-48 range). VO2max running improved to 41.6. Chronic load 28d recovering to 19.9 (from 17.5 on Jun 14). Weight at 103.7 kg (single reading Jun 21). Nutrition logging stopped after Jul 9. Vitamin D retest overdue (was due ~July 1). No new labs since Dec 2025.",
+  "acute_load_7d": 20.67,
+  "chronic_load_28d": 19.91,
+  "distance_from_peak_pct": 1.24,
+  "hrv_7d_avg": 34,
+  "rhr_7d_avg": 50,
+  "sleep_hours_7d_avg": 7.08,
+  "weight_kg_7d_avg": 103.67,
+  "last_session": {
+    "date": "2026-07-13",
+    "type": "Run",
+    "duration_min": 35,
+    "training_load": 30
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-07-14", "day": "Tue", "time": "—", "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": "keb9dbfomgvssokvq7sh56nn1c", "status": "rest"},
+    {"date": "2026-07-15", "day": "Wed", "time": "11:30", "type": "Run #16 — 5 km Z2", "duration_min": 45, "target_load": 25, "calendar_event_id": "44clvk29mq6f3g115s419dit44", "status": "planned"},
+    {"date": "2026-07-16", "day": "Thu", "time": "—", "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"},
+    {"date": "2026-07-17", "day": "Fri", "time": "—", "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"},
+    {"date": "2026-07-18", "day": "Sat", "time": "11:00", "type": "Run #17 — 7 km Z2 long run", "duration_min": 60, "target_load": 30, "calendar_event_id": "9fod0ffae5f59r072kj8qudsto", "status": "planned"},
+    {"date": "2026-07-19", "day": "Sun", "time": "11:00", "type": "Marche côtière active — 45 min", "duration_min": 45, "target_load": 10, "calendar_event_id": "hf0h1hnldp2lslfbnpsjosmsbg", "status": "planned"},
+    {"date": "2026-07-20", "day": "Mon", "time": "—", "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"}
+  ],
+  "no_train_days": [],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Training readiness crashed to 50 and HRV weekly avg at 34 ms (UNBALANCED). Rest today (14 juillet) and only resume running tomorrow if readiness recovers ≥60 by morning. Saint-Malo coastal environment should aid recovery from Parisian heatwave strain.",
+      "measurable": "Training readiness ≥60 before Run #16; HRV weekly avg ≥35 by end of week",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P1",
+      "text": "Vitamin D retest is now 2 weeks overdue (was due ~July 1). Schedule blood panel at first opportunity after vacation or find a lab in Saint-Malo/Rennes. Vitamin D at 27 ng/mL (Dec 2025) carries ~2× stress-fracture risk during running comeback at 103 kg.",
+      "measurable": "Blood panel ordered before end of July 2026",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P2",
+      "text": "Resume nutrition logging — tracking stopped after Jul 9 (5 days gap). Without intake data, TDEE recalibration (due Jul 19) will be incomplete. Weight appears to have drifted up to 103.7 kg (from 102.6 on Jun 14).",
+      "measurable": "≥4 days of logged intake before TDEE recalibration on Jul 19",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "training_readiness",
+      "threshold": "Alert if readiness stays below 60 for 2+ consecutive days",
+      "reason": "Crashed to 50 on Jul 13 — needs to recover before pushing running volume"
+    },
+    {
+      "marker": "hrv_7d_avg",
+      "threshold": "Alert if HRV weekly avg drops below 32 ms or fails to return toward 36+ within 7 days",
+      "reason": "Declining trend: 37 → 34 over the past week; UNBALANCED status appeared"
+    },
+    {
+      "marker": "weight_trend",
+      "threshold": "Weigh on Jul 19 (Pesée hebdo); alert if >104 kg",
+      "reason": "Last reading 103.67 kg (Jun 21) — possible upward drift, only 1 reading in 4 weeks"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/85"
+}
