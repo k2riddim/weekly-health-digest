@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-04-20",
+  "bootstrap": false,
+  "situational_context": "Early rebuild phase from prolonged detraining (chronic load 18.8, ~1.2% of 2023 peak). First structured session logged Apr 18 (Zwift Z2, load 15). Pattern shifting from commute-only to commute + structured training. Infant cohabitant continues to fragment sleep (78-min waking last night). Readiness consistently 'high' — autonomic system supports load increase. Two 'sur site' days this week (Tue/Thu) constrain training windows. Weight trending down slightly (106.9 → 105.9 over 3 days).",
+  "acute_load_7d": 18,
+  "chronic_load_28d": 18.78,
+  "distance_from_peak_pct": 1.17,
+  "hrv_7d_avg": 37,
+  "rhr_7d_avg": 53,
+  "sleep_hours_7d_avg": 7.22,
+  "weight_kg_7d_avg": 106.37,
+  "last_session": {
+    "date": "2026-04-18",
+    "type": "VirtualRide",
+    "duration_min": 33,
+    "training_load": 15
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-04-20", "day": "Lundi", "time": "20:00", "type": "VirtualRide", "duration_min": 35, "target_load": 15, "calendar_event_id": "6rbqg0bm6nhudprsd2gbfo4ckk", "status": "planned"},
+    {"date": "2026-04-21", "day": "Mardi", "time": null, "type": null, "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-04-22", "day": "Mercredi", "time": "07:00", "type": "Run", "duration_min": 25, "target_load": 10, "calendar_event_id": "cue6gq0gm1q5mrofkfqn3hmd1o", "status": "planned"},
+    {"date": "2026-04-23", "day": "Jeudi", "time": null, "type": null, "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-04-24", "day": "Vendredi", "time": null, "type": null, "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-04-25", "day": "Samedi", "time": "08:00", "type": "VirtualRide", "duration_min": 45, "target_load": 18, "calendar_event_id": "sbcckct0ckms6dut5rmdh1kssk", "status": "planned"},
+    {"date": "2026-04-26", "day": "Dimanche", "time": null, "type": null, "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"}
+  ],
+  "no_train_days": ["2026-04-21", "2026-04-23"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Execute tonight's Zwift Z2 session (35 min, HR 125-135). First back-to-back structured week is the critical habit trigger for rebuild.",
+      "measurable": "Session logged on Strava by end of day with training load >=12",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Prioritise sleep recovery tonight — last night's 5.95h was the week's lowest, driven by 78-min baby waking. Target lights-out by 22:00.",
+      "measurable": "Sleep hours >= 7.0 tonight (Garmin readiness tomorrow)",
+      "evidence_class": "RCT"
+    },
+    {
+      "priority": "P2",
+      "text": "Wednesday's run is the first since prolonged layoff. Keep pace conversational (HR < 130) and accept walk breaks if needed to stay in zone.",
+      "measurable": "Run completed with avg HR < 130 and no musculoskeletal complaints",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "hrv_7d_avg",
+      "threshold": "Sustaining > 35 ms confirms recovery capacity; drop below 32 would signal overreach or external stressor",
+      "reason": "Slight downtrend this week (38 → 37) — monitor for reversal post first structured week"
+    },
+    {
+      "marker": "sleep_hours_7d_avg",
+      "threshold": "Maintain >= 7.0h average; flag if 3+ nights < 6.5h",
+      "reason": "Sleep dropped from 7.55 → 7.22 due to cohabitant-driven fragmentation; training tolerance depends on recovery"
+    },
+    {
+      "marker": "rhr_7d_avg",
+      "threshold": "Stable 52-54 bpm; spike > 56 for 2+ days would indicate accumulated stress",
+      "reason": "RHR spiked to 56 on Apr 18 (night with 4 baby wakings) but recovered to 52 — isolated event"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/2"
+}
