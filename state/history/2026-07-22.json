@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-07-22",
+  "bootstrap": false,
+  "situational_context": "Running comeback Day 80 (18 runs since May 3). On vacation in Saint-Malo (Jul 12-27), running coastal trails. Longest run: 8.0 km (Run #16, Jul 15) — up from 4.9 km at last digest (Jun 14). Running frequency increased in Saint-Malo (every 2-3 days). VO2max running improved to 42 (from 40.6). HRV recovered to 40 ms 7d avg (from 35 in mid-June). RHR dropped to 47-48 bpm. Sleep excellent at 8.14h avg (vacation effect). ACWR at 1.49 — near comeback ceiling (1.50) but recovery markers clean. Weight data unavailable ~4 weeks (no scale in Saint-Malo). Vitamin D retest overdue. E-bike commuting paused during vacation. Returning to Paris Jul 27; sur site Jul 28.",
+  "acute_load_7d": 37.5,
+  "chronic_load_28d": 25.1,
+  "distance_from_peak_pct": 1.56,
+  "hrv_7d_avg": 40,
+  "rhr_7d_avg": 47.6,
+  "sleep_hours_7d_avg": 8.14,
+  "weight_kg_7d_avg": null,
+  "last_session": {
+    "date": "2026-07-20",
+    "type": "Run",
+    "duration_min": 36,
+    "training_load": 36
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-07-22", "day": "Wed", "time": "-", "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-07-23", "day": "Thu", "time": "11:00", "type": "Run #19 — 6 km Z2 récupération (Saint-Malo)", "duration_min": 50, "target_load": 25, "calendar_event_id": "lef1kis1arj3v0hlhkuq8bc1j8", "status": "planned"},
+    {"date": "2026-07-24", "day": "Fri", "time": "-", "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-07-25", "day": "Sat", "time": "11:00", "type": "Run #20 — 8 km Z2 long run (Saint-Malo)", "duration_min": 75, "target_load": 35, "calendar_event_id": "qj5eujaj0kd3h0764ahbd5e8e4", "status": "planned"},
+    {"date": "2026-07-26", "day": "Sun", "time": "11:00", "type": "Récupération active — marche/natation (Saint-Malo)", "duration_min": 60, "target_load": 10, "calendar_event_id": "c7238cfjoea7kk2t40ihs6mie0", "status": "planned"},
+    {"date": "2026-07-27", "day": "Mon", "time": "-", "type": "Travel (retour Paris)", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-07-28", "day": "Tue", "time": "-", "type": "Sur site (commute e-bike probable)", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "blocked"}
+  ],
+  "no_train_days": ["2026-07-28"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "ACWR at 1.49 — one tick from the comeback ceiling (1.50). Execute Run #19 (6 km recovery) tomorrow only if training readiness >= 40. If ACWR hasn't dropped by Thursday morning, defer Run #19 to Friday and shorten to 5 km.",
+      "measurable": "ACWR <= 1.45 by Jul 25 (before long run)",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Schedule Vitamin D retest — now overdue (was due ~Jul 2026, 8 weeks post-comeback). Dec 2025 level was 27 ng/mL (insufficient). Essential for bone health during running comeback at 102+ kg.",
+      "measurable": "Lab order placed this week; result before August",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P2",
+      "text": "Weigh in on Withings scale upon return to Paris (Jul 27). Last reading ~4 weeks ago at 102.6 kg. Weight trend critical for comeback load management.",
+      "measurable": "Withings reading logged by Jul 28",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "acwr",
+      "threshold": "Alert if ACWR exceeds 1.50 (comeback ceiling) for 2+ consecutive days",
+      "reason": "Currently at 1.49 — borderline. Two rest days should help, but Run #19 will add load."
+    },
+    {
+      "marker": "training_readiness",
+      "threshold": "Alert if training readiness drops below 30 on a planned session day",
+      "reason": "Volatile this week (26-79). Low readiness on session day -> defer the run."
+    },
+    {
+      "marker": "weight_trend",
+      "threshold": "Resume monitoring upon return to Paris — verify weight still <= 103 kg",
+      "reason": "4-week data gap during vacation. Body composition affects running load tolerance."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/94"
+}
