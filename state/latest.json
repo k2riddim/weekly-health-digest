@@ -1,7 +1,7 @@
 {
-  "as_of_date": "2026-08-14",
+  "as_of_date": "2026-09-05",
   "bootstrap": false,
-  "situational_context": "Running comeback well established and now governed by an active C4 training block (protocols/active_block.md, rev 2026-07-29, sessions #21-40) targeting a 12 km Beaumonts objective (~30/10). 27 runs logged since May 3, 2026 (104 days in); longest to date is 10.5 km (Run #20, Jul 25, Saint-Malo hills, avg HR 145) — well past the 8-10 km reference set at the previous refresh. The most recent two prescribed sessions came in short of the active block's table (Run #26 Aug 9: 5.89 km vs a 9.0 km SL target; Run #27 Aug 12: 4.23 km easy vs a 6.0 km target), and this past week has been light overall (Saint-Malo travel, one casual sea swim Aug 14) — Garmin now flags training_status as 'Detraining', chronic_load_28d down to ~24.7 from a late-July peak of ~30.6, acute_load_7d at 14.6, ACWR ~0.59 (well below the 0.8 floor). Body weight continues to trend down: 100.68 kg (Aug 11, latest reading), down from 102.6 kg mid-June. VO2max running improved to 42.9 (from 40.6 in June); VO2max cycling shows an unexplained jump to an identical 42.9 starting Aug 11 (from a stable 38.6) that looks like a Garmin sync artifact rather than a real gain, flagged for cross-check next refresh. HRV weekly avg flat at 35 (unchanged vs June, still below the 39-40 mid-May peak). Resting HR has drifted up: 7d avg ~52 bpm (vs 50 in June), with the last 3 days (Aug 12-14) elevated to 52-55 bpm, coinciding with travel — worth watching before resuming full block volume. Sleep improved to 7.98h 30-day avg (from 7.26h in June) - not the bottleneck. No new labs since Dec 2025; the Vitamin D retest that was due ~July 2026 has not landed as of this refresh (mid-August) and is now overdue. MEDICATION (standing, from protocols/health-profile.md): Benjamin is on Wegovy (semaglutide, GLP-1 receptor agonist) 0.25 mg weekly, weight-management indication — initiation decided at the 2026-08-04 teleconsultation with Dr Monnier, first injection Wednesday 2026-08-12, then every Wednesday; label titration steps every 4 weeks (next expected 2026-09-09 → 0.5 mg, to confirm). The Aug 12-14 RHR rise to 52-55 bpm starts on the injection day itself and, with the flat-to-falling HRV, is inside the expected GLP-1 class effect (+1-5 bpm RHR, lower HRV); they must be read against a post-initiation baseline, not the June pre-medication one, and RHR/HRV alone must not gate the running comeback. Appetite suppression is expected: low or absent nutrition logs are a possible under-fueling signal, not only a logging lapse, and the protein floor (T.glp1) applies daily. Weight is expected to fall; flag only loss faster than the T.glp1 band or a high lean-mass share.",
+  "situational_context": "Running comeback at 125 days (34 runs since May 3, 2026). Active C4 block (#21-40, rev 2026-07-29) in its final week — archive deadline Sep 13. The 12 km Beaumonts objective attempt (W36) did not happen; block significantly behind schedule with roughly half of prescribed sessions executed since W32 — driven by persistent HRV suppression (weekly avg 30, LOW for 10+ consecutive days, down from 35 mid-Aug) and body battery depletion (<50 consistently) — both of which sit inside the expected Wegovy class effect (see MEDICATION below), so they are not on their own evidence of overload or illness. Today's unplanned 7.28 km run (longest since Run #29, Aug 22) was well-tolerated (HR 138.7, suffer 30, well under the 145 flat cap), confirming tissue tolerance at 7+ km. RHR 53-55 bpm: +3.9 bpm vs the pre-treatment baseline (49.3 bpm, Jul 25-Aug 11) — inside the expected semaglutide shift; the rise started on the first injection day (Aug 12: 51→54). Weight slightly up to 101.15 kg (from 100.68, reversing the prior downward trend, but only 2 readings in 28d — inconclusive). VO2max running dipped to 42.2 (from 42.5); cycling still 42.9 (artifact persists). Training status improved from 'Detraining' to 'Maintaining' as ACWR normalized to 1.00 (from 0.59). On congés for Léonie's crèche adaptation through Sep 11. No new labs since Dec 2025; Vitamin D retest now 2+ months overdue. Nutrition not logged for 14 days (Aug 23-Sep 5): on Wegovy this is a possible genuine intake / protein gap, not only a logging lapse, and is the leading non-drug hypothesis for the HRV/body-battery deficit. MEDICATION (standing, from protocols/health-profile.md): Benjamin is on Wegovy (semaglutide, GLP-1 receptor agonist) 0.25 mg weekly — first injection Wednesday 2026-08-12, then every Wednesday (last 2026-09-02; day 24 of therapy). Label titration steps every 4 weeks: next expected 2026-09-09 → 0.5 mg, to confirm. Expected effects: RHR +1-5 bpm, lower HRV, suppressed appetite, weight loss; RHR/HRV are read against the post-initiation baseline, and RHR/HRV drift alone does not gate training. Post-injection side-effect window Thu-Sat.",
   "profile_ref": "protocols/health-profile.md",
   "medications": [
     {
@@ -13,77 +13,153 @@
       "dose_since": "2026-08-12",
       "since": "2026-08-12",
       "injection_weekday": "Wednesday",
-      "days_on": 2,
-      "days_on_current_dose": 2,
-      "last_injection": "2026-08-12",
+      "days_on": 24,
+      "days_on_current_dose": 24,
+      "last_injection": "2026-09-02",
       "next_expected_step": "2026-09-09 (0.5 mg per label titration, unconfirmed)",
       "prescriber": "Dr Delphine Monnier (Doctolib teleconsultation)",
       "next_review": "monthly (first follow-up ~2026-09-04)",
-      "interpretation_notes": "RHR +1-5 bpm and lower HRV expected (class effect) - use post-initiation baseline (reset at each dose step) and require a second signal before flagging; appetite suppressed - protein >= T.glp1.protein_floor_g_per_kg daily, zero-intake days may be real under-eating; weight loss expected - flag only rate > T.glp1.weight_loss_rate_flag_pct_per_week or lean-mass share > T.glp1.lean_mass_share_of_loss_flag_pct; delayed gastric emptying - last solid meal >= T.glp1.pre_run_meal_gap_hours_min h pre-run; hydration and heat caution; keep >= 1 strength session/week; injection Wednesdays - post-injection side-effect window Thu-Sat, place long run / harder work Sun-Tue"
+      "interpretation_notes": "RHR +1-5 bpm and lower HRV expected (class effect) - use post-initiation baseline (reset at each dose step) and require a second signal before flagging; appetite suppressed - protein >= T.glp1.protein_floor_g_per_kg daily, zero-intake days may be real under-eating; weight loss expected - flag only rate > T.glp1.weight_loss_rate_flag_pct_per_week or lean-mass share > T.glp1.lean_mass_share_of_loss_flag_pct; delayed gastric emptying - last solid meal >= T.glp1.pre_run_meal_gap_hours_min h pre-run; hydration and heat caution; keep >= 1 strength session/week; injection Wednesdays - side-effect window Thu-Sat, place long run / harder work Sun-Tue"
     }
   ],
-  "acute_load_7d": 14.6,
-  "chronic_load_28d": 24.74,
-  "distance_from_peak_pct": 1.54,
-  "hrv_7d_avg": 35,
-  "rhr_7d_avg": 51.7,
-  "sleep_hours_7d_avg": 7.69,
-  "weight_kg_7d_avg": 100.68,
+  "acute_load_7d": 18,
+  "chronic_load_28d": 18.06,
+  "distance_from_peak_pct": 1.12,
+  "hrv_7d_avg": 30,
+  "rhr_7d_avg": 53.86,
+  "sleep_hours_7d_avg": 7.4,
+  "weight_kg_7d_avg": 101.15,
   "last_session": {
-    "date": "2026-08-14",
-    "type": "Swim",
-    "duration_min": 13,
-    "training_load": 2
+    "date": "2026-09-05",
+    "type": "Run",
+    "duration_min": 53,
+    "training_load": 30
   },
-  "plan_7d_ahead": [],
+  "plan_7d_ahead": [
+    {
+      "date": "2026-09-05",
+      "day": "samedi",
+      "time": "07:29",
+      "type": "Run 7,28 km easy",
+      "duration_min": 53,
+      "target_load": 30,
+      "calendar_event_id": "m301sts98rliuk8v20aegrepr8",
+      "status": "done"
+    },
+    {
+      "date": "2026-09-06",
+      "day": "dimanche",
+      "time": "11:15",
+      "type": "Vélo easy 45 min Z1-Z2",
+      "duration_min": 45,
+      "target_load": 13,
+      "calendar_event_id": "1uh8esqs4q6nine281ugvk2vd0",
+      "status": "planned"
+    },
+    {
+      "date": "2026-09-07",
+      "day": "lundi",
+      "time": null,
+      "type": "Repos",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-09-08",
+      "day": "mardi",
+      "time": "12:00",
+      "type": "Vélo easy 40 min Z1-Z2",
+      "duration_min": 40,
+      "target_load": 12,
+      "calendar_event_id": "qkiom605glqlr30kaitg6u9h18",
+      "status": "planned"
+    },
+    {
+      "date": "2026-09-09",
+      "day": "mercredi",
+      "time": "12:00",
+      "type": "Run 6,5 km easy plat Z1-Z2",
+      "duration_min": 48,
+      "target_load": 22,
+      "calendar_event_id": "f6m393bds095qdkcj4275q4epk",
+      "status": "planned"
+    },
+    {
+      "date": "2026-09-10",
+      "day": "jeudi",
+      "time": null,
+      "type": "Repos",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-09-11",
+      "day": "vendredi",
+      "time": "12:00",
+      "type": "Run 8,0 km easy plat Z1-Z2",
+      "duration_min": 58,
+      "target_load": 28,
+      "calendar_event_id": "63kqmsp50jeugdl4dch31rh9ak",
+      "status": "planned"
+    }
+  ],
   "no_train_days": [],
   "recommendations": [
     {
       "priority": "P0",
-      "text": "Vitamin D retest was due ~July 2026 (8 weeks post-comeback) and has not been logged as of mid-August — no new lab data since Dec 2025 (27 ng/mL, insufficient). Schedule the blood panel now.",
-      "measurable": "Lab order placed and result logged within 2 weeks of this refresh",
+      "text": "Vitamin D retest is now 2+ months overdue (was due ~July 2026). Last level 27 ng/mL (insufficient, Dec 2025). The comeback is 125 days in with increasing impact load — stress fracture risk remains elevated at this level. Schedule the blood panel this week while on congés.",
+      "measurable": "Lab order placed and blood drawn by Sep 12",
       "evidence_class": "guideline"
     },
     {
       "priority": "P1",
-      "text": "Resting HR has drifted from a 50 bpm baseline (June) to 52-55 bpm over the last 3 days (Aug 12-14). This coincides with the GLP-1 agonist initiation window (protocols/health-profile.md): a +1-5 bpm RHR rise with lower HRV is the expected class effect, so it is NOT by itself evidence of overload or sub-clinical illness. Do not gate the active block on the pre-medication RHR; re-baseline after ~3 weeks on a stable dose (T.glp1) and hold volume only if a second signal (sleep, skin temp, symptoms, HR-at-pace drift) agrees. Separately, the last two prescribed sessions came in short of target - check appetite/energy (GLP-1 appetite suppression) before attributing that to fatigue.",
-      "measurable": "Post-initiation RHR/HRV baseline established after 21 days on a stable dose; next 2 sessions completed at target with no second recovery signal off; protein >= 1.6 g/kg logged on >= 5 of 7 days",
-      "evidence_class": "consensus"
+      "text": "HRV has been LOW for 10+ days (weekly avg 30, down from 35-36 pre-treatment) with RHR 53-55 bpm (+3.9 bpm vs the 49.3 bpm pre-treatment baseline) and body battery <50. Medication lens: Benjamin is on Wegovy 0.25 mg since Aug 12 (day 24); the RHR rise began on the first injection day and the HRV drop tracks it, both inside the expected semaglutide class effect (RCT). Body battery is derived from the same HRV/stress signal, so it is not an independent second marker. Independent markers are NOT off: sleep score 78, no illness or GI symptoms logged, today's 7.28 km at HR 138.7 shows no HR-at-pace drift. Verdict: expected class effect, not a recovery deficit from training — do not gate runs on the pre-treatment RHR/HRV values. The one genuine risk to act on is fuelling: 14 days without any logged intake on an appetite suppressant. Keep morning check to pain + subjective feel; re-baseline RHR/HRV after 21 days on a stable dose (clock restarts if the 0.5 mg step happens Sep 9).",
+      "measurable": "Protein >= 1.6 g/kg (>= 160 g) logged on >= 5 of the next 7 days; RHR 7d avg stays <= pre-treatment baseline + 5 bpm (<= 54.3) with no second signal off; no run skipped on RHR/HRV alone",
+      "evidence_class": "RCT (class effect) / consensus (fuelling)"
     },
     {
       "priority": "P2",
-      "text": "VO2max cycling jumped from a stable 38.6 to 42.9 starting Aug 11 - identical to the running estimate, which reads as a Garmin sync/algorithm artifact rather than a genuine fitness gain. Do not use it to inform cycling zones or plan decisions until it diverges from the running value on the next monthly check.",
-      "measurable": "VO2max cycling re-checked at next monthly refresh; flagged as data-quality note in the interim",
-      "evidence_class": "preliminary"
+      "text": "Archive the C4 active block (#21-40) by Sep 13 per protocol. The block is behind schedule — only ~17 of 20 prescribed sessions completed — but has served its purpose: tissue tolerance is demonstrated at 7+ km, VO2max running improved from 40.6 to 42.2 over the comeback. The next block should target the 12 km Beaumonts objective with a more realistic 2 runs/week cadence (reflecting actual execution rate) rather than the aspirational 3/week.",
+      "measurable": "active_block.md archived to protocols/archive/ by Sep 13; new block planned by Sep 15",
+      "evidence_class": "consensus"
     }
   ],
   "markers_to_watch": [
     {
+      "marker": "hrv_weekly_avg",
+      "threshold": "Read against the post-initiation baseline (Aug 12 onward), not the mid-Aug 35. Alert only if weekly avg drops below 27 AND a second independent signal is off (sleep score <70 two nights, skin temp, symptoms, HR-at-pace drift), or if it keeps falling 3+ weeks after the dose is stable",
+      "reason": "Lower HRV is an expected semaglutide class effect; the decline tracks the Aug 12 initiation. Persistent further decline on a stable dose, or a corroborating marker, would point to under-fueling or illness instead"
+    },
+    {
       "marker": "rhr_7d_avg",
-      "threshold": "Compare to the post-GLP-1-initiation baseline (T.glp1), not the June 50 bpm value. Alert only if RHR 7d avg rises > 5 bpm above the pre-medication baseline (i.e. > 55 bpm sustained) AND a second recovery signal is off (sleep score, skin temp, symptoms, HR-at-pace)",
-      "reason": "Up from a 50 bpm June baseline; the rise coincides with GLP-1 agonist initiation (expected +1-5 bpm class effect). Beyond that band, or with a corroborating signal, consider under-fueling (appetite suppression), dehydration (reduced thirst + GI losses) or illness"
+      "threshold": "Alert if RHR 7d avg exceeds pre-treatment baseline 49.3 + 5 bpm (> 54.3) for 5+ consecutive days, or any single day >= 58 bpm, AND a second recovery signal is off",
+      "reason": "Currently +3.9 bpm vs pre-treatment — inside the expected Wegovy shift (+1-5 bpm). Beyond that band, consider under-fueling (14 days no logged intake), dehydration (reduced thirst + heat) or illness; expect a further small step after each dose escalation"
     },
     {
-      "marker": "chronic_load_28d",
-      "threshold": "Flag if it keeps declining past 2 more weeks without a rebuild toward the late-July level (~30.6)",
-      "reason": "Currently 'Detraining' per Garmin status (24.7, down from ~30.6 in late July) - active block assumes a rebuilding base toward the 12 km objective"
+      "marker": "weight_trend",
+      "threshold": "Flag if 14-day loss exceeds 1.5 %/wk, if Withings muscle-mass share of any loss exceeds 35 %, or if weight is flat/up 4+ weeks after the 0.5 mg step; a slow drift down is expected",
+      "reason": "On Wegovy a downward trend is the goal, not a signal. 0.25 mg is a tolerability step with modest effect, so a flat 100.7-101.2 kg over 3 weeks (2 readings) is unremarkable; the athletic risk is lean-mass share and too-rapid loss"
     },
     {
-      "marker": "vo2max_cycling",
-      "threshold": "Confirm it diverges back from the running VO2max value (42.9) on the next data pull",
-      "reason": "Jumped to match the running figure exactly starting Aug 11, after being stable at 38.6 for months - likely artifact, not a real signal, until it independently moves"
+      "marker": "vo2max_running",
+      "threshold": "Flag if it drops below 42.0",
+      "reason": "Dipped from 42.5 to 42.2 this week — first decline since the comeback started. May reflect the reduced run volume/chronic load decline."
     },
     {
       "marker": "protein_g_per_kg / consecutive_zero_intake_days",
-      "threshold": "Flag if protein < T.glp1.protein_floor_g_per_kg (1.6 g/kg) on >= 3 of 7 logged days, or >= 2 consecutive zero-intake days (treat as possible under-eating on GLP-1, not only a logging gap)",
-      "reason": "GLP-1 appetite suppression on top of a 3-runs/week rebuild is the canonical low-energy-availability / lean-mass-loss setup; protein objective (160 g/day) is harder and more important on therapy"
+      "threshold": "Flag if protein < 1.6 g/kg on >= 3 of 7 logged days, or >= 2 consecutive zero-intake days (currently 14 — treat as possible under-eating on Wegovy, not only a logging gap)",
+      "reason": "Appetite suppression on top of a running rebuild is the canonical low-energy-availability / lean-mass-loss setup; this is the leading non-drug explanation for the HRV / body-battery deficit and is the highest-leverage lever available"
     },
     {
-      "marker": "weight_loss_rate_pct_per_week / lean_mass_share",
-      "threshold": "Flag if 14-day loss rate > T.glp1.weight_loss_rate_flag_pct_per_week (1.5 %/wk) or Withings muscle-mass share of the loss > T.glp1.lean_mass_share_of_loss_flag_pct (35 %); a downward trend inside the 0.5-1.0 %/wk band is expected and is not a signal",
-      "reason": "Weight loss is the therapeutic goal of the GLP-1 agonist; the athletic risk is the lean-mass share and too-rapid loss (gallstones, RED-S), not the loss itself"
+      "marker": "wegovy_dose_step",
+      "threshold": "2026-09-09 is the expected 0.5 mg step. Until Benjamin confirms, report 'expected, unconfirmed'; once confirmed, restart the 21-day RHR/HRV rebaseline clock and apply the 14-day escalation watch (GI, fuelling, hydration)",
+      "reason": "RHR offset and GI effects are dose-dependent; a baseline taken days after a step is not a baseline"
     }
   ],
   "investigations_opened": [],
-  "pr_url": ""
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/137"
 }
