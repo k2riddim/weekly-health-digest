@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-07-09",
+  "bootstrap": false,
+  "situational_context": "Running comeback day 67 (13 structured runs since May 3). HRV fully recovered to 37 ms weekly avg (BALANCED) after late-June dip to 33-34 (LOW/UNBALANCED post-Run #12). ACWR corrected to 1.10 from 1.35 peak — safely within comeback bounds. VO2max running improved to 41.5 (from 40.6 at last digest). Paris heatwave (34-37°C, Jul 6-14) forcing indoor/rest; last run was Run #14 on Jul 5 (6 km, well-tolerated). Traveling to Saint-Malo Jul 12-26 — coastal temps ~20°C will enable outdoor running resumption. Weight stable ~103.7 kg (single reading Jun 21, 18-day gap; pesée scheduled Jul 12). Vitamin D retest overdue (target July). E-bike commuting remains primary volume modality on sur site days (38 km round-trip, load 12-18/day).",
+  "acute_load_7d": 20.67,
+  "chronic_load_28d": 18.82,
+  "distance_from_peak_pct": 1.17,
+  "hrv_7d_avg": 37,
+  "rhr_7d_avg": 49.6,
+  "sleep_hours_7d_avg": 7.38,
+  "weight_kg_7d_avg": 103.67,
+  "last_session": {
+    "date": "2026-07-09",
+    "type": "EBikeRide (commute x2)",
+    "duration_min": 133,
+    "training_load": 18
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-07-09", "day": "Thu", "time": "—", "type": "Sur site (e-bike commute)", "duration_min": 133, "target_load": 18, "calendar_event_id": "", "status": "blocked"},
+    {"date": "2026-07-10", "day": "Fri", "time": "—", "type": "Repos canicule", "duration_min": 0, "target_load": 0, "calendar_event_id": "o9agul7skt4gq2uatr57vug4v4", "status": "rest"},
+    {"date": "2026-07-11", "day": "Sat", "time": "11:00", "type": "Home trainer indoor 40 min Z1-Z2", "duration_min": 40, "target_load": 11, "calendar_event_id": "6aos77mggr9mma4f9oq9irljb8", "status": "planned"},
+    {"date": "2026-07-12", "day": "Sun", "time": "11:15", "type": "Marche rapide / footing optionnel (avant train Saint-Malo)", "duration_min": 30, "target_load": 4, "calendar_event_id": "ged3o7i2cgd0uqcbk8ec2to4ac", "status": "planned"},
+    {"date": "2026-07-13", "day": "Mon", "time": "11:00", "type": "Run #15 — 6-7 km Z2 bord de mer (Saint-Malo)", "duration_min": 50, "target_load": 27, "calendar_event_id": "nqrefo9gkqmva7jm24ium4h79s", "status": "planned"},
+    {"date": "2026-07-14", "day": "Tue", "time": "11:00", "type": "Marche côtière / footing optionnel (Saint-Malo, 14 juillet)", "duration_min": 40, "target_load": 7, "calendar_event_id": "keb9dbfomgvssokvq7sh56nn1c", "status": "planned"},
+    {"date": "2026-07-15", "day": "Wed", "time": "—", "type": "Repos (Saint-Malo)", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"}
+  ],
+  "no_train_days": ["2026-07-09"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Vitamin D retest is overdue (was due July 2026, 8 weeks post-comeback start). Schedule blood panel before leaving for Saint-Malo or find a lab there. Last level 27 ng/mL (Dec 2025) — insufficient; target ≥40 ng/mL.",
+      "measurable": "Lab order placed and drawn before Jul 20",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Protein intake consistently below target: 7d avg 111g vs 150g target. At 103.7 kg during running comeback, adequate protein is critical for tendon adaptation and lean mass preservation. Front-load protein at breakfast/lunch; add Greek yogurt, eggs, poultry.",
+      "measurable": "≥140g protein/day avg over next 7 days",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Resume running at Saint-Malo (Run #15, Jul 13) after 8-day heat-forced pause. Anchor to demonstrated tolerance (6 km floor / 7.5 km ceiling). Start at 6 km Z2, extend toward 7 km if tissue feedback clean. Assess in first 2 km after the break.",
+      "measurable": "Run #15 completed at 6+ km, no pain lasting >24h post-run",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "tissue_feedback_post_run15",
+      "threshold": "Any localized pain (Achilles, patellar, tibia) lasting >24h after Run #15",
+      "reason": "8-day break + heatwave deconditioning; tissue tolerance may have regressed slightly at 103.7 kg"
+    },
+    {
+      "marker": "weight_trend",
+      "threshold": "18 days since last reading; pesée Jul 12 will break the gap",
+      "reason": "Cannot assess body composition trajectory without data; single reading 103.67 kg on Jun 21"
+    },
+    {
+      "marker": "hrv_stability",
+      "threshold": "Alert if HRV 7d avg drops below 34 or 3+ consecutive LOW/UNBALANCED days",
+      "reason": "Weekly avg recovered to 37 but individual scores range 33-39; monitor post-run response"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/80"
+}
