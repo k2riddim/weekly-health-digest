@@ -1,0 +1,68 @@
+{
+  "as_of_date": "2026-05-24",
+  "bootstrap": false,
+  "situational_context": "Running comeback week 4: 5 runs completed since gap broken 2026-05-03. Run #5 (May 23) consolidated the 5 km palier with clear adaptation — FC avg 136 bpm (vs 140 on Run #4), suffer 19 (vs 26). Tissue tolerance tracking well; no reported pain. Primary modality remains e-bike commuting (~38 km/day on sur site days). Chronic load declining (18.7, down from 22.3 on May 14) as older high-load cycling days fall off the 28-day window — structural, not effort-related. ACWR 0.89 — optimal band. HRV stable at 36 (BALANCED). RHR slightly elevated at 50 7d avg (was 49). VO2max running improved to 38.9 (from 38.3 at May 14). Weight steady at 103.8 kg (down 1.4 kg since late April). Sleep averaging 7.0h — adequate but with one poor night (5.95h May 24). Body battery consistently below 50 this week — may reflect cumulative fatigue from baby/sleep patterns. Upcoming: sur site Tue May 26 (commute adjusts Thu session), congés Thu-Fri, nutritionist RDV Thu 10:15. Vitamin D retest due ~July 2026.",
+  "acute_load_7d": 16.6,
+  "chronic_load_28d": 18.7,
+  "distance_from_peak_pct": 1.16,
+  "hrv_7d_avg": 36,
+  "rhr_7d_avg": 50,
+  "sleep_hours_7d_avg": 7.03,
+  "weight_kg_7d_avg": 103.82,
+  "last_session": {
+    "date": "2026-05-23",
+    "type": "Run",
+    "duration_min": 41,
+    "training_load": 19
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-05-24", "day": "Sunday", "time": "12:00", "type": "Vélo récupération Z1-Z2", "duration_min": 35, "target_load": 12, "calendar_event_id": "irsb93a8mprc38vvvrpvqqa2ko", "status": "planned"},
+    {"date": "2026-05-25", "day": "Monday", "time": null, "type": "Repos", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-05-26", "day": "Tuesday", "time": null, "type": "Commute sur site (e-bike/gravel)", "duration_min": 120, "target_load": 16, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-05-27", "day": "Wednesday", "time": null, "type": "Repos", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-05-28", "day": "Thursday", "time": "12:00", "type": "Run #6 — 5 km Z1-Z2", "duration_min": 45, "target_load": 18, "calendar_event_id": "3ua5vo8c0m59nglc8i37rm1vbg", "status": "planned"},
+    {"date": "2026-05-29", "day": "Friday", "time": "12:00", "type": "Vélo facile Z1-Z2", "duration_min": 30, "target_load": 11, "calendar_event_id": "nitu7moo6mq72kdfb1reeiikf4", "status": "planned"},
+    {"date": "2026-05-30", "day": "Saturday", "time": "12:00", "type": "Sortie vélo endurance Z2", "duration_min": 50, "target_load": 16, "calendar_event_id": "4adr1fgp3hj5japni12srqr2no", "status": "planned"},
+    {"date": "2026-05-31", "day": "Sunday", "time": "12:00", "type": "Run #7 — 5 km Z1-Z2", "duration_min": 45, "target_load": 18, "calendar_event_id": "usilp815jojoukd3jp2o1h324s", "status": "planned"}
+  ],
+  "no_train_days": ["2026-05-26"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Continue running comeback consolidation at 5 km. Execute Run #6 (Thu May 28) only if zero localized pain from Run #5. If May 26 commute was gravel with suffer >15, reduce Run #6 to 3 km.",
+      "measurable": "Run #6 completed at 5 km with FC avg ≤138 bpm and no post-run pain lasting >24h",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Address body battery deficit: no reading above 50 in the past 7 days. Prioritize sleep quality — target ≥7h tonight and through the week. Discuss recovery quality with nutritionist on Thursday.",
+      "measurable": "Body battery max ≥50 on at least 3 of next 7 days; sleep 7d avg ≥7.0h",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Prepare 30-day nutrition export for Lucie UGUEN appointment (Thu May 28, 10:15). Current protein averaging 133g/day vs 150g target at 104 kg. Discuss protein distribution per meal and fat moderation.",
+      "measurable": "Nutrition export ready by Mon May 26; protein intake ≥140g/day this week",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "rhr_7d_avg",
+      "threshold": "Alert if RHR rises >54 bpm (>5 bpm above 49 baseline) for 3+ consecutive days",
+      "reason": "Today's RHR was 52 bpm — single-day spike, likely post-run + poor sleep. Monitor for trend."
+    },
+    {
+      "marker": "body_battery_max",
+      "threshold": "At least 3 of 7 days with body battery max ≥50",
+      "reason": "No day above 50 this past week (max was 48). Persistent low values suggest cumulative fatigue."
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Target stabilization above 18, gradual climb toward 25-30 over next 4 weeks",
+      "reason": "Declined from 22.3 to 18.7 as old high-load days fell off. Needs to stabilize before further running progression."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/34"
+}
