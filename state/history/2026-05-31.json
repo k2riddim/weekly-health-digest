@@ -1,0 +1,140 @@
+{
+  "as_of_date": "2026-05-31",
+  "bootstrap": false,
+  "situational_context": "Running comeback week 5: 6 runs completed since May 3 (gap broken after 182 days). Run #6 today: 3.78 km (shortened from 5 km plan), HR avg 140, Z2 — well-executed but consolidation at 5 km still incomplete (Runs #4-5 at 5 km, #6 cut short). VO2max running improved to 39.4 (from 38.9). Primary modality remains e-bike commuting (~38 km/day), but volume reduced over past 10 days due to congés (May 29) and canicule (May 30), causing chronic load to drop from 22.3 to 15.7 (detraining territory). ACWR 0.78 — just below the 0.80 floor. Two sur site days upcoming (June 4-5) will restore commuting volume. HRV stable BALANCED (36 weekly avg), RHR improved to 48.6 bpm. Weight declining steadily: 102.97 kg (vs 104.1 on May 14), -1.81 kg over 28 days. Sleep adequate at 7.55h 7d avg. No new labs since Dec 2025. Vitamin D retest due ~July 2026.",
+  "acute_load_7d": 12.25,
+  "chronic_load_28d": 15.71,
+  "distance_from_peak_pct": 0.98,
+  "hrv_7d_avg": 36,
+  "rhr_7d_avg": 48.6,
+  "sleep_hours_7d_avg": 7.55,
+  "weight_kg_7d_avg": 102.97,
+  "last_session": {
+    "date": "2026-05-31",
+    "type": "Run",
+    "duration_min": 30,
+    "training_load": 19
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-05-31",
+      "day": "Sun",
+      "time": "12:00",
+      "type": "Run #6 — 3.78 km Z2",
+      "duration_min": 30,
+      "target_load": 19,
+      "calendar_event_id": "usilp815jojoukd3jp2o1h324s",
+      "status": "executed"
+    },
+    {
+      "date": "2026-06-01",
+      "day": "Mon",
+      "time": null,
+      "type": "Rest",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-06-02",
+      "day": "Tue",
+      "time": null,
+      "type": "Rest",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-06-03",
+      "day": "Wed",
+      "time": "12:00",
+      "type": "Run #7 — 5 km Z1-Z2 (consolidation comeback)",
+      "duration_min": 45,
+      "target_load": 19,
+      "calendar_event_id": "tkg8tsgthe416kafhsdvl73lg4",
+      "status": "planned"
+    },
+    {
+      "date": "2026-06-04",
+      "day": "Thu",
+      "time": null,
+      "type": "Sur site — commute ebike/gravel",
+      "duration_min": 120,
+      "target_load": 14,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-06-05",
+      "day": "Fri",
+      "time": null,
+      "type": "Sur site — commute ebike/gravel",
+      "duration_min": 120,
+      "target_load": 14,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-06-06",
+      "day": "Sat",
+      "time": "11:00",
+      "type": "Sortie gravel endurance Z2 — 50 min",
+      "duration_min": 50,
+      "target_load": 17,
+      "calendar_event_id": "4nbgbluuctq748tei69h8qqj2g",
+      "status": "planned"
+    },
+    {
+      "date": "2026-06-07",
+      "day": "Sun",
+      "time": "11:30",
+      "type": "Run #8 — 5 km Z1-Z2 (consolidation comeback)",
+      "duration_min": 45,
+      "target_load": 19,
+      "calendar_event_id": "mv6pqpgi9hmah19pad4kjm3v3s",
+      "status": "planned"
+    }
+  ],
+  "no_train_days": ["2026-06-04", "2026-06-05"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Continue 5 km consolidation: Run #7 (Wed June 3) and Run #8 (Sun June 7) at 5 km Z1-Z2. Run #6 was cut short at 3.78 km — need 3 consecutive full 5 km runs before increasing distance. Maintain ≥48h between runs.",
+      "measurable": "Run #7 and #8 completed at 5 km, no post-run pain lasting >24h",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Restore commuting volume to arrest chronic load decline (-30% in 17 days). The two sur site days (June 4-5) will naturally restore load. Continue ebike commuting on all office days. If taking gravel on sur site days (suffer >15), scale back the Saturday gravel ride accordingly.",
+      "measurable": "Chronic load stabilizes above 15.5 by June 7",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Maintain eccentric calf raises 3×/week and daily Vitamin D supplementation. Weight trajectory excellent at -1.81 kg/28d (102.97 kg). Protein intake averaging 130g/day vs 150g target — prioritize protein at lunch.",
+      "measurable": "≥3 calf-raise sessions; protein ≥140g/day avg; weight ≤103 kg at next weigh-in",
+      "evidence_class": "RCT"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Alert if continues declining below 14",
+      "reason": "Dropped from 22.3 to 15.7 in 17 days; at 0.98% of historical peak. Commuting resumption should arrest the decline."
+    },
+    {
+      "marker": "rhr_7d_avg",
+      "threshold": "Alert if rises >5 bpm above 48.6 bpm for 3+ consecutive days",
+      "reason": "RHR has improved to 48.6; elevation would indicate overload during comeback"
+    },
+    {
+      "marker": "post_run_pain",
+      "threshold": "Any localized joint/tendon pain lasting >24h after a run triggers skip of next run",
+      "reason": "At 102.97 kg body weight, tissue tolerance remains the bottleneck"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/40"
+}
