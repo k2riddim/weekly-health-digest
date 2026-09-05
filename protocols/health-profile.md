@@ -20,7 +20,7 @@ relevant, into `protocols/thresholds.yaml > glp1`.
 |---|---|---|
 | Class | GLP-1 receptor agonist ("analogue du GLP-1"), weight-management indication | Teleconsultation transcript 2026-08-04 (ARIA `meeting:20260804-141724-184fc4`) — high |
 | Molecule / brand | **Semaglutide — Wegovy** (weekly pen) | Benjamin, 2026-09-05 — high |
-| Current dose | **0.25 mg weekly** (starter step), doses taken 12/08, 19/08, 26/08, 02/09 — 4 of the 4 label weeks at this step completed | Benjamin, 2026-09-05 — high |
+| Current dose | **0.25 mg weekly** (starter step), doses taken 12/08, 19/08, 26/08, 02/09 — 4 of the 4 label weeks at this step completed; **no escalation yet as of 2026-09-05** (confirmed by Benjamin) | Benjamin, 2026-09-05 — high |
 | Expected escalation | Wegovy label titration is 0.25 → 0.5 → 1.0 → 1.7 → 2.4 mg with 4 weeks per step, so **2026-09-09 is the expected 0.5 mg step**, then ~07/10 (1.0), ~04/11 (1.7), ~02/12 (2.4) if the prescriber follows the label. Each confirmed step restarts the RHR/HRV rebaseline clock and opens a `T.glp1.dose_escalation_watch_days` window (GI effects and RHR offset are dose-dependent). **Confirm each step with Benjamin; never assume it happened.** | SmPC + consult ("chaque mois on réévalue … même dosage ou on ajuste") — medium for dates |
 | Injection day | **Wednesday** (weekly). Post-injection side-effect window = Thu–Sat (`T.glp1.post_injection_side_effect_window_days`); schedule the long run and any harder work Sun–Tue. Logging each injection in `oh_supplement_logs` (`GLP-1 injection`) is still useful to capture dose changes | Benjamin, 2026-09-05 — high |
 | Prescriber | Dr Delphine Monnier (téléconsultation Doctolib) | transcript — high |
