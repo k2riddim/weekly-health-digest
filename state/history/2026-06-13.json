@@ -1,0 +1,135 @@
+{
+  "as_of_date": "2026-06-13",
+  "bootstrap": false,
+  "situational_context": "Running comeback week 7: 9 runs completed since gap-break (May 3). Distance progressed to 5.8 km but ACWR spiked to 1.36 on Jun 10 (above 1.3 cap) — now in consolidation phase. Three rest days (Jun 11-13) are allowing ACWR self-correction. HRV mostly LOW/UNBALANCED past week but statistically within normal range (7d avg 35 vs 90d baseline 36 +/- 3). RHR improved to 49.4 (below 90d baseline of 51). VO2max running jumped to 40.4 (from 38.3 at last state, +2.1). Weight continues downtrend: 102.62 kg (from 104.10). Primary modality remains e-bike commuting on sur-site days. Heatwave building mid-next-week (32-37C). Young baby (Leonie, 5 months) — missed sessions expected. Comeback protocol active: consolidate at 4.5 km before progressing distance. No new labs since Dec 2025. Vitamin D retest due ~July 2026.",
+  "acute_load_7d": 23.75,
+  "chronic_load_28d": 17.41,
+  "distance_from_peak_pct": 1.08,
+  "hrv_7d_avg": 35,
+  "rhr_7d_avg": 49,
+  "sleep_hours_7d_avg": 7.45,
+  "weight_kg_7d_avg": 102.62,
+  "last_session": {
+    "date": "2026-06-10",
+    "type": "Run",
+    "duration_min": 45,
+    "training_load": 34
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-06-13",
+      "day": "Samedi",
+      "time": "11:30",
+      "type": "EBikeRide",
+      "duration_min": 45,
+      "target_load": 12,
+      "calendar_event_id": "k8a6ga7t9qa7knkq6d93jo4bfk",
+      "status": "planned"
+    },
+    {
+      "date": "2026-06-14",
+      "day": "Dimanche",
+      "time": "11:30",
+      "type": "Run",
+      "duration_min": 40,
+      "target_load": 15,
+      "calendar_event_id": "rjjjug0p9j0gv3et996jsn3r3g",
+      "status": "planned"
+    },
+    {
+      "date": "2026-06-15",
+      "day": "Lundi",
+      "time": null,
+      "type": "Rest",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-06-16",
+      "day": "Mardi",
+      "time": null,
+      "type": "EBikeRide (commute sur site)",
+      "duration_min": 120,
+      "target_load": 18,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-06-17",
+      "day": "Mercredi",
+      "time": "11:30",
+      "type": "Run",
+      "duration_min": 40,
+      "target_load": 16,
+      "calendar_event_id": "bq4h9cudqsm9duem8pk2jvev5o",
+      "status": "planned"
+    },
+    {
+      "date": "2026-06-18",
+      "day": "Jeudi",
+      "time": null,
+      "type": "EBikeRide (commute sur site)",
+      "duration_min": 120,
+      "target_load": 18,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-06-19",
+      "day": "Vendredi",
+      "time": null,
+      "type": "Rest",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    }
+  ],
+  "no_train_days": ["2026-06-16", "2026-06-18"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Consolidate running distance at 4.5 km for Run #10 and #11. Do not progress distance until ACWR drops below 1.2 with stable chronic base. Run #9 suffer score (34) and max HR (173) signal that the 5.8 km distance at current fitness is pushing too hard.",
+      "measurable": "Run #10 and #11 completed at 4.5 km with avg HR <=135 and suffer <=20",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Increase protein intake to meet 150g/day target. Current 7-day average is 128g (85% adherence). At 103 kg body weight during a comeback with concurrent mild deficit, protein is critical for tendon remodeling and muscle preservation. Target 1.4-1.6 g/kg/day.",
+      "measurable": "7-day protein average >=140g by Jun 20",
+      "evidence_class": "RCT"
+    },
+    {
+      "priority": "P2",
+      "text": "Manage heat exposure for mid-week training. With 32-37C forecast, shift outdoor sessions to earliest feasible slot (11:30), carry water, use shaded routes (Vincennes sous-bois). Cancel if temperature exceeds 35C at training time. Dehydration compounds tendon injury risk.",
+      "measurable": "No heat-related HR drift >15 bpm above target in sessions this week",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "acwr",
+      "threshold": "Alert if ACWR remains above 1.3 for 5+ consecutive days after resuming training",
+      "reason": "ACWR spiked to 1.36 on Jun 10. Consolidation phase must bring it below 1.2 before progressing distance."
+    },
+    {
+      "marker": "run_suffer_score",
+      "threshold": "Alert if Run #10 or #11 suffer score exceeds 25",
+      "reason": "Run #9 suffer of 34 was excessive for Z2 consolidation. Heat will compound this. Target <=20."
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Target gradual increase toward 25-30 over next 4 weeks",
+      "reason": "Chronic load declined from 22.3 to 17.41 in 30 days. Needs to stabilize and build. Currently at 1.08% of historical peak."
+    },
+    {
+      "marker": "protein_intake",
+      "threshold": "7d average below 130g for 2+ consecutive weeks",
+      "reason": "Protein at 128g/day (85% of 150g target) is insufficient for tendon remodeling during running comeback at 103 kg."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/53"
+}
