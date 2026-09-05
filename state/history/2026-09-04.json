@@ -1,0 +1,72 @@
+{
+  "as_of_date": "2026-09-04",
+  "bootstrap": false,
+  "situational_context": "Running comeback month 5 (124 days since May 3). C4 block #21-40 active but severely behind — only ~7 of the 14+ prescribed block runs since W31 executed, most below target distance (longest: Run #29, 7.04 km Aug 22 vs 10 km SL target). The 12 km Beaumonts objective (W36, due this week) is deferred; recovery markers do not support an attempt. On leave (Congés — adaptation crèche Léonie, Sep 1-11), which frees training time but is the dominant stressor: HRV dropped from 35 to 30 (LOW status 10+ consecutive days), RHR elevated 53-55 bpm (baseline 48-50), body battery persistently <50. Recovery deficit is NOT from overtraining (acute load ~8, ACWR ~0.48) but from psychosocial load. Weight 101.15 kg (Sep 2), slightly up from 100.68 (Aug 12); downward trajectory stalled. No running since Aug 30 (5 days), no activity since Aug 31 (4 days). Nutrition logging fully stopped. Vitamin D retest >2 months overdue. VO2max running dipped to 42.5 (from 42.9). Block end date (Sep 13) approaching — extension or new block needed.",
+  "acute_load_7d": 8,
+  "chronic_load_28d": 16.5,
+  "distance_from_peak_pct": 1.03,
+  "hrv_7d_avg": 30,
+  "rhr_7d_avg": 53.4,
+  "sleep_hours_7d_avg": 7.36,
+  "weight_kg_7d_avg": 101.15,
+  "last_session": {
+    "date": "2026-08-31",
+    "type": "EBikeRide (commute x2)",
+    "duration_min": 65,
+    "training_load": 16
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-09-04", "day": "Vendredi", "time": null, "type": "REST", "duration_min": 0, "target_load": 0, "calendar_event_id": "kcpnjft731u8299dpnat9kmonc", "status": "rest"},
+    {"date": "2026-09-05", "day": "Samedi", "time": "11:00", "type": "Vélo easy Z1-Z2 — 45 min", "duration_min": 45, "target_load": 13, "calendar_event_id": "1bpnufqmv4642g0sekbjqhnh18", "status": "planned"},
+    {"date": "2026-09-06", "day": "Dimanche", "time": "11:15", "type": "Run easy plat — 4.5 km (contingent)", "duration_min": 35, "target_load": 15, "calendar_event_id": "1uh8esqs4q6nine281ugvk2vd0", "status": "planned"},
+    {"date": "2026-09-07", "day": "Lundi", "time": null, "type": "REST", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-09-08", "day": "Mardi", "time": "12:00", "type": "Vélo easy Z1-Z2 — 40 min", "duration_min": 40, "target_load": 12, "calendar_event_id": "qkiom605glqlr30kaitg6u9h18", "status": "planned"},
+    {"date": "2026-09-09", "day": "Mercredi", "time": "12:00", "type": "Run easy plat — 5.0 km (contingent)", "duration_min": 38, "target_load": 18, "calendar_event_id": "f6m393bds095qdkcj4275q4epk", "status": "planned"},
+    {"date": "2026-09-10", "day": "Jeudi", "time": null, "type": "REST", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"}
+  ],
+  "no_train_days": [],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Address the recovery deficit before resuming regular volume. HRV (30, LOW 10+ days), RHR (53-55, +3-5 vs baseline), body battery (<50 consistently) all point to accumulated non-training stress from crèche adaptation. All sessions this week contingent on morning readiness (Training Readiness ≥60, RHR ≤54). Do not force sessions to avoid 'losing fitness' — chronic base is low enough that a few more rest days cost nothing measurable.",
+      "measurable": "HRV weekly avg returns to ≥33 and body battery ≥50 on at least 3 of 7 days",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P1",
+      "text": "Vitamin D retest is now >2 months overdue (due July 2026, last result Dec 2025: 27 ng/mL insufficient). Stress fracture risk at current BW remains elevated below 40 ng/mL. On leave this week — schedule the blood draw now.",
+      "measurable": "Blood draw completed by Sep 10; result logged within 2 weeks",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P2",
+      "text": "C4 block #21-40 reaches end date Sep 13 with 12 km Beaumonts objective unmet. Draft a transition plan or new micro-block before archival. Objective remains achievable (longest run 7.04 km, no tissue complaints) but timeline needs resetting to late October once recovery markers stabilize.",
+      "measurable": "New block or transition plan drafted by Sep 14; current block archived per protocol",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "hrv_7d_avg",
+      "threshold": "Watch for return toward 33-35; alert if drops below 28 or stays at 30 for another full week",
+      "reason": "Dropped from 35 to 30 (14%) over 3 weeks; LOW 10+ consecutive days; paired with elevated RHR and low body battery — recovery deficit driven by psychosocial stress"
+    },
+    {
+      "marker": "rhr_7d_avg",
+      "threshold": "Alert if 7d avg reaches 56 or any single day exceeds 58",
+      "reason": "Currently 53.4 (baseline 48-50); elevated >7 days; continued upward drift alongside suppressed HRV may indicate subclinical illness"
+    },
+    {
+      "marker": "weight_kg",
+      "threshold": "Flag if next reading exceeds 102 kg or no reading in >14 days",
+      "reason": "101.15 kg (Sep 2), up from 100.68 (Aug 12); downward trend stalled; pesée scheduled Sep 6"
+    },
+    {
+      "marker": "body_battery",
+      "threshold": "Watch for return to ≥50 on at least 4 of 7 days",
+      "reason": "Has not exceeded 46 in last 7 days; persistent <50 suggests inadequate parasympathetic recharge"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/136"
+}
