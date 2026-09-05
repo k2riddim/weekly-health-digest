@@ -1,0 +1,135 @@
+{
+  "as_of_date": "2026-06-06",
+  "bootstrap": false,
+  "situational_context": "Running comeback week 5: 7 formal runs completed (plus 1 commute run). 5 km palier validated twice (Run #5 on May 23, Run #7 on June 3). HRV in 3-day transient decline (scores 28→31→33, UNBALANCED→LOW) — consistent with post-Run #7 recovery wave compounded by one poor sleep night (6.1h on June 5). RHR briefly spiked to 52 (June 4-5), now normalizing at 49. VO2max running improved 38.3→39.9. Chronic load declined to 15.53 (from 22.3 on May 14) as higher April cycling loads rolled off the 28d window — not a training regression, a base-rate correction. Weight trending down: 102.97 kg (from 104.1 on May 14). Training readiness LOW (36). Primary modality remains e-bike commuting on sur site days. Baby (Léonie, ~17 months) likely contributing to occasional sleep disruption. Current phase: final consolidation at 5 km before progression to 5.5-6 km. Gravel ride today reduced 50→40 min due to borderline HRV.",
+  "acute_load_7d": 17.5,
+  "chronic_load_28d": 15.53,
+  "distance_from_peak_pct": 0.97,
+  "hrv_7d_avg": 34,
+  "rhr_7d_avg": 50,
+  "sleep_hours_7d_avg": 7.33,
+  "weight_kg_7d_avg": 102.97,
+  "last_session": {
+    "date": "2026-06-05",
+    "type": "EBikeRide (commute ×2)",
+    "duration_min": 118,
+    "training_load": 16
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-06-06",
+      "day": "Saturday",
+      "time": "11:00",
+      "type": "GravelRide Z1-Z2",
+      "duration_min": 40,
+      "target_load": 13,
+      "calendar_event_id": "4nbgbluuctq748tei69h8qqj2g",
+      "status": "planned"
+    },
+    {
+      "date": "2026-06-07",
+      "day": "Sunday",
+      "time": "11:30",
+      "type": "Run #8 — 5 km Z1-Z2",
+      "duration_min": 45,
+      "target_load": 18,
+      "calendar_event_id": "mv6pqpgi9hmah19pad4kjm3v3s",
+      "status": "planned"
+    },
+    {
+      "date": "2026-06-08",
+      "day": "Monday",
+      "time": null,
+      "type": "Rest",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-06-09",
+      "day": "Tuesday",
+      "time": null,
+      "type": "Sur site — ebike commute only",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-06-10",
+      "day": "Wednesday",
+      "time": null,
+      "type": "Rest / optional walk",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-06-11",
+      "day": "Thursday",
+      "time": null,
+      "type": "Sur site — ebike commute only",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-06-12",
+      "day": "Friday",
+      "time": null,
+      "type": "Rest — recovery before weekend",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    }
+  ],
+  "no_train_days": ["2026-06-09", "2026-06-11"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Execute today's gravel at Z1-Z2 (not Z2) for 40 min max, then reassess HRV Sunday morning before Run #8. If HRV remains <30 Sunday, downgrade to 3 km easy jog or walk. The 3-day HRV dip is a recovery wave, not overtraining, but pushing through borderline readiness risks extending it.",
+      "measurable": "Gravel completed at suffer score ≤14; Run #8 decision made based on Sunday HRV reading",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Run #8 target: HR avg ≤137 bpm. Run #7 showed cardiac drift (FC 140 avg, max 161 vs Run #5's 136/153). If Run #8 also shows FC >140 at the same pace, this signals accumulated fatigue — extend the 5 km consolidation phase by 1-2 additional runs before progressing to 5.5 km.",
+      "measurable": "Run #8 average HR ≤137 bpm at ≤7:30/km pace",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Address protein under-target: 7-day avg protein ~126g vs 150g target. At 103 kg during a body recomposition phase with running comeback, adequate protein (1.4-1.6 g/kg = 144-165g) is critical for tendon adaptation and muscle preservation. Add one protein-rich snack daily.",
+      "measurable": "≥140g protein on ≥5 of 7 days this week",
+      "evidence_class": "RCT"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "hrv_7d_avg",
+      "threshold": "Alert if HRV 7d avg drops below 30 for 2+ consecutive days",
+      "reason": "Currently 34, with acute dip to 28-33 over last 3 days. Recovery expected within 48-72h. Persistent drop below 30 would indicate cumulative overload."
+    },
+    {
+      "marker": "rhr_7d_avg",
+      "threshold": "Alert if RHR rises >5 bpm above 49 bpm baseline for 3+ consecutive days",
+      "reason": "Brief spike to 52 (June 4-5) resolved to 49 (June 6). Stable for now."
+    },
+    {
+      "marker": "run_cardiac_drift",
+      "threshold": "FC avg >140 bpm on Run #8 at same pace as Run #5",
+      "reason": "Run #7 showed cardiac drift vs Run #5 (140 vs 136 avg). If Run #8 confirms this pattern, fatigue accumulation is limiting performance."
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Monitor for continued decline below 14",
+      "reason": "Dropped from 22.3 to 15.53 in 23 days as April cycling loads aged out. Should stabilize and begin climbing as running volume accumulates."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/46"
+}
