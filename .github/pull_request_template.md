@@ -14,6 +14,10 @@
 | Sleep 7d avg | | | |
 | Weight 7d avg | | | |
 
+## Standing context applied
+
+- Medications considered: …  (from `protocols/health-profile.md`; e.g. GLP-1 agonist, day N — RHR/HRV read against post-initiation baseline)
+
 ## Plan adherence (yesterday)
 
 - Planned: …

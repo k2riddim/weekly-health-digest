@@ -23,6 +23,7 @@ Given today's analysis, produce a full 7-day training plan (today → today+6) a
 - `existing_events` — list of Calendar events in the horizon that Claude created before (matched via `calendar_event_id`)
 - `recent_runs` — the completed runs from the last ~3 weeks (date, distance, duration, avg HR, any reported pain), used to anchor prescribed run length (see checklist).
 - `heat_forecast` — per-day feels-like temperature for the planning horizon (from Phase 1), used with `T.heat` and `protocols/heat.md`.
+- `PROFILE.medications` and `T.glp1` — from `protocols/health-profile.md` / `protocols/thresholds.yaml`. While a GLP-1 agonist is active the planner must: keep a strength stimulus in the window, add fuelling / hydration lines to every event, respect the post-injection window when known, and refuse any readiness gate expressed as a pre-medication RHR/HRV absolute.
 
 ## Mandatory reads when the return-to-running protocol is active
 
@@ -48,6 +49,7 @@ Before generating sessions, verify each constraint:
 - [ ] **Heat**: For each outdoor session, take the `heat_forecast` feels-like value at the planned start hour, apply the `T.heat` post-heatwave modifier if triggered, and classify per `protocols/heat.md`. **First lever is timing** (move to the coolest hour), then duration reduction, then indoor substitution or rest. In the Red band, no outdoor running — substitute indoor or rest. Do not encode heat as a blanket "−20% if >36°C"; that threshold is far too permissive for this athlete.
 - [ ] **Red flags**: If HRV/sleep/illness signals flagged in Phase 2–3, apply `deload_multiplier` to today's planned load
 - [ ] **Illness signals**: Rest + light aerobic only, no intensity
+- [ ] **GLP-1 lens (while `T.glp1.active`)**: (a) RHR/HRV drift inside `T.glp1.rhr_expected_shift_bpm_*` vs the post-initiation baseline, with no second signal, is **not** a red flag and does not trigger the deload multiplier or a "porte deload"; (b) ≥ `T.glp1.strength_sessions_per_week_min` resistance session per rolling week (lean-mass preservation — bodyweight / gym / "Renfo" counts); (c) every event description carries the fuelling line (last solid meal ≥ `T.glp1.pre_run_meal_gap_hours_min` h before; small, frequent carbs beyond `T.glp1.session_duration_min_requiring_fuel` min; explicit pre-hydration when heat band ≥ Yellow); (d) if `T.glp1.injection_weekday` is known, do not place the long run or any Z3+ work inside the `post_injection_side_effect_window_days` window — schedule easy work or rest there; (e) a session moved or softened for GI side effects is recorded as "déplacée — effet secondaire GI", never as a silent skip.
 - [ ] **Session count**: Between `min_sessions_per_week` and `max_sessions_per_week` across the 7-day window, adjusted for `no_train_days` (fewer available days → fewer sessions, not higher density)
 - [ ] **Recovery spacing**: ≥48h between hard (Z4/Z5) sessions; ≥24h between moderate (Z3) sessions and any intensity
 - [ ] **No training on `no_train_days`**
@@ -76,6 +78,7 @@ Each session in `plan_7d_ahead` must include:
 - **Target load contribution**: estimated load units
 - **Rationale**: why this session, in context of the week plan
 - **Tired-day fallback**: what to do instead if feeling flat (e.g., "Réduire à 30min Z1 marche")
+- **Fuelling / hydration line** (while `T.glp1.active`): e.g., "Dernier repas solide ≥ 3 h avant ; 500 ml d'eau + électrolytes avant le départ ; gel ou boisson glucidique toutes les 20–25 min au-delà de 75 min" — GI side-effect days: "séance déplacée, pas sautée"
 - **Calendar event id**: assigned after create/update
 - **Status**: `planned` | `blocked` | `rest`
 

@@ -71,3 +71,45 @@ c4_block:
   long_run_increment_km_max: 1.0
   no_racing_before: "2026-10-01"
   pain_rule: ">3/10 en course, altération de foulée, ou aggravation J+1 => séance sautée entièrement, pas raccourcie"
+
+# GLP-1 receptor agonist therapy (see protocols/health-profile.md and
+# .claude/skills/research-modules/glp1-endurance.md). Population-level
+# invariants for interpreting wearable / nutrition / body-composition data
+# while the therapy is active. Set `active: false` when therapy stops (and
+# update health-profile.md in the same commit).
+glp1:
+  active: true
+  molecule: "semaglutide"
+  brand: "Wegovy"
+  initiation_date: "2026-08-12"        # first injection (confirmed by Benjamin 2026-09-05); decision at the 2026-08-04 consult
+  injection_weekday: 2                 # 0=Mon … 6=Sun → Wednesday (confirmed by Benjamin 2026-09-05)
+  current_dose_mg: 0.25                # starter step; confirmed 2026-09-05 (doses 12/08, 19/08, 26/08, 02/09)
+  current_dose_since: "2026-08-12"
+  dose_history:
+    - {dose_mg: 0.25, from: "2026-08-12"}
+  # Wegovy SmPC titration: 0.25 → 0.5 → 1.0 → 1.7 → 2.4 mg, 4 weeks per step. The
+  # prescriber reassesses monthly and may hold a step. Update current_dose_mg /
+  # dose_history when Benjamin confirms a change; the rebaseline clock
+  # (rebaseline_after_days_on_stable_dose) restarts at every step.
+  label_titration_mg: [0.25, 0.5, 1.0, 1.7, 2.4]
+  label_step_interval_weeks: 4
+  next_expected_step_date: "2026-09-09" # 0.5 mg if the label schedule is followed — CONFIRM with Benjamin
+  rhr_expected_shift_bpm_min: 1        # class effect on resting HR vs pre-treatment baseline (RCT)
+  rhr_expected_shift_bpm_max: 5
+  rebaseline_after_days_on_stable_dose: 21   # after this many days on a stable dose, the post-initiation window is the RHR/HRV reference
+  split_personal_baseline_at_initiation: true # never pool pre- and post-initiation days in the 90-day baseline
+  require_second_signal_for_rhr_hrv_flag: true # RHR/HRV drift alone is not a red flag while active
+  post_injection_side_effect_window_days: 3  # highest GI / fatigue risk in the days after each injection
+  dose_escalation_watch_days: 14            # extra caution window after any dose increase
+  weight_loss_rate_expected_pct_per_week_min: 0.5
+  weight_loss_rate_expected_pct_per_week_max: 1.0
+  weight_loss_rate_flag_pct_per_week: 1.5   # faster than this => lean-mass / energy-availability / gallstone warning
+  lean_mass_share_of_loss_flag_pct: 35      # Withings muscle-mass share of a 14d weight change above this => flag
+  protein_floor_g_per_kg: 1.6               # per kg current body weight, every day
+  protein_target_g_per_kg: 2.0              # target on training days
+  energy_availability_floor_kcal_per_kg_ffm: 30  # intake - exercise expenditure, per kg fat-free mass (IOC RED-S)
+  intake_gap_treat_as_real_after_days: 2    # >= N consecutive zero-intake days on GLP-1 => treat as possible under-eating, not just a logging gap
+  hydration_target_ml_per_kg: 35            # baseline daily fluid, before sweat replacement
+  pre_run_meal_gap_hours_min: 3             # delayed gastric emptying: last solid meal before a run
+  session_duration_min_requiring_fuel: 75   # fuel in-session beyond this on suppressed intake
+  strength_sessions_per_week_min: 1         # lean-mass preservation stimulus in the rolling plan

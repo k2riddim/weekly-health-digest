@@ -1,0 +1,72 @@
+{
+  "as_of_date": "2026-09-05",
+  "bootstrap": false,
+  "situational_context": "Running comeback at 125 days (34 runs since May 3, 2026). Active C4 block (#21-40, rev 2026-07-29) in its final week — archive deadline Sep 13. The 12 km Beaumonts objective attempt (W36) did not happen; block significantly behind schedule with roughly half of prescribed sessions executed since W32 — driven by persistent HRV suppression (weekly avg 30, LOW for 10+ consecutive days, down from 35 mid-Aug) and body battery depletion (<50 consistently). Today's unplanned 7.28 km run (longest since Run #29, Aug 22) was well-tolerated (HR 138.7, suffer 30, well under the 145 flat cap), confirming tissue tolerance at 7+ km. RHR elevated at 53-55 bpm (vs 48-50 baseline). Weight slightly up to 101.15 kg (from 100.68, reversing the prior downward trend, but only 2 readings in 28d — inconclusive). VO2max running dipped to 42.2 (from 42.5); cycling still 42.9 (artifact persists). Training status improved from 'Detraining' to 'Maintaining' as ACWR normalized to 1.00 (from 0.59). On congés for Léonie's crèche adaptation through Sep 11. No new labs since Dec 2025; Vitamin D retest now 2+ months overdue. Nutrition not logged.",
+  "acute_load_7d": 18,
+  "chronic_load_28d": 18.06,
+  "distance_from_peak_pct": 1.12,
+  "hrv_7d_avg": 30,
+  "rhr_7d_avg": 53.86,
+  "sleep_hours_7d_avg": 7.4,
+  "weight_kg_7d_avg": 101.15,
+  "last_session": {
+    "date": "2026-09-05",
+    "type": "Run",
+    "duration_min": 53,
+    "training_load": 30
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-09-05", "day": "samedi", "time": "07:29", "type": "Run 7,28 km easy", "duration_min": 53, "target_load": 30, "calendar_event_id": "m301sts98rliuk8v20aegrepr8", "status": "done"},
+    {"date": "2026-09-06", "day": "dimanche", "time": "11:15", "type": "Vélo easy 45 min Z1-Z2", "duration_min": 45, "target_load": 13, "calendar_event_id": "1uh8esqs4q6nine281ugvk2vd0", "status": "planned"},
+    {"date": "2026-09-07", "day": "lundi", "time": null, "type": "Repos", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-09-08", "day": "mardi", "time": "12:00", "type": "Vélo easy 40 min Z1-Z2", "duration_min": 40, "target_load": 12, "calendar_event_id": "qkiom605glqlr30kaitg6u9h18", "status": "planned"},
+    {"date": "2026-09-09", "day": "mercredi", "time": "12:00", "type": "Run 6,5 km easy plat Z1-Z2", "duration_min": 48, "target_load": 22, "calendar_event_id": "f6m393bds095qdkcj4275q4epk", "status": "planned"},
+    {"date": "2026-09-10", "day": "jeudi", "time": null, "type": "Repos", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-09-11", "day": "vendredi", "time": "12:00", "type": "Run 8,0 km easy plat Z1-Z2", "duration_min": 58, "target_load": 28, "calendar_event_id": "63kqmsp50jeugdl4dch31rh9ak", "status": "planned"}
+  ],
+  "no_train_days": [],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Vitamin D retest is now 2+ months overdue (was due ~July 2026). Last level 27 ng/mL (insufficient, Dec 2025). The comeback is 125 days in with increasing impact load — stress fracture risk remains elevated at this level. Schedule the blood panel this week while on congés.",
+      "measurable": "Lab order placed and blood drawn by Sep 12",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "HRV has been LOW for 10+ consecutive days (weekly avg 30, down from 35 mid-Aug, and 39-40 at mid-May peak). Paired with elevated RHR (53-55 vs 48-50 baseline) and depleted body battery (<50), this indicates a genuine recovery deficit — likely driven by a combination of crèche adaptation stress and residual training fatigue. Keep run sessions contingent on morning readiness markers (RHR ≤ 55, no pain) and maintain the bike/rest buffer days. Do not chase the block's missed volume.",
+      "measurable": "HRV weekly avg trending back toward ≥33 and body battery reaching ≥50 at least 3 of 7 days within the next 2 weeks",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Archive the C4 active block (#21-40) by Sep 13 per protocol. The block is behind schedule — only ~17 of 20 prescribed sessions completed — but has served its purpose: tissue tolerance is demonstrated at 7+ km, VO2max running improved from 40.6 to 42.2 over the comeback. The next block should target the 12 km Beaumonts objective with a more realistic 2 runs/week cadence (reflecting actual execution rate) rather than the aspirational 3/week.",
+      "measurable": "active_block.md archived to protocols/archive/ by Sep 13; new block planned by Sep 15",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "hrv_weekly_avg",
+      "threshold": "Alert if weekly avg stays ≤30 for 2 more weeks (by Sep 19) without improvement, or drops below 27",
+      "reason": "Persistent LOW status for 10+ days; down 14% from mid-Aug (35→30). A 42-year-old in a running comeback with vitamin D insufficiency needs autonomic recovery to support tissue adaptation."
+    },
+    {
+      "marker": "rhr_7d_avg",
+      "threshold": "Alert if RHR stays ≥54 bpm for 5+ consecutive days, or any single day ≥57 bpm",
+      "reason": "Elevated at 53-55 bpm vs 48-50 baseline for 2+ weeks. Paired with LOW HRV — both pointing to recovery deficit."
+    },
+    {
+      "marker": "weight_trend",
+      "threshold": "Flag if weight rises above 102 kg on next reading, or if no reading for >14 days",
+      "reason": "Reversed from 100.68 to 101.15 kg — only 2 data points in 28d. Need more readings to confirm if the prior downward trend has stalled or reversed."
+    },
+    {
+      "marker": "vo2max_running",
+      "threshold": "Flag if it drops below 42.0",
+      "reason": "Dipped from 42.5 to 42.2 this week — first decline since the comeback started. May reflect the reduced run volume/chronic load decline."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/137"
+}
