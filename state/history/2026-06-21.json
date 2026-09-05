@@ -1,0 +1,72 @@
+{
+  "as_of_date": "2026-06-21",
+  "bootstrap": false,
+  "situational_context": "Running comeback week 8: Run #12 executed today (7.5 km, suffer 36) — distance doubled vs 4 km plan, marking the longest run since comeback started May 3. VO2max running up to 40.8 (from 40.6). ACWR back in safe zone at 1.20 (down from 1.35 on June 14). Chronic load rising to 18.9 (from 17.5). HRV 7d avg stable at 36 ms. Today's readiness LOW (56) and body battery depleted (35) after early-morning effort. EXTREME HEATWAVE dominates the week: 34-41°C in Paris through June 27 — all training must be heat-adjusted. Weight reversed upward to 103.7 kg (from 102.6 on June 7), driven by consistent caloric surplus (~3050 vs 2500 target). Sur site days: Tue 23 and Thu 25 (ebike commute = light activity). Weekend sessions planned Sat 27 + Sun 28.",
+  "acute_load_7d": 22.7,
+  "chronic_load_28d": 18.9,
+  "distance_from_peak_pct": 1.18,
+  "hrv_7d_avg": 36,
+  "rhr_7d_avg": 50,
+  "sleep_hours_7d_avg": 7.50,
+  "weight_kg_7d_avg": 103.67,
+  "last_session": {
+    "date": "2026-06-21",
+    "type": "Run",
+    "duration_min": 57,
+    "training_load": 36
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-06-22", "day": "Mon", "time": null, "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-06-23", "day": "Tue", "time": null, "type": "Sur site — ebike commute", "duration_min": 120, "target_load": 15, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-06-24", "day": "Wed", "time": "12:00", "type": "Run #13 — 4 km Z2 (conditionnel, canicule)", "duration_min": 35, "target_load": 12, "calendar_event_id": "2jurvde9vndpjakmvjionr1u50", "status": "planned"},
+    {"date": "2026-06-25", "day": "Thu", "time": null, "type": "Sur site — ebike commute", "duration_min": 120, "target_load": 15, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-06-26", "day": "Fri", "time": null, "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-06-27", "day": "Sat", "time": "11:30", "type": "Sortie vélo weekend — 60 min ebike Z1-Z2", "duration_min": 60, "target_load": 10, "calendar_event_id": "sm1bvahm3qonm84euiluk9ftl4", "status": "planned"},
+    {"date": "2026-06-28", "day": "Sun", "time": "12:00", "type": "Run #14 ou marche active — 4-5 km Z2 (conditionnel)", "duration_min": 40, "target_load": 14, "calendar_event_id": "r6d61t9ourbgg7s35dt9taod44", "status": "planned"}
+  ],
+  "no_train_days": ["2026-06-23", "2026-06-25"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Run #12 distance doubled (7.5 vs 4 km planned) — consolidate this week. Next run (Run #13, Wed 24) must stay at 4 km max. No distance progression until 2 consecutive runs at controlled distance without post-run pain.",
+      "measurable": "Run #13 ≤ 4 km; no joint/tendon pain lasting >24h post-run",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "CANICULE EXTRÊME (34-41°C) — all outdoor sessions require: ≥750 mL water, shaded routes (Bois de Vincennes), FC caps reduced by 10 bpm, immediate stop if nausea/vertigo. Prefer early afternoon with shade over unshaded midday. No running if air temp >38°C at start time.",
+      "measurable": "Zero heat-related incidents; all sessions completed with hydration protocol",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P2",
+      "text": "Weight reversed +1.05 kg (102.6 → 103.7 kg) over 14 days, driven by ~550 kcal/day surplus (avg 3050 vs 2500 target). Tighten calorie adherence to ≤2700 kcal/day. Protein consistently ≥150g/day — several days this week were 87-92g (too low).",
+      "measurable": "7d avg calories ≤ 2700; protein ≥ 150g every day; weight ≤ 103.5 kg at next weigh-in",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "post_run_pain",
+      "threshold": "Any localized joint/tendon pain lasting >24h after Run #12 (7.5 km) triggers skip of Run #13",
+      "reason": "Distance doubled in one jump — tissue tolerance at 103.7 kg is the primary injury risk"
+    },
+    {
+      "marker": "body_battery_recovery",
+      "threshold": "Body battery must return to ≥40 before next training session",
+      "reason": "Currently at 35 after Run #12; training readiness 56 (low)"
+    },
+    {
+      "marker": "hrv_7d_avg",
+      "threshold": "Alert if HRV 7d avg drops below 33 ms",
+      "reason": "Currently 36 ms, stable but near lower range; heat stress could suppress further"
+    },
+    {
+      "marker": "weight_trend",
+      "threshold": "Flag if weight at next weigh-in (June 28) exceeds 104 kg",
+      "reason": "Upward reversal from 102.6 to 103.7 kg in 2 weeks; caloric surplus needs correction"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/62"
+}
