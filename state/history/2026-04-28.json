@@ -1,0 +1,120 @@
+{
+  "as_of_date": "2026-04-28",
+  "bootstrap": false,
+  "situational_context": "Early aerobic rebuild — 9 days since bootstrap. First real intensity spike (gravel ride, load 57, Apr 25) successfully absorbed over 3 days. ACWR transiently elevated at 1.44 (above 1.3 threshold), expected to normalize by May 1 as the gravel ride exits the 7d window. Ebike commuting on sur-site days provides consistent Z1 base (~20 load/day). Weight declining steadily (-2.0 kg in 9d, 106.89 → 104.89). RHR dropped 3 bpm week-over-week — positive cardiovascular signal. Training readiness recovered from post-gravel crash (25) to 76. Baby-driven life constraints continue; training revolves around commute days and weekends/holidays. VO2max: 40.9 running, 38.9 cycling.",
+  "acute_load_7d": 32.67,
+  "chronic_load_28d": 22.7,
+  "distance_from_peak_pct": 1.41,
+  "hrv_7d_avg": 37.7,
+  "rhr_7d_avg": 49.7,
+  "sleep_hours_7d_avg": 7.66,
+  "weight_kg_7d_avg": 104.89,
+  "last_session": {
+    "date": "2026-04-28",
+    "type": "EBikeRide (commute, sur site)",
+    "duration_min": 121,
+    "training_load": 24
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-04-28",
+      "day": "Tuesday",
+      "time": "—",
+      "type": "Sur site — EBike commute (done)",
+      "duration_min": 121,
+      "target_load": 24,
+      "calendar_event_id": null,
+      "status": "done"
+    },
+    {
+      "date": "2026-04-29",
+      "day": "Wednesday",
+      "time": "12:00",
+      "type": "Zwift Récup Z1",
+      "duration_min": 30,
+      "target_load": 10,
+      "calendar_event_id": "povq9lsag6oqlbdajhju1ttm10",
+      "status": "planned"
+    },
+    {
+      "date": "2026-04-30",
+      "day": "Thursday",
+      "time": "—",
+      "type": "Sur site — commute (ebike or gravel)",
+      "duration_min": 120,
+      "target_load": 20,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-05-01",
+      "day": "Friday",
+      "time": "11:00",
+      "type": "Sortie vélo endurance Z2",
+      "duration_min": 60,
+      "target_load": 18,
+      "calendar_event_id": "t0jforto8j77dufii0jv8o51g8",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-02",
+      "day": "Saturday",
+      "time": "11:00",
+      "type": "Sortie longue Z2 — Construction base aérobie",
+      "duration_min": 75,
+      "target_load": 25,
+      "calendar_event_id": "r22o9g67fjatm4tp3qvfendq08",
+      "status": "planned"
+    },
+    {
+      "date": "2026-05-03",
+      "day": "Sunday",
+      "time": "12:00",
+      "type": "Sortie récup Z1-Z2 — Week-end jour 2",
+      "duration_min": 45,
+      "target_load": 15,
+      "calendar_event_id": "j21spceejm3ecvso081j2da93o",
+      "status": "planned"
+    }
+  ],
+  "no_train_days": ["2026-04-28", "2026-04-30"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Let ACWR normalize — keep all sessions Z1-Z2 until May 2. The gravel ride spiked acute load to 1.44× chronic; absorb before adding intensity. Wednesday's Zwift Z1 is a ceiling, not a floor.",
+      "measurable": "ACWR below 1.3 by May 2",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Increase daily protein toward 140g+ — currently averaging 119g/d against 150g target (79% adherence). Prioritize post-commute recovery meal and dinner protein bolus.",
+      "measurable": "5 of next 7 days at 140g+ protein",
+      "evidence_class": "RCT"
+    },
+    {
+      "priority": "P2",
+      "text": "If Thursday (Apr 30) commute is gravel (Strava suffer score >30), downgrade Friday's Z2 to 40 min Z1 recovery. Ebike commute (suffer <20) means Friday's Z2 stays as planned.",
+      "measurable": "Check Strava suffer score for Apr 30 before committing to May 1 session",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "ACWR",
+      "threshold": "Must drop below 1.3 by May 2",
+      "reason": "Currently 1.44 — transient spike from gravel ride (load 57) should exit 7d window by May 2"
+    },
+    {
+      "marker": "weight_trend",
+      "threshold": "Monitor rate >0.5 kg/week sustained",
+      "reason": "Lost 2.0 kg in 9 days; if sustained could indicate excessive deficit — need 2 more weeks to distinguish hydration shift from genuine trend"
+    },
+    {
+      "marker": "rhr_7d_avg",
+      "threshold": "Sustaining below 51 bpm confirms positive adaptation",
+      "reason": "Dropped from 53 to 49.7 — largest weekly shift in 90d baseline; verify it holds through load absorption"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/9"
+}
