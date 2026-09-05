@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-08-21",
+  "bootstrap": false,
+  "situational_context": "Running comeback day 110 (28 runs since May 3). Active C4 block: W34 under blank-week reentry rule (Run #28 ✅ 5.06 km Aug 18 + Run #29 6.5 km Sat + Run #30 6.0 km Sun = 17.56 km ≤ 18.8 km cap). W35 deload begins Mon Aug 24 (sessions #33–35: 5+6+7 km = 18 km, ≤ 60 m D+, no SL). Post-heatwave window active until ~Aug 28 (canicule Paris ~Aug 11–18); heat bands shifted −3°C. ACWR 0.68 — well below 0.8 floor, training_status 'Detraining' (4th consecutive week), chronic load 21.1 (declining from late-Jul peak ~30.6). Recovery improving: RHR spike (55 bpm Aug 15) resolved back to 51; training readiness 82 (best since Aug 1); body battery 56. HRV weekly avg 33–34, LOW/UNBALANCED 5 consecutive days — lagging effect of travel/canicule, not a deep-dive trigger given improving TR and BB. Weight 100.68 kg (Aug 12, down from 102 early Aug). No new labs since Dec 2025; Vitamin D retest 7+ weeks overdue. VO2max cycling still mirrors running at 42.9 (artifact). Protein consistently below 150g target.",
+  "acute_load_7d": 14.33,
+  "chronic_load_28d": 21.11,
+  "distance_from_peak_pct": 1.31,
+  "hrv_7d_avg": 34,
+  "rhr_7d_avg": 52.14,
+  "sleep_hours_7d_avg": 7.8,
+  "weight_kg_7d_avg": 100.68,
+  "last_session": {
+    "date": "2026-08-21",
+    "type": "EBikeRide",
+    "duration_min": 60,
+    "training_load": 8
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-08-21", "day": "Fri", "time": "—", "type": "REST (sur site)", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "blocked"},
+    {"date": "2026-08-22", "day": "Sat", "time": "11:00", "type": "Run #29 — 6,5 km easy plat", "duration_min": 50, "target_load": 30, "calendar_event_id": "3rrqtqq619mf8qv8mus9jn5bt4", "status": "planned"},
+    {"date": "2026-08-23", "day": "Sun", "time": "11:00", "type": "Run #30 — 6,0 km easy plat (CONDITIONNEL)", "duration_min": 45, "target_load": 28, "calendar_event_id": "bh27hup66p2kuocdnt6tq2gm88", "status": "planned"},
+    {"date": "2026-08-24", "day": "Mon", "time": "—", "type": "REST (espacement ≥1j après B2B)", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"},
+    {"date": "2026-08-25", "day": "Tue", "time": "—", "type": "REST (sur site, e-bike commute)", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "blocked"},
+    {"date": "2026-08-26", "day": "Wed", "time": "11:00", "type": "Run #31 — 5,0 km easy plat (W35 deload)", "duration_min": 40, "target_load": 20, "calendar_event_id": "8llvg3ahu1bdeh8ego94dvt9ao", "status": "planned"},
+    {"date": "2026-08-27", "day": "Thu", "time": "—", "type": "REST (sur site, e-bike commute)", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "blocked"}
+  ],
+  "no_train_days": ["2026-08-21", "2026-08-25", "2026-08-27"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Vitamin D retest is now 7+ weeks overdue (due ~July 2026, last lab Dec 2025 at 27 ng/mL = insufficient). No new lab data since Dec 2025. Schedule the blood panel this week.",
+      "measurable": "Lab order placed and blood drawn within 7 days",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Execute the weekend back-to-back runs (Run #29 Sat 6.5 km + Run #30 Sun 6.0 km) to halt the chronic load decline. ACWR 0.68 with massive margin (comeback ceiling 1.50). Recovery supports this: TR 82, BB 56, RHR 51. Respect the conditional gate on Run #30 (no pain from #29, no gait alteration, RHR ≤ 54 Sun morning).",
+      "measurable": "Both runs completed at Z1-Z2 (FC ≤ 145), no tissue complaints",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Protein intake below 150g target on 6 of last 7 logged days (range 86–114g except one day at 204g). During a running comeback, protein supports tendon remodeling and muscle preservation. Aim for ≥ 130g consistently, prioritizing post-run meals.",
+      "measurable": "≥ 130g protein on ≥ 5 of next 7 logged days",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "hrv_weekly_avg",
+      "threshold": "Flag if ≤ 33 for 3+ more days after weekend runs",
+      "reason": "LOW/UNBALANCED 5 consecutive days (Aug 17–21), weekly avg 33–34. TR/BB improving suggests recovery is progressing — but prolonged suppression alongside load increases would be concerning."
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Must stabilize and begin trending up within 2 weeks (by ~Sep 4)",
+      "reason": "Declined from 30.6 (late Jul) to 21.1 over 3+ weeks. Weekend sessions + W35 deload should arrest the decline."
+    },
+    {
+      "marker": "rhr_7d_avg",
+      "threshold": "Confirm drops to ≤ 51 within 2 days as Aug 15 spike exits window",
+      "reason": "7d avg 52.1 but last 3 individual days 50–51. Normalizing expected."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/123"
+}
