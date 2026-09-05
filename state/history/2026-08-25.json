@@ -1,0 +1,72 @@
+{
+  "as_of_date": "2026-08-25",
+  "bootstrap": false,
+  "situational_context": "Running comeback W35 DELOAD week (C4 block #21-40). Training status recovered to 'Maintaining' after 4 runs in 8 days (#28-31), ACWR rebounded from 0.48 to 1.14. However, recovery markers are deteriorating mid-deload: HRV weekly avg 34 (UNBALANCED, target ≥36 by end of deload), RHR spiked to 54 bpm (from 50 baseline), body battery 34, training readiness 46. Run #29 (Aug 22, 7.04 km, suffer 51, avg HR 146.2) exceeded the C4 block flat HR cap (145 bpm) and likely triggered the recovery lag. Today's Run #31 (3.79 km, sur site afternoon) was shorter than the 5 km deload target. The W36 12 km Beaumonts gate (HRV ≥36 + RHR ≤51) is at risk — if not met by Sun Aug 30, the attempt is postponed and deload extends. Weight stable at 100.68 kg (Aug 12, no new reading). No new labs since Dec 2025 — Vitamin D retest now >6 weeks overdue. VO2max running slightly declined to 42.5; cycling artifact persists at 42.9.",
+  "acute_load_7d": 23.2,
+  "chronic_load_28d": 20.4,
+  "distance_from_peak_pct": 1.27,
+  "hrv_7d_avg": 34,
+  "rhr_7d_avg": 52.3,
+  "sleep_hours_7d_avg": 7.60,
+  "weight_kg_7d_avg": 100.68,
+  "last_session": {
+    "date": "2026-08-25",
+    "type": "Run",
+    "duration_min": 28,
+    "training_load": 22
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-08-25", "day": "Tue", "time": "15:36", "type": "Run #31 (executed)", "duration_min": 28, "target_load": 22, "calendar_event_id": "krn71bfrurkukuhf9jh7h0ce4s", "status": "planned"},
+    {"date": "2026-08-26", "day": "Wed", "time": null, "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-08-27", "day": "Thu", "time": null, "type": "Sur site (potential ebike commute)", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-08-28", "day": "Fri", "time": "11:00", "type": "Run #32 — 6,0 km easy plat (W35 deload)", "duration_min": 45, "target_load": 25, "calendar_event_id": "mrtm8k0pg5m5ml8t495b2vivlc", "status": "planned"},
+    {"date": "2026-08-29", "day": "Sat", "time": null, "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-08-30", "day": "Sun", "time": "11:00", "type": "Run #33 — 7,0 km easy plat (W35 deload) + PORTE DELOAD", "duration_min": 52, "target_load": 30, "calendar_event_id": "iq83p7ojps35kmlusrri05kr3o", "status": "planned"},
+    {"date": "2026-08-31", "day": "Mon", "time": null, "type": "Rest / W36 decision based on deload gate", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"}
+  ],
+  "no_train_days": ["2026-08-25", "2026-08-27"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "RHR has spiked to 54 bpm (3-day avg Aug 23-25), up from a 50 bpm baseline at the start of the deload week. Combined with HRV UNBALANCED at 34 and body battery ~34, recovery is NOT responding to the deload. Hold remaining sessions at easy Z1-Z2, strict FC ≤140 bpm. If RHR remains ≥53 by Friday morning, reduce Run #32 to 4 km or swap for a 30 min walk.",
+      "measurable": "RHR 7d avg back to ≤52 bpm by Sun Aug 30; HRV weekly avg ≥35 by end of deload",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P1",
+      "text": "Vitamin D retest was due ~July 2026 and is now >6 weeks overdue. Last reading: 27 ng/mL (Dec 2025, insufficient). At 100.68 kg with ongoing running comeback and tissue stress, the injury risk from low vitamin D is real. Schedule the blood panel this week.",
+      "measurable": "Lab order placed by end of week; result logged within 2 weeks",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P2",
+      "text": "Run #29 (Aug 22) had avg HR 146.2 and max 163, exceeding the C4 block flat HR caps (145/158). This likely contributed to the 3-day RHR spike and delayed recovery. For all remaining deload runs, target FC moy ≤140 (not 143) — leave a margin given the recovery deficit. Walk any section where HR approaches 140.",
+      "measurable": "Next 2 runs avg HR ≤140 with no post-run RHR spike",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "rhr_7d_avg",
+      "threshold": "Alert if RHR 7d avg stays ≥53 bpm by Fri Aug 28 morning",
+      "reason": "3-day spike to 54-55 bpm during deload week; the deload gate check (Sun) depends on this resolving"
+    },
+    {
+      "marker": "hrv_weekly_avg",
+      "threshold": "Deload gate: needs ≥36 by Sun Aug 30 for W36 to proceed",
+      "reason": "Currently 34, UNBALANCED; if not met, W36 12 km Beaumonts attempt postponed"
+    },
+    {
+      "marker": "body_battery",
+      "threshold": "Should return to ≥50 max by end of deload; currently 34",
+      "reason": "Sustained low body battery (<35) for 3 days during a deload week is atypical"
+    },
+    {
+      "marker": "vo2max_cycling",
+      "threshold": "Confirm divergence from running VO2max on next data pull",
+      "reason": "Still locked at 42.9 (identical to running peak), likely artifact"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/126"
+}
