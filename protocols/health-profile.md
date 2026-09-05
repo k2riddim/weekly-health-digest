@@ -14,13 +14,14 @@ relevant, into `protocols/thresholds.yaml > glp1`.
 
 ## 1. Medications — ACTIVE
 
-### GLP-1 receptor agonist (weekly subcutaneous injection)
+### Wegovy (semaglutide) — GLP-1 receptor agonist, weekly subcutaneous injection
 
 | Field | Value | Source / confidence |
 |---|---|---|
 | Class | GLP-1 receptor agonist ("analogue du GLP-1"), weight-management indication | Teleconsultation transcript 2026-08-04 (ARIA `meeting:20260804-141724-184fc4`) — high |
-| Molecule / brand | **TO CONFIRM** (semaglutide vs tirzepatide vs liraglutide not stated in the transcript) | unknown |
-| Current dose / escalation step | **TO CONFIRM** — standard protocols escalate every 4 weeks from 2026-08-12 (candidate step dates: 2026-09-09, 2026-10-07, 2026-11-04); the prescriber reassesses dose monthly. Apply `T.glp1.dose_escalation_watch_days` after any confirmed step | consult: "chaque mois on réévalue … même dosage ou on ajuste" |
+| Molecule / brand | **Semaglutide — Wegovy** (weekly pen) | Benjamin, 2026-09-05 — high |
+| Current dose | **0.25 mg weekly** (starter step), doses taken 12/08, 19/08, 26/08, 02/09 — 4 of the 4 label weeks at this step completed | Benjamin, 2026-09-05 — high |
+| Expected escalation | Wegovy label titration is 0.25 → 0.5 → 1.0 → 1.7 → 2.4 mg with 4 weeks per step, so **2026-09-09 is the expected 0.5 mg step**, then ~07/10 (1.0), ~04/11 (1.7), ~02/12 (2.4) if the prescriber follows the label. Each confirmed step restarts the RHR/HRV rebaseline clock and opens a `T.glp1.dose_escalation_watch_days` window (GI effects and RHR offset are dose-dependent). **Confirm each step with Benjamin; never assume it happened.** | SmPC + consult ("chaque mois on réévalue … même dosage ou on ajuste") — medium for dates |
 | Injection day | **Wednesday** (weekly). Post-injection side-effect window = Thu–Sat (`T.glp1.post_injection_side_effect_window_days`); schedule the long run and any harder work Sun–Tue. Logging each injection in `oh_supplement_logs` (`GLP-1 injection`) is still useful to capture dose changes | Benjamin, 2026-09-05 — high |
 | Prescriber | Dr Delphine Monnier (téléconsultation Doctolib) | transcript — high |
 | Initiation | **First injection Wednesday 2026-08-12.** Decision taken at the 2026-08-04 consult. Wearable signature matches: Garmin RHR jumped 51→54 bpm on 2026-08-12 itself and has sat at 52–55 bpm since (vs 48–50 pre-initiation); HRV weekly avg drifted 36→30 over the following 3 weeks | Benjamin, 2026-09-05 — high |
@@ -99,7 +100,8 @@ stating, in the same sentence, how GLP-1 therapy does or does not account for th
 
 ## 6. Known unknowns — ask Benjamin / update when known
 
-- [ ] Molecule, brand and current dose of the GLP-1 agonist; dates of any dose escalation
+- [x] Molecule, brand and current dose — Wegovy (semaglutide) 0.25 mg weekly (confirmed 2026-09-05)
+- [ ] Dose escalation dates as they happen (first expected 2026-09-09 → 0.5 mg); update `T.glp1.current_dose_mg` / `dose_history`
 - [x] Date of first injection — 2026-08-12 (confirmed 2026-09-05)
 - [x] Weekly injection day — Wednesday (confirmed 2026-09-05)
 - [ ] Whether the prescriber gave any exercise-specific guidance

@@ -113,10 +113,29 @@ Evidence classes follow `protocols/thresholds.yaml > evidence_classes`.
 - Sleep apnoea history: weight loss should *improve* it; the reverse trend would be notable.
 - Vitamin D and iron status become more important with a lower intake — reinforce the overdue panel.
 
-## 8. How the digest should phrase it
+## 8. Benjamin's regimen — semaglutide (Wegovy)
 
-- Correct: "RHR 7d avg 54 bpm, +4 bpm vs the pre-GLP-1 baseline of 50 — within the expected
-  class effect; no second recovery marker is off, so not treated as a red flag."
+- Weekly subcutaneous semaglutide, Wednesdays, from 2026-08-12. Label titration: 0.25 mg
+  (weeks 1–4) → 0.5 mg (5–8) → 1.0 mg (9–12) → 1.7 mg (13–16) → 2.4 mg maintenance; the
+  prescriber may hold a step. Current dose and step history live in `T.glp1` — read them, do
+  not assume the label calendar was followed.
+- 0.25 mg is a tolerability step, not the therapeutic dose; appetite and weight effects are
+  modest, but the **heart-rate effect is already visible at low doses** (RHR 51→54 bpm on the
+  first injection day in Benjamin's Garmin data). Expect the RHR offset and GI effects to grow
+  at each step, and the first 1–2 weeks after a step to be the noisiest.
+- Semaglutide pharmacokinetics: ~1-week half-life, steady state after ~4–5 weeks on a dose.
+  That is why `T.glp1.rebaseline_after_days_on_stable_dose` (21 days) restarts at every step:
+  a "baseline" taken 5 days after a dose increase is not a baseline.
+- Delayed gastric emptying is most pronounced in the first weeks after each step and partially
+  attenuates over time — re-tighten the pre-run meal gap after every escalation, then relax it
+  as tolerance returns.
+- Dose is confirmed by Benjamin, never inferred: an unconfirmed expected step is reported as
+  "expected, unconfirmed" and the escalation watch window is applied provisionally.
+
+## 9. How the digest should phrase it
+
+- Correct: "RHR 7d avg 54 bpm, +4 bpm vs the pre-semaglutide baseline of 50 — within the expected
+  class effect at 0.25 mg; no second recovery marker is off, so not treated as a red flag."
 - Correct: "Logged intake 0 kcal for 12 days: on GLP-1 this may be real under-eating rather than
   a logging lapse — protein floor not verifiable, treated as a P0 fuelling risk."
 - Wrong: "Unexplained 14-day HRV/RHR suppression, no illness logged."

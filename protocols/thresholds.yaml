@@ -79,8 +79,21 @@ c4_block:
 # update health-profile.md in the same commit).
 glp1:
   active: true
+  molecule: "semaglutide"
+  brand: "Wegovy"
   initiation_date: "2026-08-12"        # first injection (confirmed by Benjamin 2026-09-05); decision at the 2026-08-04 consult
   injection_weekday: 2                 # 0=Mon … 6=Sun → Wednesday (confirmed by Benjamin 2026-09-05)
+  current_dose_mg: 0.25                # starter step; confirmed 2026-09-05 (doses 12/08, 19/08, 26/08, 02/09)
+  current_dose_since: "2026-08-12"
+  dose_history:
+    - {dose_mg: 0.25, from: "2026-08-12"}
+  # Wegovy SmPC titration: 0.25 → 0.5 → 1.0 → 1.7 → 2.4 mg, 4 weeks per step. The
+  # prescriber reassesses monthly and may hold a step. Update current_dose_mg /
+  # dose_history when Benjamin confirms a change; the rebaseline clock
+  # (rebaseline_after_days_on_stable_dose) restarts at every step.
+  label_titration_mg: [0.25, 0.5, 1.0, 1.7, 2.4]
+  label_step_interval_weeks: 4
+  next_expected_step_date: "2026-09-09" # 0.5 mg if the label schedule is followed — CONFIRM with Benjamin
   rhr_expected_shift_bpm_min: 1        # class effect on resting HR vs pre-treatment baseline (RCT)
   rhr_expected_shift_bpm_max: 5
   rebaseline_after_days_on_stable_dose: 21   # after this many days on a stable dose, the post-initiation window is the RHR/HRV reference

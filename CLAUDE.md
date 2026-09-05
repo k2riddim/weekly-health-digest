@@ -6,7 +6,7 @@ Auto-loaded by Claude Code on every run of the daily-digest Routine. Contains th
 
 Benjamin is a male endurance athlete based in Paris with longitudinal data across Strava, Garmin, Withings, labs, chess, nutrition, and cohabitant metrics. Everything about his current situation must be re-discovered from data each day. This prompt contains no hardcoded numbers, no life-phase assumptions, and no training templates — they evolve with him. With the exception of the super important  return to running protocol you must always check and apply if the user is returning to running.
 
-**Standing medical context is the one thing that is NOT re-discovered from data.** `protocols/health-profile.md` holds Benjamin's active medications, conditions and care team. As of August 2026 he is on a **GLP-1 receptor agonist** (weekly injection, weight-management indication). That single fact changes the default reading of resting HR, HRV, weight, appetite, nutrition logging and GI signals — see the profile and `.claude/skills/research-modules/glp1-endurance.md`. Every phase below must apply it; no assessment may call an RHR/HRV/weight/intake signal "unexplained" without first stating how the medication does or does not account for it.
+**Standing medical context is the one thing that is NOT re-discovered from data.** `protocols/health-profile.md` holds Benjamin's active medications, conditions and care team. As of August 2026 he is on **Wegovy (semaglutide), a GLP-1 receptor agonist** (weekly injection every Wednesday since 2026-08-12, 0.25 mg starter step, label titration every 4 weeks — current dose in `T.glp1.current_dose_mg`). That single fact changes the default reading of resting HR, HRV, weight, appetite, nutrition logging and GI signals — see the profile and `.claude/skills/research-modules/glp1-endurance.md`. Every phase below must apply it; no assessment may call an RHR/HRV/weight/intake signal "unexplained" without first stating how the medication does or does not account for it.
 
 ## Target
 
@@ -56,8 +56,8 @@ Complete all 6. Each requires real tool calls, not assumptions. Between phases, 
 2. `cat state/historical-peak.json` → parse into `HISTORICAL_PEAK`.
 3. `cat protocols/thresholds.yaml` → parse into `T`.
 4. If `LAST_STATE.bootstrap === true`, note that Phase 5 is the first real delta (compare today to the bootstrap snapshot, labelled as such).
-5. `cat protocols/health-profile.md` → parse into `PROFILE`. Extract `PROFILE.medications` (currently a GLP-1 receptor agonist). If `T.glp1.active` is true, read `.claude/skills/research-modules/glp1-endurance.md` now, not later. State explicitly, before Phase 1: "Active medications: …; interpretation adjustments in force: …". **A run that reaches Phase 2 without having stated this is invalid.**
-6. Compute `days_on_glp1` = today − `T.glp1.initiation_date`, and `injection_window` = true if `T.glp1.injection_weekday` is known and today or yesterday falls within `T.glp1.post_injection_side_effect_window_days` of it.
+5. `cat protocols/health-profile.md` → parse into `PROFILE`. Extract `PROFILE.medications` (currently Wegovy / semaglutide). Keep `medications[].name` **stable across days** (dose and step go in their own fields) — the Phase 5 carry-over check matches on `name`. If `T.glp1.active` is true, read `.claude/skills/research-modules/glp1-endurance.md` now, not later. State explicitly, before Phase 1: "Active medications: …; interpretation adjustments in force: …". **A run that reaches Phase 2 without having stated this is invalid.**
+6. Compute `days_on_glp1` = today − `T.glp1.initiation_date`, `days_on_current_dose` = today − `T.glp1.current_dose_since`, and `injection_window` = true if today or yesterday falls within `T.glp1.post_injection_side_effect_window_days` after the Wednesday injection. If today ≥ `T.glp1.next_expected_step_date` and `T.glp1.current_dose_mg` has not been updated, flag "dose step expected but unconfirmed" in the digest and Telegram, and treat the following `T.glp1.dose_escalation_watch_days` as a possible-escalation window (do not assume it happened).
 
 ### Phase 1 — Snapshot today + rolling context (broad pass)
 
@@ -235,7 +235,7 @@ Natural observations Benjamin could mention at his next visit, not test requests
   "situational_context": "free-text, re-evaluated today — must include the active-medication clause",
   "profile_ref": "protocols/health-profile.md",
   "medications": [
-    {"name": "GLP-1 receptor agonist (molecule/dose to confirm)", "since": "2026-08-12", "injection_weekday": "Wednesday", "days_on": N, "last_injection": "YYYY-MM-DD (most recent Wednesday)", "prescriber": "Dr Delphine Monnier", "next_review": "monthly", "interpretation_notes": "RHR +1-5 bpm expected; HRV lower; appetite suppressed; use post-initiation baseline; side-effect window Thu-Sat"}
+    {"name": "Wegovy (semaglutide)", "class": "GLP-1 receptor agonist", "dose": "0.25 mg weekly (from T.glp1.current_dose_mg)", "dose_since": "YYYY-MM-DD", "since": "2026-08-12", "injection_weekday": "Wednesday", "days_on": N, "days_on_current_dose": N, "last_injection": "YYYY-MM-DD (most recent Wednesday)", "next_expected_step": "YYYY-MM-DD (from T.glp1, unconfirmed)", "prescriber": "Dr Delphine Monnier", "next_review": "monthly", "interpretation_notes": "RHR +1-5 bpm expected; HRV lower; appetite suppressed; use post-initiation baseline, reset at each dose step; side-effect window Thu-Sat"}
   ],
   "acute_load_7d": N,
   "chronic_load_28d": N,
