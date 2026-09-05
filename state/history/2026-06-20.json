@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-06-20",
+  "bootstrap": false,
+  "situational_context": "Recovery week absorbed successfully. ACWR resolved from 1.35 to 0.94 (safe band). Running comeback day 48, 10 runs completed (Run #10 on Jun 14 was the last). Readiness at period-best: training readiness 93, body battery 54, HRV BALANCED. 6 days of running rest since Run #10 has allowed tissue recovery. Extreme heat wave in Paris (35-40C Jun 20-26) is the dominant constraint — all outdoor sessions require heat-adapted protocols. Weight trending down steadily (102.62 kg on Jun 7, next weigh-in Jun 21). E-bike remains primary mobility modality. No pain signals reported. Protein intake consistently below target (121g vs 150g). Vitamin D retest due July 2026.",
+  "acute_load_7d": 16.7,
+  "chronic_load_28d": 17.7,
+  "distance_from_peak_pct": 1.1,
+  "hrv_7d_avg": 36,
+  "rhr_7d_avg": 50,
+  "sleep_hours_7d_avg": 7.55,
+  "weight_kg_7d_avg": 102.62,
+  "last_session": {
+    "date": "2026-06-19",
+    "type": "EBikeRide",
+    "duration_min": 67,
+    "training_load": 10
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-06-20", "day": "Saturday", "time": "11:30", "type": "Run #12 — 4 km Z2 (canicule 35C)", "duration_min": 45, "target_load": 13, "calendar_event_id": "htge0trofvj84q6kd129bl3lm8", "status": "planned"},
+    {"date": "2026-06-21", "day": "Sunday", "time": "11:30", "type": "Sortie velo ebike — 60 min Z1-Z2 (canicule 38C)", "duration_min": 75, "target_load": 11, "calendar_event_id": "u98g4brlhab37mo6g8pofpqht0", "status": "planned"},
+    {"date": "2026-06-22", "day": "Monday", "time": null, "type": "Repos (canicule 40C+, jour ouvre)", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-06-23", "day": "Tuesday", "time": null, "type": "Sur site — commute ebike/gravel (~38 km)", "duration_min": 120, "target_load": 15, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-06-24", "day": "Wednesday", "time": "12:00", "type": "Run #13 — 3-4 km Z2 conditionnel (canicule 40C)", "duration_min": 45, "target_load": 12, "calendar_event_id": "2jurvde9vndpjakmvjionr1u50", "status": "planned"},
+    {"date": "2026-06-25", "day": "Thursday", "time": null, "type": "Sur site — commute ebike/gravel (~38 km)", "duration_min": 120, "target_load": 15, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-06-26", "day": "Friday", "time": null, "type": "Repos ou marche legere 20 min", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"}
+  ],
+  "no_train_days": ["2026-06-23", "2026-06-25"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Heat wave protocol: all outdoor sessions at reduced intensity. FC ceiling -7 bpm at 35C, -10 bpm at 38C+. Hydration >=500 mL per run, >=750 mL per bike. Prefer shaded routes (Bois de Vincennes). Cancel if temperature >42C at session start.",
+      "measurable": "No session with avg HR above heat-adjusted ceiling; no heat-related symptoms",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Increase protein to >=150g/day. Current 7d avg is 121g (81% of target). At 102.6 kg in running comeback + moderate deficit, tendon collagen remodeling requires >=1.6 g/kg lean mass/day. Add ~30g protein at dinner.",
+      "measurable": "Protein >=150g on >=5 of next 7 days",
+      "evidence_class": "RCT"
+    },
+    {
+      "priority": "P2",
+      "text": "Book Vitamin D + CBC blood panel before July 15. Vitamin D was 27 ng/mL in December (insufficient). At 8 weeks into running comeback at 102.6 kg, confirming >=40 ng/mL is critical for stress fracture prevention.",
+      "measurable": "Lab appointment booked by June 30",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "post_run_pain",
+      "threshold": "Any localized joint/tendon pain lasting >24h after Run #12 or #13 triggers skip of next run",
+      "reason": "Tissue tolerance bottleneck at 102.6 kg; 6 days rest should have allowed good tissue adaptation"
+    },
+    {
+      "marker": "heat_symptoms",
+      "threshold": "Any nausea, dizziness, confusion, or excessive HR drift during outdoor session triggers immediate stop and 48h rest",
+      "reason": "35-40C heat wave all week; exertional heat illness risk elevated at 102.6 kg"
+    },
+    {
+      "marker": "hrv_7d_avg",
+      "threshold": "Alert if HRV 7d avg drops below 32 ms",
+      "reason": "Currently 36 ms (stable). Sustained drop would signal accumulated fatigue or heat stress"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/61"
+}
