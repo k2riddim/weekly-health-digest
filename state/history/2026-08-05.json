@@ -1,0 +1,72 @@
+{
+  "as_of_date": "2026-08-05",
+  "bootstrap": false,
+  "situational_context": "Running comeback day 94 (since May 3, 2026), now in C4 structured block W32 (sessions #21-40). 24 runs completed, peak distance 10.5 km (Run #20, Saint-Malo côte, Jul 25). VO2max running 42.6 (up from 38.3 at start, +4.3). Weight 101.2 kg (down from 104.8 at start, -3.6 kg). Chronic load 29.25 — nearly doubled from 17.5 six weeks ago. ACWR 0.68 — below 0.8 lower bound post-deload W31, will normalize as W32 sessions add load. HRV 7d avg 36 ms (BALANCED, stable). Post-heatwave modifier active until ~Aug 12 (canicule Jul 28 – Aug 2). No new labs since Dec 2025; Vitamin D retest overdue (~1 month). Active block targeting 12 km Beaumonts by W36 (Aug 31–Sep 6). Baby Léonie 19 months — sleep adequate, occasional fragmentation.",
+  "acute_load_7d": 19.8,
+  "chronic_load_28d": 29.25,
+  "distance_from_peak_pct": 1.82,
+  "hrv_7d_avg": 36,
+  "rhr_7d_avg": 49,
+  "sleep_hours_7d_avg": 7.94,
+  "weight_kg_7d_avg": 101.59,
+  "last_session": {
+    "date": "2026-08-05",
+    "type": "Run",
+    "duration_min": 43,
+    "training_load": 33
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-08-05", "day": "Wed", "time": "06:10", "type": "Run #24 — 6.1 km Z2 plat", "duration_min": 43, "target_load": 33, "calendar_event_id": "ma3itaf2rc6pmgbho2t8udaltk", "status": "executed"},
+    {"date": "2026-08-06", "day": "Thu", "time": "-", "type": "Sur site — e-bike commute only", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "blocked"},
+    {"date": "2026-08-07", "day": "Fri", "time": "11:00", "type": "Run #25 — 6.5 km côte RECON Beaumonts", "duration_min": 50, "target_load": 35, "calendar_event_id": "trj81ttdarapjo1116cn8rg1nk", "status": "planned"},
+    {"date": "2026-08-08", "day": "Sat", "time": "11:00", "type": "Récupération active — vélo léger ou renforcement", "duration_min": 50, "target_load": 8, "calendar_event_id": "91kv9vk43ao362u9hp7sol0u58", "status": "planned"},
+    {"date": "2026-08-09", "day": "Sun", "time": "11:15", "type": "Run #26 — SL 9.0 km Z2 plat", "duration_min": 65, "target_load": 48, "calendar_event_id": "42gonf5bop238grsr4ptlq6df4", "status": "planned"},
+    {"date": "2026-08-10", "day": "Mon", "time": "-", "type": "Rest", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "rest"},
+    {"date": "2026-08-11", "day": "Tue", "time": "-", "type": "Sur site — e-bike commute only", "duration_min": 0, "target_load": 0, "calendar_event_id": "", "status": "blocked"}
+  ],
+  "no_train_days": ["2026-08-06", "2026-08-11"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "ACWR at 0.68 is below the 0.8 lower bound — expected post-deload W31. Execute the W32 plan as programmed (Runs #25, #26 + recovery active). The acute load will naturally rise toward 0.8+ by Aug 11. Do not add extra sessions to force the ratio up — let the block's structure do the work.",
+      "measurable": "ACWR ≥ 0.75 by Aug 11; ≥ 0.80 by Aug 15",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Vitamin D retest was due July 2026 and is now ~1 month overdue. Dec 2025 level (27 ng/mL) was insufficient. Schedule a blood panel to confirm supplementation is raising levels toward the 40 ng/mL target — stress fracture risk remains elevated until confirmed.",
+      "measurable": "Blood draw ordered by Aug 15; result showing Vitamin D ≥ 35 ng/mL",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P2",
+      "text": "Post-heatwave modifier active until ~Aug 12 (canicule Jul 28 – Aug 2). For Run #25 (Aug 7, 11h) check feels-like at 10:30 — if >23°C, switch to treadmill or delay to 09:30. For Run #26 SL (Aug 9, 11:15), treadmill is the safer default given Orange-band risk at midday.",
+      "measurable": "No outdoor session in Orange/Red conditions; all runs executed or safely substituted",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "acwr",
+      "threshold": "Alert if ACWR drops below 0.60 or doesn't reach 0.75 by Aug 11",
+      "reason": "Currently 0.68 post-deload W31; should rise naturally with W32 sessions"
+    },
+    {
+      "marker": "tissue_feedback_post_côte",
+      "threshold": "Any localized pain (Achilles, patellar, tibia) lasting >24h after Run #25 (côte RECON) triggers skip of Run #26 SL",
+      "reason": "First hill session at ~101 kg — eccentric load on descent is the primary injury vector"
+    },
+    {
+      "marker": "hrv_7d_avg",
+      "threshold": "Alert if HRV 7d avg drops below 33 ms for ≥3 consecutive days",
+      "reason": "Stable at 36 ms; decline would indicate accumulated fatigue from block ramp-up"
+    },
+    {
+      "marker": "vitamin_d_retest",
+      "threshold": "Blood draw by Aug 15",
+      "reason": "Dec 2025 level 27 ng/mL insufficient — ~2× stress fracture risk below 40 ng/mL (Burgi 2011)"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/108"
+}
