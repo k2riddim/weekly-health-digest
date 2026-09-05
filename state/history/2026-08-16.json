@@ -1,0 +1,72 @@
+{
+  "as_of_date": "2026-08-16",
+  "bootstrap": false,
+  "situational_context": "Running comeback Phase 3 — C4 block #21-40, W34 reentry after near-blank W33. 27 runs since May 3, 2026 (105 days in). Last run: Run #27 on Aug 12 (4.23 km easy, 4 days ago). W33 (Aug 10-16) was a near-total miss: only 1 of 3 planned sessions executed (Run #27, 30% short of 6 km target), with #28 and #29 skipped during Saint-Malo travel (Aug 14-16). C4 blank_week_reentry rule applied to W34: ≤17.6 km, no SL, plat only. ACWR has dropped to ~0.50 ('Detraining'), chronic load 28d ~24.0 (down from ~30.6 late-July peak — 3 weeks of continuous decline). HRV went UNBALANCED today (Aug 16, first occurrence) — weekly avg dropped 35→34. RHR 7d avg elevated to 52.4 bpm, hitting alert threshold of 5 consecutive days ≥52 (Aug 12-16). Body battery sustained low (26-34 range). Pattern consistent with travel disruption + cumulative heat stress + detraining, not illness. Post-heatwave modifier active through ~Aug 24 (Paris canicule Aug 10-14, up to 40°C). Possible temperature rebound to 35-40°C after Aug 20 (meteo-paris warning). Weight 100.68 kg (Aug 12 reading, continuing downtrend from 104.8 at comeback start). VO2max running stable at 42.9. VO2max cycling jumped to 42.9 (from 38.6 on Aug 10) — confirmed as Garmin artifact, identical to running figure. No new labs since Dec 2025; Vitamin D retest now 3+ weeks overdue. Benjamin returned to Paris today (TGV 18:14).",
+  "acute_load_7d": 12.0,
+  "chronic_load_28d": 24.0,
+  "distance_from_peak_pct": 1.49,
+  "hrv_7d_avg": 34,
+  "rhr_7d_avg": 52.4,
+  "sleep_hours_7d_avg": 7.93,
+  "weight_kg_7d_avg": 100.68,
+  "last_session": {
+    "date": "2026-08-14",
+    "type": "Swim",
+    "duration_min": 13,
+    "training_load": 2
+  },
+  "plan_7d_ahead": [
+    {"date": "2026-08-16", "day": "Samedi", "time": null, "type": "Repos (voyage Saint-Malo → Paris)", "duration_min": 0, "target_load": 0, "calendar_event_id": null, "status": "rest"},
+    {"date": "2026-08-17", "day": "Dimanche", "time": "11:00", "type": "Run #28 — 5,5 km easy plat", "duration_min": 45, "target_load": 22, "calendar_event_id": "3oc6jnsj6uhucasqfgpve052jg", "status": "planned"},
+    {"date": "2026-08-18", "day": "Lundi", "time": null, "type": "Sur site — ebike commute (~38 km)", "duration_min": 110, "target_load": 12, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-08-19", "day": "Mardi", "time": null, "type": "Repos (canicule 34°C — RED zone)", "duration_min": 0, "target_load": 0, "calendar_event_id": "9nuj1l8s5v63v0pffi45pl3ga4", "status": "rest"},
+    {"date": "2026-08-20", "day": "Jeudi", "time": null, "type": "Sur site — ebike commute (~38 km)", "duration_min": 110, "target_load": 12, "calendar_event_id": null, "status": "blocked"},
+    {"date": "2026-08-21", "day": "Vendredi", "time": "11:00", "type": "Run #29 — 6,0 km easy plat", "duration_min": 45, "target_load": 25, "calendar_event_id": "3grkaf3vu8qeh6tn04bbe6tais", "status": "planned"},
+    {"date": "2026-08-22", "day": "Samedi", "time": "11:00", "type": "Run #30 — 6,0 km easy plat", "duration_min": 45, "target_load": 25, "calendar_event_id": "3rrqtqq619mf8qv8mus9jn5bt4", "status": "planned"}
+  ],
+  "no_train_days": ["2026-08-18", "2026-08-20"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Resume running with W34 reentry plan — blank_week_reentry rule in effect after near-blank W33. Three easy plat sessions (Sun 5.5 km, Fri 6 km, Sat 6 km) with strict heat protocol and abort conditions. Priority is getting consecutive runs back on the ledger, not chasing the block's progression. If RHR ≥54 on any session morning, reduce to 4 km or swap to rest.",
+      "measurable": "3 runs completed this week totalling ≥15 km, all with FC avg ≤145 bpm and no post-run pain >24h",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P1",
+      "text": "RHR alert active — 5 consecutive days ≥52 bpm (Aug 12-16, range 52-55). Combined with HRV going UNBALANCED today. Most likely travel + heat + detraining, not illness. Monitor: if RHR doesn't return to ≤51 by Aug 19 after 3 days back in routine, further reduce next week's plan.",
+      "measurable": "RHR 7d avg ≤51 bpm by Aug 22, HRV status returning to BALANCED",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Vitamin D retest now 3+ weeks overdue (was due ~July 2026, last value Dec 2025: 27 ng/mL insufficient). No new lab data in 8+ months. Schedule blood panel this week.",
+      "measurable": "Lab order placed by Aug 22, result logged within 2 weeks",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "rhr_7d_avg",
+      "threshold": "Alert if RHR 7d avg stays >=52 bpm past Aug 22, or any single day exceeds 56 bpm",
+      "reason": "5 consecutive days ≥52 triggered the alert. Currently 52.4 (7d avg). Pattern started during Saint-Malo travel and persists. Expected to normalize with return to routine; if not, suggests underlying issue."
+    },
+    {
+      "marker": "hrv_status",
+      "threshold": "Flag if UNBALANCED persists for ≥3 consecutive days",
+      "reason": "First UNBALANCED day today (Aug 16). Weekly avg dropped from 35→34. Single day is noise; sustained drift is signal. Cross-reference with RHR for recovery-deficit pattern."
+    },
+    {
+      "marker": "chronic_load_28d",
+      "threshold": "Flag if still declining past Aug 23 (4 weeks of continuous decline from ~30.6 peak)",
+      "reason": "Now at ~24.0, down from ~30.6 late July. Detraining status since Aug 5. The W34 reentry plan should stabilize or begin reversing this trend."
+    },
+    {
+      "marker": "post_heatwave_modifier",
+      "threshold": "Re-evaluate after Aug 24 (10-day window from canicule end ~Aug 14)",
+      "reason": "Meteo-paris warns of possible temperature rebound to 35-40°C after Aug 20. If another heatwave occurs, the modifier window resets."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/118"
+}
