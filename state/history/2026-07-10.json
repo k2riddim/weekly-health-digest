@@ -1,0 +1,130 @@
+{
+  "as_of_date": "2026-07-10",
+  "bootstrap": false,
+  "situational_context": "Running comeback day 68, 14 runs completed (last: Run #14, 6.0 km on Jul 5). ACWR normalized to 1.10 (down from 1.35 on Jun 14) — P0 alert resolved. HRV 7d avg recovered to 37 ms (from 35), all BALANCED status since Jul 3 after a rough UNBALANCED/LOW patch in late June. Training status shifted from Functional Overreaching to Maintaining. Paris heatwave RED alert (3rd of 2026, Météo-France red since Jul 11) — forced and appropriate rest since Jul 7. Traveling to Saint-Malo Jul 12–26 (coastal vacation rental, 20–24°C, GREEN zone) — ideal conditions for running resumption. VO2max running improved to 41.5 (from 40.6 at last state). Demonstrated run tolerance: 7.5 km (Run #12), floor 6 km. Weight: last weigh 103.67 kg on Jun 21, pesée scheduled Jul 12. No new labs since Dec 2025; Vitamin D retest still pending (was due ~July). Chronic load slowly rebuilding at 18.8 (up from 17.5). E-bike commuting remains primary modality on sur-site days (suffer 6–12 per leg). Baby Léonie (6 months) — sleep adequate, no major disruption signals this week.",
+  "acute_load_7d": 20.7,
+  "chronic_load_28d": 18.8,
+  "distance_from_peak_pct": 1.2,
+  "hrv_7d_avg": 37,
+  "rhr_7d_avg": 49.6,
+  "sleep_hours_7d_avg": 7.49,
+  "weight_kg_7d_avg": 103.67,
+  "last_session": {
+    "date": "2026-07-09",
+    "type": "EBikeRide (commute x2)",
+    "duration_min": 130,
+    "training_load": 18
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-07-10",
+      "day": "Friday",
+      "time": null,
+      "type": "Rest",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": "o9agul7skt4gq2uatr57vug4v4",
+      "status": "rest"
+    },
+    {
+      "date": "2026-07-11",
+      "day": "Saturday",
+      "time": "11:00",
+      "type": "Home trainer indoor Z1-Z2",
+      "duration_min": 40,
+      "target_load": 12,
+      "calendar_event_id": "6aos77mggr9mma4f9oq9irljb8",
+      "status": "planned"
+    },
+    {
+      "date": "2026-07-12",
+      "day": "Sunday",
+      "time": "11:15",
+      "type": "Marche rapide / footing optionnel (avant train Saint-Malo)",
+      "duration_min": 30,
+      "target_load": 5,
+      "calendar_event_id": "ged3o7i2cgd0uqcbk8ec2to4ac",
+      "status": "planned"
+    },
+    {
+      "date": "2026-07-13",
+      "day": "Monday",
+      "time": "11:00",
+      "type": "Run #15 — 6-7 km Z2 bord de mer (Saint-Malo)",
+      "duration_min": 50,
+      "target_load": 28,
+      "calendar_event_id": "nqrefo9gkqmva7jm24ium4h79s",
+      "status": "planned"
+    },
+    {
+      "date": "2026-07-14",
+      "day": "Tuesday",
+      "time": "11:00",
+      "type": "Marche côtière / footing optionnel (Saint-Malo, 14 juillet)",
+      "duration_min": 35,
+      "target_load": 8,
+      "calendar_event_id": "keb9dbfomgvssokvq7sh56nn1c",
+      "status": "planned"
+    },
+    {
+      "date": "2026-07-15",
+      "day": "Wednesday",
+      "time": "11:30",
+      "type": "Run #16 — 7-8 km Z2 sentier côtier (Saint-Malo)",
+      "duration_min": 55,
+      "target_load": 32,
+      "calendar_event_id": "ouhmc27dle5on8u512t5uaipok",
+      "status": "planned"
+    },
+    {
+      "date": "2026-07-16",
+      "day": "Thursday",
+      "time": null,
+      "type": "Rest / marche légère optionnelle",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    }
+  ],
+  "no_train_days": [],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Capitalize on Saint-Malo's GREEN conditions (20–24°C) to resume running after 8 days off. Run #15 on Monday at 6–7 km Z2, then Run #16 on Wednesday at 7–8 km Z2. Anchor to demonstrated tolerance (6 km floor, 7.5 km ceiling). If Run #15 goes well, let Run #16 reach 7.5–8 km naturally — do not clamp to the floor.",
+      "measurable": "Two clean runs completed (no tissue pain >24h, no HRV crash >10%)",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P1",
+      "text": "Complete Withings pesée on Sunday Jul 12 before departure. Last weigh-in was Jun 21 (103.67 kg) — 19-day gap. Weight data is needed to track the −3 to −5 kg comeback target and calibrate TDEE.",
+      "measurable": "Weigh-in completed Jul 12; weight trend updated",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P2",
+      "text": "Schedule Vitamin D retest. Was due ~July 2026 (8 weeks post-comeback). Last result 27 ng/mL (insufficient). Confirm supplementation is raising levels toward 40 ng/mL target before increasing running volume further.",
+      "measurable": "Lab order placed or blood drawn within 2 weeks",
+      "evidence_class": "guideline"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "post_run_tissue_feedback",
+      "threshold": "Any localized pain >24h after Run #15 or #16 → skip next run, assess",
+      "reason": "8-day running gap plus 103 kg body weight; tissue tolerance needs re-confirmation after the pause"
+    },
+    {
+      "marker": "hrv_7d_avg",
+      "threshold": "Alert if HRV 7d avg drops below 34 ms (currently 37, recovered from 33–34 late June)",
+      "reason": "HRV just recovered after a LOW/UNBALANCED patch; watch for regression when running resumes"
+    },
+    {
+      "marker": "weight_trend",
+      "threshold": "Track after Jul 12 pesée — alert if >1 kg gain vs Jun 21 reading",
+      "reason": "19-day data gap; heatwave period may have affected hydration/composition"
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": "https://github.com/k2riddim/weekly-health-digest/pull/81"
+}
