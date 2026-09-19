@@ -31,6 +31,13 @@ Analytical report in **English**. Calendar event titles and descriptions, Telegr
 - **Archive**: `state/history/YYYY-MM-DD.json` — append-only copy of each day's state.
 - **Human digest**: `digests/YYYY-MM-DD.md`.
 - **Phone delivery**: Telegram message, body = compact version of the daily digest (French).
+- **Weekly athletic profile & objectives**: a separate weekly routine (not one of the 6 daily phases) writes `profile-reports/YYYY-MM-DD-athletic-profile-objectives.md` and refreshes every row of the live `objectives` table (`biometrics:query`/`upsert_objective`) — current_value, trajectory, and a 0-100 confidence score per goal. **Phase 1 and Phase 4 must query the `objectives` table for `status='active'` rows** and treat priority-`high` objectives (run frequency, protein target, weight target, annual labs) as additional context for readiness interpretation and for the rolling 7-day plan — e.g. a running-frequency objective behind pace is a reason to protect an easy run slot, not a reason to add intensity. See "Latest weekly digest" below for the standing summary between weekly refreshes.
+
+### Latest weekly digest (auto-updated weekly, do not hand-edit)
+
+*Last refreshed 2026-09-19 by the weekly athletic-profile routine. Full report: `profile-reports/2026-09-19-athletic-profile-objectives.md`.*
+
+Detrained sub-elite masters endurance athlete (half-marathon PR 1:34:33, marathon PR 3:39:55, both 2019) mid-comeback under medically-supervised weight management (Wegovy since 2026-08-12). VO2max (42.4, ACSM "Good") is well preserved. This week's read is mixed: body composition turned a corner (first sub-100kg reading, 99.68kg Sep 14, pace now inside the GLP-1-expected band) while the athletic-rebuild chain stalled further (run frequency 1/3 for the week, long-run ceiling stuck at 10.5km for 8 weeks, and a 27-day nutrition-logging blackout — now the single highest-leverage unresolved item). No active structured training block since C4 expired Sep 13. Objective confidence scores (0-100): run-3x/wk **8%**, protein-160g **2%**, weight-95kg **30%** (only one trending up), Beaumonts-12km **10%**, semi<1h45 **6%**, annual labs **16%**, root objective **13%**.
 
 ## Thresholds
 
