@@ -93,7 +93,7 @@ glp1:
   # (rebaseline_after_days_on_stable_dose) restarts at every step.
   label_titration_mg: [0.25, 0.5, 1.0, 1.7, 2.4]
   label_step_interval_weeks: 4
-  next_expected_step_date: "2026-09-09" # 0.5 mg if the label schedule is followed — CONFIRM with Benjamin
+  next_expected_step_date: "2026-09-30" # 0.5 mg — deferred per Sep 15 consultation; 0.25 mg through pen 2 (Sep 23), then 0.5 mg with pen 3
   rhr_expected_shift_bpm_min: 1        # class effect on resting HR vs pre-treatment baseline (RCT)
   rhr_expected_shift_bpm_max: 5
   rebaseline_after_days_on_stable_dose: 21   # after this many days on a stable dose, the post-initiation window is the RHR/HRV reference
