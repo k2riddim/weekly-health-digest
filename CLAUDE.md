@@ -31,6 +31,19 @@ Analytical report in **English**. Calendar event titles and descriptions, Telegr
 - **Archive**: `state/history/YYYY-MM-DD.json` — append-only copy of each day's state.
 - **Human digest**: `digests/YYYY-MM-DD.md`.
 - **Phone delivery**: Telegram message, body = compact version of the daily digest (French).
+- **Weekly athletic profile & objectives tracker**: `profile-reports/YYYY-MM-DD-athletic-profile-objectives.md` — a separate, weekly (not daily) run that (1) re-derives Benjamin's full-history athletic classification from Strava/Withings/Garmin and (2) audits every row in the `objectives` DB table against a live query of its `source_table`/`source_column`/`source_filter`/`source_agg`, assigning a 0–100 confidence score per objective. It writes its refreshed `current_value`/`notes`/confidence back onto each `objectives` row via `upsert_objective` (so the DB always carries the latest read) and updates the "Latest weekly digest" block immediately below. **Read that block at Phase 0/2 of every daily run** — it carries objective-level context (e.g. a stalled long-run objective, a nutrition-logging blackout, a paused pipeline) that should inform triage and the rolling 7-day plan without re-deriving it from scratch daily.
+
+### Latest weekly digest (as of 2026-09-26)
+
+Full report: `profile-reports/2026-09-26-athletic-profile-objectives.md`.
+
+- **Pipeline flag**: this daily routine had not committed to `main` in 21 days (last: 2026-09-05, PR #139) as of the 2026-09-26 weekly pass — no calendar replanning happened in that window, and `protocols/active_block.md` (C4, expired 2026-09-13) was never archived per its own end-of-block instruction. If you are reading this and it is now materially later than 2026-09-05, this note is stale — the fact that this run is executing at all resolves the flag; just make sure Phase 4 picks up planning where it left off (a new block should be stood up if none exists) rather than assuming continuity that didn't happen.
+- **Classification**: masters-age (42) recreational endurance athlete, competitive ceiling proven in 2019 (marathon 3:39:55, half 1:34:33 PRs), currently a detrained athlete in a medically-supported (GLP-1) body-recomposition + return-to-running phase. Current VO2max (~42.2 mL/kg/min) is close to what the 2019 race pace implies — the performance gap vs. 2019 is driven mainly by body mass (+16–17 kg) and running-frequency detraining, not a lost aerobic ceiling.
+- **Objectives needing daily-plan awareness**:
+  - `a1bde447` (run ≥3×/wk) and `9b982443` (12 km long run by 2026-10-30): both stalled (0–1 run/wk actual; long-run max stuck at 10.5 km since 2026-07-25). No active structured block exists — Phase 4 should stand up a replacement (per `active_block.md`'s own archival instruction) anchored to demonstrated tolerance (10.5 km), not the aspirational 12 km directly.
+  - `49829c29` (protein 160 g/d, 30d avg): 34 consecutive zero-log days (2026-08-23 →). Genuinely ambiguous whether this is a logging gap or true under-eating on an appetite-suppressing drug — worth a direct nutrition-logging nudge in the digest/Telegram rather than assuming either.
+  - `218d1c78` (weight → 95 kg): progressing but below the GLP-1-expected minimum rate and non-monotonic (rebounded +1.16 kg in the most recent week) — treat as on-track-but-slow, not a red flag, consistent with the still-unescalated 0.25 mg starter dose.
+- This block is overwritten by each weekly pass — treat it as a rolling summary, not an append-only log; the dated report file is the durable record.
 
 ## Thresholds
 
