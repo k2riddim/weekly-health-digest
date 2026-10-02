@@ -1,0 +1,160 @@
+{
+  "as_of_date": "2026-10-02",
+  "bootstrap": false,
+  "situational_context": "Running comeback at 152 days (38+ runs since May 3, 2026). C4 active block lapsed — archived today (was due Sep 13). Training in unstructured post-block phase. The Sep 21 gravel ride (49.6 km, suffer 145, load 145) caused a massive load spike that inflated chronic to 32.6 but acute has now deflated to 13.3 (ACWR 0.41, detraining). Two runs in the last 4 weeks — Sep 17 (4 km) and Sep 26 (5 km, HR 130) — both well-tolerated. VO2max running improved to 42.7. Weight stable ~100.8 kg. MEDICATION: Wegovy (semaglutide) dose escalated from 0.25 mg to 0.5 mg on Sep 30 (confirmed via calendar — consultation Sep 15 with Dr Monnier). Day 2 on new dose; 14-day escalation watch active (Sep 30 – Oct 14). RHR rebaseline clock restarted. Today's RHR 58 is a transient dose-step + post-injection spike — 7d avg 54.4 still reflects the 0.25 mg period. HRV 7d avg 31 (stable within GLP-1 class effect). Symptoms: left throat pain radiating to ear (ENT, severity 1) and leg stiffness (severity 1) logged Sep 29 — both mild. Nutrition logging gap: 41 consecutive zero-intake days (since Aug 23). On a GLP-1 agonist this is P0 for under-fueling risk. No new labs since Dec 2025 (10+ months overdue). Doctor appointment with Dr BOURIOT (Ipso Nation) on Oct 8 — opportunity for blood panel.",
+  "profile_ref": "protocols/health-profile.md",
+  "medications": [
+    {
+      "name": "Wegovy (semaglutide)",
+      "class": "GLP-1 receptor agonist",
+      "route": "weekly subcutaneous injection (abdomen)",
+      "indication": "weight management (BMI ~33, 15-month plateau)",
+      "dose": "0.5 mg weekly",
+      "dose_since": "2026-09-30",
+      "since": "2026-08-12",
+      "injection_weekday": "Wednesday",
+      "days_on": 51,
+      "days_on_current_dose": 2,
+      "last_injection": "2026-09-30",
+      "next_expected_step": "2026-10-28 (1.0 mg per label titration, unconfirmed)",
+      "prescriber": "Dr Delphine Monnier (Doctolib teleconsultation)",
+      "next_review": "monthly (after 4th dose at 0.5 mg — pens: 30/09, 07/10, 14/10, 21/10)",
+      "interpretation_notes": "RHR offset expected to grow at 0.5 mg (+2-7 bpm vs pre-treatment plausible); HRV lower; appetite further suppressed; dose-escalation 14-day watch active (Sep 30 – Oct 14); use post-escalation baseline (from Sep 30), require second signal for flag; pre-run meal gap >= 3h; side-effect window Thu-Sat"
+    }
+  ],
+  "acute_load_7d": 13.3,
+  "chronic_load_28d": 32.6,
+  "distance_from_peak_pct": 2.03,
+  "hrv_7d_avg": 31,
+  "rhr_7d_avg": 54.4,
+  "sleep_hours_7d_avg": 7.29,
+  "weight_kg_7d_avg": 100.84,
+  "last_session": {
+    "date": "2026-10-02",
+    "type": "EBikeRide",
+    "duration_min": 38,
+    "training_load": 4
+  },
+  "plan_7d_ahead": [
+    {
+      "date": "2026-10-02",
+      "day": "vendredi",
+      "time": null,
+      "type": "Repos (post-injection J+2, e-bike facile fait)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "rest"
+    },
+    {
+      "date": "2026-10-03",
+      "day": "samedi",
+      "time": "11:30",
+      "type": "Run easy 5 km Z1-Z2 (Bois de Vincennes)",
+      "duration_min": 42,
+      "target_load": 15,
+      "calendar_event_id": "mgjg3piqu2lkqrm8bnajug0n58",
+      "status": "planned"
+    },
+    {
+      "date": "2026-10-04",
+      "day": "dimanche",
+      "time": "12:00",
+      "type": "Gravel/vélo easy 25 km Z1-Z2",
+      "duration_min": 75,
+      "target_load": 22,
+      "calendar_event_id": "vluucakc3imaf57ijtf3jlm8p4",
+      "status": "planned"
+    },
+    {
+      "date": "2026-10-05",
+      "day": "lundi",
+      "time": "12:00",
+      "type": "Renforcement musculaire 30 min (préservation masse maigre)",
+      "duration_min": 30,
+      "target_load": 10,
+      "calendar_event_id": "kb9vrnf5bh0pbqplcll26d41q0",
+      "status": "planned"
+    },
+    {
+      "date": "2026-10-06",
+      "day": "mardi",
+      "time": null,
+      "type": "Sur site — pas d'entraînement planifié",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "blocked"
+    },
+    {
+      "date": "2026-10-07",
+      "day": "mercredi",
+      "time": "12:00",
+      "type": "Run easy 5 km Z1-Z2 plat",
+      "duration_min": 40,
+      "target_load": 14,
+      "calendar_event_id": "q3mh7injio2inq4lkt3j42346s",
+      "status": "planned"
+    },
+    {
+      "date": "2026-10-08",
+      "day": "jeudi",
+      "time": null,
+      "type": "Sur site — pas d'entraînement planifié (RDV Dr BOURIOT 19h15)",
+      "duration_min": 0,
+      "target_load": 0,
+      "calendar_event_id": null,
+      "status": "blocked"
+    }
+  ],
+  "no_train_days": ["2026-10-06", "2026-10-08"],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "text": "Resume nutrition logging immediately. On Wegovy 0.5 mg (day 2), appetite is further suppressed — 41 consecutive days of zero logged intake makes it impossible to verify protein floor (1.6 g/kg = 161 g/day at 100.8 kg) or energy availability. Under-fueling is the highest-leverage modifiable risk for lean-mass preservation during GLP-1 weight loss. Even rough daily logging is better than nothing.",
+      "measurable": ">=5 days with logged intake in the next 7 days; protein >= 1.6 g/kg on logged days",
+      "evidence_class": "consensus"
+    },
+    {
+      "priority": "P1",
+      "text": "Vitamin D retest is now 10+ months overdue (was due July 2026). Last level 27 ng/mL (insufficient, Dec 2025). Comeback is 152 days in with ongoing impact load. Appointment with Dr BOURIOT on Oct 8 (Ipso Nation, 19h15) is the opportunity — request Vitamin D + standard annual blood panel.",
+      "measurable": "Lab order placed at Oct 8 appointment",
+      "evidence_class": "guideline"
+    },
+    {
+      "priority": "P2",
+      "text": "Update protocols/health-profile.md with the confirmed Wegovy dose change: 0.5 mg weekly from Sep 30 (consultation Sep 15 with Dr Monnier). The thresholds.yaml has been updated by this run; the profile narrative needs manual update.",
+      "measurable": "health-profile.md updated with 0.5 mg dose before the next digest run",
+      "evidence_class": "consensus"
+    }
+  ],
+  "markers_to_watch": [
+    {
+      "marker": "rhr_7d_avg (post-0.5mg baseline)",
+      "threshold": "Alert if RHR 7d avg exceeds 56 bpm for 5+ days, or single day >= 60, AND a second signal is off. Rebaseline clock restarted Sep 30.",
+      "reason": "Today's 58 is a transient post-injection spike on day 2 of 0.5 mg. 7d avg 54.4 still reflects the 0.25 mg period."
+    },
+    {
+      "marker": "dose_escalation_watch",
+      "threshold": "Active Sep 30 – Oct 14. Watch: new/worsening GI, weight loss > 1.5%/wk, RHR 7d > 56, body battery < 30 for 3+ days, sleep score < 65 for 3+ nights.",
+      "reason": "First injection at 0.5 mg was Sep 30. GI and autonomic effects are dose-dependent."
+    },
+    {
+      "marker": "nutrition_logging",
+      "threshold": "Currently 41 consecutive zero days. Resolves when >= 5 days in a 7-day window have logged intake with protein >= 1.6 g/kg.",
+      "reason": "P0 concern: unverifiable protein/energy availability on GLP-1."
+    },
+    {
+      "marker": "weight_trend (post-0.5mg)",
+      "threshold": "Flag if 14-day loss > 1.5%/wk, lean-mass share > 35%, or flat/up 6+ weeks after step.",
+      "reason": "0.5 mg should begin driving more weight loss than the 0.25 mg step."
+    },
+    {
+      "marker": "throat_pain_ent",
+      "threshold": "If persists > 5 days, worsens, or fever/difficulty swallowing -> GP.",
+      "reason": "Severity 1 left throat pain since Sep 29. Could be GLP-1 reflux, coincidental ENT, or early viral."
+    }
+  ],
+  "investigations_opened": [],
+  "pr_url": ""
+}
