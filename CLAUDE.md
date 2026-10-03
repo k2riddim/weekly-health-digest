@@ -26,6 +26,7 @@ Analytical report in **English**. Calendar event titles and descriptions, Telegr
 ## Memory
 
 - **Standing profile**: `protocols/health-profile.md` — medications, conditions, care team. Human-maintained, read at the start of Phase 0, never overwritten by the routine. Its `medications` list is mirrored into `state/latest.json > medications` every day so the state can never silently drop it.
+- **Weekly athletic profile**: the `WEEKLY-PROFILE` block in this file + `profile-reports/` — rewritten by the weekly run, read-only for the daily run.
 - **Primary state**: `state/latest.json` (committed each day). Read at the start of Phase 0, overwritten at the end of Phase 6.
 - **Historical peak**: `state/historical-peak.json`. Stable. Only update if the current 28-day chronic load exceeds the stored peak — then write a new version.
 - **Archive**: `state/history/YYYY-MM-DD.json` — append-only copy of each day's state.
@@ -45,6 +46,29 @@ When a signal surfaces that warrants deeper interpretation, `read_file` the matc
 - Sleep disruption → `sleep-fragmentation.md`
 - Post-layoff rebuild → `endurance-rebuild.md`
 - RHR / HRV drift, weight or body-composition trend, low or missing intake, GI symptoms, fatigue **while a GLP-1 agonist is active** → `glp1-endurance.md` (mandatory before interpreting any of these)
+
+## Weekly athletic profile & objectives (auto-updated)
+
+The weekly athletic-profile + objectives run (full report in `profile-reports/YYYY-MM-DD-athletic-profile-objectives.md`) **rewrites everything between the markers below on every run**, so the daily planner always carries the latest classification and objective status. Read this block in Phase 0 and use it in Phase 4: objectives outrank generic progression, but never override the ramp cap, return-to-running rules or the GLP-1 constraints.
+
+<!-- WEEKLY-PROFILE:START -->
+**Last weekly run: 2026-10-03** — full report: `profile-reports/2026-10-03-athletic-profile-objectives.md`
+
+- **Classification:** detrained former competitive-amateur endurance athlete (PRs: HM 1:34:33 in 2019, marathon 3:39:55 in 2019); currently low-active for structured training (~0.9 h/wk in 2026 vs 3–4.5 h/wk at peak), VO2max ≈ 42–43 (fair, ~50th pct for men 40–49), BMI 31.8, on Wegovy. Mitchell sport profile: high-dynamic/low-static (IIIA).
+- **Running reality (anchor Phase 4 here):** last 5 weeks = 1,1,1,1,0 runs/wk; last run 5.0 km on 2026-09-26; longest since July = 7.3 km; best recent long run 10.5 km (2026-07-25). Rebuild from ~5 km × 3/wk with the long run +1 km/wk; ≥1 rest day between runs; long run not Thu–Sat after the Wednesday injection.
+- **Pipeline gap:** daily digest last ran 2026-09-05; `protocols/active_block.md` (C4) expired 2026-09-13 and no replacement block exists. A new block (re-baselined to the demonstrated ceiling, aimed at 12 km Beaumonts ~early Dec and a spring half) must be planned and put on the Calendar.
+- **Objectives (live, confidence = chance of hitting the target on its date):**
+  - 3 runs/wk (a1bde447) — deadline 2026-09-29 missed; 4-wk avg 0.75 → 0 %. Re-dating recommended (rolling 4-wk avg ≥ 2.5 by 2026-11-15).
+  - 160 g protein/day (49829c29) — deadline 2026-09-29 missed; 30-d avg 0.0 g logged (no summary since 2026-08-22; logging blackout vs real under-eating unresolved) → 0 %.
+  - 12 km Beaumonts (9b982443) — max 10.5 km, 2026-10-30 → 2 %; realistic ~2026-12-06.
+  - 95 kg (218d1c78) — 100.84 kg on 2026-09-23; needs 0.42 kg/wk vs 0.21 demonstrated, 2026-12-30 → 18 %.
+  - Annual blood panel (42361937) — last labs 2025-12-04, 2026-12-30 → 15 %; vitamin D retest overdue; tie to Wegovy monthly review.
+  - Half < 1h45 (96910249) — 2027-03-30 → 2 %; needs 4:58/km vs ~6:08 in Oct 2025.
+  - Parent comeback goal (a0000000-…0001) — 2027-06-29 → 7 %.
+- **Critical path:** 3 runs/wk on the Calendar → long-run ladder → weight loss (confirm Wegovy dose step: 0.5 mg expected ~2026-09-09, 1.0 mg ~2026-10-07, both unconfirmed) → race-specific block from January.
+- **Highest-leverage action now:** put three runs on the Calendar for the week of 2026-10-05 (≈5 / 5–6 / 6–7 km) and hold that cadence for 4 weeks; add 1 strength session/week (GLP-1 lean-mass preservation); ask Benjamin whether food intake is truly near zero or just unlogged.
+- **Planner rules from this analysis:** weight and Garmin RHR/HRV are read against the Wegovy post-initiation baseline (RHR 52–59, HRV 29–32 = expected class effect, no 2nd signal); when objective dates have passed, the daily run flags it in the digest but does not edit objective dates — Benjamin decides re-dating.
+<!-- WEEKLY-PROFILE:END -->
 
 ## EXECUTION — 6 mandatory phases
 
